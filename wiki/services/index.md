@@ -20,3 +20,8 @@
 - [Managed database scaling](managed-database-scaling.md) - RDS, Aurora, and DynamoDB scaling dimensions.
 - [Load balancing and health checks](load-balancing-and-health-checks.md) - ELB targets and Route 53 health-driven routing.
 - [AWS Backup](aws-backup.md) - plans, assignments, vaults, copies, and restore testing.
+
+## Domain 3
+
+- [AMI and container image management](image-management.md) - build, distribute, secure, pin, and retire images.
+- [CloudFormation and AWS CDK lifecycle](cloudformation-and-cdk.md) - declarative ownership, preview, replacement protection, and assets.

@@ -11,3 +11,13 @@
 - [Storage versioning and recovery](storage-versioning.md) - S3 and FSx historical protection.
 - [Disaster recovery](disaster-recovery.md) - strategy, data, traffic, validation, and failback.
 - [Scaling, resilience, and recovery](scaling-resilience-and-recovery.md) - the complete Domain 2 operating model.
+
+## Domain 3
+
+- [Deployment diagnostics](deployment-diagnostics.md) - first-failure evidence and safe recovery.
+- [Cross-account and multi-Region provisioning](cross-account-resource-provisioning.md) - RAM, StackSets, and ownership.
+- [Deployment strategies](deployment-strategies.md) - blast radius, coexistence, traffic, health, and rollback.
+- [Terraform and Git deployment controls](third-party-deployment-tools.md) - configuration, state, plan, and release identity.
+- [Systems Manager operational automation](operational-automation.md) - managed nodes and fleet operations.
+- [Event-driven automation](event-driven-automation.md) - routing, permissions, retry, idempotency, and loops.
+- [Deployment and operational automation](deployment-and-operational-automation.md) - the complete Domain 3 operating model.

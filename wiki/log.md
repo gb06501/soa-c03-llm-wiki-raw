@@ -1,5 +1,14 @@
 # Wiki update log
 
+## [2026-07-21] ingest | Domain 3 bootstrap
+
+- **Inventory:** Processed all eight Domain 3 skill sources against the global page plan.
+- **Creation:** Added 27 pages covering images, infrastructure as code, diagnostics, cross-account provisioning, deployment strategies, Terraform/Git, fleet operations, and event automation.
+- **Coverage:** Validated 31 of 53 corpus skills; Domains 4-5 remain planned.
+- **Navigation:** Added Domain 3 indexes and repaired the missing Domain 2 entry in the learning catalogue.
+- **Validation:** Resolved structural links and every Domain 3 facet destination.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] ingest | Domain 2 bootstrap
 
 - **Inventory:** Processed all nine Domain 2 skill sources against the global page plan.

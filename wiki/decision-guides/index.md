@@ -37,3 +37,17 @@
 - [Database restore selection](database-restore-selection.md)
 - [Versioning, backup, and Object Lock selection](versioning-backup-object-lock-selection.md)
 - [Disaster-recovery strategy selection](dr-strategy-selection.md)
+
+## Domain 3: Artifacts and provisioning
+
+- [AMI and container image selection](machine-container-image-selection.md)
+- [Infrastructure provisioning selection](infrastructure-provisioning-selection.md)
+- [Resource sharing and provisioning selection](resource-sharing-and-provisioning-selection.md)
+- [Deployment tool selection](deployment-tool-selection.md)
+
+## Domain 3: Deployment and automation
+
+- [Deployment failure evidence selection](deployment-failure-evidence-selection.md)
+- [Deployment strategy selection](deployment-strategy-selection.md)
+- [Operational automation service selection](operational-automation-service-selection.md)
+- [Event-driven automation selection](event-driven-automation-selection.md)
