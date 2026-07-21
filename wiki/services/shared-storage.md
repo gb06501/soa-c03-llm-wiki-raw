@@ -1,9 +1,9 @@
 ---
-type: AWS Service
+type: Concept
 title: Shared storage
 description: Selects EFS, an FSx family, S3 Files, S3, or Storage Gateway from protocol and workload needs.
 tags: [soa-c03, domain-1, efs, fsx, s3-files, storage-gateway]
-timestamp: 2026-07-21T00:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["1.3.3", "1.3.4"]
 domain_ids: ["1"]
 sources:

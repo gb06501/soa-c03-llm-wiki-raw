@@ -1,9 +1,10 @@
 ---
 type: AWS Service
-title: AWS Backup
-description: Explains plans, rules, assignments, vaults, copies, recovery points, and restore testing.
+title: Backup
+service_id: backup
+description: Coordinates backup plans, assignments, vaults, copies, recovery points, and restore testing.
 tags: [soa-c03, domain-2, aws-backup, backup]
-timestamp: 2026-07-21T13:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["2.3.1"]
 domain_ids: ["2"]
 sources:

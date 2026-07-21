@@ -1,9 +1,9 @@
 ---
-type: AWS Service
+type: Concept
 title: Load balancing and health checks
 description: Explains load-balancer selection, target health, and Route 53 health-driven DNS behavior.
 tags: [soa-c03, domain-2, load-balancing, health-checks, route53]
-timestamp: 2026-07-21T13:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["2.2.1"]
 domain_ids: ["2"]
 sources:

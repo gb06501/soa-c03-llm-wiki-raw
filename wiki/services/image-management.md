@@ -1,9 +1,9 @@
 ---
-type: AWS Service
+type: Concept
 title: AMI and container image management
 description: Builds, distributes, secures, verifies, and safely retires EC2 AMIs and ECR container images.
 tags: [soa-c03, domain-3, ami, ecr, image-builder]
-timestamp: 2026-07-21T16:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["3.1.1"]
 domain_ids: ["3"]
 sources:

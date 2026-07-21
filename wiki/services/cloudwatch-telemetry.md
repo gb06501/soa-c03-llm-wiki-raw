@@ -1,9 +1,10 @@
 ---
 type: AWS Service
-title: CloudWatch telemetry
-description: Selects and verifies AWS metrics, logs, traces, audit records, and container telemetry.
+title: CloudWatch
+service_id: cloudwatch
+description: Collects and relates metrics, logs, traces, alarms, dashboards, and operational evidence.
 tags: [soa-c03, domain-1, cloudwatch, observability]
-timestamp: 2026-07-21T00:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["1.1.1", "1.1.2", "1.2.1"]
 domain_ids: ["1"]
 sources:

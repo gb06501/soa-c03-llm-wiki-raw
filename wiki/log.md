@@ -1,5 +1,15 @@
 # Wiki update log
 
+## [2026-07-21] reconcile | Canonical service coverage correction
+
+- **Root cause:** The first coverage schema allowed many distinct services to collapse into one broad facet destination.
+- **Governance:** Added canonical short-name service registry, an AWS Feature page type, and atomic facet-item requirements.
+- **Correction:** Added 14 canonical Domain 3 service pages and reclassified broad or feature-oriented pages without renaming stable paths.
+- **Integration:** Enriched EC2, S3, EventBridge, SNS, and Systems Manager Automation with Domain 3 sources.
+- **Migration:** Domains 1-2 remain implemented but are marked needs-reconciliation until their facets are audited atomically.
+- **Coverage:** Replaced eight aggregate Domain 3 service facets with 40 atomic service, feature, mechanism, and external-tool items.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] ingest | Domain 3 bootstrap
 
 - **Inventory:** Processed all eight Domain 3 skill sources against the global page plan.

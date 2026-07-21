@@ -1,16 +1,18 @@
 ---
 type: AWS Service
-title: SNS notifications
-description: Fans out messages from alarms or applications to confirmed and authorized subscriptions.
+title: SNS
+service_id: sns
+description: Fans out messages to authorized subscriptions with delivery, filtering, encryption, and failure evidence.
 tags: [soa-c03, domain-1, sns, notifications]
-timestamp: 2026-07-21T00:00:00+02:00
-skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2"]
-domain_ids: ["1"]
+timestamp: 2026-07-21T18:00:00+02:00
+skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "3.2.2"]
+domain_ids: ["1", "3"]
 sources:
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
+  - /raw/skills/3.2.2-implement-event-driven-automation.md
 status: verified
 ---
 
@@ -62,9 +64,16 @@ source/alarm history -> topic ARN -> topic policy and KMS key
 - [Alarm and notification failure](../playbooks/alarm-and-notification-failure.md)
 - [Remediation tool selection](../decision-guides/remediation-tool-selection.md)
 
+# Domain 3: Event automation
+
+SNS is the push fan-out boundary. Use SQS when consumers need a durable polling buffer. Each subscription has independent delivery and filtering behavior, and source, topic, subscription, encryption, and consumer permissions remain separate.
+
+Duplicate delivery and retry require idempotent subscribers. Fan-out success does not prove every subscriber completed its business action.
+
 # Sources
 
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.1.5](../../raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
+- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)

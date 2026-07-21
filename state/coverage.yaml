@@ -1,25 +1,31 @@
-version: 1
-updated_at: "2026-07-21T16:00:00+02:00"
+version: 2
+updated_at: "2026-07-21T18:00:00+02:00"
 scope: "SOA-C03 complete 53-skill corpus"
 method: "global-plan-incremental-build"
+atomic_itemization: required
+service_registry: "state/aws-service-registry.yaml"
 summary:
   total_skills: 53
-  validated_skills: 31
+  validated_skills: 8
+  needs_reconciliation_skills: 23
   planned_skills: 22
   domains:
-    "1": validated
-    "2": validated
+    "1": needs_reconciliation
+    "2": needs_reconciliation
     "3": validated
     "4": planned
     "5": planned
 coverage_states: [standalone, embedded, planned, gap, not_applicable]
+migration:
+  domains_requiring_atomic_reconciliation: ["1", "2"]
+  reason: "These domains were validated under the aggregate-facet v1 schema; their generated pages remain implemented."
 skills:
   - id: "1.1.1"
     domain: "1"
     path: "raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md"
     blob_sha: 9276191767df8b284787fbec83132b92e70ac7cf
     title: "Configure monitoring and logging for workloads"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -62,7 +68,7 @@ skills:
     path: "raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md"
     blob_sha: 50d465117056a84173fd77395b5ef35da7f1c779
     title: "Configure and manage the CloudWatch agent"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -105,7 +111,7 @@ skills:
     path: "raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md"
     blob_sha: 3215a985cebf416ce6e08d1da8a2c0f631c8c9a1
     title: "Configure and troubleshoot CloudWatch alarms"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -148,7 +154,7 @@ skills:
     path: "raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md"
     blob_sha: f8762ed1958aa26f8bfed82e49a35384a0f3e738
     title: "Create and manage CloudWatch dashboards"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -191,7 +197,7 @@ skills:
     path: "raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md"
     blob_sha: d5f860feff9c8e9527f547d7421b1ecad32c4691
     title: "Configure SNS notifications and alarm integration"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -234,7 +240,7 @@ skills:
     path: "raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md"
     blob_sha: f89ef47d2e310365ebd034008968a6fb7eee2565
     title: "Analyze performance metrics and automate remediation"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -277,7 +283,7 @@ skills:
     path: "raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md"
     blob_sha: bf8f9692ff59f2971f9f28934610727ec1f81080
     title: "Route, enrich, and deliver events with EventBridge"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -320,7 +326,7 @@ skills:
     path: "raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md"
     blob_sha: 8aa9155497a5f61063fc61ac787abd4ef3d5f202
     title: "Create and run Systems Manager Automation runbooks"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -363,7 +369,7 @@ skills:
     path: "raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md"
     blob_sha: f36715eb52036bb2b68980b1c653e2cb51a649c0
     title: "Optimize compute resources and remediate performance problems"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -406,7 +412,7 @@ skills:
     path: "raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md"
     blob_sha: a0542a7dea22a1aafffda1273023544ffe04b106
     title: "Analyze and optimize EBS performance"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -449,7 +455,7 @@ skills:
     path: "raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md"
     blob_sha: 7301c40a0a9c745b40b507e433b82e0ebb3ec03b
     title: "Implement and optimize S3 performance strategies"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -492,7 +498,7 @@ skills:
     path: "raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md"
     blob_sha: dddf4c9717914e1edb85785688192f83253aff1f
     title: "Evaluate and optimize shared storage solutions"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -535,7 +541,7 @@ skills:
     path: "raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md"
     blob_sha: d76b9fd2aef66437a134f5ebe7dd995819d81e02
     title: "Monitor and optimize Amazon RDS"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -578,7 +584,7 @@ skills:
     path: "raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md"
     blob_sha: e5dba30bddacc0d15eb2911c4bbbd7d294ee1863
     title: "Implement, monitor, and optimize EC2 instances, storage, and networking"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -621,7 +627,7 @@ skills:
     path: "raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md"
     blob_sha: 9e37b5cbaee9921bfe200c0189bd2aecfc033c8d
     title: "Configure and manage scaling mechanisms in compute environments"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -665,7 +671,7 @@ skills:
     path: "raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md"
     blob_sha: 73d9bd8bd6c6e3b01d33f7d5b827b34c05da13d6
     title: "Implement caching for dynamic scalability"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -709,7 +715,7 @@ skills:
     path: "raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md"
     blob_sha: 8baefb31c3b270b7da6dbab6686552d56f5eccfb
     title: "Configure and manage scaling in AWS managed databases"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -753,7 +759,7 @@ skills:
     path: "raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md"
     blob_sha: ea003bff45ec5e4de1e185ddc4e074d00ae65b03
     title: "Configure and troubleshoot ELB and Route 53 health checks"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -797,7 +803,7 @@ skills:
     path: "raw/skills/2.2.2-configure-fault-tolerant-systems.md"
     blob_sha: 201bea01798712d69de370ea6ffa72b3b17ac636
     title: "Configure fault-tolerant systems"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -841,7 +847,7 @@ skills:
     path: "raw/skills/2.3.1-automate-snapshots-and-backups.md"
     blob_sha: d0277df7b96a0e2710ffaf6ac7126c0df5f40bbf
     title: "Automate snapshots and backups"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -885,7 +891,7 @@ skills:
     path: "raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md"
     blob_sha: 4644334be57772bf741d4a16a085657016046425
     title: "Restore databases to meet RTO, RPO, and cost requirements"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -929,7 +935,7 @@ skills:
     path: "raw/skills/2.3.3-implement-versioning-for-storage-services.md"
     blob_sha: b11f2b74c372b8c641d6ba2f5894636511c7e13d
     title: "Implement versioning for storage services"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -973,7 +979,7 @@ skills:
     path: "raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md"
     blob_sha: 6663abbe42d523c4788fedc5954c18e61a38065c
     title: "Follow disaster-recovery procedures and best practices"
-    status: validated
+    status: needs_reconciliation
     facets:
       services_features_mechanisms:
         status: standalone
@@ -1021,8 +1027,27 @@ skills:
     facets:
       services_features_mechanisms:
         status: standalone
-        destination: "wiki/services/image-management.md"
-        section: "# Core model"
+        items:
+          - identity: "ec2"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ec2-performance.md"
+            section: "# Domain 3: AMIs and deployment"
+          - identity: "image-builder"
+            kind: service
+            status: standalone
+            destination: "wiki/services/image-builder.md"
+            section: "# Core model"
+          - identity: "ecr"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ecr.md"
+            section: "# Core model"
+          - identity: "image-lifecycle"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/image-management.md"
+            section: "# Core model"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/machine-container-image-selection.md"
@@ -1065,8 +1090,27 @@ skills:
     facets:
       services_features_mechanisms:
         status: standalone
-        destination: "wiki/services/cloudformation-and-cdk.md"
-        section: "# Core model"
+        items:
+          - identity: "cloudformation"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudformation.md"
+            section: "# Core model"
+          - identity: "cdk"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cdk.md"
+            section: "# Core model"
+          - identity: "service-catalog"
+            kind: service
+            status: standalone
+            destination: "wiki/services/service-catalog.md"
+            section: "# Core model"
+          - identity: "iac-lifecycle"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/cloudformation-and-cdk.md"
+            section: "# Core model"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/infrastructure-provisioning-selection.md"
@@ -1109,8 +1153,57 @@ skills:
     facets:
       services_features_mechanisms:
         status: standalone
-        destination: "wiki/concepts/deployment-diagnostics.md"
-        section: "# Core model"
+        items:
+          - identity: "ec2"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ec2-performance.md"
+            section: "# Domain 3: AMIs and deployment"
+          - identity: "ec2-auto-scaling"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ec2-auto-scaling.md"
+            section: "# Core model"
+          - identity: "ecr"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ecr.md"
+            section: "# Core model"
+          - identity: "ecs"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ecs.md"
+            section: "# Core model"
+          - identity: "eks"
+            kind: service
+            status: standalone
+            destination: "wiki/services/eks.md"
+            section: "# Core model"
+          - identity: "lambda"
+            kind: service
+            status: standalone
+            destination: "wiki/services/lambda.md"
+            section: "# Core model"
+          - identity: "cloudformation"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudformation.md"
+            section: "# Permissions and evidence"
+          - identity: "cdk"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cdk.md"
+            section: "# Failure boundaries"
+          - identity: "service-catalog"
+            kind: service
+            status: standalone
+            destination: "wiki/services/service-catalog.md"
+            section: "# Evidence and failures"
+          - identity: "deployment-diagnostics"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/deployment-diagnostics.md"
+            section: "# Core model"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/deployment-failure-evidence-selection.md"
@@ -1152,9 +1245,23 @@ skills:
     status: validated
     facets:
       services_features_mechanisms:
-        status: standalone
-        destination: "wiki/concepts/cross-account-resource-provisioning.md"
-        section: "# Core model"
+        status: embedded
+        items:
+          - identity: "resource-access-manager"
+            kind: service
+            status: standalone
+            destination: "wiki/services/resource-access-manager.md"
+            section: "# Core model"
+          - identity: "cloudformation-stacksets"
+            kind: feature
+            status: embedded
+            destination: "wiki/services/cloudformation.md"
+            section: "# StackSets"
+          - identity: "cross-account-provisioning"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/cross-account-resource-provisioning.md"
+            section: "# Core model"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/resource-sharing-and-provisioning-selection.md"
@@ -1197,8 +1304,32 @@ skills:
     facets:
       services_features_mechanisms:
         status: standalone
-        destination: "wiki/concepts/deployment-strategies.md"
-        section: "# Core model"
+        items:
+          - identity: "ec2-auto-scaling"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ec2-auto-scaling.md"
+            section: "# Core model"
+          - identity: "ecs"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ecs.md"
+            section: "# Core model"
+          - identity: "lambda"
+            kind: service
+            status: standalone
+            destination: "wiki/services/lambda.md"
+            section: "# Deployment controls"
+          - identity: "cloudformation"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudformation.md"
+            section: "# Resource lifecycle"
+          - identity: "deployment-strategies"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/deployment-strategies.md"
+            section: "# Core model"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/deployment-strategy-selection.md"
@@ -1240,9 +1371,18 @@ skills:
     status: validated
     facets:
       services_features_mechanisms:
-        status: standalone
-        destination: "wiki/concepts/third-party-deployment-tools.md"
-        section: "# Core model"
+        status: embedded
+        items:
+          - identity: "terraform"
+            kind: external-tool
+            status: standalone
+            destination: "wiki/concepts/third-party-deployment-tools.md"
+            section: "# Core model"
+          - identity: "git"
+            kind: external-tool
+            status: embedded
+            destination: "wiki/concepts/third-party-deployment-tools.md"
+            section: "# Git release boundary"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/deployment-tool-selection.md"
@@ -1285,8 +1425,22 @@ skills:
     facets:
       services_features_mechanisms:
         status: standalone
-        destination: "wiki/concepts/operational-automation.md"
-        section: "# Core model"
+        items:
+          - identity: "systems-manager"
+            kind: service
+            status: standalone
+            destination: "wiki/services/systems-manager.md"
+            section: "# Core model"
+          - identity: "systems-manager-automation"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/systems-manager-automation.md"
+            section: "# Core model"
+          - identity: "operational-automation"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/operational-automation.md"
+            section: "# Core model"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/operational-automation-service-selection.md"
@@ -1329,8 +1483,52 @@ skills:
     facets:
       services_features_mechanisms:
         status: standalone
-        destination: "wiki/concepts/event-driven-automation.md"
-        section: "# Core model"
+        items:
+          - identity: "s3"
+            kind: service
+            status: standalone
+            destination: "wiki/services/s3-performance.md"
+            section: "# Domain 3: Event notifications"
+          - identity: "eventbridge"
+            kind: service
+            status: standalone
+            destination: "wiki/services/eventbridge.md"
+            section: "# Domain 3: Delivery, replay, and loop safety"
+          - identity: "sns"
+            kind: service
+            status: standalone
+            destination: "wiki/services/sns-notifications.md"
+            section: "# Domain 3: Event automation"
+          - identity: "sqs"
+            kind: service
+            status: standalone
+            destination: "wiki/services/sqs.md"
+            section: "# Core model"
+          - identity: "lambda"
+            kind: service
+            status: standalone
+            destination: "wiki/services/lambda.md"
+            section: "# Invocation models"
+          - identity: "step-functions"
+            kind: service
+            status: standalone
+            destination: "wiki/services/step-functions.md"
+            section: "# Core model"
+          - identity: "systems-manager-automation"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/systems-manager-automation.md"
+            section: "# Domain 3: Operational and event integration"
+          - identity: "devops-agent"
+            kind: service
+            status: standalone
+            destination: "wiki/services/devops-agent.md"
+            section: "# Core model"
+          - identity: "event-driven-automation"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/event-driven-automation.md"
+            section: "# Core model"
       scenario_clues_requirements:
         status: standalone
         destination: "wiki/decision-guides/event-driven-automation-selection.md"

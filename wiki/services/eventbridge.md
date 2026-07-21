@@ -1,17 +1,19 @@
 ---
 type: AWS Service
 title: EventBridge
-description: Matches events on a bus and routes transformed payloads to authorized targets.
+service_id: eventbridge
+description: Matches events on buses and routes transformed payloads to authorized targets with retry and failure controls.
 tags: [soa-c03, domain-1, eventbridge, automation]
-timestamp: 2026-07-21T00:00:00+02:00
-skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3"]
-domain_ids: ["1"]
+timestamp: 2026-07-21T18:00:00+02:00
+skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "3.2.2"]
+domain_ids: ["1", "3"]
 sources:
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
   - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
+  - /raw/skills/3.2.2-implement-event-driven-automation.md
 status: verified
 ---
 
@@ -73,6 +75,12 @@ source emitted -> account/Region/bus -> rule enabled -> actual pattern match
 - [Event-driven remediation failure](../playbooks/event-driven-remediation-failure.md)
 - [Remediation tool selection](../decision-guides/remediation-tool-selection.md)
 
+# Domain 3: Delivery, replay, and loop safety
+
+A rule pattern must match the real event envelope. A matching rule still needs a valid target ARN, target role or resource policy, and KMS access. Each target has independent retry, age, DLQ, and evidence.
+
+Archive replay deliberately sends old events again; it does not reverse prior effects. Consumers need idempotency and current-state guards. Automatic remediation must filter its own result events or otherwise prevent recursive triggers.
+
 # Sources
 
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
@@ -80,4 +88,4 @@ source emitted -> account/Region/bus -> rule enabled -> actual pattern match
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
-
+- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)

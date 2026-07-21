@@ -20,17 +20,18 @@ status: verified
 
 # Stage 1: Establish identity and ownership
 
-1. [AMI and container image management](/services/image-management.md)
-2. [CloudFormation and CDK lifecycle](/services/cloudformation-and-cdk.md)
+1. [EC2](/services/ec2-performance.md), [Image Builder](/services/image-builder.md), and [ECR](/services/ecr.md)
+2. [CloudFormation](/services/cloudformation.md), [CDK](/services/cdk.md), and [Service Catalog](/services/service-catalog.md)
 3. [Terraform and Git controls](/concepts/third-party-deployment-tools.md)
 
 Goal: distinguish immutable release identity, resource ownership, and reviewed change preview.
 
 # Stage 2: Provision across boundaries
 
-1. [Cross-account and multi-Region provisioning](/concepts/cross-account-resource-provisioning.md)
-2. [Resource sharing and provisioning selection](/decision-guides/resource-sharing-and-provisioning-selection.md)
-3. [Cross-account provisioning failure](/playbooks/cross-account-provisioning-failure.md)
+1. [Resource Access Manager](/services/resource-access-manager.md) and [CloudFormation](/services/cloudformation.md)
+2. [Cross-account and multi-Region provisioning](/concepts/cross-account-resource-provisioning.md)
+3. [Resource sharing and provisioning selection](/decision-guides/resource-sharing-and-provisioning-selection.md)
+4. [Cross-account provisioning failure](/playbooks/cross-account-provisioning-failure.md)
 
 Goal: choose sharing, repeated deployment, or artifact copying without confusing ownership.
 
@@ -53,10 +54,12 @@ Goal: find the first failed layer and correct the smallest safe cause.
 
 # Stage 5: Automate operations
 
-1. [Systems Manager operational automation](/concepts/operational-automation.md)
+1. [Systems Manager](/services/systems-manager.md) and [Systems Manager Automation](/services/systems-manager-automation.md)
 2. [Operational automation selection](/decision-guides/operational-automation-service-selection.md)
-3. [Event-driven automation](/concepts/event-driven-automation.md)
-4. [Event-driven automation selection](/decision-guides/event-driven-automation-selection.md)
+3. [S3](/services/s3-performance.md), [EventBridge](/services/eventbridge.md), [SNS](/services/sns-notifications.md), [SQS](/services/sqs.md), and [Lambda](/services/lambda.md)
+4. [Step Functions](/services/step-functions.md) and [DevOps Agent](/services/devops-agent.md)
+5. [Event-driven automation](/concepts/event-driven-automation.md)
+6. [Event-driven automation selection](/decision-guides/event-driven-automation-selection.md)
 
 Goal: select the right control surface, permission model, failure semantics, idempotency, and loop guard.
 

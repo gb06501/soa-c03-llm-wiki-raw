@@ -1,9 +1,10 @@
 ---
-type: AWS Service
+type: AWS Feature
 title: CloudWatch alarms
+parent_services: [CloudWatch]
 description: Evaluates metric conditions and emits state changes for notification or remediation.
 tags: [soa-c03, domain-1, cloudwatch, alarms]
-timestamp: 2026-07-21T00:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2"]
 domain_ids: ["1"]
 sources:
