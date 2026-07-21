@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T18:00:00+02:00"
+updated_at: "2026-07-21T22:00:00+02:00"
 display_policy: "Use short recognizable names; AWS and Amazon prefixes are optional."
 rules:
   - "AWS Service pages represent exactly one registered service."
@@ -94,3 +94,103 @@ services:
     display_name: Systems Manager
     aliases: [AWS Systems Manager, SSM]
     page: wiki/services/systems-manager.md
+  - id: aurora
+    display_name: Aurora
+    aliases: [Amazon Aurora]
+    page: wiki/services/aurora.md
+  - id: certificate-manager
+    display_name: Certificate Manager
+    aliases: [AWS Certificate Manager, ACM]
+    page: wiki/services/certificate-manager.md
+  - id: cloudfront
+    display_name: CloudFront
+    aliases: [Amazon CloudFront]
+    page: wiki/services/cloudfront.md
+  - id: cloudtrail
+    display_name: CloudTrail
+    aliases: [AWS CloudTrail]
+    page: wiki/services/cloudtrail.md
+  - id: config
+    display_name: Config
+    aliases: [AWS Config]
+    page: wiki/services/config.md
+  - id: control-tower
+    display_name: Control Tower
+    aliases: [AWS Control Tower]
+    page: wiki/services/control-tower.md
+  - id: dynamodb
+    display_name: DynamoDB
+    aliases: [Amazon DynamoDB]
+    page: wiki/services/dynamodb.md
+  - id: efs
+    display_name: EFS
+    aliases: [Amazon EFS, Elastic File System]
+    page: wiki/services/efs.md
+  - id: elastic-load-balancing
+    display_name: Elastic Load Balancing
+    aliases: [Elastic Load Balancing, ELB, ALB, NLB]
+    page: wiki/services/elastic-load-balancing.md
+  - id: fsx
+    display_name: FSx
+    aliases: [Amazon FSx]
+    page: wiki/services/fsx.md
+  - id: guardduty
+    display_name: GuardDuty
+    aliases: [Amazon GuardDuty]
+    page: wiki/services/guardduty.md
+  - id: iam
+    display_name: IAM
+    aliases: [AWS IAM, Identity and Access Management]
+    page: wiki/services/iam.md
+  - id: iam-identity-center
+    display_name: IAM Identity Center
+    aliases: [AWS IAM Identity Center, AWS SSO]
+    page: wiki/services/iam-identity-center.md
+  - id: inspector
+    display_name: Inspector
+    aliases: [Amazon Inspector]
+    page: wiki/services/inspector.md
+  - id: kms
+    display_name: KMS
+    aliases: [AWS KMS, Key Management Service]
+    page: wiki/services/kms.md
+  - id: macie
+    display_name: Macie
+    aliases: [Amazon Macie]
+    page: wiki/services/macie.md
+  - id: organizations
+    display_name: Organizations
+    aliases: [AWS Organizations]
+    page: wiki/services/organizations.md
+  - id: private-ca
+    display_name: Private CA
+    aliases: [AWS Private CA, ACM Private CA]
+    page: wiki/services/private-ca.md
+  - id: route-53
+    display_name: Route 53
+    aliases: [Amazon Route 53]
+    page: wiki/services/route-53.md
+  - id: security-agent
+    display_name: Security Agent
+    aliases: [AWS Security Agent]
+    page: wiki/services/security-agent.md
+  - id: security-hub-cspm
+    display_name: Security Hub CSPM
+    aliases: [AWS Security Hub, Amazon Security Hub CSPM, Security Hub]
+    page: wiki/services/security-hub-cspm.md
+  - id: secrets-manager
+    display_name: Secrets Manager
+    aliases: [AWS Secrets Manager]
+    page: wiki/services/secrets-manager.md
+  - id: sts
+    display_name: STS
+    aliases: [AWS STS, Security Token Service]
+    page: wiki/services/sts.md
+  - id: trusted-advisor
+    display_name: Trusted Advisor
+    aliases: [AWS Trusted Advisor]
+    page: wiki/services/trusted-advisor.md
+  - id: vpc
+    display_name: VPC
+    aliases: [Amazon VPC, Virtual Private Cloud]
+    page: wiki/services/vpc.md
