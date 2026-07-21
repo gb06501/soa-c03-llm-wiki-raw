@@ -70,12 +70,12 @@ status: verified
 
 # Sources
 
-- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
-- [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
-- [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
-- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
-- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
-- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
-- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
-- [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
-- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+- [Skill 2.1.1](../../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
+- [Skill 2.1.2](../../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
+- [Skill 2.1.3](../../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
+- [Skill 2.2.1](../../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 2.2.2](../../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 2.3.2](../../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+- [Skill 2.3.3](../../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
+- [Skill 2.3.4](../../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
