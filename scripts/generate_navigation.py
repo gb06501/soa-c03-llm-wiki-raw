@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import ast
+import difflib
 import re
 import sys
 from collections import Counter, defaultdict
@@ -380,8 +381,20 @@ def main() -> int:
     for path, content in desired.items():
         content = content.rstrip() + "\n"
         if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(path.relative_to(ROOT).as_posix())
+            actual = path.read_text(encoding="utf-8") if path.exists() else ""
+            if actual != content:
+                relative = path.relative_to(ROOT).as_posix()
+                stale.append(relative)
+                print(
+                    "".join(
+                        difflib.unified_diff(
+                            actual.splitlines(keepends=True),
+                            content.splitlines(keepends=True),
+                            fromfile=relative,
+                            tofile=f"generated:{relative}",
+                        )
+                    )
+                )
         else:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(content, encoding="utf-8")
