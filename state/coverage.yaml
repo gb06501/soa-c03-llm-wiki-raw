@@ -1,0 +1,2295 @@
+version: 1
+updated_at: "2026-07-21T12:00:00+02:00"
+scope: "SOA-C03 complete 53-skill corpus"
+method: "global-plan-incremental-build"
+summary:
+  total_skills: 53
+  validated_skills: 14
+  planned_skills: 39
+  domains:
+    "1": validated
+    "2": planned
+    "3": planned
+    "4": planned
+    "5": planned
+coverage_states: [standalone, embedded, planned, gap, not_applicable]
+skills:
+  - id: "1.1.1"
+    domain: "1"
+    path: "raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md"
+    blob_sha: 9276191767df8b284787fbec83132b92e70ac7cf
+    title: "Configure monitoring and logging for workloads"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/cloudwatch-telemetry.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/telemetry-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/telemetry-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/telemetry-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Steps"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Steps"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Telemetry"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.1.2"
+    domain: "1"
+    path: "raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md"
+    blob_sha: 50d465117056a84173fd77395b5ef35da7f1c779
+    title: "Configure and manage the CloudWatch agent"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/cloudwatch-agent.md"
+        section: "# When to use"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/telemetry-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/telemetry-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/telemetry-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Steps"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Steps"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Telemetry"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.1.3"
+    domain: "1"
+    path: "raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md"
+    blob_sha: 3215a985cebf416ce6e08d1da8a2c0f631c8c9a1
+    title: "Configure and troubleshoot CloudWatch alarms"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/cloudwatch-alarms.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/alarm-design.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/alarm-design.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/alarm-design.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/alarm-and-notification-failure.md"
+        section: "# Fast diagnosis"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/alarm-and-notification-failure.md"
+        section: "# Stage 3: action"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/alarm-and-notification-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Alarms and notifications"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.1.4"
+    domain: "1"
+    path: "raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md"
+    blob_sha: f8762ed1958aa26f8bfed82e49a35384a0f3e738
+    title: "Create and manage CloudWatch dashboards"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/cloudwatch-dashboards.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/dashboard-design.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/dashboard-design.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/dashboard-design.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Steps"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Steps"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/missing-telemetry.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Telemetry"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.1.5"
+    domain: "1"
+    path: "raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md"
+    blob_sha: d5f860feff9c8e9527f547d7421b1ecad32c4691
+    title: "Configure SNS notifications and alarm integration"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/sns-notifications.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/event-notification-routing.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/event-notification-routing.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/event-notification-routing.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/alarm-and-notification-failure.md"
+        section: "# Fast diagnosis"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/alarm-and-notification-failure.md"
+        section: "# Stage 3: action"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/alarm-and-notification-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Alarms and notifications"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.2.1"
+    domain: "1"
+    path: "raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md"
+    blob_sha: f89ef47d2e310365ebd034008968a6fb7eee2565
+    title: "Analyze performance metrics and automate remediation"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/concepts/evidence-to-remediation-loop.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/remediation-tool-selection.md"
+        section: "# Selection table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/remediation-tool-selection.md"
+        section: "# Selection table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/remediation-tool-selection.md"
+        section: "# Exam traps"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Layer checks"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Change path"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Events and automation"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.2.2"
+    domain: "1"
+    path: "raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md"
+    blob_sha: bf8f9692ff59f2971f9f28934610727ec1f81080
+    title: "Route, enrich, and deliver events with EventBridge"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/eventbridge.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/event-notification-routing.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/event-notification-routing.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/event-notification-routing.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/event-driven-remediation-failure.md"
+        section: "# Trace"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/event-driven-remediation-failure.md"
+        section: "# Safety before retry"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/event-driven-remediation-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Events and automation"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.2.3"
+    domain: "1"
+    path: "raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md"
+    blob_sha: 8aa9155497a5f61063fc61ac787abd4ef3d5f202
+    title: "Create and run Systems Manager Automation runbooks"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/systems-manager-automation.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/remediation-tool-selection.md"
+        section: "# Selection table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/remediation-tool-selection.md"
+        section: "# Selection table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/remediation-tool-selection.md"
+        section: "# Exam traps"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/event-driven-remediation-failure.md"
+        section: "# Trace"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/event-driven-remediation-failure.md"
+        section: "# Safety before retry"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/event-driven-remediation-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Events and automation"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.3.1"
+    domain: "1"
+    path: "raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md"
+    blob_sha: f36715eb52036bb2b68980b1c653e2cb51a649c0
+    title: "Optimize compute resources and remediate performance problems"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/ec2-performance.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/compute-optimization.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/compute-optimization.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/compute-optimization.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Layer checks"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Change path"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Compute and storage"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.3.2"
+    domain: "1"
+    path: "raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md"
+    blob_sha: a0542a7dea22a1aafffda1273023544ffe04b106
+    title: "Analyze and optimize EBS performance"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/ebs-performance.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/ebs-performance-tuning.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/ebs-performance-tuning.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/ebs-performance-tuning.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Layer checks"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Change path"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Compute and storage"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.3.3"
+    domain: "1"
+    path: "raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md"
+    blob_sha: 7301c40a0a9c745b40b507e433b82e0ebb3ec03b
+    title: "Implement and optimize S3 performance strategies"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/s3-performance.md"
+        section: "# Problem separation"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/s3-transfer-optimization.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/s3-transfer-optimization.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/s3-transfer-optimization.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Layer checks"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Change path"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# S3 and shared storage"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.3.4"
+    domain: "1"
+    path: "raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md"
+    blob_sha: dddf4c9717914e1edb85785688192f83253aff1f
+    title: "Evaluate and optimize shared storage solutions"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/shared-storage.md"
+        section: "# First decision"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/shared-storage-performance.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/shared-storage-performance.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/shared-storage-performance.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Layer checks"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Change path"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# S3 and shared storage"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.3.5"
+    domain: "1"
+    path: "raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md"
+    blob_sha: d76b9fd2aef66437a134f5ebe7dd995819d81e02
+    title: "Monitor and optimize Amazon RDS"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/rds-performance.md"
+        section: "# Monitoring layers"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/database-remediation.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/database-remediation.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/database-remediation.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Layer checks"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Change path"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# RDS"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "1.3.6"
+    domain: "1"
+    path: "raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md"
+    blob_sha: e5dba30bddacc0d15eb2911c4bbbd7d294ee1863
+    title: "Implement, monitor, and optimize EC2 instances, storage, and networking"
+    status: validated
+    facets:
+      services_features_mechanisms:
+        status: standalone
+        destination: "wiki/services/ec2-performance.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: standalone
+        destination: "wiki/decision-guides/compute-optimization.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: standalone
+        destination: "wiki/decision-guides/compute-optimization.md"
+        section: "# Decision table"
+      comparisons:
+        status: embedded
+        destination: "wiki/decision-guides/compute-optimization.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Layer checks"
+      remediation_safety:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Change path"
+      failure_modes_verification:
+        status: embedded
+        destination: "wiki/playbooks/resource-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: standalone
+        destination: "wiki/exam-traps/domain-1-exam-traps.md"
+        section: "# Compute and storage"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/evidence-selection.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.1.1"
+    domain: "2"
+    path: "raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md"
+    blob_sha: 9e37b5cbaee9921bfe200c0189bd2aecfc033c8d
+    title: "Configure and manage scaling mechanisms in compute environments"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/compute-scaling.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/compute-scaling-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/compute-scaling-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/compute-scaling-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/scaling-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/scaling-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/scaling-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.1.2"
+    domain: "2"
+    path: "raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md"
+    blob_sha: 73d9bd8bd6c6e3b01d33f7d5b827b34c05da13d6
+    title: "Implement caching for dynamic scalability"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/caching.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/caching-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/caching-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/caching-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/cache-performance-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/cache-performance-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/cache-performance-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.1.3"
+    domain: "2"
+    path: "raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md"
+    blob_sha: 8baefb31c3b270b7da6dbab6686552d56f5eccfb
+    title: "Configure and manage scaling in AWS managed databases"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/managed-database-scaling.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/database-scaling-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/database-scaling-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/database-scaling-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/database-scaling-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/database-scaling-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/database-scaling-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.2.1"
+    domain: "2"
+    path: "raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md"
+    blob_sha: ea003bff45ec5e4de1e185ddc4e074d00ae65b03
+    title: "Configure and troubleshoot ELB and Route 53 health checks"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/load-balancing-and-health-checks.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/load-balancer-health-check-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/load-balancer-health-check-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/load-balancer-health-check-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.2.2"
+    domain: "2"
+    path: "raw/skills/2.2.2-configure-fault-tolerant-systems.md"
+    blob_sha: 201bea01798712d69de370ea6ffa72b3b17ac636
+    title: "Configure fault-tolerant systems"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/fault-tolerance.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/fault-tolerance-pattern-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/fault-tolerance-pattern-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/fault-tolerance-pattern-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/failure-boundary-diagnosis.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/failure-boundary-diagnosis.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/failure-boundary-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.3.1"
+    domain: "2"
+    path: "raw/skills/2.3.1-automate-snapshots-and-backups.md"
+    blob_sha: d0277df7b96a0e2710ffaf6ac7126c0df5f40bbf
+    title: "Automate snapshots and backups"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/aws-backup.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/backup-protection-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/backup-protection-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/backup-protection-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/backup-job-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/backup-job-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/backup-job-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.3.2"
+    domain: "2"
+    path: "raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md"
+    blob_sha: 4644334be57772bf741d4a16a085657016046425
+    title: "Restore databases to meet RTO, RPO, and cost requirements"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/database-recovery.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/database-restore-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/database-restore-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/database-restore-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/database-restore-and-cutover.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/database-restore-and-cutover.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/database-restore-and-cutover.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.3.3"
+    domain: "2"
+    path: "raw/skills/2.3.3-implement-versioning-for-storage-services.md"
+    blob_sha: b11f2b74c372b8c641d6ba2f5894636511c7e13d
+    title: "Implement versioning for storage services"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/storage-versioning.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/storage-version-recovery.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/storage-version-recovery.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/storage-version-recovery.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "2.3.4"
+    domain: "2"
+    path: "raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md"
+    blob_sha: 6663abbe42d523c4788fedc5954c18e61a38065c
+    title: "Follow disaster-recovery procedures and best practices"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/disaster-recovery.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/dr-strategy-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/dr-strategy-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/dr-strategy-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/disaster-recovery-failover.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/disaster-recovery-failover.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/disaster-recovery-failover.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-2-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/scaling-resilience-and-recovery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.1.1"
+    domain: "3"
+    path: "raw/skills/3.1.1-create-and-manage-amis-and-container-images.md"
+    blob_sha: 61ab57b0d18914439a8e9109e9741063eb130183
+    title: "Create and manage AMIs and container images"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/image-management.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/machine-container-image-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/machine-container-image-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/machine-container-image-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/image-build-distribution-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/image-build-distribution-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/image-build-distribution-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.1.2"
+    domain: "3"
+    path: "raw/skills/3.1.2-create-and-manage-resources-with-cloudformation-and-cdk.md"
+    blob_sha: 17847639f1b396ba21ed59a2c082cb345ed3aee2
+    title: "Create and manage resources with CloudFormation and AWS CDK"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/cloudformation-and-cdk.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/infrastructure-provisioning-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/infrastructure-provisioning-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/infrastructure-provisioning-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/cloudformation-deployment-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/cloudformation-deployment-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/cloudformation-deployment-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.1.3"
+    domain: "3"
+    path: "raw/skills/3.1.3-identify-and-remediate-deployment-issues.md"
+    blob_sha: 811dc566222d815c319088dff179aefebf3e49aa
+    title: "Identify and remediate deployment issues"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/deployment-diagnostics.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/deployment-failure-evidence-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/deployment-failure-evidence-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/deployment-failure-evidence-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/deployment-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/deployment-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/deployment-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.1.4"
+    domain: "3"
+    path: "raw/skills/3.1.4-provision-and-share-resources-across-regions-and-accounts.md"
+    blob_sha: fe3e84e2d3a1709bf66fbb3de89a54cbe75af8c5
+    title: "Provision and share resources across Regions and accounts"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/cross-account-resource-provisioning.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/resource-sharing-and-provisioning-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/resource-sharing-and-provisioning-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/resource-sharing-and-provisioning-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/cross-account-provisioning-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/cross-account-provisioning-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/cross-account-provisioning-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.1.5"
+    domain: "3"
+    path: "raw/skills/3.1.5-implement-deployment-strategies-and-services.md"
+    blob_sha: 60aef0fb6ad84889223c97abe8bb30e624bb4c2d
+    title: "Implement deployment strategies and services"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/deployment-strategies.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/deployment-strategy-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/deployment-strategy-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/deployment-strategy-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/deployment-rollback.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/deployment-rollback.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/deployment-rollback.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.1.6"
+    domain: "3"
+    path: "raw/skills/3.1.6-use-and-manage-third-party-deployment-tools.md"
+    blob_sha: 2ca022704b79cd272fbcc77fb94432a7a18f4fba
+    title: "Use and manage third-party deployment tools"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/third-party-deployment-tools.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/deployment-tool-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/deployment-tool-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/deployment-tool-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/third-party-deployment-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/third-party-deployment-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/third-party-deployment-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.2.1"
+    domain: "3"
+    path: "raw/skills/3.2.1-automate-operational-processes-with-services.md"
+    blob_sha: e2153fb9cc799a36fbd4349658f4fdf73a5f9b02
+    title: "Automate operational processes with AWS services"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/operational-automation.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/operational-automation-service-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/operational-automation-service-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/operational-automation-service-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/automation-execution-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/automation-execution-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/automation-execution-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "3.2.2"
+    domain: "3"
+    path: "raw/skills/3.2.2-implement-event-driven-automation.md"
+    blob_sha: ad69d394ebd4be7ceb2c05f3d4dd567d4eedb29f
+    title: "Implement event-driven automation"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/event-driven-automation.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/event-driven-automation-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/event-driven-automation-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/event-driven-automation-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/event-driven-automation-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/event-driven-automation-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/event-driven-automation-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-3-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/deployment-and-operational-automation.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.1.1"
+    domain: "4"
+    path: "raw/skills/4.1.1-implement-iam-features.md"
+    blob_sha: 2cdf1831552a55f342292aa847e044e5fda03140
+    title: "Implement IAM features"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/iam-access-control.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/iam-principal-and-policy-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/iam-principal-and-policy-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/iam-principal-and-policy-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/access-denied.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/access-denied.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/access-denied.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.1.2"
+    domain: "4"
+    path: "raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md"
+    blob_sha: a6ae319a4368aeac67de811339914002793e535f
+    title: "Troubleshoot and audit access issues"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/access-evaluation.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/access-denial-evidence-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/access-denial-evidence-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/access-denial-evidence-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/access-denied.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/access-denied.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/access-denied.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.1.3"
+    domain: "4"
+    path: "raw/skills/4.1.3-implement-secure-multi-account-strategies.md"
+    blob_sha: 31690ff51f59d0e03b476a2b368853d7d89e670f
+    title: "Implement secure multi-account strategies"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/organizations-and-multi-account.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/multi-account-guardrail-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/multi-account-guardrail-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/multi-account-guardrail-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/cross-account-access-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/cross-account-access-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/cross-account-access-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.1.4"
+    domain: "4"
+    path: "raw/skills/4.1.4-remediate-trusted-advisor-security-checks.md"
+    blob_sha: 14a2951bc7d19ab05d53e1f13870ff121bf02582
+    title: "Remediate Trusted Advisor security checks"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/trusted-advisor-security.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/security-check-remediation-priority.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/security-check-remediation-priority.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/security-check-remediation-priority.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/security-finding-remediation.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/security-finding-remediation.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/security-finding-remediation.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.1.5"
+    domain: "4"
+    path: "raw/skills/4.1.5-enforce-compliance-requirements-and-continuous-monitoring.md"
+    blob_sha: 3e79d6d52b8409fddb32a9bd5ac591f02e32cd03
+    title: "Enforce compliance requirements and continuous monitoring"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/config-and-compliance.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/compliance-monitoring-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/compliance-monitoring-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/compliance-monitoring-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/compliance-remediation-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/compliance-remediation-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/compliance-remediation-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.2.1"
+    domain: "4"
+    path: "raw/skills/4.2.1-implement-and-enforce-a-data-classification-scheme.md"
+    blob_sha: 639af843711bbe521ead2aaa2f1c95847b544b1a
+    title: "Implement and enforce a data classification scheme"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/data-classification.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/data-protection-control-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/data-protection-control-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/data-protection-control-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/data-classification-gap.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/data-classification-gap.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/data-classification-gap.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.2.2"
+    domain: "4"
+    path: "raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md"
+    blob_sha: 2a1176d854442ff42e287d58c9c96505d063e012
+    title: "Implement, configure, and troubleshoot encryption at rest"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/kms-encryption-at-rest.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/encryption-at-rest-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/encryption-at-rest-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/encryption-at-rest-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/kms-access-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/kms-access-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/kms-access-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.2.3"
+    domain: "4"
+    path: "raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md"
+    blob_sha: 8a45f14b8213f40817143400a62e9cabdd19dbbb
+    title: "Implement, configure, and troubleshoot encryption in transit"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/encryption-in-transit.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/tls-certificate-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/tls-certificate-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/tls-certificate-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/tls-connectivity-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/tls-connectivity-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/tls-connectivity-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.2.4"
+    domain: "4"
+    path: "raw/skills/4.2.4-securely-store-secrets-by-using-services.md"
+    blob_sha: 3624043a7c48d3359a23902d51a3beda9ddc7fed
+    title: "Securely store secrets by using AWS services"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/secrets-management.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/secrets-storage-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/secrets-storage-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/secrets-storage-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/secret-access-and-rotation-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/secret-access-and-rotation-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/secret-access-and-rotation-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "4.2.5"
+    domain: "4"
+    path: "raw/skills/4.2.5-configure-reports-and-remediate-findings-from-services.md"
+    blob_sha: 7e19f79162dcb9f6a4ce42d13478e5ec8d239dbe
+    title: "Configure reports and remediate findings from AWS services"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/security-findings.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/security-finding-triage.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/security-finding-triage.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/security-finding-triage.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/security-finding-remediation.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/security-finding-remediation.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/security-finding-remediation.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-4-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/multi-account-security-governance.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.1.1"
+    domain: "5"
+    path: "raw/skills/5.1.1-configure-a-vpc.md"
+    blob_sha: 436af42d77a9e63392b8bd3cad10c33176dc1869
+    title: "Configure a VPC"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/vpc-networking.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/vpc-addressing-routing-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/vpc-addressing-routing-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/vpc-addressing-routing-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/vpc-connectivity-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/vpc-connectivity-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/vpc-connectivity-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.1.2"
+    domain: "5"
+    path: "raw/skills/5.1.2-configure-private-networking-connectivity.md"
+    blob_sha: fc5e2062a51d9a5425cfc61679e31cf50378c8d5
+    title: "Configure private networking connectivity"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/private-connectivity.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/private-connectivity-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/private-connectivity-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/private-connectivity-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.1.3"
+    domain: "5"
+    path: "raw/skills/5.1.3-audit-network-protection-services-in-one-account.md"
+    blob_sha: 3046db4d12b3ec245cfd7c70009739178a87a5cd
+    title: "Audit AWS network protection services in one account"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/network-protection.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/network-protection-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/network-protection-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/network-protection-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/network-protection-gap.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/network-protection-gap.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/network-protection-gap.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.1.4"
+    domain: "5"
+    path: "raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md"
+    blob_sha: 0376ffd95c1cd42ecc1c79ae1e10599545c1c1b7
+    title: "Optimize the cost of network architectures"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/network-cost-optimization.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/network-cost-optimization.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/network-cost-optimization.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/network-cost-optimization.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/network-cost-anomaly.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/network-cost-anomaly.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/network-cost-anomaly.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.2.1"
+    domain: "5"
+    path: "raw/skills/5.2.1-configure-dns-and-route-53-resolver.md"
+    blob_sha: deae42725c4682f48c2c363a453781e4aa85ecd8
+    title: "Configure DNS and Route 53 Resolver"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/route53-resolver.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/dns-resolution-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/dns-resolution-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/dns-resolution-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/dns-resolution-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/dns-resolution-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/dns-resolution-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.2.2"
+    domain: "5"
+    path: "raw/skills/5.2.2-implement-route-53-routing-policies-configurations-and-query-logging.md"
+    blob_sha: 9ae80ef3c3878002e253b4f8585e8858f908ba4e
+    title: "Implement Route 53 routing policies, configurations, and query logging"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/route53-routing.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/dns-routing-policy-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/dns-routing-policy-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/dns-routing-policy-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/dns-routing-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/dns-routing-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/dns-routing-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.2.3"
+    domain: "5"
+    path: "raw/skills/5.2.3-configure-content-and-service-distribution.md"
+    blob_sha: 935e839e6159b97ae846ab391fc942cf4870e4e1
+    title: "Configure content and service distribution"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/content-distribution.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/content-distribution-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/content-distribution-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/content-distribution-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/edge-delivery-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/edge-delivery-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/edge-delivery-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.3.1"
+    domain: "5"
+    path: "raw/skills/5.3.1-troubleshoot-vpc-configurations.md"
+    blob_sha: 37b6dce602941686711849135647ed28bb125bcd
+    title: "Troubleshoot VPC configurations"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/packet-path-diagnostics.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/network-path-evidence-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/network-path-evidence-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/network-path-evidence-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/vpc-connectivity-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/vpc-connectivity-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/vpc-connectivity-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.3.2"
+    domain: "5"
+    path: "raw/skills/5.3.2-collect-and-interpret-networking-logs.md"
+    blob_sha: bfb55e23e28feaaed2c7e997b08bfc31c53495ad
+    title: "Collect and interpret networking logs"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/concepts/network-logging.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/network-log-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/network-log-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/network-log-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/network-request-tracing.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/network-request-tracing.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/network-request-tracing.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.3.3"
+    domain: "5"
+    path: "raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md"
+    blob_sha: e0a03380b4d3b4095c17c9a44fa03467db482679
+    title: "Identify and remediate CloudFront caching issues"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/cloudfront-caching.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/cloudfront-cache-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/cloudfront-cache-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/cloudfront-cache-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.3.4"
+    domain: "5"
+    path: "raw/skills/5.3.4-identify-and-troubleshoot-hybrid-and-private-connectivity-issues.md"
+    blob_sha: a1a3f9961750b36a7589630cd535f48ae1d6041a
+    title: "Identify and troubleshoot hybrid and private connectivity issues"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/hybrid-private-connectivity.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/private-connectivity-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/private-connectivity-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/private-connectivity-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
+  - id: "5.3.5"
+    domain: "5"
+    path: "raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md"
+    blob_sha: 6492d3839ea1424db7daf2209c1fc175263ca0fc
+    title: "Configure and analyze CloudWatch network monitoring services"
+    status: planned
+    facets:
+      services_features_mechanisms:
+        status: planned
+        destination: "wiki/services/cloudwatch-network-monitoring.md"
+        section: "# Core model"
+      scenario_clues_requirements:
+        status: planned
+        destination: "wiki/decision-guides/network-monitor-selection.md"
+        section: "# Decision table"
+      decision_boundaries_rejected_alternatives:
+        status: planned
+        destination: "wiki/decision-guides/network-monitor-selection.md"
+        section: "# Decision table"
+      comparisons:
+        status: planned
+        destination: "wiki/decision-guides/network-monitor-selection.md"
+        section: "# Rejection rules"
+      evidence_metrics_logs_diagnosis:
+        status: planned
+        destination: "wiki/playbooks/network-performance-diagnosis.md"
+        section: "# Evidence path"
+      remediation_safety:
+        status: planned
+        destination: "wiki/playbooks/network-performance-diagnosis.md"
+        section: "# Safe action"
+      failure_modes_verification:
+        status: planned
+        destination: "wiki/playbooks/network-performance-diagnosis.md"
+        section: "# Verification"
+      exam_traps_exceptions:
+        status: planned
+        destination: "wiki/exam-traps/domain-5-exam-traps.md"
+        section: "# Traps"
+      cross_domain_dependencies:
+        status: planned
+        destination: "wiki/concepts/network-evidence-and-delivery.md"
+        reason: "Reserved for the final corpus reconciliation pass."
