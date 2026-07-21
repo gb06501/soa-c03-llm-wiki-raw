@@ -52,16 +52,16 @@
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [4.1.1](4.1.1.md) | Implement IAM features | Planned |
-| [4.1.2](4.1.2.md) | Troubleshoot and audit access issues | Planned |
-| [4.1.3](4.1.3.md) | Implement secure multi-account strategies | Planned |
-| [4.1.4](4.1.4.md) | Remediate Trusted Advisor security checks | Planned |
-| [4.1.5](4.1.5.md) | Enforce compliance requirements and continuous monitoring | Planned |
-| [4.2.1](4.2.1.md) | Implement and enforce a data classification scheme | Planned |
-| [4.2.2](4.2.2.md) | Implement, configure, and troubleshoot encryption at rest | Planned |
-| [4.2.3](4.2.3.md) | Implement, configure, and troubleshoot encryption in transit | Planned |
-| [4.2.4](4.2.4.md) | Securely store secrets by using AWS services | Planned |
-| [4.2.5](4.2.5.md) | Configure reports and remediate findings from AWS services | Planned |
+| [4.1.1](4.1.1.md) | Implement IAM features | Validated |
+| [4.1.2](4.1.2.md) | Troubleshoot and audit access issues | Validated |
+| [4.1.3](4.1.3.md) | Implement secure multi-account strategies | Validated |
+| [4.1.4](4.1.4.md) | Remediate Trusted Advisor security checks | Validated |
+| [4.1.5](4.1.5.md) | Enforce compliance requirements and continuous monitoring | Validated |
+| [4.2.1](4.2.1.md) | Implement and enforce a data classification scheme | Validated |
+| [4.2.2](4.2.2.md) | Implement, configure, and troubleshoot encryption at rest | Validated |
+| [4.2.3](4.2.3.md) | Implement, configure, and troubleshoot encryption in transit | Validated |
+| [4.2.4](4.2.4.md) | Securely store secrets by using AWS services | Validated |
+| [4.2.5](4.2.5.md) | Configure reports and remediate findings from AWS services | Validated |
 
 ## [Domain 5: Networking and Content Delivery](../domains/domain-5.md)
 
