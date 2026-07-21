@@ -31,3 +31,10 @@
 - [Encryption in transit](encryption-in-transit.md) - Separates DNS, network, TLS policy, certificate identity, trust, and application delivery across each hop.
 - [Security findings](security-findings.md) - Normalizes source evidence into risk-ranked investigation, containment, remediation, and verified closure.
 - [Multi-account security governance](multi-account-security-governance.md) - Connects account boundaries, identity, guardrails, detection, evidence, and response across Domain 4.
+
+## Domain 5: Networking and content delivery
+
+- [Network cost optimization](network-cost-optimization.md) - Connects traffic paths, processing boundaries, data transfer, observability, and architecture changes to measurable network cost.
+- [Network evidence and delivery](network-evidence-and-delivery.md) - Maps a request path to the configuration, metrics, logs, and active tests that prove each hop.
+- [Network logging](network-logging.md) - Selects, enables, and interprets network, edge, protection, and workload request evidence.
+- [Packet-path diagnostics](packet-path-diagnostics.md) - Diagnoses name resolution, routing, filtering, translation, load balancing, edge delivery, and application response in path order.

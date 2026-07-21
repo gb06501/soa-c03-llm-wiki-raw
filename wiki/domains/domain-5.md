@@ -2,88 +2,122 @@
 
 # Domain 5: Networking and Content Delivery
 
-This domain contains 12 source skills and 0 implemented generated pages.
+This domain contains 12 source skills and 67 implemented generated pages.
 
 ## Coverage summary
 
-- **Planned:** 12 skills
+- **Validated:** 12 skills
 
 ## Skills
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [5.1.1](../skills/5.1.1.md) | Configure a VPC | Planned |
-| [5.1.2](../skills/5.1.2.md) | Configure private networking connectivity | Planned |
-| [5.1.3](../skills/5.1.3.md) | Audit AWS network protection services in one account | Planned |
-| [5.1.4](../skills/5.1.4.md) | Optimize the cost of network architectures | Planned |
-| [5.2.1](../skills/5.2.1.md) | Configure DNS and Route 53 Resolver | Planned |
-| [5.2.2](../skills/5.2.2.md) | Implement Route 53 routing policies, configurations, and query logging | Planned |
-| [5.2.3](../skills/5.2.3.md) | Configure content and service distribution | Planned |
-| [5.3.1](../skills/5.3.1.md) | Troubleshoot VPC configurations | Planned |
-| [5.3.2](../skills/5.3.2.md) | Collect and interpret networking logs | Planned |
-| [5.3.3](../skills/5.3.3.md) | Identify and remediate CloudFront caching issues | Planned |
-| [5.3.4](../skills/5.3.4.md) | Identify and troubleshoot hybrid and private connectivity issues | Planned |
-| [5.3.5](../skills/5.3.5.md) | Configure and analyze CloudWatch network monitoring services | Planned |
+| [5.1.1](../skills/5.1.1.md) | Configure a VPC | Validated |
+| [5.1.2](../skills/5.1.2.md) | Configure private networking connectivity | Validated |
+| [5.1.3](../skills/5.1.3.md) | Audit AWS network protection services in one account | Validated |
+| [5.1.4](../skills/5.1.4.md) | Optimize the cost of network architectures | Validated |
+| [5.2.1](../skills/5.2.1.md) | Configure DNS and Route 53 Resolver | Validated |
+| [5.2.2](../skills/5.2.2.md) | Implement Route 53 routing policies, configurations, and query logging | Validated |
+| [5.2.3](../skills/5.2.3.md) | Configure content and service distribution | Validated |
+| [5.3.1](../skills/5.3.1.md) | Troubleshoot VPC configurations | Validated |
+| [5.3.2](../skills/5.3.2.md) | Collect and interpret networking logs | Validated |
+| [5.3.3](../skills/5.3.3.md) | Identify and remediate CloudFront caching issues | Validated |
+| [5.3.4](../skills/5.3.4.md) | Identify and troubleshoot hybrid and private connectivity issues | Validated |
+| [5.3.5](../skills/5.3.5.md) | Configure and analyze CloudWatch network monitoring services | Validated |
 
 ## Implemented knowledge
 
-No generated knowledge pages are implemented for this domain yet.
-
-## Planned knowledge
-
 ### AWS Service
 
-- <code>wiki/services/cloudfront-caching.md</code>
-- <code>wiki/services/cloudwatch-network-monitoring.md</code>
-- <code>wiki/services/content-distribution.md</code>
-- <code>wiki/services/hybrid-private-connectivity.md</code>
-- <code>wiki/services/network-protection.md</code>
-- <code>wiki/services/private-connectivity.md</code>
-- <code>wiki/services/route53-resolver.md</code>
-- <code>wiki/services/route53-routing.md</code>
-- <code>wiki/services/vpc-networking.md</code>
+- [Athena](../services/athena.md)
+- [CloudFront](../services/cloudfront.md)
+- [CloudWatch](../services/cloudwatch-telemetry.md)
+- [Cost Explorer](../services/cost-explorer.md)
+- [Direct Connect](../services/direct-connect.md)
+- [DynamoDB](../services/dynamodb.md)
+- [ECS](../services/ecs.md)
+- [EKS](../services/eks.md)
+- [Elastic Load Balancing](../services/elastic-load-balancing.md)
+- [Firehose](../services/firehose.md)
+- [Global Accelerator](../services/global-accelerator.md)
+- [Network Firewall](../services/network-firewall.md)
+- [PrivateLink](../services/privatelink.md)
+- [Route 53](../services/route-53.md)
+- [S3](../services/s3-performance.md)
+- [Shield](../services/shield.md)
+- [Transit Gateway](../services/transit-gateway.md)
+- [VPC](../services/vpc.md)
+- [WAF](../services/waf.md)
+
+### AWS Feature
+
+- [Client VPN](../services/client-vpn.md)
+- [CloudFront caching](../services/cloudfront-caching.md)
+- [CloudWatch Internet Monitor](../services/cloudwatch-internet-monitor.md)
+- [CloudWatch Network Flow Monitor](../services/cloudwatch-network-flow-monitor.md)
+- [CloudWatch Network Synthetic Monitor](../services/cloudwatch-network-synthetic-monitor.md)
+- [CloudWatch Synthetics](../services/cloudwatch-synthetics.md)
+- [Gateway Load Balancer](../services/gateway-load-balancer.md)
+- [NAT Gateway](../services/nat-gateway.md)
+- [Route 53 Resolver DNS Firewall](../services/route53-resolver-dns-firewall.md)
+- [Route 53 Resolver](../services/route53-resolver.md)
+- [Route 53 routing](../services/route53-routing.md)
+- [Site-to-Site VPN](../services/site-to-site-vpn.md)
+- [VPC Flow Logs](../services/vpc-flow-logs.md)
+- [VPC IPAM](../services/vpc-ipam.md)
+- [VPC Reachability Analyzer](../services/vpc-reachability-analyzer.md)
 
 ### Concept
 
-- <code>wiki/concepts/network-cost-optimization.md</code>
-- <code>wiki/concepts/network-evidence-and-delivery.md</code>
-- <code>wiki/concepts/network-logging.md</code>
-- <code>wiki/concepts/packet-path-diagnostics.md</code>
+- [Network cost optimization](../concepts/network-cost-optimization.md)
+- [Network evidence and delivery](../concepts/network-evidence-and-delivery.md)
+- [Network logging](../concepts/network-logging.md)
+- [Packet-path diagnostics](../concepts/packet-path-diagnostics.md)
+- [CloudWatch network monitoring](../services/cloudwatch-network-monitoring.md)
+- [Content and service distribution](../services/content-distribution.md)
+- [Hybrid and private connectivity](../services/hybrid-private-connectivity.md)
+- [Network protection](../services/network-protection.md)
+- [Private connectivity](../services/private-connectivity.md)
+- [VPC networking](../services/vpc-networking.md)
 
 ### Decision Guide
 
-- <code>wiki/decision-guides/cloudfront-cache-policy-selection.md</code>
-- <code>wiki/decision-guides/content-distribution-selection.md</code>
-- <code>wiki/decision-guides/dns-resolution-selection.md</code>
-- <code>wiki/decision-guides/dns-routing-policy-selection.md</code>
-- <code>wiki/decision-guides/network-cost-optimization.md</code>
-- <code>wiki/decision-guides/network-log-selection.md</code>
-- <code>wiki/decision-guides/network-monitor-selection.md</code>
-- <code>wiki/decision-guides/network-path-evidence-selection.md</code>
-- <code>wiki/decision-guides/network-protection-selection.md</code>
-- <code>wiki/decision-guides/private-connectivity-selection.md</code>
-- <code>wiki/decision-guides/vpc-addressing-routing-selection.md</code>
+- [CloudFront cache policy selection](../decision-guides/cloudfront-cache-policy-selection.md)
+- [Content distribution selection](../decision-guides/content-distribution-selection.md)
+- [DNS resolution selection](../decision-guides/dns-resolution-selection.md)
+- [DNS routing policy selection](../decision-guides/dns-routing-policy-selection.md)
+- [Network cost optimization](../decision-guides/network-cost-optimization.md)
+- [Network log selection](../decision-guides/network-log-selection.md)
+- [Network monitor selection](../decision-guides/network-monitor-selection.md)
+- [Network path evidence selection](../decision-guides/network-path-evidence-selection.md)
+- [Network protection selection](../decision-guides/network-protection-selection.md)
+- [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
+- [VPC addressing and routing selection](../decision-guides/vpc-addressing-routing-selection.md)
 
 ### Troubleshooting Playbook
 
-- <code>wiki/playbooks/cloudfront-cache-failure.md</code>
-- <code>wiki/playbooks/dns-resolution-failure.md</code>
-- <code>wiki/playbooks/dns-routing-failure.md</code>
-- <code>wiki/playbooks/edge-delivery-failure.md</code>
-- <code>wiki/playbooks/hybrid-private-connectivity-failure.md</code>
-- <code>wiki/playbooks/network-cost-anomaly.md</code>
-- <code>wiki/playbooks/network-performance-diagnosis.md</code>
-- <code>wiki/playbooks/network-protection-gap.md</code>
-- <code>wiki/playbooks/network-request-tracing.md</code>
-- <code>wiki/playbooks/vpc-connectivity-failure.md</code>
+- [CloudFront cache failure](../playbooks/cloudfront-cache-failure.md)
+- [DNS resolution failure](../playbooks/dns-resolution-failure.md)
+- [DNS routing failure](../playbooks/dns-routing-failure.md)
+- [Edge delivery failure](../playbooks/edge-delivery-failure.md)
+- [Hybrid and private connectivity failure](../playbooks/hybrid-private-connectivity-failure.md)
+- [Network cost anomaly](../playbooks/network-cost-anomaly.md)
+- [Network performance diagnosis](../playbooks/network-performance-diagnosis.md)
+- [Network protection gap](../playbooks/network-protection-gap.md)
+- [Network request tracing](../playbooks/network-request-tracing.md)
+- [VPC connectivity failure](../playbooks/vpc-connectivity-failure.md)
 
 ### Exam Trap
 
-- <code>wiki/exam-traps/domain-5-exam-traps.md</code>
+- [Domain 5 exam traps](../exam-traps/domain-5-exam-traps.md)
 
 ### Learning Path
 
-- <code>wiki/learning/paths/domain-5-learning-path.md</code>
+- [Domain 5 learning path](../learning/paths/domain-5-learning-path.md)
+
+## Planned knowledge
+
+No additional planned pages are assigned to this domain.
 
 ## State
 

@@ -1,5 +1,14 @@
 # Wiki update log
 
+## [2026-07-21] generate | Domain 5 networking and content delivery
+
+- **Scope:** Processed all 12 immutable Domain 5 skills with 122 atomic service, feature, mechanism, concept, decision, and troubleshooting coverage items.
+- **Knowledge:** Added 58 semantic pages: 10 canonical AWS service/product pages, 15 AWS feature pages, 10 concepts, 11 decision guides, 10 troubleshooting playbooks, 1 exam-trap page, and 1 learning path.
+- **Integration:** Enriched nine shared service pages with Domain 5 source material while retaining their stable identities and paths.
+- **Identity repair:** Reclassified nine broad planned service bundles as features or concepts and registered only exact AWS service/product identities.
+- **State:** Marked every Domain 5 facet destination validated and updated the page plan, manifest, service registry, indexes, and generated navigation.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] generate | Domain 4 security and compliance
 
 - **Scope:** Processed all 10 immutable Domain 4 skills with 86 atomic service, feature, and mechanism coverage items.

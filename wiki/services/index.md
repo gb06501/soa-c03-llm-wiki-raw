@@ -104,3 +104,45 @@ These paths are retained to avoid unnecessary link churn; their frontmatter now 
 - [Trusted Advisor security checks](trusted-advisor-security.md)
 - [KMS encryption at rest](kms-encryption-at-rest.md)
 - [Secrets management](secrets-management.md)
+
+## Domain 5 canonical services
+
+### Network, edge, security, and analysis
+
+- [Athena](athena.md)
+- [Cost Explorer](cost-explorer.md)
+- [Direct Connect](direct-connect.md)
+- [Firehose](firehose.md)
+- [Global Accelerator](global-accelerator.md)
+- [Network Firewall](network-firewall.md)
+- [PrivateLink](privatelink.md)
+- [Shield](shield.md)
+- [Transit Gateway](transit-gateway.md)
+- [WAF](waf.md)
+
+## Domain 5 AWS features
+
+- [Client VPN](client-vpn.md) — parent: VPC.
+- [CloudFront caching](cloudfront-caching.md) — parent: CloudFront.
+- [CloudWatch Internet Monitor](cloudwatch-internet-monitor.md) — parent: CloudWatch.
+- [CloudWatch Network Flow Monitor](cloudwatch-network-flow-monitor.md) — parent: CloudWatch.
+- [CloudWatch Network Synthetic Monitor](cloudwatch-network-synthetic-monitor.md) — parent: CloudWatch.
+- [CloudWatch Synthetics](cloudwatch-synthetics.md) — parent: CloudWatch.
+- [Gateway Load Balancer](gateway-load-balancer.md) — parent: Elastic Load Balancing.
+- [NAT Gateway](nat-gateway.md) — parent: VPC.
+- [Route 53 Resolver](route53-resolver.md) — parent: Route 53.
+- [Route 53 Resolver DNS Firewall](route53-resolver-dns-firewall.md) — parent: Route 53.
+- [Route 53 routing](route53-routing.md) — parent: Route 53.
+- [Site-to-Site VPN](site-to-site-vpn.md) — parent: VPC.
+- [VPC Flow Logs](vpc-flow-logs.md) — parent: VPC.
+- [VPC IPAM](vpc-ipam.md) — parent: VPC.
+- [VPC Reachability Analyzer](vpc-reachability-analyzer.md) — parent: VPC.
+
+## Domain 5 cross-service concepts at stable paths
+
+- [CloudWatch network monitoring](cloudwatch-network-monitoring.md)
+- [Content distribution](content-distribution.md)
+- [Hybrid and private connectivity](hybrid-private-connectivity.md)
+- [Network protection](network-protection.md)
+- [Private connectivity](private-connectivity.md)
+- [VPC networking](vpc-networking.md)

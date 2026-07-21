@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T22:00:00+02:00"
+updated_at: "2026-07-21T22:45:00+02:00"
 scope: "SOA-C03 complete corpus"
 principle: "Plan all skills globally; implement in domain-sized batches; reconcile after Domain 5."
 counts:
@@ -64,15 +64,15 @@ pages:
     skill_ids: ["4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5"]
   - path: "wiki/concepts/network-cost-optimization.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.4"]
   - path: "wiki/concepts/network-evidence-and-delivery.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5"]
   - path: "wiki/concepts/network-logging.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.2"]
   - path: "wiki/concepts/observability-signal-selection.md"
     type: "Concept"
@@ -84,7 +84,7 @@ pages:
     skill_ids: ["3.2.1"]
   - path: "wiki/concepts/packet-path-diagnostics.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.1"]
   - path: "wiki/concepts/safe-automation.md"
     type: "Concept"
@@ -124,7 +124,7 @@ pages:
     skill_ids: ["2.1.2"]
   - path: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.3"]
   - path: "wiki/decision-guides/compliance-monitoring-selection.md"
     type: "Decision Guide"
@@ -140,7 +140,7 @@ pages:
     skill_ids: ["2.1.1"]
   - path: "wiki/decision-guides/content-distribution-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.2.3"]
   - path: "wiki/decision-guides/dashboard-design.md"
     type: "Decision Guide"
@@ -176,11 +176,11 @@ pages:
     skill_ids: ["3.1.6"]
   - path: "wiki/decision-guides/dns-resolution-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.2.1"]
   - path: "wiki/decision-guides/dns-routing-policy-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.2.2"]
   - path: "wiki/decision-guides/dr-strategy-selection.md"
     type: "Decision Guide"
@@ -228,23 +228,23 @@ pages:
     skill_ids: ["4.1.3"]
   - path: "wiki/decision-guides/network-cost-optimization.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.4"]
   - path: "wiki/decision-guides/network-log-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.2"]
   - path: "wiki/decision-guides/network-monitor-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.5"]
   - path: "wiki/decision-guides/network-path-evidence-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.1"]
   - path: "wiki/decision-guides/network-protection-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.3"]
   - path: "wiki/decision-guides/operational-automation-service-selection.md"
     type: "Decision Guide"
@@ -252,7 +252,7 @@ pages:
     skill_ids: ["3.2.1"]
   - path: "wiki/decision-guides/private-connectivity-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.2", "5.3.4"]
   - path: "wiki/decision-guides/remediation-tool-selection.md"
     type: "Decision Guide"
@@ -300,7 +300,7 @@ pages:
     skill_ids: ["2.3.3"]
   - path: "wiki/decision-guides/vpc-addressing-routing-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.1"]
   - path: "wiki/exam-traps/domain-1-exam-traps.md"
     type: "Exam Trap"
@@ -320,7 +320,7 @@ pages:
     skill_ids: ["4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5"]
   - path: "wiki/exam-traps/domain-5-exam-traps.md"
     type: "Exam Trap"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5"]
   - path: "wiki/learning/paths/domain-1-learning-path.md"
     type: "Learning Path"
@@ -340,7 +340,7 @@ pages:
     skill_ids: ["4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5"]
   - path: "wiki/learning/paths/domain-5-learning-path.md"
     type: "Learning Path"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5"]
   - path: "wiki/playbooks/access-denied.md"
     type: "Troubleshooting Playbook"
@@ -368,7 +368,7 @@ pages:
     skill_ids: ["3.1.2"]
   - path: "wiki/playbooks/cloudfront-cache-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.3"]
   - path: "wiki/playbooks/compliance-remediation-failure.md"
     type: "Troubleshooting Playbook"
@@ -408,15 +408,15 @@ pages:
     skill_ids: ["2.3.4"]
   - path: "wiki/playbooks/dns-resolution-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.2.1"]
   - path: "wiki/playbooks/dns-routing-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.2.2"]
   - path: "wiki/playbooks/edge-delivery-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.2.3"]
   - path: "wiki/playbooks/event-driven-automation-failure.md"
     type: "Troubleshooting Playbook"
@@ -432,7 +432,7 @@ pages:
     skill_ids: ["2.2.2"]
   - path: "wiki/playbooks/hybrid-private-connectivity-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.2", "5.3.4"]
   - path: "wiki/playbooks/image-build-distribution-failure.md"
     type: "Troubleshooting Playbook"
@@ -448,19 +448,19 @@ pages:
     skill_ids: ["1.1.1", "1.1.2", "1.1.4"]
   - path: "wiki/playbooks/network-cost-anomaly.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.4"]
   - path: "wiki/playbooks/network-performance-diagnosis.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.5"]
   - path: "wiki/playbooks/network-protection-gap.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.3"]
   - path: "wiki/playbooks/network-request-tracing.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.3.2"]
   - path: "wiki/playbooks/resource-performance-diagnosis.md"
     type: "Troubleshooting Playbook"
@@ -496,7 +496,7 @@ pages:
     skill_ids: ["2.2.1"]
   - path: "wiki/playbooks/vpc-connectivity-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["5.1.1", "5.3.1"]
   - path: "wiki/services/aws-backup.md"
     type: "AWS Service"
@@ -511,8 +511,8 @@ pages:
     status: implemented
     skill_ids: ["3.1.2"]
   - path: "wiki/services/cloudfront-caching.md"
-    type: "AWS Service"
-    status: planned
+    type: "AWS Feature"
+    status: implemented
     skill_ids: ["5.3.3"]
   - path: "wiki/services/cloudwatch-agent.md"
     type: "AWS Feature"
@@ -527,13 +527,13 @@ pages:
     status: implemented
     skill_ids: ["1.1.4"]
   - path: "wiki/services/cloudwatch-network-monitoring.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["5.3.5"]
   - path: "wiki/services/cloudwatch-telemetry.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.1.1"]
+    skill_ids: ["1.1.1","5.3.2","5.3.5"]
   - path: "wiki/services/compute-scaling.md"
     type: "Concept"
     status: implemented
@@ -543,8 +543,8 @@ pages:
     status: implemented
     skill_ids: ["4.1.5"]
   - path: "wiki/services/content-distribution.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["5.2.3"]
   - path: "wiki/services/ebs-performance.md"
     type: "AWS Service"
@@ -559,8 +559,8 @@ pages:
     status: implemented
     skill_ids: ["1.2.2"]
   - path: "wiki/services/hybrid-private-connectivity.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["5.3.4"]
   - path: "wiki/services/iam-access-control.md"
     type: "Concept"
@@ -583,33 +583,33 @@ pages:
     status: implemented
     skill_ids: ["2.1.3"]
   - path: "wiki/services/network-protection.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["5.1.3"]
   - path: "wiki/services/organizations-and-multi-account.md"
     type: "Concept"
     status: implemented
     skill_ids: ["4.1.3"]
   - path: "wiki/services/private-connectivity.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["5.1.2"]
   - path: "wiki/services/rds-performance.md"
     type: "AWS Service"
     status: implemented
     skill_ids: ["1.3.5"]
   - path: "wiki/services/route53-resolver.md"
-    type: "AWS Service"
-    status: planned
+    type: "AWS Feature"
+    status: implemented
     skill_ids: ["5.2.1"]
   - path: "wiki/services/route53-routing.md"
-    type: "AWS Service"
-    status: planned
+    type: "AWS Feature"
+    status: implemented
     skill_ids: ["5.2.2"]
   - path: "wiki/services/s3-performance.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.3.3"]
+    skill_ids: ["1.3.3","5.1.2","5.1.4","5.2.3","5.3.2"]
   - path: "wiki/services/secrets-management.md"
     type: "Concept"
     status: implemented
@@ -631,8 +631,8 @@ pages:
     status: implemented
     skill_ids: ["4.1.4"]
   - path: "wiki/services/vpc-networking.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["5.1.1"]
   - path: "wiki/services/iam.md"
     type: "AWS Service"
@@ -705,23 +705,23 @@ pages:
   - path: "wiki/services/cloudfront.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.3"]
+    skill_ids: ["4.2.3","5.1.3","5.1.4","5.2.3","5.3.2","5.3.3","5.3.5"]
   - path: "wiki/services/route-53.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.3"]
+    skill_ids: ["4.2.3","5.1.3","5.2.1","5.2.2","5.2.3","5.3.2","5.3.5"]
   - path: "wiki/services/vpc.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.1.2","4.2.3","4.2.4"]
+    skill_ids: ["4.1.2","4.2.3","4.2.4","5.1.1","5.1.2","5.1.3","5.1.4","5.2.1","5.2.2","5.2.3","5.3.1","5.3.2","5.3.3","5.3.4","5.3.5"]
   - path: "wiki/services/elastic-load-balancing.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.3"]
+    skill_ids: ["4.2.3","5.1.3","5.1.4","5.2.3","5.3.1","5.3.2","5.3.5"]
   - path: "wiki/services/dynamodb.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.2"]
+    skill_ids: ["4.2.2","5.1.2","5.1.4"]
   - path: "wiki/services/aurora.md"
     type: "AWS Service"
     status: implemented
@@ -773,11 +773,11 @@ pages:
   - path: "wiki/services/ecs.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.1.3", "3.1.5"]
+    skill_ids: ["3.1.3","3.1.5","5.3.2"]
   - path: "wiki/services/eks.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.1.3"]
+    skill_ids: ["3.1.3","5.3.2"]
   - path: "wiki/services/lambda.md"
     type: "AWS Service"
     status: implemented
@@ -798,6 +798,94 @@ pages:
     type: "AWS Service"
     status: implemented
     skill_ids: ["3.2.2"]
+  - path: "wiki/services/athena.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.4","5.3.2"]
+  - path: "wiki/services/cost-explorer.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.4"]
+  - path: "wiki/services/direct-connect.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.2","5.1.4","5.3.4"]
+  - path: "wiki/services/firehose.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.3","5.3.2"]
+  - path: "wiki/services/global-accelerator.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.4","5.2.3","5.3.5"]
+  - path: "wiki/services/network-firewall.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.3","5.1.4","5.3.2","5.3.5"]
+  - path: "wiki/services/privatelink.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.2","5.1.4","5.3.4"]
+  - path: "wiki/services/shield.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.3","5.2.3"]
+  - path: "wiki/services/transit-gateway.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.2","5.1.4","5.3.1","5.3.4","5.3.5"]
+  - path: "wiki/services/waf.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["5.1.3","5.2.3","5.3.2"]
+  - path: "wiki/services/vpc-ipam.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.1"]
+  - path: "wiki/services/vpc-flow-logs.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.1","5.1.4","5.3.1","5.3.2","5.3.4","5.3.5"]
+  - path: "wiki/services/vpc-reachability-analyzer.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.1","5.3.1","5.3.4","5.3.5"]
+  - path: "wiki/services/nat-gateway.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.1","5.1.4","5.3.1","5.3.5"]
+  - path: "wiki/services/site-to-site-vpn.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.2","5.1.4","5.3.1","5.3.4","5.3.5"]
+  - path: "wiki/services/client-vpn.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.2","5.3.4"]
+  - path: "wiki/services/gateway-load-balancer.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.2","5.1.3"]
+  - path: "wiki/services/route53-resolver-dns-firewall.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.1.3","5.2.1","5.2.2","5.3.2","5.3.5"]
+  - path: "wiki/services/cloudwatch-network-synthetic-monitor.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.3.5"]
+  - path: "wiki/services/cloudwatch-network-flow-monitor.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.3.5"]
+  - path: "wiki/services/cloudwatch-internet-monitor.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.3.5"]
+  - path: "wiki/services/cloudwatch-synthetics.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["5.3.5"]
 cross_domain_reconciliation:
   status: planned
   checks:

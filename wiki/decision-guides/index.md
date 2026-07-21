@@ -75,3 +75,22 @@
 - [TLS certificate selection](tls-certificate-selection.md) - Chooses public, imported, or private certificates and endpoint termination patterns.
 - [Secrets storage selection](secrets-storage-selection.md) - Chooses Secrets Manager, Parameter Store, or direct KMS use by lifecycle and delivery requirements.
 - [Security finding triage](security-finding-triage.md) - Prioritizes and routes source findings using risk and operational context.
+
+## Domain 5: Networking and content delivery
+
+### Network architecture and protection
+
+- [VPC addressing and routing selection](vpc-addressing-routing-selection.md) - Chooses address space, subnet boundaries, routes, egress, and path-analysis controls.
+- [Private connectivity selection](private-connectivity-selection.md) - Chooses endpoints, PrivateLink, peering, Transit Gateway, VPN, Direct Connect, Client VPN, or Gateway Load Balancer.
+- [Network protection selection](network-protection-selection.md) - Chooses security groups, network ACLs, WAF, Shield, DNS Firewall, or Network Firewall by enforcement layer.
+- [Network cost optimization](network-cost-optimization.md) - Chooses evidence and architecture changes for NAT, endpoints, cross-AZ, transit, edge, and logging costs.
+
+### DNS, edge, and evidence
+
+- [DNS resolution selection](dns-resolution-selection.md) - Chooses hosted zones, Resolver endpoints, forwarding rules, and DNS logging controls.
+- [DNS routing policy selection](dns-routing-policy-selection.md) - Chooses simple, weighted, latency, failover, geolocation, geoproximity, or multivalue routing.
+- [Content distribution selection](content-distribution-selection.md) - Chooses CloudFront, Global Accelerator, Route 53, or load balancing from protocol and delivery requirements.
+- [CloudFront cache policy selection](cloudfront-cache-policy-selection.md) - Chooses cache behaviors, keys, TTLs, origin controls, and invalidation.
+- [Network log selection](network-log-selection.md) - Chooses the smallest decisive log source for the request layer under investigation.
+- [Network path evidence selection](network-path-evidence-selection.md) - Chooses static analysis, passive telemetry, or active tests to prove a suspected hop.
+- [Network monitor selection](network-monitor-selection.md) - Chooses component metrics, synthetic tests, flow monitoring, or internet-path monitoring.

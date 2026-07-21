@@ -3,12 +3,14 @@ type: AWS Service
 title: DynamoDB
 service_id: dynamodb
 description: Provides managed NoSQL storage with service encryption and optional customer-managed KMS control.
-tags: ["soa-c03", "domain-4", "dynamodb", "encryption-at-rest"]
-timestamp: 2026-07-21T22:00:00+02:00
-skill_ids: ["4.2.2"]
-domain_ids: ["4"]
+tags: ["soa-c03", "domain-4", "dynamodb", "encryption-at-rest", domain-5, gateway-endpoint, network-cost]
+timestamp: 2026-07-21T22:45:00+02:00
+skill_ids: ["4.2.2", "5.1.2", "5.1.4"]
+domain_ids: ["4", "5"]
 sources:
   - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
+  - /raw/skills/5.1.2-configure-private-networking-connectivity.md
+  - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
 status: verified
 ---
 # Core model
@@ -32,6 +34,17 @@ Avoid disabling or scheduling deletion of an in-use key, test restore and replic
 - [Encryption at rest selection](../decision-guides/encryption-at-rest-selection.md)
 - [KMS access failure](../playbooks/kms-access-failure.md)
 
+# Domain 5: Gateway endpoint access
+
+A DynamoDB gateway endpoint installs service prefix-list routes into associated route tables. It has no endpoint ENI or security group. Endpoint policy restricts use but does not grant identity or table permission.
+
+Use the endpoint for supported private regional traffic and to avoid NAT processing. Verify route-table association, selected prefix-list route, DNS/Region, endpoint policy, IAM/table/KMS authorization, and application result.
+
+- [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
+- [Network cost optimization](../decision-guides/network-cost-optimization.md)
+
 # Sources
 
 - [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)
+- [Skill 5.1.2](../../raw/skills/5.1.2-configure-private-networking-connectivity.md)
+- [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)

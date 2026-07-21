@@ -40,3 +40,16 @@
 - [TLS connectivity failure](tls-connectivity-failure.md) - Diagnoses DNS, TCP, policy, certificate, trust, SNI, listener, origin, and application layers.
 - [Secret access and rotation failure](secret-access-and-rotation-failure.md) - Diagnoses identity, policy, endpoint, version-label, target-system, and rotation-step failures.
 - [Security finding remediation](security-finding-remediation.md) - Validates, prioritizes, contains, remediates, and closes source findings safely.
+
+## Domain 5: Networking and content delivery
+
+- [VPC connectivity failure](vpc-connectivity-failure.md) - Traces DNS, route, translation, security group, network ACL, load balancer, and application reachability.
+- [DNS resolution failure](dns-resolution-failure.md) - Diagnoses hosted-zone, Resolver endpoint, forwarding-rule, association, and query-path failures.
+- [DNS routing failure](dns-routing-failure.md) - Diagnoses record, health-check, routing-policy, propagation, and resolver-cache behavior.
+- [Edge delivery failure](edge-delivery-failure.md) - Diagnoses client, DNS, edge, certificate, origin, and application failures.
+- [CloudFront cache failure](cloudfront-cache-failure.md) - Diagnoses misses, stale objects, cache keys, directives, invalidations, and cached errors.
+- [Hybrid and private connectivity failure](hybrid-private-connectivity-failure.md) - Diagnoses endpoints, peering, Transit Gateway, VPN, Direct Connect, and client access.
+- [Network protection gap](network-protection-gap.md) - Finds missing associations, rule-order errors, bypass paths, and enforcement-mode gaps.
+- [Network request tracing](network-request-tracing.md) - Correlates VPC, load-balancer, WAF, CloudFront, container, and application evidence.
+- [Network cost anomaly](network-cost-anomaly.md) - Attributes network spend to traffic path and validates the smallest safe optimization.
+- [Network performance diagnosis](network-performance-diagnosis.md) - Separates component saturation, flow behavior, synthetic path degradation, internet impact, and application latency.
