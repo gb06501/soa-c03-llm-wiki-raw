@@ -84,6 +84,22 @@ Ready when you can identify compute, memory, storage, network, concurrency, data
 
 Read [Domain 1 exam traps](../../exam-traps/domain-1-exam-traps.md), then explain why every tempting conclusion fails.
 
+# Decision-guide checkpoint
+
+Use these after the corresponding service pages:
+
+1. [Telemetry selection](../../decision-guides/telemetry-selection.md)
+2. [CloudWatch alarm design](../../decision-guides/alarm-design.md)
+3. [CloudWatch dashboard design](../../decision-guides/dashboard-design.md)
+4. [Event and notification routing](../../decision-guides/event-notification-routing.md)
+5. [Remediation tool selection](../../decision-guides/remediation-tool-selection.md)
+6. [Compute optimization](../../decision-guides/compute-optimization.md)
+7. [RDS performance remediation](../../decision-guides/database-remediation.md)
+8. [EBS performance tuning](../../decision-guides/ebs-performance-tuning.md)
+9. [S3 transfer optimization](../../decision-guides/s3-transfer-optimization.md)
+10. [Storage service selection](../../decision-guides/storage-service-selection.md)
+11. [Shared storage performance](../../decision-guides/shared-storage-performance.md)
+
 # Suggested practice
 
 - Diagnose a missing EC2 memory metric.
