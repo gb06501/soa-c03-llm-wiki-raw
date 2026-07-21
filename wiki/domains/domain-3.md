@@ -2,7 +2,7 @@
 
 # Domain 3: Deployment, Provisioning, and Automation
 
-This domain contains 8 source skills and 40 implemented generated pages.
+This domain contains 8 source skills and 46 implemented generated pages.
 
 ## Coverage summary
 
@@ -28,16 +28,25 @@ This domain contains 8 source skills and 40 implemented generated pages.
 - [CDK](../services/cdk.md)
 - [CloudFormation](../services/cloudformation.md)
 - [DevOps Agent](../services/devops-agent.md)
+- [EC2 Auto Scaling](../services/ec2-auto-scaling.md)
+- [EC2](../services/ec2-performance.md)
 - [ECR](../services/ecr.md)
 - [ECS](../services/ecs.md)
 - [EKS](../services/eks.md)
+- [EventBridge](../services/eventbridge.md)
 - [Image Builder](../services/image-builder.md)
 - [Lambda](../services/lambda.md)
 - [Resource Access Manager](../services/resource-access-manager.md)
+- [S3](../services/s3-performance.md)
 - [Service Catalog](../services/service-catalog.md)
+- [SNS](../services/sns-notifications.md)
 - [SQS](../services/sqs.md)
 - [Step Functions](../services/step-functions.md)
 - [Systems Manager](../services/systems-manager.md)
+
+### AWS Feature
+
+- [Systems Manager Automation](../services/systems-manager-automation.md)
 
 ### Concept
 
