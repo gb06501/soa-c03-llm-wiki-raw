@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T22:00:00+02:00"
+updated_at: "2026-07-21T22:45:00+02:00"
 display_policy: "Use short recognizable names; AWS and Amazon prefixes are optional."
 rules:
   - "AWS Service pages represent exactly one registered service."
@@ -194,3 +194,43 @@ services:
     display_name: VPC
     aliases: [Amazon VPC, Virtual Private Cloud]
     page: wiki/services/vpc.md
+  - id: athena
+    display_name: Athena
+    aliases: [Amazon Athena]
+    page: wiki/services/athena.md
+  - id: cost-explorer
+    display_name: Cost Explorer
+    aliases: [AWS Cost Explorer]
+    page: wiki/services/cost-explorer.md
+  - id: direct-connect
+    display_name: Direct Connect
+    aliases: [AWS Direct Connect, DX]
+    page: wiki/services/direct-connect.md
+  - id: firehose
+    display_name: Firehose
+    aliases: [Amazon Data Firehose, Kinesis Data Firehose]
+    page: wiki/services/firehose.md
+  - id: global-accelerator
+    display_name: Global Accelerator
+    aliases: [AWS Global Accelerator]
+    page: wiki/services/global-accelerator.md
+  - id: network-firewall
+    display_name: Network Firewall
+    aliases: [AWS Network Firewall]
+    page: wiki/services/network-firewall.md
+  - id: privatelink
+    display_name: PrivateLink
+    aliases: [AWS PrivateLink]
+    page: wiki/services/privatelink.md
+  - id: shield
+    display_name: Shield
+    aliases: [AWS Shield, Shield Standard, Shield Advanced]
+    page: wiki/services/shield.md
+  - id: transit-gateway
+    display_name: Transit Gateway
+    aliases: [AWS Transit Gateway, TGW]
+    page: wiki/services/transit-gateway.md
+  - id: waf
+    display_name: WAF
+    aliases: [AWS WAF, Web Application Firewall]
+    page: wiki/services/waf.md

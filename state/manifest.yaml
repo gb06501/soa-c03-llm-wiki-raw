@@ -1,6 +1,6 @@
 version: 1
-updated_at: "2026-07-21T22:00:00+02:00"
-scope: "SOA-C03 Domains 1-4"
+updated_at: "2026-07-21T22:45:00+02:00"
+scope: "SOA-C03 complete corpus"
 status: validated
 sources:
   - path: raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
@@ -208,8 +208,68 @@ sources:
     processed_at: "2026-07-21T22:00:00+02:00"
     generated_pages: [wiki/services/config.md, wiki/services/macie.md, wiki/services/security-hub-cspm.md, wiki/services/guardduty.md, wiki/services/inspector.md, wiki/services/security-agent.md, wiki/concepts/multi-account-security-governance.md, wiki/concepts/security-findings.md, wiki/decision-guides/security-finding-triage.md, wiki/playbooks/security-finding-remediation.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
     status: validated
+  - path: raw/skills/5.1.1-configure-a-vpc.md
+    blob_sha: 436af42d77a9e63392b8bd3cad10c33176dc1869
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/vpc-ipam.md, wiki/services/vpc-flow-logs.md, wiki/services/vpc-reachability-analyzer.md, wiki/services/nat-gateway.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/vpc-networking.md, wiki/decision-guides/vpc-addressing-routing-selection.md, wiki/playbooks/vpc-connectivity-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md]
+    status: validated
+  - path: raw/skills/5.1.2-configure-private-networking-connectivity.md
+    blob_sha: fc5e2062a51d9a5425cfc61679e31cf50378c8d5
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/direct-connect.md, wiki/services/transit-gateway.md, wiki/services/privatelink.md, wiki/services/site-to-site-vpn.md, wiki/services/client-vpn.md, wiki/services/gateway-load-balancer.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/private-connectivity.md, wiki/decision-guides/private-connectivity-selection.md, wiki/playbooks/hybrid-private-connectivity-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/s3-performance.md, wiki/services/dynamodb.md]
+    status: validated
+  - path: raw/skills/5.1.3-audit-network-protection-services-in-one-account.md
+    blob_sha: 3046db4d12b3ec245cfd7c70009739178a87a5cd
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/network-firewall.md, wiki/services/waf.md, wiki/services/shield.md, wiki/services/firehose.md, wiki/services/gateway-load-balancer.md, wiki/services/route53-resolver-dns-firewall.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/network-protection.md, wiki/decision-guides/network-protection-selection.md, wiki/playbooks/network-protection-gap.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/cloudfront.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md]
+    status: validated
+  - path: raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
+    blob_sha: 0376ffd95c1cd42ecc1c79ae1e10599545c1c1b7
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/direct-connect.md, wiki/services/global-accelerator.md, wiki/services/network-firewall.md, wiki/services/transit-gateway.md, wiki/services/privatelink.md, wiki/services/cost-explorer.md, wiki/services/athena.md, wiki/services/vpc-flow-logs.md, wiki/services/nat-gateway.md, wiki/services/site-to-site-vpn.md, wiki/concepts/network-cost-optimization.md, wiki/concepts/network-evidence-and-delivery.md, wiki/decision-guides/network-cost-optimization.md, wiki/playbooks/network-cost-anomaly.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/cloudfront.md, wiki/services/elastic-load-balancing.md, wiki/services/s3-performance.md, wiki/services/dynamodb.md]
+    status: validated
+  - path: raw/skills/5.2.1-configure-dns-and-route-53-resolver.md
+    blob_sha: deae42725c4682f48c2c363a453781e4aa85ecd8
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/route53-resolver-dns-firewall.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/route53-resolver.md, wiki/decision-guides/dns-resolution-selection.md, wiki/playbooks/dns-resolution-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/route-53.md]
+    status: validated
+  - path: raw/skills/5.2.2-implement-route-53-routing-policies-configurations-and-query-logging.md
+    blob_sha: 9ae80ef3c3878002e253b4f8585e8858f908ba4e
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/route53-resolver-dns-firewall.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/route53-routing.md, wiki/decision-guides/dns-routing-policy-selection.md, wiki/playbooks/dns-routing-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/route-53.md]
+    status: validated
+  - path: raw/skills/5.2.3-configure-content-and-service-distribution.md
+    blob_sha: 935e839e6159b97ae846ab391fc942cf4870e4e1
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/global-accelerator.md, wiki/services/waf.md, wiki/services/shield.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/content-distribution.md, wiki/decision-guides/content-distribution-selection.md, wiki/playbooks/edge-delivery-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/cloudfront.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md, wiki/services/s3-performance.md]
+    status: validated
+  - path: raw/skills/5.3.1-troubleshoot-vpc-configurations.md
+    blob_sha: 37b6dce602941686711849135647ed28bb125bcd
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/transit-gateway.md, wiki/services/vpc-flow-logs.md, wiki/services/vpc-reachability-analyzer.md, wiki/services/nat-gateway.md, wiki/services/site-to-site-vpn.md, wiki/concepts/network-evidence-and-delivery.md, wiki/concepts/packet-path-diagnostics.md, wiki/decision-guides/network-path-evidence-selection.md, wiki/playbooks/vpc-connectivity-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/elastic-load-balancing.md]
+    status: validated
+  - path: raw/skills/5.3.2-collect-and-interpret-networking-logs.md
+    blob_sha: bfb55e23e28feaaed2c7e997b08bfc31c53495ad
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/network-firewall.md, wiki/services/waf.md, wiki/services/athena.md, wiki/services/firehose.md, wiki/services/vpc-flow-logs.md, wiki/services/route53-resolver-dns-firewall.md, wiki/concepts/network-evidence-and-delivery.md, wiki/concepts/network-logging.md, wiki/decision-guides/network-log-selection.md, wiki/playbooks/network-request-tracing.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/cloudfront.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md, wiki/services/cloudwatch-telemetry.md, wiki/services/s3-performance.md, wiki/services/ecs.md, wiki/services/eks.md]
+    status: validated
+  - path: raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md
+    blob_sha: e0a03380b4d3b4095c17c9a44fa03467db482679
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/concepts/network-evidence-and-delivery.md, wiki/services/cloudfront-caching.md, wiki/decision-guides/cloudfront-cache-policy-selection.md, wiki/playbooks/cloudfront-cache-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/cloudfront.md]
+    status: validated
+  - path: raw/skills/5.3.4-identify-and-troubleshoot-hybrid-and-private-connectivity-issues.md
+    blob_sha: a1a3f9961750b36a7589630cd535f48ae1d6041a
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/direct-connect.md, wiki/services/transit-gateway.md, wiki/services/privatelink.md, wiki/services/vpc-flow-logs.md, wiki/services/vpc-reachability-analyzer.md, wiki/services/site-to-site-vpn.md, wiki/services/client-vpn.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/hybrid-private-connectivity.md, wiki/decision-guides/private-connectivity-selection.md, wiki/playbooks/hybrid-private-connectivity-failure.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md]
+    status: validated
+  - path: raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
+    blob_sha: 6492d3839ea1424db7daf2209c1fc175263ca0fc
+    processed_at: "2026-07-21T22:45:00+02:00"
+    generated_pages: [wiki/services/global-accelerator.md, wiki/services/network-firewall.md, wiki/services/transit-gateway.md, wiki/services/vpc-flow-logs.md, wiki/services/vpc-reachability-analyzer.md, wiki/services/nat-gateway.md, wiki/services/site-to-site-vpn.md, wiki/services/route53-resolver-dns-firewall.md, wiki/services/cloudwatch-network-synthetic-monitor.md, wiki/services/cloudwatch-network-flow-monitor.md, wiki/services/cloudwatch-internet-monitor.md, wiki/services/cloudwatch-synthetics.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/cloudwatch-network-monitoring.md, wiki/decision-guides/network-monitor-selection.md, wiki/playbooks/network-performance-diagnosis.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/cloudfront.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md, wiki/services/cloudwatch-telemetry.md]
+    status: validated
 generated:
-  count: 161
+  count: 219
   roots:
     - wiki/services
     - wiki/concepts

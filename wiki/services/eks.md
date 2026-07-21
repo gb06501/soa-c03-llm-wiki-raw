@@ -3,12 +3,13 @@ type: AWS Service
 title: EKS
 service_id: eks
 description: Runs Kubernetes workloads whose deployment health depends on pods, nodes, images, IAM, networking, and cluster capacity.
-tags: [soa-c03, domain-3, eks, kubernetes, deployment]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["3.1.3"]
-domain_ids: ["3"]
+tags: [soa-c03, domain-3, eks, kubernetes, deployment, domain-5, network-logs]
+timestamp: 2026-07-21T22:45:00+02:00
+skill_ids: ["3.1.3", "5.3.2"]
+domain_ids: ["3", "5"]
 sources:
   - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
+  - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
 status: verified
 ---
 
@@ -41,6 +42,16 @@ Confirm desired replicas are scheduled and ready, the intended image digest is r
 - [Deployment diagnostics](../concepts/deployment-diagnostics.md)
 - [Deployment failure](../playbooks/deployment-failure.md)
 
+# Domain 5: Network request evidence
+
+Correlate ingress/controller logs, service and EndpointSlice state, pod current/previous logs and events, readiness/liveness, CoreDNS, VPC CNI/IP allocation, kube-proxy or data-plane evidence, node logs, enabled control-plane logs, and VPC/ELB evidence.
+
+An application container can be healthy while an ingress, sidecar, network policy, DNS, CNI, target, or subnet-capacity layer fails.
+
+- [Network log selection](../decision-guides/network-log-selection.md)
+- [Network request tracing](../playbooks/network-request-tracing.md)
+
 # Sources
 
 - [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
+- [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)

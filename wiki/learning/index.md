@@ -15,3 +15,7 @@
 ## Domain 4: Security and compliance
 
 - [Domain 4 learning path](paths/domain-4-learning-path.md) - Orders authorization, multi-account governance, compliance, data protection, secrets, findings, and verified remediation.
+
+## Domain 5: Networking and content delivery
+
+- [Domain 5 learning path](paths/domain-5-learning-path.md) - Orders Domain 5 study from packet paths and connectivity through DNS, edge delivery, evidence, cost, and troubleshooting.

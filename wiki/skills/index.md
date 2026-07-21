@@ -67,15 +67,15 @@
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [5.1.1](5.1.1.md) | Configure a VPC | Planned |
-| [5.1.2](5.1.2.md) | Configure private networking connectivity | Planned |
-| [5.1.3](5.1.3.md) | Audit AWS network protection services in one account | Planned |
-| [5.1.4](5.1.4.md) | Optimize the cost of network architectures | Planned |
-| [5.2.1](5.2.1.md) | Configure DNS and Route 53 Resolver | Planned |
-| [5.2.2](5.2.2.md) | Implement Route 53 routing policies, configurations, and query logging | Planned |
-| [5.2.3](5.2.3.md) | Configure content and service distribution | Planned |
-| [5.3.1](5.3.1.md) | Troubleshoot VPC configurations | Planned |
-| [5.3.2](5.3.2.md) | Collect and interpret networking logs | Planned |
-| [5.3.3](5.3.3.md) | Identify and remediate CloudFront caching issues | Planned |
-| [5.3.4](5.3.4.md) | Identify and troubleshoot hybrid and private connectivity issues | Planned |
-| [5.3.5](5.3.5.md) | Configure and analyze CloudWatch network monitoring services | Planned |
+| [5.1.1](5.1.1.md) | Configure a VPC | Validated |
+| [5.1.2](5.1.2.md) | Configure private networking connectivity | Validated |
+| [5.1.3](5.1.3.md) | Audit AWS network protection services in one account | Validated |
+| [5.1.4](5.1.4.md) | Optimize the cost of network architectures | Validated |
+| [5.2.1](5.2.1.md) | Configure DNS and Route 53 Resolver | Validated |
+| [5.2.2](5.2.2.md) | Implement Route 53 routing policies, configurations, and query logging | Validated |
+| [5.2.3](5.2.3.md) | Configure content and service distribution | Validated |
+| [5.3.1](5.3.1.md) | Troubleshoot VPC configurations | Validated |
+| [5.3.2](5.3.2.md) | Collect and interpret networking logs | Validated |
+| [5.3.3](5.3.3.md) | Identify and remediate CloudFront caching issues | Validated |
+| [5.3.4](5.3.4.md) | Identify and troubleshoot hybrid and private connectivity issues | Validated |
+| [5.3.5](5.3.5.md) | Configure and analyze CloudWatch network monitoring services | Validated |

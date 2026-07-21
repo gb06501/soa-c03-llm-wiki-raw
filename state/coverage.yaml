@@ -1,20 +1,20 @@
 version: 2
-updated_at: "2026-07-21T22:00:00+02:00"
+updated_at: "2026-07-21T22:45:00+02:00"
 scope: "SOA-C03 complete 53-skill corpus"
 method: "global-plan-incremental-build"
 atomic_itemization: required
 service_registry: "state/aws-service-registry.yaml"
 summary:
   total_skills: 53
-  validated_skills: 8
+  validated_skills: 30
   needs_reconciliation_skills: 23
-  planned_skills: 22
+  planned_skills: 0
   domains:
     "1": needs_reconciliation
     "2": needs_reconciliation
     "3": validated
-    "4": planned
-    "5": planned
+    "4": validated
+    "5": validated
 coverage_states: [standalone, embedded, planned, gap, not_applicable]
 migration:
   domains_requiring_atomic_reconciliation: ["1", "2"]
@@ -2426,514 +2426,1123 @@ skills:
     path: "raw/skills/5.1.1-configure-a-vpc.md"
     blob_sha: 436af42d77a9e63392b8bd3cad10c33176dc1869
     title: "Configure a VPC"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/vpc-networking.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "# Domain 5: Packet paths and connectivity"
+          - identity: "vpc-ipam"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-ipam.md"
+            section: "# Core model"
+          - identity: "nat-gateway"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/nat-gateway.md"
+            section: "# Core model"
+          - identity: "vpc-flow-logs"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-flow-logs.md"
+            section: "# Core model"
+          - identity: "vpc-reachability-analyzer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-reachability-analyzer.md"
+            section: "# Core model"
+          - identity: "internet-gateway"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/vpc-networking.md"
+            section: "# Subnet intent"
+          - identity: "egress-only-internet-gateway"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/vpc-networking.md"
+            section: "# Subnet intent"
+          - identity: "security-groups"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/vpc-networking.md"
+            section: "# Core model"
+          - identity: "network-acls"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/vpc-networking.md"
+            section: "# Core model"
+          - identity: "vpc-networking"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/vpc-networking.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/vpc-addressing-routing-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/vpc-addressing-routing-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/vpc-addressing-routing-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/vpc-connectivity-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/vpc-connectivity-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/vpc-connectivity-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# VPC addressing and packet paths"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "5.1.2"
     domain: "5"
     path: "raw/skills/5.1.2-configure-private-networking-connectivity.md"
     blob_sha: fc5e2062a51d9a5425cfc61679e31cf50378c8d5
     title: "Configure private networking connectivity"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/private-connectivity.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "## Private and hybrid connectivity"
+          - identity: "s3"
+            kind: service
+            status: standalone
+            destination: "wiki/services/s3-performance.md"
+            section: "# Domain 5: Private access and edge origin"
+          - identity: "dynamodb"
+            kind: service
+            status: standalone
+            destination: "wiki/services/dynamodb.md"
+            section: "# Domain 5: Gateway endpoint access"
+          - identity: "privatelink"
+            kind: service
+            status: standalone
+            destination: "wiki/services/privatelink.md"
+            section: "# Core model"
+          - identity: "transit-gateway"
+            kind: service
+            status: standalone
+            destination: "wiki/services/transit-gateway.md"
+            section: "# Core model"
+          - identity: "direct-connect"
+            kind: service
+            status: standalone
+            destination: "wiki/services/direct-connect.md"
+            section: "# Core model"
+          - identity: "site-to-site-vpn"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/site-to-site-vpn.md"
+            section: "# Core model"
+          - identity: "client-vpn"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/client-vpn.md"
+            section: "# Core model"
+          - identity: "gateway-load-balancer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/gateway-load-balancer.md"
+            section: "# Core model"
+          - identity: "gateway-endpoint"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/private-connectivity.md"
+            section: "# Selection map"
+          - identity: "interface-endpoint"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/private-connectivity.md"
+            section: "# Selection map"
+          - identity: "vpc-peering"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/private-connectivity.md"
+            section: "# Selection map"
+          - identity: "private-connectivity"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/private-connectivity.md"
+            section: "# Core distinction"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/private-connectivity-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/private-connectivity-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/private-connectivity-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Private and hybrid connectivity"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "5.1.3"
     domain: "5"
     path: "raw/skills/5.1.3-audit-network-protection-services-in-one-account.md"
     blob_sha: 3046db4d12b3ec245cfd7c70009739178a87a5cd
     title: "Audit AWS network protection services in one account"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/network-protection.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "route-53"
+            kind: service
+            status: standalone
+            destination: "wiki/services/route-53.md"
+            section: "# Domain 5: DNS, Resolver, and routing"
+          - identity: "route53-resolver-dns-firewall"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-resolver-dns-firewall.md"
+            section: "# Core model"
+          - identity: "waf"
+            kind: service
+            status: standalone
+            destination: "wiki/services/waf.md"
+            section: "# Core model"
+          - identity: "shield"
+            kind: service
+            status: standalone
+            destination: "wiki/services/shield.md"
+            section: "# Core model"
+          - identity: "network-firewall"
+            kind: service
+            status: standalone
+            destination: "wiki/services/network-firewall.md"
+            section: "# Core model"
+          - identity: "gateway-load-balancer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/gateway-load-balancer.md"
+            section: "# Core model"
+          - identity: "security-groups"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/network-protection.md"
+            section: "# Layer model"
+          - identity: "network-acls"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/network-protection.md"
+            section: "# Layer model"
+          - identity: "network-protection"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/network-protection.md"
+            section: "# Layer model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-protection-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-protection-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/network-protection-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-protection-gap.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-protection-gap.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-protection-gap.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Network protection"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Safe-change loop"
+
   - id: "5.1.4"
     domain: "5"
     path: "raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md"
     blob_sha: 0376ffd95c1cd42ecc1c79ae1e10599545c1c1b7
     title: "Optimize the cost of network architectures"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/concepts/network-cost-optimization.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "cost-explorer"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cost-explorer.md"
+            section: "# Core model"
+          - identity: "athena"
+            kind: service
+            status: standalone
+            destination: "wiki/services/athena.md"
+            section: "# Core model"
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "# Domain 5: Packet paths and connectivity"
+          - identity: "vpc-flow-logs"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-flow-logs.md"
+            section: "# Core model"
+          - identity: "nat-gateway"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/nat-gateway.md"
+            section: "# Decision boundaries"
+          - identity: "s3"
+            kind: service
+            status: standalone
+            destination: "wiki/services/s3-performance.md"
+            section: "# Domain 5: Private access and edge origin"
+          - identity: "dynamodb"
+            kind: service
+            status: standalone
+            destination: "wiki/services/dynamodb.md"
+            section: "# Domain 5: Gateway endpoint access"
+          - identity: "cloudfront"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudfront.md"
+            section: "# Domain 5: Edge delivery and caching"
+          - identity: "global-accelerator"
+            kind: service
+            status: standalone
+            destination: "wiki/services/global-accelerator.md"
+            section: "# Decision boundaries"
+          - identity: "elastic-load-balancing"
+            kind: service
+            status: standalone
+            destination: "wiki/services/elastic-load-balancing.md"
+            section: "# Domain 5: Balancing and request evidence"
+          - identity: "privatelink"
+            kind: service
+            status: standalone
+            destination: "wiki/services/privatelink.md"
+            section: "# Decision boundaries"
+          - identity: "transit-gateway"
+            kind: service
+            status: standalone
+            destination: "wiki/services/transit-gateway.md"
+            section: "# Decision boundaries"
+          - identity: "direct-connect"
+            kind: service
+            status: standalone
+            destination: "wiki/services/direct-connect.md"
+            section: "# Decision boundaries"
+          - identity: "network-firewall"
+            kind: service
+            status: standalone
+            destination: "wiki/services/network-firewall.md"
+            section: "# Core model"
+          - identity: "network-cost"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/network-cost-optimization.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-cost-optimization.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-cost-optimization.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/network-cost-optimization.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-cost-anomaly.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-cost-anomaly.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-cost-anomaly.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Network cost"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Safe-change loop"
+
   - id: "5.2.1"
     domain: "5"
     path: "raw/skills/5.2.1-configure-dns-and-route-53-resolver.md"
     blob_sha: deae42725c4682f48c2c363a453781e4aa85ecd8
     title: "Configure DNS and Route 53 Resolver"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/route53-resolver.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "route-53"
+            kind: service
+            status: standalone
+            destination: "wiki/services/route-53.md"
+            section: "# Domain 5: DNS, Resolver, and routing"
+          - identity: "route53-resolver"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-resolver.md"
+            section: "# Core model"
+          - identity: "route53-resolver-dns-firewall"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-resolver-dns-firewall.md"
+            section: "# Core model"
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "## Private and hybrid connectivity"
+          - identity: "private-hosted-zones"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/route53-resolver.md"
+            section: "# Key objects"
+          - identity: "resolver-forwarding"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/route53-resolver.md"
+            section: "# Core model"
+          - identity: "dns-resolution"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/route53-resolver.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/dns-resolution-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/dns-resolution-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/dns-resolution-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/dns-resolution-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/dns-resolution-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/dns-resolution-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# DNS and Route 53"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Evidence layers"
+
   - id: "5.2.2"
     domain: "5"
     path: "raw/skills/5.2.2-implement-route-53-routing-policies-configurations-and-query-logging.md"
     blob_sha: 9ae80ef3c3878002e253b4f8585e8858f908ba4e
     title: "Implement Route 53 routing policies, configurations, and query logging"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/route53-routing.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "route-53"
+            kind: service
+            status: standalone
+            destination: "wiki/services/route-53.md"
+            section: "# Domain 5: DNS, Resolver, and routing"
+          - identity: "route53-routing"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-routing.md"
+            section: "# Routing policies"
+          - identity: "route53-resolver-dns-firewall"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-resolver-dns-firewall.md"
+            section: "# Evidence and diagnosis"
+          - identity: "public-query-logging"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/route53-routing.md"
+            section: "# Logging boundary"
+          - identity: "resolver-query-logging"
+            kind: mechanism
+            status: embedded
+            destination: "wiki/services/route53-routing.md"
+            section: "# Logging boundary"
+          - identity: "dns-routing"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/route53-routing.md"
+            section: "# Routing policies"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/dns-routing-policy-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/dns-routing-policy-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/dns-routing-policy-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/dns-routing-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/dns-routing-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/dns-routing-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# DNS and Route 53"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Evidence layers"
+
   - id: "5.2.3"
     domain: "5"
     path: "raw/skills/5.2.3-configure-content-and-service-distribution.md"
     blob_sha: 935e839e6159b97ae846ab391fc942cf4870e4e1
     title: "Configure content and service distribution"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/content-distribution.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "cloudfront"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudfront.md"
+            section: "# Domain 5: Edge delivery and caching"
+          - identity: "global-accelerator"
+            kind: service
+            status: standalone
+            destination: "wiki/services/global-accelerator.md"
+            section: "# Core model"
+          - identity: "route-53"
+            kind: service
+            status: standalone
+            destination: "wiki/services/route-53.md"
+            section: "# Domain 5: DNS, Resolver, and routing"
+          - identity: "elastic-load-balancing"
+            kind: service
+            status: standalone
+            destination: "wiki/services/elastic-load-balancing.md"
+            section: "# Domain 5: Balancing and request evidence"
+          - identity: "s3"
+            kind: service
+            status: standalone
+            destination: "wiki/services/s3-performance.md"
+            section: "# Domain 5: Private access and edge origin"
+          - identity: "waf"
+            kind: service
+            status: standalone
+            destination: "wiki/services/waf.md"
+            section: "# Core model"
+          - identity: "shield"
+            kind: service
+            status: standalone
+            destination: "wiki/services/shield.md"
+            section: "# Core model"
+          - identity: "content-distribution"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/content-distribution.md"
+            section: "# Core distinction"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/content-distribution-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/content-distribution-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/content-distribution-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/edge-delivery-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/edge-delivery-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/edge-delivery-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Edge delivery and caching"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "5.3.1"
     domain: "5"
     path: "raw/skills/5.3.1-troubleshoot-vpc-configurations.md"
     blob_sha: 37b6dce602941686711849135647ed28bb125bcd
     title: "Troubleshoot VPC configurations"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/concepts/packet-path-diagnostics.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "## Evidence and verification"
+          - identity: "transit-gateway"
+            kind: service
+            status: standalone
+            destination: "wiki/services/transit-gateway.md"
+            section: "# Evidence and diagnosis"
+          - identity: "nat-gateway"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/nat-gateway.md"
+            section: "# Evidence and diagnosis"
+          - identity: "site-to-site-vpn"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/site-to-site-vpn.md"
+            section: "# Evidence and diagnosis"
+          - identity: "vpc-flow-logs"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-flow-logs.md"
+            section: "# Interpretation"
+          - identity: "vpc-reachability-analyzer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-reachability-analyzer.md"
+            section: "# Core model"
+          - identity: "privatelink"
+            kind: service
+            status: standalone
+            destination: "wiki/services/privatelink.md"
+            section: "# Evidence and diagnosis"
+          - identity: "elastic-load-balancing"
+            kind: service
+            status: standalone
+            destination: "wiki/services/elastic-load-balancing.md"
+            section: "# Domain 5: Balancing and request evidence"
+          - identity: "packet-path"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/packet-path-diagnostics.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-path-evidence-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-path-evidence-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/network-path-evidence-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/vpc-connectivity-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/vpc-connectivity-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/vpc-connectivity-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# VPC addressing and packet paths"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Diagnostic rule"
+
   - id: "5.3.2"
     domain: "5"
     path: "raw/skills/5.3.2-collect-and-interpret-networking-logs.md"
     blob_sha: bfb55e23e28feaaed2c7e997b08bfc31c53495ad
     title: "Collect and interpret networking logs"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/concepts/network-logging.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "## Evidence and verification"
+          - identity: "vpc-flow-logs"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-flow-logs.md"
+            section: "# Core model"
+          - identity: "elastic-load-balancing"
+            kind: service
+            status: standalone
+            destination: "wiki/services/elastic-load-balancing.md"
+            section: "# Domain 5: Balancing and request evidence"
+          - identity: "waf"
+            kind: service
+            status: standalone
+            destination: "wiki/services/waf.md"
+            section: "# Evidence and diagnosis"
+          - identity: "cloudfront"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudfront.md"
+            section: "# Domain 5: Edge delivery and caching"
+          - identity: "route-53"
+            kind: service
+            status: standalone
+            destination: "wiki/services/route-53.md"
+            section: "# Domain 5: DNS, Resolver, and routing"
+          - identity: "route53-resolver-dns-firewall"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-resolver-dns-firewall.md"
+            section: "# Evidence and diagnosis"
+          - identity: "network-firewall"
+            kind: service
+            status: standalone
+            destination: "wiki/services/network-firewall.md"
+            section: "# Inspection layers"
+          - identity: "athena"
+            kind: service
+            status: standalone
+            destination: "wiki/services/athena.md"
+            section: "# Core model"
+          - identity: "firehose"
+            kind: service
+            status: standalone
+            destination: "wiki/services/firehose.md"
+            section: "# Core model"
+          - identity: "ecs"
+            kind: service
+            status: standalone
+            destination: "wiki/services/ecs.md"
+            section: "# Domain 5: Network request evidence"
+          - identity: "eks"
+            kind: service
+            status: standalone
+            destination: "wiki/services/eks.md"
+            section: "# Domain 5: Network request evidence"
+          - identity: "cloudwatch"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudwatch-telemetry.md"
+            section: "# Domain 5: Network monitoring"
+          - identity: "network-logging"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/network-logging.md"
+            section: "# Request breadcrumb model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-log-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-log-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/network-log-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-request-tracing.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-request-tracing.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-request-tracing.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Logs and monitoring"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Evidence layers"
+
   - id: "5.3.3"
     domain: "5"
     path: "raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md"
     blob_sha: e0a03380b4d3b4095c17c9a44fa03467db482679
     title: "Identify and remediate CloudFront caching issues"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/cloudfront-caching.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "cloudfront"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudfront.md"
+            section: "# Domain 5: Edge delivery and caching"
+          - identity: "cloudfront-caching"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/cloudfront-caching.md"
+            section: "# Core pipeline"
+          - identity: "waf"
+            kind: service
+            status: standalone
+            destination: "wiki/services/waf.md"
+            section: "# Evidence and diagnosis"
+          - identity: "cloudwatch"
+            kind: service
+            status: embedded
+            destination: "wiki/services/cloudwatch-telemetry.md"
+            section: "# Domain 5: Network monitoring"
+          - identity: "cache-pipeline"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/cloudfront-caching.md"
+            section: "# Core pipeline"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cloudfront-cache-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cloudfront-cache-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cloudfront-cache-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Edge delivery and caching"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Diagnostic rule"
+
   - id: "5.3.4"
     domain: "5"
     path: "raw/skills/5.3.4-identify-and-troubleshoot-hybrid-and-private-connectivity-issues.md"
     blob_sha: a1a3f9961750b36a7589630cd535f48ae1d6041a
     title: "Identify and troubleshoot hybrid and private connectivity issues"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/hybrid-private-connectivity.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "## Private and hybrid connectivity"
+          - identity: "direct-connect"
+            kind: service
+            status: standalone
+            destination: "wiki/services/direct-connect.md"
+            section: "# Core model"
+          - identity: "transit-gateway"
+            kind: service
+            status: standalone
+            destination: "wiki/services/transit-gateway.md"
+            section: "# Core model"
+          - identity: "privatelink"
+            kind: service
+            status: standalone
+            destination: "wiki/services/privatelink.md"
+            section: "# Core model"
+          - identity: "site-to-site-vpn"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/site-to-site-vpn.md"
+            section: "# Core model"
+          - identity: "client-vpn"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/client-vpn.md"
+            section: "# Core model"
+          - identity: "vpc-flow-logs"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-flow-logs.md"
+            section: "# Core model"
+          - identity: "vpc-reachability-analyzer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-reachability-analyzer.md"
+            section: "# Core model"
+          - identity: "route53-resolver"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-resolver.md"
+            section: "# Core model"
+          - identity: "hybrid-connectivity"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/hybrid-private-connectivity.md"
+            section: "# Layer model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/private-connectivity-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/private-connectivity-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/private-connectivity-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/hybrid-private-connectivity-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Private and hybrid connectivity"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Diagnostic rule"
+
   - id: "5.3.5"
     domain: "5"
     path: "raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md"
     blob_sha: 6492d3839ea1424db7daf2209c1fc175263ca0fc
     title: "Configure and analyze CloudWatch network monitoring services"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/cloudwatch-network-monitoring.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "cloudwatch"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudwatch-telemetry.md"
+            section: "# Domain 5: Network monitoring"
+          - identity: "cloudwatch-network-synthetic-monitor"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/cloudwatch-network-synthetic-monitor.md"
+            section: "# Core model"
+          - identity: "cloudwatch-network-flow-monitor"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/cloudwatch-network-flow-monitor.md"
+            section: "# Core model"
+          - identity: "cloudwatch-internet-monitor"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/cloudwatch-internet-monitor.md"
+            section: "# Core model"
+          - identity: "cloudwatch-synthetics"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/cloudwatch-synthetics.md"
+            section: "# Core model"
+          - identity: "vpc-reachability-analyzer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-reachability-analyzer.md"
+            section: "# Decision boundaries"
+          - identity: "vpc-flow-logs"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/vpc-flow-logs.md"
+            section: "# Interpretation"
+          - identity: "nat-gateway"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/nat-gateway.md"
+            section: "# Evidence and diagnosis"
+          - identity: "site-to-site-vpn"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/site-to-site-vpn.md"
+            section: "# Evidence and diagnosis"
+          - identity: "transit-gateway"
+            kind: service
+            status: standalone
+            destination: "wiki/services/transit-gateway.md"
+            section: "# Evidence and diagnosis"
+          - identity: "elastic-load-balancing"
+            kind: service
+            status: standalone
+            destination: "wiki/services/elastic-load-balancing.md"
+            section: "# Domain 5: Balancing and request evidence"
+          - identity: "route-53"
+            kind: service
+            status: standalone
+            destination: "wiki/services/route-53.md"
+            section: "# Domain 5: DNS, Resolver, and routing"
+          - identity: "route53-resolver-dns-firewall"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/route53-resolver-dns-firewall.md"
+            section: "# Evidence and diagnosis"
+          - identity: "network-firewall"
+            kind: service
+            status: standalone
+            destination: "wiki/services/network-firewall.md"
+            section: "# Evidence and diagnosis"
+          - identity: "global-accelerator"
+            kind: service
+            status: standalone
+            destination: "wiki/services/global-accelerator.md"
+            section: "# Evidence and diagnosis"
+          - identity: "network-monitoring"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/cloudwatch-network-monitoring.md"
+            section: "# Monitor boundary"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-monitor-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/network-monitor-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/network-monitor-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-performance-diagnosis.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-performance-diagnosis.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/network-performance-diagnosis.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-5-exam-traps.md"
-        section: "# Traps"
+        section: "# Logs and monitoring"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/network-evidence-and-delivery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Evidence layers"

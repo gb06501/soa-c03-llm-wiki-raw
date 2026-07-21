@@ -3,14 +3,16 @@ type: AWS Service
 title: CloudWatch
 service_id: cloudwatch
 description: Collects and relates metrics, logs, traces, alarms, dashboards, and operational evidence.
-tags: [soa-c03, domain-1, cloudwatch, observability]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["1.1.1", "1.1.2", "1.2.1"]
-domain_ids: ["1"]
+tags: [soa-c03, domain-1, cloudwatch, observability, domain-5, network-monitoring]
+timestamp: 2026-07-21T22:45:00+02:00
+skill_ids: ["1.1.1", "1.1.2", "1.2.1", "5.3.2", "5.3.5"]
+domain_ids: ["1", "5"]
 sources:
   - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
+  - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
+  - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
 status: verified
 ---
 
@@ -74,9 +76,21 @@ CloudWatch Metrics answers quantitative resource and application questions. Clou
 - [CloudWatch alarms](cloudwatch-alarms.md)
 - [Missing telemetry](../playbooks/missing-telemetry.md)
 
+# Domain 5: Network monitoring
+
+CloudWatch network evidence includes configured hybrid probes, actual supported flow performance, public internet health events, scripted canaries, component metrics, alarms, dashboards, and Logs Insights.
+
+Choose the monitor by question: Network Synthetic Monitor for configured paths, Network Flow Monitor for real TCP flows, Internet Monitor for geography/ASN public impact, Synthetics for application journeys, and component metrics/logs for NAT, VPN, TGW, ELB, Route 53, firewall, and accelerator diagnosis.
+
+Preserve AZ, tunnel, attachment, target, geography, ASN, probe, and flow dimensions. Metrics detect and scope symptoms; logs, configuration, and application evidence establish cause and recovery.
+
+- [Network monitor selection](../decision-guides/network-monitor-selection.md)
+- [Network performance diagnosis](../playbooks/network-performance-diagnosis.md)
+
 # Sources
 
 - [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
 - [Skill 1.1.2](../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
-
+- [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
+- [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)

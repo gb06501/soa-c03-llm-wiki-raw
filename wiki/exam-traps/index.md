@@ -15,3 +15,7 @@
 ## Domain 4: Security and compliance
 
 - [Domain 4 exam traps](domain-4-exam-traps.md) - Corrects identity, governance, compliance, classification, encryption, secrets, and finding-response misconceptions.
+
+## Domain 5: Networking and content delivery
+
+- [Domain 5 exam traps](domain-5-exam-traps.md) - Corrects recurring VPC, private connectivity, network protection, cost, DNS, edge, logging, caching, and monitoring misconceptions.

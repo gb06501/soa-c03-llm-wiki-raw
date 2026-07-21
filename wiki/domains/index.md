@@ -8,4 +8,4 @@
 | [Domain 2: Reliability and Business Continuity](domain-2.md) | 9 | 31 | 9 needs reconciliation |
 | [Domain 3: Deployment, Provisioning, and Automation](domain-3.md) | 8 | 46 | 8 validated |
 | [Domain 4: Security and Compliance](domain-4.md) | 10 | 58 | 10 validated |
-| [Domain 5: Networking and Content Delivery](domain-5.md) | 12 | 0 | 12 planned |
+| [Domain 5: Networking and Content Delivery](domain-5.md) | 12 | 67 | 12 validated |
