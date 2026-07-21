@@ -1,5 +1,14 @@
 # Wiki update log
 
+## [2026-07-21] generate | Domain and skill navigation
+
+- **Navigation:** Added deterministic views for all five domains and all 53 skill IDs.
+- **Traceability:** Each skill view links its immutable raw source, coverage status, implemented knowledge, planned knowledge, and processing state.
+- **Retrieval:** Each domain view groups skills and generated pages while keeping planned destinations non-clickable.
+- **Governance:** Kept frontmatter identifiers machine-readable and treated tags as search metadata rather than generating low-value tag pages.
+- **Automation:** Added a reproducible navigation generator and freshness check.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] repair | Repository-wide navigation consistency
 
 - **Root cause:** Bundle-root links such as `/concepts/...` were validated as if `wiki/` were a web root, but GitHub renders them from the site root.

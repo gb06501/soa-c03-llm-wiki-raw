@@ -6,6 +6,7 @@ on:
       - "wiki/**"
       - "AGENTS.md"
       - "scripts/validate_wiki_links.py"
+      - "scripts/generate_navigation.py"
       - ".github/workflows/wiki-navigation.yml"
   push:
     branches: [main]
@@ -13,6 +14,7 @@ on:
       - "wiki/**"
       - "AGENTS.md"
       - "scripts/validate_wiki_links.py"
+      - "scripts/generate_navigation.py"
       - ".github/workflows/wiki-navigation.yml"
 
 permissions:
@@ -23,5 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify generated domain and skill views
+        run: python3 scripts/generate_navigation.py --check
       - name: Validate complete wiki link graph
         run: python3 scripts/validate_wiki_links.py
