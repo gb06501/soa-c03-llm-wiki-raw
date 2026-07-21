@@ -51,8 +51,7 @@ When external research is requested:
 | `wiki/` | Agent-maintained | Cross-linked, generated knowledge |
 | `wiki/index.md` | Agent-maintained | Progressive-disclosure catalogue |
 | `wiki/log.md` | Agent-maintained | Append-only history of ingests and material updates |
-| `state/manifest.yaml` | Agent-maintained | Source versions and processing state |
-| `state/coverage.yaml` | Agent-maintained | Corpus-wide skill, knowledge-facet, and page coverage |
+| `state/manifest.yaml` | Agent-maintained | Processing state and source-to-output mapping |
 | `AGENTS.md` | Human and agent co-maintained | Operating contract for the wiki |
 
 The raw layer and generated wiki layer must remain visibly separate.
@@ -208,40 +207,6 @@ Do not:
 
 Prefer synthesis across skills. For example, an RDS availability page may draw from performance, fault-tolerance, backup, deployment, security, and networking skills.
 
-Compactness does not override coverage. A decision boundary may live inside a service page instead of a standalone Decision Guide only when `state/coverage.yaml` identifies the containing page and section. Do not count a source as covered merely because it appears in frontmatter.
-
-## Coverage model
-
-Plan from the entire 53-skill corpus before generating or completing any individual domain. The global plan establishes stable concept identities and reveals cross-domain relationships; implementation may then proceed in reviewable domain-sized batches.
-
-For every raw skill, inventory these knowledge facets:
-
-- services, features, and mechanisms;
-- scenario clues and requirements;
-- decision boundaries and rejected alternatives;
-- comparisons;
-- evidence, metrics, logs, and diagnostic sequence;
-- remediation choices and safety controls;
-- failure modes and verification;
-- exam traps and exceptions;
-- cross-domain dependencies.
-
-Record every applicable facet in `state/coverage.yaml`. Each entry must map to one of:
-
-- `standalone`: represented by a dedicated wiki page;
-- `embedded`: represented by a named section in another page;
-- `planned`: identified but not yet generated;
-- `gap`: insufficient or contradictory source support;
-- `not_applicable`: reviewed and intentionally omitted, with a reason.
-
-A skill is `validated` only when every applicable facet is mapped and every material decision boundary has a page-and-section destination. Source citation alone is traceability, not coverage.
-
-Coverage is evaluated at three levels:
-
-1. **Skill coverage** — all applicable facets from each raw file are accounted for.
-2. **Domain coverage** — domain-specific services, decisions, comparisons, playbooks, traps, and learning paths are navigable.
-3. **Corpus coverage** — cross-domain concepts are synthesized once, duplicates are reconciled, and global indexes expose them.
-
 ## Cross-linking
 
 - Use standard Markdown links between related wiki pages.
@@ -284,35 +249,21 @@ For a read-only question:
 6. State uncertainty or missing coverage.
 7. Do not modify the repository unless the user explicitly asks to persist the result.
 
-### 2. Plan coverage and bootstrap domains
+### 2. Bootstrap a domain
 
-Use a **global-plan, incremental-build** workflow.
+Process one exam domain at a time unless the user explicitly requests a full batch.
 
-Before the first domain bootstrap or whenever the source corpus changes materially:
-
-1. Inventory all 53 raw skills, not only the requested domain.
-2. Extract candidate services, concepts, decisions, comparisons, playbooks, traps, and cross-domain dependencies.
-3. Normalize synonyms and choose stable page identities.
-4. Create or update the corpus-wide `state/coverage.yaml`.
-5. Propose the global page plan and identify which pages span domains.
-6. Mark unbuilt destinations as `planned`; do not call them covered.
-
-For each domain-sized implementation batch:
-
-1. Read the global coverage plan and every raw skill in the domain.
-2. Reassess related pages from other domains so shared concepts are updated rather than duplicated.
-3. Create or update pages for every applicable facet.
-4. Map every decision boundary to a standalone Decision Guide or a named decision section.
-5. Add meaningful cross-links and update all relevant indexes.
-6. Append the operation to `wiki/log.md`.
-7. Update `state/manifest.yaml` and `state/coverage.yaml`.
-8. Run structural and semantic quality gates.
-9. Report planned, implemented, embedded, unsupported, and intentionally omitted items separately.
-10. Use a dedicated branch and draft pull request for human review.
-
-After the final domain batch, run a corpus reconciliation pass across all 53 skills. Merge duplicate identities, repair cross-domain links, verify global navigation, and keep unresolved gaps explicit.
-
-Do not generate every page in one unreviewed batch merely because planning uses the whole corpus.
+1. Inventory every raw skill in the domain.
+2. Read existing wiki indexes and related pages.
+3. Identify reusable services, concepts, comparisons, playbooks, and traps.
+4. Propose the page plan before a large generation batch.
+5. Create or update pages.
+6. Add meaningful cross-links.
+7. Update indexes.
+8. Append the operation to `wiki/log.md`.
+9. Update `state/manifest.yaml`.
+10. Run the quality gates.
+11. Use a dedicated branch and open a draft PR for human review.
 
 ### 3. Ingest a changed or new source
 
@@ -386,10 +337,10 @@ Create `state/manifest.yaml` during the first bootstrap. Track, per raw file:
 - Git blob SHA or stable content hash;
 - processed timestamp;
 - generated or updated wiki pages;
-- processing status: `inventoried`, `planned`, `drafted`, or `validated`;
+- processing status;
 - unresolved gaps or contradictions.
 
-Use the manifest to avoid reprocessing unchanged sources blindly. Use `state/coverage.yaml` for semantic completeness; do not overload the manifest with facet-level coverage.
+Use the manifest to avoid reprocessing unchanged sources blindly.
 
 ### Log
 
@@ -435,21 +386,13 @@ Before declaring generation complete, verify:
 9. The result improves cross-skill understanding rather than copying source text.
 10. The content is concise enough to study but complete enough to make operational decisions.
 11. Exam-critical exceptions and misleading alternatives are visible.
-12. Every raw skill and applicable knowledge facet appears in `state/coverage.yaml`.
-13. Every material decision boundary maps to a standalone guide or a named page section.
-14. No item marked `standalone` or `embedded` points to a missing page or section.
-15. Items marked `planned`, `gap`, or `not_applicable` are reported and justified.
-16. Domain completion is not inferred from source citation counts or page counts.
-17. A final corpus reconciliation checks cross-domain duplication and missing global navigation.
-18. The pull request reports unresolved uncertainty honestly.
+12. The pull request reports unresolved uncertainty honestly.
 
 ## Definition of done
 
 A knowledge-generation task is done when:
 
-- the requested source scope is fully processed at facet level, not merely cited;
-- all applicable decision boundaries have explicit destinations;
-- `state/coverage.yaml` contains no unexplained omissions for the requested scope;
+- the requested source scope is fully processed;
 - generated pages are source-grounded and cross-linked;
 - indexes, log, and manifest are updated;
 - quality gates pass;
@@ -464,17 +407,9 @@ Examples of effective instructions:
 
 > Using only this repository, answer the following SOA-C03 question. Start with the wiki, fall back to raw skills, cite file paths and skill IDs, and state any missing coverage.
 
-### Plan the corpus
-
-> Inventory all 53 skills and create the global coverage map and page plan according to AGENTS.md. Do not generate content yet. Account for services, decisions, comparisons, evidence, remediation, playbooks, traps, and cross-domain concepts.
-
 ### Bootstrap
 
-> Bootstrap Domain 1 from the global coverage plan according to AGENTS.md. Treat raw as immutable, account for every applicable facet and decision boundary, generate the OKF wiki on a branch, run structural and semantic quality gates, and open a draft PR.
-
-### Reconcile the corpus
-
-> After all domain batches, reconcile the complete wiki against all 53 skills. Resolve duplicate concepts, verify cross-domain navigation, report every planned or unsupported facet, and do not declare corpus completion while unexplained coverage gaps remain.
+> Bootstrap Domain 1 according to AGENTS.md. Treat raw as immutable, propose the page plan, generate the OKF wiki on a branch, run the quality gates, and open a draft PR.
 
 ### Persist an insight
 
