@@ -57,3 +57,21 @@
 - [Deployment strategy selection](deployment-strategy-selection.md) - Selects all-at-once, rolling, immutable, blue/green, canary, or linear deployment from risk and capacity clues.
 - [Operational automation service selection](operational-automation-service-selection.md) - Selects the correct Systems Manager capability for fleet operations and configuration.
 - [Event-driven automation selection](event-driven-automation-selection.md) - Selects event routing, buffering, compute, workflows, retries, and failure controls from automation clues.
+
+## Domain 4: Security and compliance
+
+### Identity and governance
+
+- [IAM principal and policy selection](iam-principal-and-policy-selection.md) - Chooses identities, temporary credentials, and policy locations for workforce, workload, service, and cross-account access.
+- [Access denial evidence selection](access-denial-evidence-selection.md) - Selects decisive identity, trust, resource, boundary, KMS, and endpoint evidence.
+- [Multi-account guardrail selection](multi-account-guardrail-selection.md) - Chooses account structure, federation, preventive limits, detective controls, and delegated administration.
+- [Security check remediation priority](security-check-remediation-priority.md) - Ranks advisory checks by exposure, privilege, data impact, freshness, and remediation readiness.
+- [Compliance monitoring selection](compliance-monitoring-selection.md) - Chooses preventive, detective, aggregation, and remediation controls.
+
+### Data protection and findings
+
+- [Data protection control selection](data-protection-control-selection.md) - Maps classification requirements to discovery, access, encryption, retention, and response.
+- [Encryption at rest selection](encryption-at-rest-selection.md) - Chooses key ownership and service encryption patterns with safe migration and recovery.
+- [TLS certificate selection](tls-certificate-selection.md) - Chooses public, imported, or private certificates and endpoint termination patterns.
+- [Secrets storage selection](secrets-storage-selection.md) - Chooses Secrets Manager, Parameter Store, or direct KMS use by lifecycle and delivery requirements.
+- [Security finding triage](security-finding-triage.md) - Prioritizes and routes source findings using risk and operational context.
