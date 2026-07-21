@@ -39,8 +39,8 @@ Confirm the intended product version and constraints, successful provisioned-pro
 
 # Related concepts
 
-- [CloudFormation](/services/cloudformation.md)
-- [Infrastructure provisioning selection](/decision-guides/infrastructure-provisioning-selection.md)
+- [CloudFormation](cloudformation.md)
+- [Infrastructure provisioning selection](../decision-guides/infrastructure-provisioning-selection.md)
 
 # Sources
 

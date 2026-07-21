@@ -46,8 +46,8 @@ Confirm participant use or successful stack instances in every intended account/
 
 # Related concepts
 
-- [Cross-account provisioning](/concepts/cross-account-resource-provisioning.md)
-- [Selection guide](/decision-guides/resource-sharing-and-provisioning-selection.md)
+- [Cross-account provisioning](../concepts/cross-account-resource-provisioning.md)
+- [Selection guide](../decision-guides/resource-sharing-and-provisioning-selection.md)
 
 # Sources
 

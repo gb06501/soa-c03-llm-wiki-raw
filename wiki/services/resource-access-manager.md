@@ -39,8 +39,8 @@ Use StackSets when separate infrastructure must be created in each target. Use a
 
 # Related concepts
 
-- [Cross-account provisioning](/concepts/cross-account-resource-provisioning.md)
-- [Provisioning selection](/decision-guides/resource-sharing-and-provisioning-selection.md)
+- [Cross-account provisioning](../concepts/cross-account-resource-provisioning.md)
+- [Provisioning selection](../decision-guides/resource-sharing-and-provisioning-selection.md)
 
 # Sources
 

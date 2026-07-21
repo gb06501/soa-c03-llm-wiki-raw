@@ -47,8 +47,8 @@ Confirm nodes are online, every intended target completed, output and compliance
 
 # Related concepts
 
-- [Operational automation](/concepts/operational-automation.md)
-- [Service selection](/decision-guides/operational-automation-service-selection.md)
+- [Operational automation](../concepts/operational-automation.md)
+- [Service selection](../decision-guides/operational-automation-service-selection.md)
 
 # Sources
 

@@ -1,23 +1,25 @@
 # Cross-skill concepts
 
-- [Observability signal selection](observability-signal-selection.md) - choose evidence from the question being asked.
-- [Evidence-to-remediation loop](evidence-to-remediation-loop.md) - prove cause before action and recovery after action.
-- [Safe automation](safe-automation.md) - constrain automated changes and prevent loops or repeated damage.
+## Domain 1: Monitoring and performance optimization
 
-## Domain 2
+- [Observability signal selection](observability-signal-selection.md) - Chooses the evidence source from the operational question instead of from a preferred tool.
+- [Evidence-to-remediation loop](evidence-to-remediation-loop.md) - Diagnoses scope and cause before applying the smallest safe change and verifying recovery.
+- [Safe automation](safe-automation.md) - Constrains automated operational changes with least privilege, bounded execution, idempotency, and verification.
 
-- [Fault tolerance](fault-tolerance.md) - process, AZ, and Region failure boundaries.
-- [Database recovery](database-recovery.md) - RPO, RTO, restore, cutover, and validation.
-- [Storage versioning and recovery](storage-versioning.md) - S3 and FSx historical protection.
-- [Disaster recovery](disaster-recovery.md) - strategy, data, traffic, validation, and failback.
-- [Scaling, resilience, and recovery](scaling-resilience-and-recovery.md) - the complete Domain 2 operating model.
+## Domain 2: Reliability and business continuity
 
-## Domain 3
+- [Fault tolerance](fault-tolerance.md) - Maps process, Availability Zone, and Region failures to prepared capacity, health, decoupling, and traffic controls.
+- [Database recovery](database-recovery.md) - Connects RPO, RTO, restore point, resource recreation, cutover, and validation for RDS, Aurora, and DynamoDB.
+- [Storage versioning and recovery](storage-versioning.md) - Explains S3 versions, Object Lock, replication, lifecycle, and FSx-specific historical recovery controls.
+- [Disaster recovery](disaster-recovery.md) - Connects DR strategy, data method, infrastructure readiness, traffic movement, validation, and failback.
+- [Scaling, resilience, and recovery](scaling-resilience-and-recovery.md) - Connects capacity response, fault containment, durable recovery, and traffic restoration across Domain 2.
 
-- [Deployment diagnostics](deployment-diagnostics.md) - first-failure evidence and safe recovery.
-- [Cross-account and multi-Region provisioning](cross-account-resource-provisioning.md) - RAM, StackSets, and ownership.
-- [Deployment strategies](deployment-strategies.md) - blast radius, coexistence, traffic, health, and rollback.
-- [Terraform and Git deployment controls](third-party-deployment-tools.md) - configuration, state, plan, and release identity.
-- [Systems Manager operational automation](operational-automation.md) - managed nodes and fleet operations.
-- [Event-driven automation](event-driven-automation.md) - routing, permissions, retry, idempotency, and loops.
-- [Deployment and operational automation](deployment-and-operational-automation.md) - the complete Domain 3 operating model.
+## Domain 3: Deployment, provisioning, and automation
+
+- [Deployment diagnostics](deployment-diagnostics.md) - Finds the earliest failing deployment layer, preserves state, and selects the smallest safe correction.
+- [Cross-account and multi-Region provisioning](cross-account-resource-provisioning.md) - Separates shared-resource use from repeated infrastructure deployment across accounts and Regions.
+- [Deployment strategies](deployment-strategies.md) - Compares deployment blast radius, coexistence, traffic movement, health gates, capacity, and rollback.
+- [Terraform and Git deployment controls](third-party-deployment-tools.md) - Explains Terraform configuration, state, plan, locking, ownership, and reviewed Git release identity.
+- [Systems Manager operational automation](operational-automation.md) - Selects and governs Systems Manager capabilities for fleet commands, desired state, patching, maintenance, sessions, and inventory.
+- [Event-driven automation](event-driven-automation.md) - Connects event sources, filters, permissions, targets, retries, failure capture, idempotency, and loop prevention.
+- [Deployment and operational automation](deployment-and-operational-automation.md) - Unifies artifact identity, infrastructure ownership, rollout, event and fleet automation, evidence, and recovery across Domain 3.

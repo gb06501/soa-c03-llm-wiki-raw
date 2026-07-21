@@ -48,8 +48,8 @@ Confirm state lock release, state-to-AWS mapping, correct account/Region, no une
 
 # Related concepts
 
-- [Terraform and Git controls](/concepts/third-party-deployment-tools.md)
-- [Tool selection](/decision-guides/deployment-tool-selection.md)
+- [Terraform and Git controls](../concepts/third-party-deployment-tools.md)
+- [Tool selection](../decision-guides/deployment-tool-selection.md)
 
 # Sources
 

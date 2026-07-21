@@ -41,9 +41,9 @@ For `UPDATE_ROLLBACK_FAILED`, repair the blocking permission, dependency, or res
 
 # Related concepts
 
-- [CloudFormation and CDK lifecycle](/services/cloudformation-and-cdk.md)
-- [CloudFormation deployment failure](/playbooks/cloudformation-deployment-failure.md)
-- [Cross-account provisioning](/concepts/cross-account-resource-provisioning.md)
+- [CloudFormation and CDK lifecycle](cloudformation-and-cdk.md)
+- [CloudFormation deployment failure](../playbooks/cloudformation-deployment-failure.md)
+- [Cross-account provisioning](../concepts/cross-account-resource-provisioning.md)
 
 # Sources
 

@@ -45,8 +45,8 @@ Confirm traffic is on the intended version, errors/latency and business results 
 
 # Related concepts
 
-- [Deployment strategies](/concepts/deployment-strategies.md)
-- [Strategy selection](/decision-guides/deployment-strategy-selection.md)
+- [Deployment strategies](../concepts/deployment-strategies.md)
+- [Strategy selection](../decision-guides/deployment-strategy-selection.md)
 
 # Sources
 

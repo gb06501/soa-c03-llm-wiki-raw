@@ -37,8 +37,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [CloudFormation and CDK](/services/cloudformation-and-cdk.md)
-- [CloudFormation failure](/playbooks/cloudformation-deployment-failure.md)
+- [CloudFormation and CDK](../services/cloudformation-and-cdk.md)
+- [CloudFormation failure](../playbooks/cloudformation-deployment-failure.md)
 
 # Sources
 

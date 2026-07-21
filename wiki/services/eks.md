@@ -38,8 +38,8 @@ Confirm desired replicas are scheduled and ready, the intended image digest is r
 
 # Related concepts
 
-- [Deployment diagnostics](/concepts/deployment-diagnostics.md)
-- [Deployment failure](/playbooks/deployment-failure.md)
+- [Deployment diagnostics](../concepts/deployment-diagnostics.md)
+- [Deployment failure](../playbooks/deployment-failure.md)
 
 # Sources
 

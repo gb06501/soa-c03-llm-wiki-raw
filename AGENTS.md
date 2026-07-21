@@ -79,6 +79,13 @@ wiki/
 
 Create subdirectory `index.md` files when a directory has enough pages that progressive disclosure becomes useful.
 
+For every domain-aware catalogue:
+
+- use `## Domain N: Domain name` for each implemented domain;
+- use the same heading depth and entry format for every domain;
+- use optional `###` topic groups consistently beneath domain headings;
+- never leave Domain 1 entries unheaded while later domains have explicit headings.
+
 ### Page types
 
 Use a small, stable vocabulary:
@@ -267,12 +274,12 @@ Coverage is evaluated at three levels:
 ## Cross-linking
 
 - Use standard Markdown links between related wiki pages.
-- Prefer bundle-root-relative links, for example `[RDS Multi-AZ](/services/rds-multi-az.md)`.
+- Use file-relative links that GitHub can render, for example `[RDS](../services/rds-performance.md)`.
 - Link a concept on its first meaningful mention.
 - Add a `Related concepts` section when it materially improves navigation.
 - Links must express useful relationships, not merely inflate graph density.
 - Avoid isolated pages. If a page is intentionally isolated, record why in the log.
-- Broken links may represent planned knowledge, but must be reported as knowledge gaps.
+- Never publish a clickable link to a missing page. Record planned knowledge as plain text in `state/coverage.yaml` or a Knowledge Gap page until the destination exists.
 
 ## Source traceability
 
@@ -386,7 +393,7 @@ Check for:
 - unsupported claims;
 - missing or invalid YAML frontmatter;
 - missing `type`, title, description, tags, timestamp, status, or sources;
-- broken internal links;
+- broken internal links across the complete `wiki/` tree, resolved exactly as GitHub renders them;
 - duplicate concept identities;
 - `AWS Service` titles absent from the service registry;
 - `AWS Feature` pages without valid parent services;
@@ -455,7 +462,7 @@ Before declaring generation complete, verify:
 2. Every generated concept has valid OKF frontmatter.
 3. Every generated claim has traceable source support or is labelled as inference.
 4. All declared source files exist.
-5. Internal links resolve, except explicitly recorded planned gaps.
+5. Every Markdown link in the complete `wiki/` tree resolves from its source file in GitHub; validation must not be limited to changed files.
 6. Indexes include new and changed pages.
 7. The update log and manifest are current.
 8. No duplicate concept page was created.
@@ -475,6 +482,8 @@ Before declaring generation complete, verify:
 22. Generic concept pages are not counted as standalone service coverage.
 23. Shared cross-domain service pages incorporate the new source and skill ID, not only a link.
 24. Validation reports atomic item counts, not only facet-category counts.
+25. Domain-aware indexes use the same `## Domain N: Domain name` structure for every implemented domain.
+26. Run `python3 scripts/validate_wiki_links.py`; it must report zero invalid links.
 
 ## Definition of done
 

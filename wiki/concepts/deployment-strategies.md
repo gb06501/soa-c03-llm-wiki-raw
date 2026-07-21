@@ -38,9 +38,9 @@ Traffic rollback does not undo database writes or destructive schema changes.
 
 # Related concepts
 
-- [Strategy selection](/decision-guides/deployment-strategy-selection.md)
-- [Deployment rollback](/playbooks/deployment-rollback.md)
-- [Image management](/services/image-management.md)
+- [Strategy selection](../decision-guides/deployment-strategy-selection.md)
+- [Deployment rollback](../playbooks/deployment-rollback.md)
+- [Image management](../services/image-management.md)
 
 # Sources
 

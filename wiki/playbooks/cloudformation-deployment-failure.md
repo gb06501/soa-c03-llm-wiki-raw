@@ -46,8 +46,8 @@ Reach a stable stack status, confirm intended physical resources and retained da
 
 # Related concepts
 
-- [CloudFormation and CDK](/services/cloudformation-and-cdk.md)
-- [Deployment diagnostics](/concepts/deployment-diagnostics.md)
+- [CloudFormation and CDK](../services/cloudformation-and-cdk.md)
+- [Deployment diagnostics](../concepts/deployment-diagnostics.md)
 
 # Sources
 

@@ -49,8 +49,8 @@ Use authentication errors, repository and KMS denials, image/tag/digest lookup, 
 
 # Related concepts
 
-- [Image selection](/decision-guides/machine-container-image-selection.md)
-- [Deployment rollback](/playbooks/deployment-rollback.md)
+- [Image selection](../decision-guides/machine-container-image-selection.md)
+- [Deployment rollback](../playbooks/deployment-rollback.md)
 
 # Sources
 

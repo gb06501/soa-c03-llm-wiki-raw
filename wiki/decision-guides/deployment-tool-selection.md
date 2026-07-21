@@ -37,8 +37,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [Third-party tools](/concepts/third-party-deployment-tools.md)
-- [Third-party failure](/playbooks/third-party-deployment-failure.md)
+- [Third-party tools](../concepts/third-party-deployment-tools.md)
+- [Third-party failure](../playbooks/third-party-deployment-failure.md)
 
 # Sources
 

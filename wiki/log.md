@@ -1,5 +1,14 @@
 # Wiki update log
 
+## [2026-07-21] repair | Repository-wide navigation consistency
+
+- **Root cause:** Bundle-root links such as `/concepts/...` were validated as if `wiki/` were a web root, but GitHub renders them from the site root.
+- **Repair:** Converted 129 links in 42 pages to GitHub-safe file-relative paths.
+- **Indexes:** Standardized Domain 1-3 headings and entry formats across the root, concept, decision-guide, playbook, exam-trap, and learning catalogues.
+- **Governance:** Required full-tree link validation and prohibited clickable links to destinations that do not exist.
+- **Automation:** Added a repository validator and pull-request quality workflow.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] reconcile | Canonical service coverage correction
 
 - **Root cause:** The first coverage schema allowed many distinct services to collapse into one broad facet destination.

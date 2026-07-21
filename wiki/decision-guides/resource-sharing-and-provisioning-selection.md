@@ -37,8 +37,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [Cross-account provisioning](/concepts/cross-account-resource-provisioning.md)
-- [Provisioning failure](/playbooks/cross-account-provisioning-failure.md)
+- [Cross-account provisioning](../concepts/cross-account-resource-provisioning.md)
+- [Provisioning failure](../playbooks/cross-account-provisioning-failure.md)
 
 # Sources
 

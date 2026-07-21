@@ -45,9 +45,9 @@ Make side effects idempotent, bound concurrency and retries, protect downstream 
 
 # Related concepts
 
-- [Event-driven automation](/concepts/event-driven-automation.md)
-- [Deployment strategy selection](/decision-guides/deployment-strategy-selection.md)
-- [Event-driven failure](/playbooks/event-driven-automation-failure.md)
+- [Event-driven automation](../concepts/event-driven-automation.md)
+- [Deployment strategy selection](../decision-guides/deployment-strategy-selection.md)
+- [Event-driven failure](../playbooks/event-driven-automation-failure.md)
 
 # Sources
 

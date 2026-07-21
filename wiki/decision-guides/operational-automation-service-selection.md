@@ -38,8 +38,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [Operational automation](/concepts/operational-automation.md)
-- [Automation failure](/playbooks/automation-execution-failure.md)
+- [Operational automation](../concepts/operational-automation.md)
+- [Automation failure](../playbooks/automation-execution-failure.md)
 
 # Sources
 
