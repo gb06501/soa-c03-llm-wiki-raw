@@ -24,6 +24,15 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 - [Exam traps](exam-traps/index.md) - misleading reliability and recovery alternatives.
 - [Domain 2 learning path](learning/paths/domain-2-learning-path.md) - ordered study sequence.
 
+## Domain 3: Deployment, provisioning, and automation
+
+- [Services and features](services/index.md) - image and infrastructure-as-code lifecycle.
+- [Cross-skill concepts](concepts/index.md) - diagnostics, deployment strategies, multi-account provisioning, and automation.
+- [Decision guides](decision-guides/index.md) - artifact, tooling, rollout, fleet, and event choices.
+- [Troubleshooting playbooks](playbooks/index.md) - evidence-first deployment and automation recovery.
+- [Exam traps](exam-traps/domain-3-exam-traps.md) - misleading deployment and automation alternatives.
+- [Domain 3 learning path](learning/paths/domain-3-learning-path.md) - ordered study sequence.
+
 ## Maintenance
 
 - [Update log](log.md)
