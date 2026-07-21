@@ -19,3 +19,21 @@
 
 - [Storage service selection](storage-service-selection.md) - choose object, block, file, parallel, or hybrid storage.
 - [Shared storage performance](shared-storage-performance.md) - choose EFS/FSx family and performance controls.
+
+## Domain 2: Scaling and caching
+
+- [Compute scaling selection](compute-scaling-selection.md)
+- [Caching selection](caching-selection.md)
+- [Database scaling selection](database-scaling-selection.md)
+
+## Domain 2: Availability
+
+- [Load balancer and health-check selection](load-balancer-health-check-selection.md)
+- [Fault-tolerance pattern selection](fault-tolerance-pattern-selection.md)
+
+## Domain 2: Recovery
+
+- [Backup protection selection](backup-protection-selection.md)
+- [Database restore selection](database-restore-selection.md)
+- [Versioning, backup, and Object Lock selection](versioning-backup-object-lock-selection.md)
+- [Disaster-recovery strategy selection](dr-strategy-selection.md)

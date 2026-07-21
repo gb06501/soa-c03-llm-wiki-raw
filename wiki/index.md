@@ -15,6 +15,15 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 - [Exam traps](exam-traps/index.md) - tempting wrong conclusions and corrective mental models.
 - [Learning paths](learning/index.md) - ordered study sequences.
 
+## Domain 2: Reliability and business continuity
+
+- [Services and features](services/index.md) - scaling, caching, health checks, and backup services.
+- [Cross-skill concepts](concepts/index.md) - fault tolerance, recovery, versioning, and DR.
+- [Decision guides](decision-guides/index.md) - capacity, availability, protection, and recovery choices.
+- [Troubleshooting playbooks](playbooks/index.md) - evidence-first scaling, health, backup, and failover diagnosis.
+- [Exam traps](exam-traps/index.md) - misleading reliability and recovery alternatives.
+- [Domain 2 learning path](learning/paths/domain-2-learning-path.md) - ordered study sequence.
+
 ## Maintenance
 
 - [Update log](log.md)
