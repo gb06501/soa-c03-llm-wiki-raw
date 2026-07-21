@@ -1,14 +1,14 @@
 version: 1
-updated_at: "2026-07-21T12:00:00+02:00"
+updated_at: "2026-07-21T13:00:00+02:00"
 scope: "SOA-C03 complete 53-skill corpus"
 method: "global-plan-incremental-build"
 summary:
   total_skills: 53
-  validated_skills: 14
-  planned_skills: 39
+  validated_skills: 23
+  planned_skills: 30
   domains:
     "1": validated
-    "2": planned
+    "2": validated
     "3": planned
     "4": planned
     "5": planned
@@ -621,388 +621,397 @@ skills:
     path: "raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md"
     blob_sha: 9e37b5cbaee9921bfe200c0189bd2aecfc033c8d
     title: "Configure and manage scaling mechanisms in compute environments"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/services/compute-scaling.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/compute-scaling-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/compute-scaling-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/compute-scaling-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/scaling-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/scaling-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/scaling-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Scaling and caching"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.1.2"
     domain: "2"
     path: "raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md"
     blob_sha: 73d9bd8bd6c6e3b01d33f7d5b827b34c05da13d6
     title: "Implement caching for dynamic scalability"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/services/caching.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/caching-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/caching-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/caching-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cache-performance-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cache-performance-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cache-performance-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Scaling and caching"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.1.3"
     domain: "2"
     path: "raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md"
     blob_sha: 8baefb31c3b270b7da6dbab6686552d56f5eccfb
     title: "Configure and manage scaling in AWS managed databases"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/services/managed-database-scaling.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/database-scaling-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/database-scaling-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/database-scaling-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/database-scaling-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/database-scaling-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/database-scaling-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Database scaling"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.2.1"
     domain: "2"
     path: "raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md"
     blob_sha: ea003bff45ec5e4de1e185ddc4e074d00ae65b03
     title: "Configure and troubleshoot ELB and Route 53 health checks"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/services/load-balancing-and-health-checks.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/load-balancer-health-check-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/load-balancer-health-check-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/load-balancer-health-check-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Health and fault tolerance"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.2.2"
     domain: "2"
     path: "raw/skills/2.2.2-configure-fault-tolerant-systems.md"
     blob_sha: 201bea01798712d69de370ea6ffa72b3b17ac636
     title: "Configure fault-tolerant systems"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/concepts/fault-tolerance.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/fault-tolerance-pattern-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/fault-tolerance-pattern-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/fault-tolerance-pattern-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/failure-boundary-diagnosis.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/failure-boundary-diagnosis.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/failure-boundary-diagnosis.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Health and fault tolerance"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.3.1"
     domain: "2"
     path: "raw/skills/2.3.1-automate-snapshots-and-backups.md"
     blob_sha: d0277df7b96a0e2710ffaf6ac7126c0df5f40bbf
     title: "Automate snapshots and backups"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/services/aws-backup.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/backup-protection-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/backup-protection-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/backup-protection-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/backup-job-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/backup-job-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/backup-job-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Backup and restore"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.3.2"
     domain: "2"
     path: "raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md"
     blob_sha: 4644334be57772bf741d4a16a085657016046425
     title: "Restore databases to meet RTO, RPO, and cost requirements"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/concepts/database-recovery.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/database-restore-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/database-restore-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/database-restore-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/database-restore-and-cutover.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/database-restore-and-cutover.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/database-restore-and-cutover.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Backup and restore"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.3.3"
     domain: "2"
     path: "raw/skills/2.3.3-implement-versioning-for-storage-services.md"
     blob_sha: b11f2b74c372b8c641d6ba2f5894636511c7e13d
     title: "Implement versioning for storage services"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/concepts/storage-versioning.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/storage-version-recovery.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/storage-version-recovery.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/storage-version-recovery.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Versioning and disaster recovery"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "2.3.4"
     domain: "2"
     path: "raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md"
     blob_sha: 6663abbe42d523c4788fedc5954c18e61a38065c
     title: "Follow disaster-recovery procedures and best practices"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
+        status: standalone
         destination: "wiki/concepts/disaster-recovery.md"
         section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/dr-strategy-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/dr-strategy-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/dr-strategy-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/disaster-recovery-failover.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/disaster-recovery-failover.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/disaster-recovery-failover.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-2-exam-traps.md"
-        section: "# Traps"
+        section: "# Versioning and disaster recovery"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/scaling-resilience-and-recovery.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "3.1.1"
     domain: "3"
     path: "raw/skills/3.1.1-create-and-manage-amis-and-container-images.md"

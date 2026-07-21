@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T12:00:00+02:00"
+updated_at: "2026-07-21T13:00:00+02:00"
 scope: "SOA-C03 complete corpus"
 principle: "Plan all skills globally; implement in domain-sized batches; reconcile after Domain 5."
 counts:
@@ -20,7 +20,7 @@ pages:
     skill_ids: ["4.2.1"]
   - path: "wiki/concepts/database-recovery.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.2"]
   - path: "wiki/concepts/deployment-and-operational-automation.md"
     type: "Concept"
@@ -36,7 +36,7 @@ pages:
     skill_ids: ["3.1.5"]
   - path: "wiki/concepts/disaster-recovery.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.4"]
   - path: "wiki/concepts/encryption-in-transit.md"
     type: "Concept"
@@ -56,7 +56,7 @@ pages:
     skill_ids: ["1.2.1"]
   - path: "wiki/concepts/fault-tolerance.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["2.2.2"]
   - path: "wiki/concepts/multi-account-security-governance.md"
     type: "Concept"
@@ -92,7 +92,7 @@ pages:
     skill_ids: []
   - path: "wiki/concepts/scaling-resilience-and-recovery.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.1", "2.1.2", "2.1.3", "2.2.1", "2.2.2", "2.3.1", "2.3.2", "2.3.3", "2.3.4"]
   - path: "wiki/concepts/security-findings.md"
     type: "Concept"
@@ -100,7 +100,7 @@ pages:
     skill_ids: ["4.2.5"]
   - path: "wiki/concepts/storage-versioning.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.3"]
   - path: "wiki/concepts/third-party-deployment-tools.md"
     type: "Concept"
@@ -116,11 +116,11 @@ pages:
     skill_ids: ["1.1.3"]
   - path: "wiki/decision-guides/backup-protection-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.1"]
   - path: "wiki/decision-guides/caching-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.2"]
   - path: "wiki/decision-guides/cloudfront-cache-policy-selection.md"
     type: "Decision Guide"
@@ -136,7 +136,7 @@ pages:
     skill_ids: ["1.3.1", "1.3.6"]
   - path: "wiki/decision-guides/compute-scaling-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.1"]
   - path: "wiki/decision-guides/content-distribution-selection.md"
     type: "Decision Guide"
@@ -156,11 +156,11 @@ pages:
     skill_ids: ["1.3.5"]
   - path: "wiki/decision-guides/database-restore-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.2"]
   - path: "wiki/decision-guides/database-scaling-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.3"]
   - path: "wiki/decision-guides/deployment-failure-evidence-selection.md"
     type: "Decision Guide"
@@ -184,7 +184,7 @@ pages:
     skill_ids: ["5.2.2"]
   - path: "wiki/decision-guides/dr-strategy-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.4"]
   - path: "wiki/decision-guides/ebs-performance-tuning.md"
     type: "Decision Guide"
@@ -204,7 +204,7 @@ pages:
     skill_ids: ["1.1.5", "1.2.2"]
   - path: "wiki/decision-guides/fault-tolerance-pattern-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.2.2"]
   - path: "wiki/decision-guides/iam-principal-and-policy-selection.md"
     type: "Decision Guide"
@@ -216,7 +216,7 @@ pages:
     skill_ids: ["3.1.2"]
   - path: "wiki/decision-guides/load-balancer-health-check-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.2.1"]
   - path: "wiki/decision-guides/machine-container-image-selection.md"
     type: "Decision Guide"
@@ -296,7 +296,7 @@ pages:
     skill_ids: ["4.2.3"]
   - path: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.3"]
   - path: "wiki/decision-guides/vpc-addressing-routing-selection.md"
     type: "Decision Guide"
@@ -308,7 +308,7 @@ pages:
     skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6"]
   - path: "wiki/exam-traps/domain-2-exam-traps.md"
     type: "Exam Trap"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.1", "2.1.2", "2.1.3", "2.2.1", "2.2.2", "2.3.1", "2.3.2", "2.3.3", "2.3.4"]
   - path: "wiki/exam-traps/domain-3-exam-traps.md"
     type: "Exam Trap"
@@ -328,7 +328,7 @@ pages:
     skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6"]
   - path: "wiki/learning/paths/domain-2-learning-path.md"
     type: "Learning Path"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.1", "2.1.2", "2.1.3", "2.2.1", "2.2.2", "2.3.1", "2.3.2", "2.3.3", "2.3.4"]
   - path: "wiki/learning/paths/domain-3-learning-path.md"
     type: "Learning Path"
@@ -356,11 +356,11 @@ pages:
     skill_ids: ["3.2.1"]
   - path: "wiki/playbooks/backup-job-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.1"]
   - path: "wiki/playbooks/cache-performance-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.2"]
   - path: "wiki/playbooks/cloudformation-deployment-failure.md"
     type: "Troubleshooting Playbook"
@@ -388,11 +388,11 @@ pages:
     skill_ids: ["4.2.1"]
   - path: "wiki/playbooks/database-restore-and-cutover.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.2"]
   - path: "wiki/playbooks/database-scaling-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.3"]
   - path: "wiki/playbooks/deployment-failure.md"
     type: "Troubleshooting Playbook"
@@ -404,7 +404,7 @@ pages:
     skill_ids: ["3.1.5"]
   - path: "wiki/playbooks/disaster-recovery-failover.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.4"]
   - path: "wiki/playbooks/dns-resolution-failure.md"
     type: "Troubleshooting Playbook"
@@ -428,7 +428,7 @@ pages:
     skill_ids: ["1.2.2", "1.2.3"]
   - path: "wiki/playbooks/failure-boundary-diagnosis.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.2.2"]
   - path: "wiki/playbooks/hybrid-private-connectivity-failure.md"
     type: "Troubleshooting Playbook"
@@ -468,7 +468,7 @@ pages:
     skill_ids: ["1.2.1", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6"]
   - path: "wiki/playbooks/scaling-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.1"]
   - path: "wiki/playbooks/secret-access-and-rotation-failure.md"
     type: "Troubleshooting Playbook"
@@ -480,7 +480,7 @@ pages:
     skill_ids: ["4.1.4", "4.2.5"]
   - path: "wiki/playbooks/storage-version-recovery.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.3"]
   - path: "wiki/playbooks/third-party-deployment-failure.md"
     type: "Troubleshooting Playbook"
@@ -492,7 +492,7 @@ pages:
     skill_ids: ["4.2.3"]
   - path: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["2.2.1"]
   - path: "wiki/playbooks/vpc-connectivity-failure.md"
     type: "Troubleshooting Playbook"
@@ -500,11 +500,11 @@ pages:
     skill_ids: ["5.1.1", "5.3.1"]
   - path: "wiki/services/aws-backup.md"
     type: "AWS Service"
-    status: planned
+    status: implemented
     skill_ids: ["2.3.1"]
   - path: "wiki/services/caching.md"
     type: "AWS Service"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.2"]
   - path: "wiki/services/cloudformation-and-cdk.md"
     type: "AWS Service"
@@ -536,7 +536,7 @@ pages:
     skill_ids: ["1.1.1"]
   - path: "wiki/services/compute-scaling.md"
     type: "AWS Service"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.1"]
   - path: "wiki/services/config-and-compliance.md"
     type: "AWS Service"
@@ -576,11 +576,11 @@ pages:
     skill_ids: ["4.2.2"]
   - path: "wiki/services/load-balancing-and-health-checks.md"
     type: "AWS Service"
-    status: planned
+    status: implemented
     skill_ids: ["2.2.1"]
   - path: "wiki/services/managed-database-scaling.md"
     type: "AWS Service"
-    status: planned
+    status: implemented
     skill_ids: ["2.1.3"]
   - path: "wiki/services/network-protection.md"
     type: "AWS Service"

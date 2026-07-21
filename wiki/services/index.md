@@ -13,3 +13,10 @@
 - [RDS performance](rds-performance.md) - metrics, DB load, waits, SQL, and targeted remediation.
 - [EC2 performance](ec2-performance.md) - health, compute, storage, network, and placement behavior.
 
+## Domain 2
+
+- [Compute scaling](compute-scaling.md) - EC2, ECS, EKS, and Lambda capacity controls.
+- [Caching](caching.md) - CloudFront, ElastiCache, and DAX behavior.
+- [Managed database scaling](managed-database-scaling.md) - RDS, Aurora, and DynamoDB scaling dimensions.
+- [Load balancing and health checks](load-balancing-and-health-checks.md) - ELB targets and Route 53 health-driven routing.
+- [AWS Backup](aws-backup.md) - plans, assignments, vaults, copies, and restore testing.
