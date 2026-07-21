@@ -1,6 +1,6 @@
 version: 1
-updated_at: "2026-07-21T18:00:00+02:00"
-scope: "SOA-C03 Domains 1-3"
+updated_at: "2026-07-21T22:00:00+02:00"
+scope: "SOA-C03 Domains 1-4"
 status: validated
 sources:
   - path: raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
@@ -158,8 +158,58 @@ sources:
     processed_at: "2026-07-21T16:00:00+02:00"
     generated_pages: [wiki/concepts/event-driven-automation.md, wiki/decision-guides/event-driven-automation-selection.md, wiki/playbooks/event-driven-automation-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/s3-performance.md, wiki/services/eventbridge.md, wiki/services/sns-notifications.md, wiki/services/sqs.md, wiki/services/lambda.md, wiki/services/step-functions.md, wiki/services/systems-manager.md, wiki/services/systems-manager-automation.md, wiki/services/devops-agent.md]
     status: validated
+  - path: raw/skills/4.1.1-implement-iam-features.md
+    blob_sha: 2cdf1831552a55f342292aa847e044e5fda03140
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/iam.md, wiki/services/iam-identity-center.md, wiki/services/sts.md, wiki/services/iam-access-analyzer.md, wiki/concepts/multi-account-security-governance.md, wiki/services/iam-access-control.md, wiki/decision-guides/iam-principal-and-policy-selection.md, wiki/playbooks/access-denied.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md
+    blob_sha: a6ae319a4368aeac67de811339914002793e535f
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/iam.md, wiki/services/sts.md, wiki/services/cloudtrail.md, wiki/services/kms.md, wiki/services/secrets-manager.md, wiki/services/vpc.md, wiki/services/iam-access-analyzer.md, wiki/concepts/access-evaluation.md, wiki/concepts/multi-account-security-governance.md, wiki/services/iam-access-control.md, wiki/decision-guides/access-denial-evidence-selection.md, wiki/playbooks/access-denied.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.1.3-implement-secure-multi-account-strategies.md
+    blob_sha: 31690ff51f59d0e03b476a2b368853d7d89e670f
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/iam-identity-center.md, wiki/services/sts.md, wiki/services/cloudtrail.md, wiki/services/organizations.md, wiki/services/control-tower.md, wiki/concepts/multi-account-security-governance.md, wiki/services/organizations-and-multi-account.md, wiki/decision-guides/multi-account-guardrail-selection.md, wiki/playbooks/cross-account-access-failure.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.1.4-remediate-trusted-advisor-security-checks.md
+    blob_sha: 14a2951bc7d19ab05d53e1f13870ff121bf02582
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/cloudtrail.md, wiki/services/trusted-advisor.md, wiki/concepts/multi-account-security-governance.md, wiki/services/trusted-advisor-security.md, wiki/decision-guides/security-check-remediation-priority.md, wiki/playbooks/security-finding-remediation.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.1.5-enforce-compliance-requirements-and-continuous-monitoring.md
+    blob_sha: 3e79d6d52b8409fddb32a9bd5ac591f02e32cd03
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/organizations.md, wiki/services/control-tower.md, wiki/services/config.md, wiki/concepts/multi-account-security-governance.md, wiki/services/config-and-compliance.md, wiki/decision-guides/compliance-monitoring-selection.md, wiki/playbooks/compliance-remediation-failure.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.2.1-implement-and-enforce-a-data-classification-scheme.md
+    blob_sha: 639af843711bbe521ead2aaa2f1c95847b544b1a
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/config.md, wiki/services/macie.md, wiki/services/kms.md, wiki/concepts/data-classification.md, wiki/concepts/multi-account-security-governance.md, wiki/decision-guides/data-protection-control-selection.md, wiki/playbooks/data-classification-gap.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
+    blob_sha: 2a1176d854442ff42e287d58c9c96505d063e012
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/kms.md, wiki/services/dynamodb.md, wiki/services/aurora.md, wiki/services/efs.md, wiki/services/fsx.md, wiki/concepts/multi-account-security-governance.md, wiki/services/kms-encryption-at-rest.md, wiki/decision-guides/encryption-at-rest-selection.md, wiki/playbooks/kms-access-failure.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
+    blob_sha: 8a45f14b8213f40817143400a62e9cabdd19dbbb
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/certificate-manager.md, wiki/services/private-ca.md, wiki/services/cloudfront.md, wiki/services/route-53.md, wiki/services/vpc.md, wiki/services/elastic-load-balancing.md, wiki/services/aurora.md, wiki/services/efs.md, wiki/concepts/encryption-in-transit.md, wiki/concepts/multi-account-security-governance.md, wiki/decision-guides/tls-certificate-selection.md, wiki/playbooks/tls-connectivity-failure.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.2.4-securely-store-secrets-by-using-services.md
+    blob_sha: 3624043a7c48d3359a23902d51a3beda9ddc7fed
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/cloudtrail.md, wiki/services/kms.md, wiki/services/secrets-manager.md, wiki/services/vpc.md, wiki/services/aurora.md, wiki/services/systems-manager-parameter-store.md, wiki/concepts/multi-account-security-governance.md, wiki/services/secrets-management.md, wiki/decision-guides/secrets-storage-selection.md, wiki/playbooks/secret-access-and-rotation-failure.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
+  - path: raw/skills/4.2.5-configure-reports-and-remediate-findings-from-services.md
+    blob_sha: 7e19f79162dcb9f6a4ce42d13478e5ec8d239dbe
+    processed_at: "2026-07-21T22:00:00+02:00"
+    generated_pages: [wiki/services/config.md, wiki/services/macie.md, wiki/services/security-hub-cspm.md, wiki/services/guardduty.md, wiki/services/inspector.md, wiki/services/security-agent.md, wiki/concepts/multi-account-security-governance.md, wiki/concepts/security-findings.md, wiki/decision-guides/security-finding-triage.md, wiki/playbooks/security-finding-remediation.md, wiki/exam-traps/domain-4-exam-traps.md, wiki/learning/paths/domain-4-learning-path.md]
+    status: validated
 generated:
-  count: 103
+  count: 161
   roots:
     - wiki/services
     - wiki/concepts
