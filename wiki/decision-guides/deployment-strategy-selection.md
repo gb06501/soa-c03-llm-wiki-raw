@@ -37,8 +37,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [Deployment strategies](/concepts/deployment-strategies.md)
-- [Deployment rollback](/playbooks/deployment-rollback.md)
+- [Deployment strategies](../concepts/deployment-strategies.md)
+- [Deployment rollback](../playbooks/deployment-rollback.md)
 
 # Sources
 

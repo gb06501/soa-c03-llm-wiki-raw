@@ -36,9 +36,9 @@ Keep the known-good launch-template version and AMI. Rollback cannot succeed if 
 
 # Related concepts
 
-- [Compute scaling](/services/compute-scaling.md)
-- [Deployment strategies](/concepts/deployment-strategies.md)
-- [Scaling failure](/playbooks/scaling-failure.md)
+- [Compute scaling](compute-scaling.md)
+- [Deployment strategies](../concepts/deployment-strategies.md)
+- [Scaling failure](../playbooks/scaling-failure.md)
 
 # Sources
 

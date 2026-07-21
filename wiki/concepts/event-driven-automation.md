@@ -43,9 +43,9 @@ Confirm source emission, filter match, target authorization, target start, workf
 
 # Related concepts
 
-- [Event-driven selection](/decision-guides/event-driven-automation-selection.md)
-- [Event-driven failure](/playbooks/event-driven-automation-failure.md)
-- [EventBridge](/services/eventbridge.md)
+- [Event-driven selection](../decision-guides/event-driven-automation-selection.md)
+- [Event-driven failure](../playbooks/event-driven-automation-failure.md)
+- [EventBridge](../services/eventbridge.md)
 
 # Sources
 

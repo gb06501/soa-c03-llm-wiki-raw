@@ -48,9 +48,9 @@ Validate or synthesize, inspect the diff/change set, identify stateful replaceme
 
 # Related concepts
 
-- [Infrastructure provisioning selection](/decision-guides/infrastructure-provisioning-selection.md)
-- [CloudFormation deployment failure](/playbooks/cloudformation-deployment-failure.md)
-- [Deployment diagnostics](/concepts/deployment-diagnostics.md)
+- [Infrastructure provisioning selection](../decision-guides/infrastructure-provisioning-selection.md)
+- [CloudFormation deployment failure](../playbooks/cloudformation-deployment-failure.md)
+- [Deployment diagnostics](../concepts/deployment-diagnostics.md)
 
 # Sources
 

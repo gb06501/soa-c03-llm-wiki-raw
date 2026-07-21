@@ -54,10 +54,10 @@ Do not retry permanent errors blindly, do not delete stateful evidence to force 
 
 # Related concepts
 
-- [Deployment diagnostics](/concepts/deployment-diagnostics.md)
-- [Deployment strategies](/concepts/deployment-strategies.md)
-- [Operational automation](/concepts/operational-automation.md)
-- [Event-driven automation](/concepts/event-driven-automation.md)
+- [Deployment diagnostics](deployment-diagnostics.md)
+- [Deployment strategies](deployment-strategies.md)
+- [Operational automation](operational-automation.md)
+- [Event-driven automation](event-driven-automation.md)
 
 # Sources
 

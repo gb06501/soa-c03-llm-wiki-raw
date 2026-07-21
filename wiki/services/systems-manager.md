@@ -47,9 +47,9 @@ Patch Scan reports; Install changes the node. Maintenance-window cutoff stops ne
 
 # Related concepts
 
-- [Operational automation](/concepts/operational-automation.md)
-- [Systems Manager Automation](/services/systems-manager-automation.md)
-- [Automation failure](/playbooks/automation-execution-failure.md)
+- [Operational automation](../concepts/operational-automation.md)
+- [Systems Manager Automation](systems-manager-automation.md)
+- [Automation failure](../playbooks/automation-execution-failure.md)
 
 # Sources
 

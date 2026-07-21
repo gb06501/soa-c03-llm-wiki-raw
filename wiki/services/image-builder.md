@@ -44,8 +44,8 @@ Use a trusted base, patch and harden through versioned components, test and scan
 
 # Related concepts
 
-- [Image-management lifecycle](/services/image-management.md)
-- [Image build and distribution failure](/playbooks/image-build-distribution-failure.md)
+- [Image-management lifecycle](image-management.md)
+- [Image build and distribution failure](../playbooks/image-build-distribution-failure.md)
 
 # Sources
 

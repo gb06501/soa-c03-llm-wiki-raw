@@ -40,9 +40,9 @@ Keep the prior task-definition revision and ECR digest. Drain connections delibe
 
 # Related concepts
 
-- [ECR](/services/ecr.md)
-- [Deployment strategies](/concepts/deployment-strategies.md)
-- [Deployment rollback](/playbooks/deployment-rollback.md)
+- [ECR](ecr.md)
+- [Deployment strategies](../concepts/deployment-strategies.md)
+- [Deployment rollback](../playbooks/deployment-rollback.md)
 
 # Sources
 

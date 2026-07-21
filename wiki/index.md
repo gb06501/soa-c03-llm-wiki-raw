@@ -8,30 +8,30 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 
 ## Domain 1: Monitoring and performance optimization
 
-- [Services and features](services/index.md) - canonical AWS services, owned features, and cross-service mechanisms.
-- [Cross-skill concepts](concepts/index.md) - reusable reasoning models across multiple services.
-- [Decision guides](decision-guides/index.md) - scenario clue to AWS choice.
+- [Services and features](services/index.md) - AWS services, owned features, and cross-service mechanisms.
+- [Cross-skill concepts](concepts/index.md) - reusable reasoning models for this domain.
+- [Decision guides](decision-guides/index.md) - scenario clues mapped to AWS choices.
 - [Troubleshooting playbooks](playbooks/index.md) - evidence-first diagnosis and safe remediation.
-- [Exam traps](exam-traps/index.md) - tempting wrong conclusions and corrective mental models.
-- [Learning paths](learning/index.md) - ordered study sequences.
+- [Exam traps](exam-traps/domain-1-exam-traps.md) - misleading alternatives and corrective mental models.
+- [Learning path](learning/paths/domain-1-learning-path.md) - an ordered study sequence.
 
 ## Domain 2: Reliability and business continuity
 
-- [Services and features](services/index.md) - canonical services plus scaling, caching, health, and backup mechanisms.
-- [Cross-skill concepts](concepts/index.md) - fault tolerance, recovery, versioning, and DR.
-- [Decision guides](decision-guides/index.md) - capacity, availability, protection, and recovery choices.
-- [Troubleshooting playbooks](playbooks/index.md) - evidence-first scaling, health, backup, and failover diagnosis.
-- [Exam traps](exam-traps/index.md) - misleading reliability and recovery alternatives.
-- [Domain 2 learning path](learning/paths/domain-2-learning-path.md) - ordered study sequence.
+- [Services and features](services/index.md) - AWS services, owned features, and cross-service mechanisms.
+- [Cross-skill concepts](concepts/index.md) - reusable reasoning models for this domain.
+- [Decision guides](decision-guides/index.md) - scenario clues mapped to AWS choices.
+- [Troubleshooting playbooks](playbooks/index.md) - evidence-first diagnosis and safe remediation.
+- [Exam traps](exam-traps/domain-2-exam-traps.md) - misleading alternatives and corrective mental models.
+- [Learning path](learning/paths/domain-2-learning-path.md) - an ordered study sequence.
 
 ## Domain 3: Deployment, provisioning, and automation
 
-- [Services and features](services/index.md) - canonical deployment, provisioning, and automation services.
-- [Cross-skill concepts](concepts/index.md) - diagnostics, deployment strategies, multi-account provisioning, and automation.
-- [Decision guides](decision-guides/index.md) - artifact, tooling, rollout, fleet, and event choices.
-- [Troubleshooting playbooks](playbooks/index.md) - evidence-first deployment and automation recovery.
-- [Exam traps](exam-traps/domain-3-exam-traps.md) - misleading deployment and automation alternatives.
-- [Domain 3 learning path](learning/paths/domain-3-learning-path.md) - ordered study sequence.
+- [Services and features](services/index.md) - AWS services, owned features, and cross-service mechanisms.
+- [Cross-skill concepts](concepts/index.md) - reusable reasoning models for this domain.
+- [Decision guides](decision-guides/index.md) - scenario clues mapped to AWS choices.
+- [Troubleshooting playbooks](playbooks/index.md) - evidence-first diagnosis and safe remediation.
+- [Exam traps](exam-traps/domain-3-exam-traps.md) - misleading alternatives and corrective mental models.
+- [Learning path](learning/paths/domain-3-learning-path.md) - an ordered study sequence.
 
 ## Maintenance
 
@@ -39,4 +39,3 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 - Processing state: [`state/manifest.yaml`](../state/manifest.yaml)
 - Semantic coverage: [`state/coverage.yaml`](../state/coverage.yaml)
 - Corpus page plan: [`state/page-plan.yaml`](../state/page-plan.yaml)
-

@@ -73,8 +73,8 @@ status: verified
 
 # Related concepts
 
-- [Domain 3 operating model](/concepts/deployment-and-operational-automation.md)
-- [Domain 3 learning path](/learning/paths/domain-3-learning-path.md)
+- [Domain 3 operating model](../concepts/deployment-and-operational-automation.md)
+- [Domain 3 learning path](../learning/paths/domain-3-learning-path.md)
 
 # Sources
 

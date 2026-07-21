@@ -37,8 +37,8 @@ Missing evidence or scope prevents useful investigation. A valid recommendation 
 
 # Related concepts
 
-- [Event-driven automation](/concepts/event-driven-automation.md)
-- [Event-driven selection](/decision-guides/event-driven-automation-selection.md)
+- [Event-driven automation](../concepts/event-driven-automation.md)
+- [Event-driven selection](../decision-guides/event-driven-automation-selection.md)
 
 # Sources
 

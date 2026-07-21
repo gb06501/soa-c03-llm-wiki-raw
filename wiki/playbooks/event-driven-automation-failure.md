@@ -48,8 +48,8 @@ Confirm source-to-target metrics, successful target evidence, intended resource/
 
 # Related concepts
 
-- [Event-driven automation](/concepts/event-driven-automation.md)
-- [Selection guide](/decision-guides/event-driven-automation-selection.md)
+- [Event-driven automation](../concepts/event-driven-automation.md)
+- [Selection guide](../decision-guides/event-driven-automation-selection.md)
 
 # Sources
 

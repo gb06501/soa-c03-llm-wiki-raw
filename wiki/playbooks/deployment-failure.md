@@ -46,8 +46,8 @@ Confirm stable orchestration state, expected resource identity, healthy applicat
 
 # Related concepts
 
-- [Deployment diagnostics](/concepts/deployment-diagnostics.md)
-- [Evidence selection](/decision-guides/deployment-failure-evidence-selection.md)
+- [Deployment diagnostics](../concepts/deployment-diagnostics.md)
+- [Evidence selection](../decision-guides/deployment-failure-evidence-selection.md)
 
 # Sources
 

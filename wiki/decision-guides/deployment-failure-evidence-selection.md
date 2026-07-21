@@ -37,8 +37,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [Deployment diagnostics](/concepts/deployment-diagnostics.md)
-- [Deployment failure](/playbooks/deployment-failure.md)
+- [Deployment diagnostics](../concepts/deployment-diagnostics.md)
+- [Deployment failure](../playbooks/deployment-failure.md)
 
 # Sources
 

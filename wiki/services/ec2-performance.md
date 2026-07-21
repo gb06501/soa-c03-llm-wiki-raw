@@ -84,7 +84,7 @@ An AMI combines Region-specific metadata, block-device mappings, and backing sna
 
 Image creation normally reboots for consistency. A no-reboot capture can be crash-consistent unless application writes are quiesced. Deregistration prevents new launches but does not terminate existing instances or automatically remove every snapshot.
 
-During deployment, separate control-plane launch success from bootstrap, dependency, target-health, and application evidence. Instance refresh belongs to [EC2 Auto Scaling](/services/ec2-auto-scaling.md).
+During deployment, separate control-plane launch success from bootstrap, dependency, target-health, and application evidence. Instance refresh belongs to [EC2 Auto Scaling](ec2-auto-scaling.md).
 
 # Sources
 

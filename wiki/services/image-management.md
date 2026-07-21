@@ -48,9 +48,9 @@ Wrong Region or architecture, missing launch/snapshot/KMS permission, inconsiste
 
 # Related concepts
 
-- [Image selection](/decision-guides/machine-container-image-selection.md)
-- [Image build and distribution failure](/playbooks/image-build-distribution-failure.md)
-- [Deployment strategies](/concepts/deployment-strategies.md)
+- [Image selection](../decision-guides/machine-container-image-selection.md)
+- [Image build and distribution failure](../playbooks/image-build-distribution-failure.md)
+- [Deployment strategies](../concepts/deployment-strategies.md)
 
 # Sources
 

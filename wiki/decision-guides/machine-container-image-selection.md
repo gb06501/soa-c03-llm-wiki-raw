@@ -37,8 +37,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [Image management](/services/image-management.md)
-- [Image failure playbook](/playbooks/image-build-distribution-failure.md)
+- [Image management](../services/image-management.md)
+- [Image failure playbook](../playbooks/image-build-distribution-failure.md)
 
 # Sources
 

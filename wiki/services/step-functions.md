@@ -39,8 +39,8 @@ Make repeated tasks idempotent, design compensation explicitly, limit retries, p
 
 # Related concepts
 
-- [Event-driven automation](/concepts/event-driven-automation.md)
-- [Event-driven selection](/decision-guides/event-driven-automation-selection.md)
+- [Event-driven automation](../concepts/event-driven-automation.md)
+- [Event-driven selection](../decision-guides/event-driven-automation-selection.md)
 
 # Sources
 

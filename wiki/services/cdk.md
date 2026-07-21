@@ -44,8 +44,8 @@ Bootstrap every required target environment with deliberate trust. Review `diff`
 
 # Related concepts
 
-- [CloudFormation](/services/cloudformation.md)
-- [Infrastructure provisioning selection](/decision-guides/infrastructure-provisioning-selection.md)
+- [CloudFormation](cloudformation.md)
+- [Infrastructure provisioning selection](../decision-guides/infrastructure-provisioning-selection.md)
 
 # Sources
 

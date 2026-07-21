@@ -1,0 +1,27 @@
+name: Wiki navigation
+
+on:
+  pull_request:
+    paths:
+      - "wiki/**"
+      - "AGENTS.md"
+      - "scripts/validate_wiki_links.py"
+      - ".github/workflows/wiki-navigation.yml"
+  push:
+    branches: [main]
+    paths:
+      - "wiki/**"
+      - "AGENTS.md"
+      - "scripts/validate_wiki_links.py"
+      - ".github/workflows/wiki-navigation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate complete wiki link graph
+        run: python3 scripts/validate_wiki_links.py

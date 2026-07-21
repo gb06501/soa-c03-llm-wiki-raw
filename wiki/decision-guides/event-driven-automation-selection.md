@@ -37,8 +37,8 @@ Confirm the selected object, identity, permission path, scope, and observable ou
 
 # Related concepts
 
-- [Event-driven automation](/concepts/event-driven-automation.md)
-- [Event-driven failure](/playbooks/event-driven-automation-failure.md)
+- [Event-driven automation](../concepts/event-driven-automation.md)
+- [Event-driven failure](../playbooks/event-driven-automation-failure.md)
 
 # Sources
 

@@ -43,8 +43,8 @@ RAM does not copy or replicate resources. One stack instance means one account p
 
 # Related concepts
 
-- [Sharing and provisioning selection](/decision-guides/resource-sharing-and-provisioning-selection.md)
-- [Cross-account provisioning failure](/playbooks/cross-account-provisioning-failure.md)
+- [Sharing and provisioning selection](../decision-guides/resource-sharing-and-provisioning-selection.md)
+- [Cross-account provisioning failure](../playbooks/cross-account-provisioning-failure.md)
 
 # Sources
 

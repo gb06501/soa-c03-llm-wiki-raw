@@ -42,9 +42,9 @@ A branch can move. A commit or controlled tag identifies the reviewed release. R
 
 # Related concepts
 
-- [Deployment tool selection](/decision-guides/deployment-tool-selection.md)
-- [Third-party deployment failure](/playbooks/third-party-deployment-failure.md)
-- [CloudFormation lifecycle](/services/cloudformation-and-cdk.md)
+- [Deployment tool selection](../decision-guides/deployment-tool-selection.md)
+- [Third-party deployment failure](../playbooks/third-party-deployment-failure.md)
+- [CloudFormation lifecycle](../services/cloudformation-and-cdk.md)
 
 # Sources
 

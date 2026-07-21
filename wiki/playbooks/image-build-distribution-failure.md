@@ -46,8 +46,8 @@ Launch or pull by exact identity in every required account/Region, pass tests an
 
 # Related concepts
 
-- [Image management](/services/image-management.md)
-- [Image selection](/decision-guides/machine-container-image-selection.md)
+- [Image management](../services/image-management.md)
+- [Image selection](../decision-guides/machine-container-image-selection.md)
 
 # Sources
 

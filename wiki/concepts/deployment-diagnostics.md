@@ -46,9 +46,9 @@ Preserve state, stop blind retries, repair the proven blocker, preview replaceme
 
 # Related concepts
 
-- [Deployment evidence selection](/decision-guides/deployment-failure-evidence-selection.md)
-- [Deployment failure playbook](/playbooks/deployment-failure.md)
-- [CloudFormation lifecycle](/services/cloudformation-and-cdk.md)
+- [Deployment evidence selection](../decision-guides/deployment-failure-evidence-selection.md)
+- [Deployment failure playbook](../playbooks/deployment-failure.md)
+- [CloudFormation lifecycle](../services/cloudformation-and-cdk.md)
 
 # Sources
 
