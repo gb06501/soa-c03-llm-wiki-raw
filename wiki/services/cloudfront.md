@@ -4,9 +4,9 @@ title: CloudFront
 service_id: cloudfront
 description: Delivers content through edge distributions with independent viewer and origin TLS policies.
 tags: ["soa-c03", "domain-4", "cloudfront", "tls", domain-5, edge, caching]
-timestamp: 2026-07-21T22:45:00+02:00
-skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.2", "5.3.3", "5.3.5"]
-domain_ids: ["4", "5"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.2", "5.3.3", "5.3.5", "1.3.3", "2.1.2"]
+domain_ids: ["4", "5", "1", "2"]
 sources:
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
   - /raw/skills/5.1.3-audit-network-protection-services-in-one-account.md
@@ -15,6 +15,8 @@ sources:
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
   - /raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
+  - /raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md
+  - /raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md
 status: verified
 ---
 # Core model
@@ -50,6 +52,12 @@ Diagnose with hostname/path, behavior, X-Cache, Age, result/status, policy/TTL, 
 - [CloudFront cache policy selection](../decision-guides/cloudfront-cache-policy-selection.md)
 - [Edge delivery failure](../playbooks/edge-delivery-failure.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Cache boundary
+
+CloudFront caches edge responses according to behavior, key, TTL, origin directives, and invalidation. It reduces repeated origin work and remote latency; it is not S3 Transfer Acceleration, an application-data cache, or a DynamoDB read cache.
+
 # Sources
 
 - [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
@@ -59,3 +67,5 @@ Diagnose with hostname/path, behavior, X-Cache, Age, result/status, policy/TTL, 
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 5.3.3](../../raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
+- [Skill 1.3.3](../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
+- [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)

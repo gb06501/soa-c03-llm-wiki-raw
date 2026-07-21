@@ -2,38 +2,75 @@
 
 # Domain 2: Reliability and Business Continuity
 
-This domain contains 9 source skills and 31 implemented generated pages.
+This domain contains 9 source skills and 65 implemented generated pages.
 
 ## Coverage summary
 
-- **Needs reconciliation:** 9 skills
+- **Validated:** 9 skills
 
 ## Skills
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [2.1.1](../skills/2.1.1.md) | Configure and manage scaling mechanisms in compute environments | Needs reconciliation |
-| [2.1.2](../skills/2.1.2.md) | Implement caching for dynamic scalability | Needs reconciliation |
-| [2.1.3](../skills/2.1.3.md) | Configure and manage scaling in AWS managed databases | Needs reconciliation |
-| [2.2.1](../skills/2.2.1.md) | Configure and troubleshoot ELB and Route 53 health checks | Needs reconciliation |
-| [2.2.2](../skills/2.2.2.md) | Configure fault-tolerant systems | Needs reconciliation |
-| [2.3.1](../skills/2.3.1.md) | Automate snapshots and backups | Needs reconciliation |
-| [2.3.2](../skills/2.3.2.md) | Restore databases to meet RTO, RPO, and cost requirements | Needs reconciliation |
-| [2.3.3](../skills/2.3.3.md) | Implement versioning for storage services | Needs reconciliation |
-| [2.3.4](../skills/2.3.4.md) | Follow disaster-recovery procedures and best practices | Needs reconciliation |
+| [2.1.1](../skills/2.1.1.md) | Configure and manage scaling mechanisms in compute environments | Validated |
+| [2.1.2](../skills/2.1.2.md) | Implement caching for dynamic scalability | Validated |
+| [2.1.3](../skills/2.1.3.md) | Configure and manage scaling in AWS managed databases | Validated |
+| [2.2.1](../skills/2.2.1.md) | Configure and troubleshoot ELB and Route 53 health checks | Validated |
+| [2.2.2](../skills/2.2.2.md) | Configure fault-tolerant systems | Validated |
+| [2.3.1](../skills/2.3.1.md) | Automate snapshots and backups | Validated |
+| [2.3.2](../skills/2.3.2.md) | Restore databases to meet RTO, RPO, and cost requirements | Validated |
+| [2.3.3](../skills/2.3.3.md) | Implement versioning for storage services | Validated |
+| [2.3.4](../skills/2.3.4.md) | Follow disaster-recovery procedures and best practices | Validated |
 
 ## Implemented knowledge
 
 ### AWS Service
 
+- [Application Auto Scaling](../services/application-auto-scaling.md)
+- [Application Recovery Controller](../services/application-recovery-controller.md)
+- [Aurora](../services/aurora.md)
 - [Backup](../services/aws-backup.md)
+- [CDK](../services/cdk.md)
+- [CloudFormation](../services/cloudformation.md)
+- [CloudFront](../services/cloudfront.md)
+- [CloudTrail](../services/cloudtrail.md)
+- [CloudWatch](../services/cloudwatch-telemetry.md)
+- [DAX](../services/dax.md)
+- [DynamoDB](../services/dynamodb.md)
+- [EBS](../services/ebs-performance.md)
 - [EC2 Auto Scaling](../services/ec2-auto-scaling.md)
+- [EC2](../services/ec2-performance.md)
+- [ECS](../services/ecs.md)
+- [EFS](../services/efs.md)
+- [EKS](../services/eks.md)
+- [Elastic Load Balancing](../services/elastic-load-balancing.md)
+- [ElastiCache](../services/elasticache.md)
+- [EventBridge](../services/eventbridge.md)
+- [Fargate](../services/fargate.md)
+- [FSx](../services/fsx.md)
+- [Global Accelerator](../services/global-accelerator.md)
+- [IAM](../services/iam.md)
+- [KMS](../services/kms.md)
+- [Lambda](../services/lambda.md)
+- [RDS](../services/rds-performance.md)
+- [Route 53](../services/route-53.md)
+- [S3](../services/s3-performance.md)
+- [SNS](../services/sns-notifications.md)
+- [SQS](../services/sqs.md)
+- [Step Functions](../services/step-functions.md)
+- [VPC](../services/vpc.md)
+
+### AWS Feature
+
+- [Backup Audit Manager](../services/backup-audit-manager.md)
+- [RDS Proxy](../services/rds-proxy.md)
 
 ### Concept
 
 - [Database recovery](../concepts/database-recovery.md)
 - [Disaster recovery](../concepts/disaster-recovery.md)
 - [Fault tolerance](../concepts/fault-tolerance.md)
+- [Observability signal selection](../concepts/observability-signal-selection.md)
 - [Scaling, resilience, and recovery](../concepts/scaling-resilience-and-recovery.md)
 - [Storage versioning and recovery](../concepts/storage-versioning.md)
 - [Caching](../services/caching.md)

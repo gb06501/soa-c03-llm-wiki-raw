@@ -4,9 +4,9 @@ title: EC2
 service_id: ec2
 description: Runs virtual machine instances from versioned images with observable compute, storage, network, health, and deployment behavior.
 tags: [soa-c03, domain-1, ec2, performance, health]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["1.1.2", "1.2.1", "1.3.1", "1.3.2", "1.3.6", "3.1.1", "3.1.3", "3.1.5"]
-domain_ids: ["1", "3"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["1.1.2", "1.2.1", "1.3.1", "1.3.2", "1.3.6", "3.1.1", "3.1.3", "3.1.5", "1.1.1", "1.1.3", "2.1.1", "2.2.2", "2.3.1"]
+domain_ids: ["1", "3", "2"]
 sources:
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
@@ -16,6 +16,11 @@ sources:
   - /raw/skills/3.1.1-create-and-manage-amis-and-container-images.md
   - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
   - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
+  - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
+  - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
+  - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
 status: verified
 ---
 
@@ -86,6 +91,20 @@ Image creation normally reboots for consistency. A no-reboot capture can be cras
 
 During deployment, separate control-plane launch success from bootstrap, dependency, target-health, and application evidence. Instance refresh belongs to [EC2 Auto Scaling](ec2-auto-scaling.md).
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Health, capacity, storage, and network
+
+System status failures point first to the AWS host path; instance status failures point first to guest startup, OS, or networking. Instance type bounds CPU, memory, network, and EBS capability. Guest memory and filesystem evidence requires an agent.
+
+## Persistence and recovery
+
+EBS persists independently of a running instance; instance store is disposable across stop, termination, or host loss. Reboot, stop/start, resize, Auto Scaling replacement, AMI recovery, and backup restore have different state and identity effects.
+
+## Placement and scaling
+
+Cluster placement optimizes close communication inside one AZ; spread and partition placement reduce different hardware-sharing risks. None replaces multi-AZ application design. A launch-template update affects new instances until replacement or refresh occurs.
+
 # Sources
 
 - [Skill 1.1.2](../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
@@ -96,3 +115,8 @@ During deployment, separate control-plane launch success from bootstrap, depende
 - [Skill 3.1.1](../../raw/skills/3.1.1-create-and-manage-amis-and-container-images.md)
 - [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
 - [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
+- [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
+- [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
+- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)

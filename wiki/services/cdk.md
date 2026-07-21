@@ -4,12 +4,13 @@ title: CDK
 service_id: cdk
 description: Defines infrastructure with constructs, synthesizes CloudFormation, publishes assets, and deploys through stack lifecycle controls.
 tags: [soa-c03, domain-3, cdk, iac]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["3.1.2", "3.1.3"]
-domain_ids: ["3"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["3.1.2", "3.1.3", "2.3.4"]
+domain_ids: ["3", "2"]
 sources:
   - /raw/skills/3.1.2-create-and-manage-resources-with-cloudformation-and-cdk.md
   - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 
@@ -47,7 +48,14 @@ Bootstrap every required target environment with deliberate trust. Review `diff`
 - [CloudFormation](cloudformation.md)
 - [Infrastructure provisioning selection](../decision-guides/infrastructure-provisioning-selection.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Recovery readiness
+
+CDK source synthesizes infrastructure templates that can recreate declared resources in a recovery Region. Artifact, context, bootstrap, account, Region, permission, and data dependencies still require preparation and validation.
+
 # Sources
 
 - [Skill 3.1.2](../../raw/skills/3.1.2-create-and-manage-resources-with-cloudformation-and-cdk.md)
 - [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)

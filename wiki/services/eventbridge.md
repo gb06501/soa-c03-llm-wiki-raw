@@ -4,9 +4,9 @@ title: EventBridge
 service_id: eventbridge
 description: Matches events on buses and routes transformed payloads to authorized targets with retry and failure controls.
 tags: [soa-c03, domain-1, eventbridge, automation]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "3.2.2"]
-domain_ids: ["1", "3"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "3.2.2", "2.2.2", "2.3.1"]
+domain_ids: ["1", "3", "2"]
 sources:
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
@@ -14,6 +14,8 @@ sources:
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
   - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
   - /raw/skills/3.2.2-implement-event-driven-automation.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
 status: verified
 ---
 
@@ -81,6 +83,12 @@ A rule pattern must match the real event envelope. A matching rule still needs a
 
 Archive replay deliberately sends old events again; it does not reverse prior effects. Consumers need idempotency and current-state guards. Automatic remediation must filter its own result events or otherwise prevent recursive triggers.
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Routing and operational triggers
+
+EventBridge matches event structure and routes to authorized targets. It does not replace a durable worker queue, target permissions, target retry design, or idempotent processing. Alarm changes, backup events, health events, and automation triggers retain their source-service evidence.
+
 # Sources
 
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
@@ -89,3 +97,5 @@ Archive replay deliberately sends old events again; it does not reverse prior ef
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)

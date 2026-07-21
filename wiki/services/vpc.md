@@ -4,9 +4,9 @@ title: VPC
 service_id: vpc
 description: Provides network boundaries, routes, endpoints, and private connectivity that constrain security-service data paths.
 tags: ["soa-c03", "domain-4", "vpc", "private-connectivity", domain-5, networking, routing]
-timestamp: 2026-07-21T22:45:00+02:00
-skill_ids: ["4.1.2", "4.2.3", "4.2.4", "5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5"]
-domain_ids: ["4", "5"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["4.1.2", "4.2.3", "4.2.4", "5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5", "1.3.4", "1.3.6", "2.2.1", "2.2.2", "2.3.2"]
+domain_ids: ["4", "5", "1", "2"]
 sources:
   - /raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
@@ -23,6 +23,11 @@ sources:
   - /raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md
   - /raw/skills/5.3.4-identify-and-troubleshoot-hybrid-and-private-connectivity-issues.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
+  - /raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
+  - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
+  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
 status: verified
 ---
 # Core model
@@ -72,6 +77,12 @@ Use route associations, Flow Logs, Reachability Analyzer, NAT/endpoint/TGW/VPN m
 - [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
 - [VPC connectivity failure](../playbooks/vpc-connectivity-failure.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Compute, storage, health, and recovery paths
+
+ENIs, subnets, routes, security groups, network ACLs, addresses, DNS, and available subnet capacity affect EC2 performance, shared-storage mounts, load-balancer health, scaling launches, and restored database reachability. A recovered resource is not usable until the entire path and application endpoint are correct.
+
 # Sources
 
 - [Skill 4.1.2](../../raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md)
@@ -89,3 +100,8 @@ Use route associations, Flow Logs, Reachability Analyzer, NAT/endpoint/TGW/VPN m
 - [Skill 5.3.3](../../raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md)
 - [Skill 5.3.4](../../raw/skills/5.3.4-identify-and-troubleshoot-hybrid-and-private-connectivity-issues.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
+- [Skill 1.3.4](../../raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md)
+- [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
+- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)

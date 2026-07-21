@@ -4,11 +4,14 @@ title: Backup
 service_id: backup
 description: Coordinates backup plans, assignments, vaults, copies, recovery points, and restore testing.
 tags: [soa-c03, domain-2, aws-backup, backup]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["2.3.1"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["2.3.1", "2.3.2", "2.3.3", "2.3.4"]
 domain_ids: ["2"]
 sources:
   - /raw/skills/2.3.1-automate-snapshots-and-backups.md
+  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
+  - /raw/skills/2.3.3-implement-versioning-for-storage-services.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 
@@ -63,6 +66,21 @@ Use job status/message, copy status, recovery-point inventory, retention/lock st
 - [Backup job failure](../playbooks/backup-job-failure.md)
 - [Database recovery](../concepts/database-recovery.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Protection object model
+
+`plan -> rule -> assignment -> job -> recovery point -> vault -> copy -> restore test`
+
+Schedule, retention, lifecycle, vault policy, Vault Lock, role, KMS access, and copy destination are independent controls. Continuous and periodic protection have different recovery-point behavior.
+
+## Restore evidence
+
+A successful backup job proves capture, not application recovery or RTO. Validate restore permissions, resource recreation, data correctness, dependency configuration, application cutover, monitoring, and measured elapsed time.
+
 # Sources
 
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+- [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)

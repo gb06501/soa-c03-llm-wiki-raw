@@ -4,9 +4,9 @@ title: Elastic Load Balancing
 service_id: elastic-load-balancing
 description: Terminates, passes through, or routes encrypted connections through managed load balancers.
 tags: ["soa-c03", "domain-4", "elastic-load-balancing", "tls", domain-5, network-evidence]
-timestamp: 2026-07-21T22:45:00+02:00
-skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.1", "5.3.2", "5.3.5"]
-domain_ids: ["4", "5"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.1", "5.3.2", "5.3.5", "2.1.1", "2.2.1", "2.2.2", "2.3.4"]
+domain_ids: ["4", "5", "2"]
 sources:
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
   - /raw/skills/5.1.3-audit-network-protection-services-in-one-account.md
@@ -15,6 +15,10 @@ sources:
   - /raw/skills/5.3.1-troubleshoot-vpc-configurations.md
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
+  - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
+  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 # Core model
@@ -50,6 +54,14 @@ Load-balancer hourly/capacity and cross-AZ paths are cost inputs, but consolidat
 - [Network request tracing](../playbooks/network-request-tracing.md)
 - [Network performance diagnosis](../playbooks/network-performance-diagnosis.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Load balancer and health model
+
+ALB routes HTTP/HTTPS requests, NLB handles high-performance TCP/UDP/TLS flows, and Gateway Load Balancer inserts virtual appliances. Listener, rule, target group, health-check path/port/protocol, target state, security path, and application response determine usable capacity.
+
+ELB health can drive Auto Scaling replacement, but Route 53 health separately controls DNS answers.
+
 # Sources
 
 - [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
@@ -59,3 +71,7 @@ Load-balancer hourly/capacity and cross-AZ paths are cost inputs, but consolidat
 - [Skill 5.3.1](../../raw/skills/5.3.1-troubleshoot-vpc-configurations.md)
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
+- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
+- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)

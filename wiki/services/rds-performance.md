@@ -4,13 +4,18 @@ title: RDS
 service_id: rds
 description: Runs managed relational databases with observable compute, connection, storage, query, scaling, and recovery behavior.
 tags: [soa-c03, domain-1, rds, database, performance]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["1.2.1", "1.3.1", "1.3.5"]
-domain_ids: ["1"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["1.2.1", "1.3.1", "1.3.5", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4"]
+domain_ids: ["1", "2"]
 sources:
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md
+  - /raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
+  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 
@@ -71,9 +76,27 @@ baseline -> limiting layer -> one targeted change -> impact review
 - [Resource performance diagnosis](../playbooks/resource-performance-diagnosis.md)
 - [Remediation tool selection](../decision-guides/remediation-tool-selection.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Monitoring layers
+
+CloudWatch shows service-level resource behavior; Enhanced Monitoring shows operating-system detail; database insights show load, waits, SQL, users, and hosts; logs show engine events. Start at the constrained layer.
+
+## Scaling and proxy boundary
+
+Instance class changes compute and memory. Read replicas offload reads and can lag. Storage autoscaling grows space within bounds. RDS Proxy pools connections; it does not add database compute or cache query results.
+
+## Backup, restore, and availability
+
+Multi-AZ is availability, not backup or read scaling. Snapshot and point-in-time restore create a new database identity that requires network, parameter, security, endpoint, monitoring, and application cutover validation.
+
 # Sources
 
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.5](../../raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md)
-
+- [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)

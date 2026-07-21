@@ -6,34 +6,34 @@
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [1.1.1](1.1.1.md) | Configure monitoring and logging for workloads | Needs reconciliation |
-| [1.1.2](1.1.2.md) | Configure and manage the CloudWatch agent | Needs reconciliation |
-| [1.1.3](1.1.3.md) | Configure and troubleshoot CloudWatch alarms | Needs reconciliation |
-| [1.1.4](1.1.4.md) | Create and manage CloudWatch dashboards | Needs reconciliation |
-| [1.1.5](1.1.5.md) | Configure SNS notifications and alarm integration | Needs reconciliation |
-| [1.2.1](1.2.1.md) | Analyze performance metrics and automate remediation | Needs reconciliation |
-| [1.2.2](1.2.2.md) | Route, enrich, and deliver events with EventBridge | Needs reconciliation |
-| [1.2.3](1.2.3.md) | Create and run Systems Manager Automation runbooks | Needs reconciliation |
-| [1.3.1](1.3.1.md) | Optimize compute resources and remediate performance problems | Needs reconciliation |
-| [1.3.2](1.3.2.md) | Analyze and optimize EBS performance | Needs reconciliation |
-| [1.3.3](1.3.3.md) | Implement and optimize S3 performance strategies | Needs reconciliation |
-| [1.3.4](1.3.4.md) | Evaluate and optimize shared storage solutions | Needs reconciliation |
-| [1.3.5](1.3.5.md) | Monitor and optimize Amazon RDS | Needs reconciliation |
-| [1.3.6](1.3.6.md) | Implement, monitor, and optimize EC2 instances, storage, and networking | Needs reconciliation |
+| [1.1.1](1.1.1.md) | Configure monitoring and logging for workloads | Validated |
+| [1.1.2](1.1.2.md) | Configure and manage the CloudWatch agent | Validated |
+| [1.1.3](1.1.3.md) | Configure and troubleshoot CloudWatch alarms | Validated |
+| [1.1.4](1.1.4.md) | Create and manage CloudWatch dashboards | Validated |
+| [1.1.5](1.1.5.md) | Configure SNS notifications and alarm integration | Validated |
+| [1.2.1](1.2.1.md) | Analyze performance metrics and automate remediation | Validated |
+| [1.2.2](1.2.2.md) | Route, enrich, and deliver events with EventBridge | Validated |
+| [1.2.3](1.2.3.md) | Create and run Systems Manager Automation runbooks | Validated |
+| [1.3.1](1.3.1.md) | Optimize compute resources and remediate performance problems | Validated |
+| [1.3.2](1.3.2.md) | Analyze and optimize EBS performance | Validated |
+| [1.3.3](1.3.3.md) | Implement and optimize S3 performance strategies | Validated |
+| [1.3.4](1.3.4.md) | Evaluate and optimize shared storage solutions | Validated |
+| [1.3.5](1.3.5.md) | Monitor and optimize Amazon RDS | Validated |
+| [1.3.6](1.3.6.md) | Implement, monitor, and optimize EC2 instances, storage, and networking | Validated |
 
 ## [Domain 2: Reliability and Business Continuity](../domains/domain-2.md)
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [2.1.1](2.1.1.md) | Configure and manage scaling mechanisms in compute environments | Needs reconciliation |
-| [2.1.2](2.1.2.md) | Implement caching for dynamic scalability | Needs reconciliation |
-| [2.1.3](2.1.3.md) | Configure and manage scaling in AWS managed databases | Needs reconciliation |
-| [2.2.1](2.2.1.md) | Configure and troubleshoot ELB and Route 53 health checks | Needs reconciliation |
-| [2.2.2](2.2.2.md) | Configure fault-tolerant systems | Needs reconciliation |
-| [2.3.1](2.3.1.md) | Automate snapshots and backups | Needs reconciliation |
-| [2.3.2](2.3.2.md) | Restore databases to meet RTO, RPO, and cost requirements | Needs reconciliation |
-| [2.3.3](2.3.3.md) | Implement versioning for storage services | Needs reconciliation |
-| [2.3.4](2.3.4.md) | Follow disaster-recovery procedures and best practices | Needs reconciliation |
+| [2.1.1](2.1.1.md) | Configure and manage scaling mechanisms in compute environments | Validated |
+| [2.1.2](2.1.2.md) | Implement caching for dynamic scalability | Validated |
+| [2.1.3](2.1.3.md) | Configure and manage scaling in AWS managed databases | Validated |
+| [2.2.1](2.2.1.md) | Configure and troubleshoot ELB and Route 53 health checks | Validated |
+| [2.2.2](2.2.2.md) | Configure fault-tolerant systems | Validated |
+| [2.3.1](2.3.1.md) | Automate snapshots and backups | Validated |
+| [2.3.2](2.3.2.md) | Restore databases to meet RTO, RPO, and cost requirements | Validated |
+| [2.3.3](2.3.3.md) | Implement versioning for storage services | Validated |
+| [2.3.4](2.3.4.md) | Follow disaster-recovery procedures and best practices | Validated |
 
 ## [Domain 3: Deployment, Provisioning, and Automation](../domains/domain-3.md)
 

@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T22:45:00+02:00"
+updated_at: "2026-07-22T09:00:00+02:00"
 scope: "SOA-C03 complete corpus"
 principle: "Plan all skills globally; implement in domain-sized batches; reconcile after Domain 5."
 counts:
@@ -46,10 +46,6 @@ pages:
     type: "Concept"
     status: implemented
     skill_ids: ["3.2.2"]
-  - path: "wiki/concepts/evidence-selection.md"
-    type: "Concept"
-    status: planned
-    skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6"]
   - path: "wiki/concepts/evidence-to-remediation-loop.md"
     type: "Concept"
     status: implemented
@@ -77,7 +73,7 @@ pages:
   - path: "wiki/concepts/observability-signal-selection.md"
     type: "Concept"
     status: implemented
-    skill_ids: []
+    skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.2.1", "1.3.5", "1.3.6", "1.1.5", "1.2.2", "1.2.3", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "2.1.1", "2.1.2", "2.1.3", "2.2.1", "2.2.2", "2.3.1", "2.3.2", "2.3.3", "2.3.4"]
   - path: "wiki/concepts/operational-automation.md"
     type: "Concept"
     status: implemented
@@ -501,7 +497,7 @@ pages:
   - path: "wiki/services/aws-backup.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["2.3.1"]
+    skill_ids: ["2.3.1", "2.3.2", "2.3.3", "2.3.4"]
   - path: "wiki/services/caching.md"
     type: "Concept"
     status: implemented
@@ -533,7 +529,7 @@ pages:
   - path: "wiki/services/cloudwatch-telemetry.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.1.1","5.3.2","5.3.5"]
+    skill_ids: ["1.1.1", "1.1.2", "1.2.1", "5.3.2", "5.3.5", "1.1.3", "1.1.4", "1.3.1", "1.3.2", "1.3.5", "1.3.6", "2.1.1", "2.1.3", "2.2.1"]
   - path: "wiki/services/compute-scaling.md"
     type: "Concept"
     status: implemented
@@ -549,15 +545,15 @@ pages:
   - path: "wiki/services/ebs-performance.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.3.2"]
+    skill_ids: ["1.2.1", "1.3.1", "1.3.2", "1.3.6", "2.2.2", "2.3.1"]
   - path: "wiki/services/ec2-performance.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.3.1", "1.3.6"]
+    skill_ids: ["1.1.2", "1.2.1", "1.3.1", "1.3.2", "1.3.6", "3.1.1", "3.1.3", "3.1.5", "1.1.1", "1.1.3", "2.1.1", "2.2.2", "2.3.1"]
   - path: "wiki/services/eventbridge.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.2.2"]
+    skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "3.2.2", "2.2.2", "2.3.1"]
   - path: "wiki/services/hybrid-private-connectivity.md"
     type: "Concept"
     status: implemented
@@ -597,7 +593,7 @@ pages:
   - path: "wiki/services/rds-performance.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.3.5"]
+    skill_ids: ["1.2.1", "1.3.1", "1.3.5", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4"]
   - path: "wiki/services/route53-resolver.md"
     type: "AWS Feature"
     status: implemented
@@ -609,7 +605,7 @@ pages:
   - path: "wiki/services/s3-performance.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.3.3","5.1.2","5.1.4","5.2.3","5.3.2"]
+    skill_ids: ["1.3.3", "1.3.4", "3.2.2", "5.1.2", "5.1.4", "5.2.3", "5.3.2", "1.1.1", "1.3.1", "2.2.2", "2.3.1", "2.3.3", "2.3.4"]
   - path: "wiki/services/secrets-management.md"
     type: "Concept"
     status: implemented
@@ -621,11 +617,11 @@ pages:
   - path: "wiki/services/sns-notifications.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["1.1.5"]
+    skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "3.2.2", "2.2.2", "2.3.1"]
   - path: "wiki/services/systems-manager-automation.md"
     type: "AWS Feature"
     status: implemented
-    skill_ids: ["1.2.3"]
+    skill_ids: ["1.2.1", "1.2.2", "1.2.3", "3.2.1", "3.2.2", "1.1.3"]
   - path: "wiki/services/trusted-advisor-security.md"
     type: "Concept"
     status: implemented
@@ -637,7 +633,7 @@ pages:
   - path: "wiki/services/iam.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.1.1","4.1.2"]
+    skill_ids: ["4.1.1", "4.1.2", "1.2.3", "2.3.1", "2.3.3"]
   - path: "wiki/services/iam-identity-center.md"
     type: "AWS Service"
     status: implemented
@@ -649,7 +645,7 @@ pages:
   - path: "wiki/services/cloudtrail.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.1.2","4.1.3","4.1.4","4.2.4"]
+    skill_ids: ["4.1.2", "4.1.3", "4.1.4", "4.2.4", "1.1.1", "1.2.1", "2.1.1"]
   - path: "wiki/services/organizations.md"
     type: "AWS Service"
     status: implemented
@@ -661,11 +657,11 @@ pages:
   - path: "wiki/services/trusted-advisor.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.1.4"]
+    skill_ids: ["4.1.4", "1.3.1"]
   - path: "wiki/services/config.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.1.5","4.2.1","4.2.5"]
+    skill_ids: ["4.1.5", "4.2.1", "4.2.5", "1.2.1", "1.2.3"]
   - path: "wiki/services/macie.md"
     type: "AWS Service"
     status: implemented
@@ -673,7 +669,7 @@ pages:
   - path: "wiki/services/kms.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.1.2","4.2.1","4.2.2","4.2.4"]
+    skill_ids: ["4.1.2", "4.2.1", "4.2.2", "4.2.4", "1.1.5", "2.3.1", "2.3.2", "2.3.3"]
   - path: "wiki/services/certificate-manager.md"
     type: "AWS Service"
     status: implemented
@@ -705,35 +701,35 @@ pages:
   - path: "wiki/services/cloudfront.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.3","5.1.3","5.1.4","5.2.3","5.3.2","5.3.3","5.3.5"]
+    skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.2", "5.3.3", "5.3.5", "1.3.3", "2.1.2"]
   - path: "wiki/services/route-53.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.3","5.1.3","5.2.1","5.2.2","5.2.3","5.3.2","5.3.5"]
+    skill_ids: ["4.2.3", "5.1.3", "5.2.1", "5.2.2", "5.2.3", "5.3.2", "5.3.5", "2.2.1", "2.2.2", "2.3.2", "2.3.4"]
   - path: "wiki/services/vpc.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.1.2","4.2.3","4.2.4","5.1.1","5.1.2","5.1.3","5.1.4","5.2.1","5.2.2","5.2.3","5.3.1","5.3.2","5.3.3","5.3.4","5.3.5"]
+    skill_ids: ["4.1.2", "4.2.3", "4.2.4", "5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5", "1.3.4", "1.3.6", "2.2.1", "2.2.2", "2.3.2"]
   - path: "wiki/services/elastic-load-balancing.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.3","5.1.3","5.1.4","5.2.3","5.3.1","5.3.2","5.3.5"]
+    skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.1", "5.3.2", "5.3.5", "2.1.1", "2.2.1", "2.2.2", "2.3.4"]
   - path: "wiki/services/dynamodb.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.2","5.1.2","5.1.4"]
+    skill_ids: ["4.2.2", "5.1.2", "5.1.4", "1.2.1", "2.1.2", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4"]
   - path: "wiki/services/aurora.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.2","4.2.3","4.2.4"]
+    skill_ids: ["4.2.2", "4.2.3", "4.2.4", "1.2.1", "1.3.5", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4"]
   - path: "wiki/services/efs.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.2","4.2.3"]
+    skill_ids: ["4.2.2", "4.2.3", "1.3.4", "2.2.2", "2.3.4"]
   - path: "wiki/services/fsx.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["4.2.2"]
+    skill_ids: ["4.2.2", "1.3.4", "2.3.3"]
   - path: "wiki/services/iam-access-analyzer.md"
     type: "AWS Feature"
     status: implemented
@@ -753,11 +749,11 @@ pages:
   - path: "wiki/services/cloudformation.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.1.2", "3.1.3", "3.1.4", "3.1.5"]
+    skill_ids: ["3.1.2", "3.1.3", "3.1.4", "3.1.5", "1.2.1", "2.3.4"]
   - path: "wiki/services/cdk.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.1.2", "3.1.3"]
+    skill_ids: ["3.1.2", "3.1.3", "2.3.4"]
   - path: "wiki/services/service-catalog.md"
     type: "AWS Service"
     status: implemented
@@ -769,43 +765,43 @@ pages:
   - path: "wiki/services/ec2-auto-scaling.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["2.1.1", "3.1.3", "3.1.5"]
+    skill_ids: ["2.1.1", "3.1.5", "1.1.3", "1.2.1", "1.3.1", "1.3.6", "2.2.2"]
   - path: "wiki/services/ecs.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.1.3","3.1.5","5.3.2"]
+    skill_ids: ["3.1.3", "3.1.5", "5.3.2", "1.1.1", "1.1.2", "1.2.1", "1.3.1", "2.1.1", "2.3.2"]
   - path: "wiki/services/eks.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.1.3","5.3.2"]
+    skill_ids: ["3.1.3", "5.3.2", "1.1.1", "1.1.2", "1.2.1", "1.3.1", "2.1.1", "2.3.2"]
   - path: "wiki/services/lambda.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.1.3", "3.1.5", "3.2.2"]
+    skill_ids: ["3.1.3", "3.1.5", "3.2.2", "1.1.1", "1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "2.1.1", "2.3.2"]
   - path: "wiki/services/systems-manager.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.2.1", "3.2.2"]
+    skill_ids: ["3.2.1", "3.2.2", "1.1.2", "1.1.3", "1.2.1", "1.2.2", "1.2.3"]
   - path: "wiki/services/sqs.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.2.2"]
+    skill_ids: ["3.2.2", "1.1.5", "1.2.2", "2.2.2"]
   - path: "wiki/services/step-functions.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.2.2"]
+    skill_ids: ["3.2.2", "1.1.5", "1.2.2", "2.2.2"]
   - path: "wiki/services/devops-agent.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["3.2.2"]
+    skill_ids: ["3.2.2", "1.2.1"]
   - path: "wiki/services/athena.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["5.1.4","5.3.2"]
+    skill_ids: ["5.1.4", "5.3.2", "1.1.1", "1.3.1"]
   - path: "wiki/services/cost-explorer.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["5.1.4"]
+    skill_ids: ["5.1.4", "1.3.1"]
   - path: "wiki/services/direct-connect.md"
     type: "AWS Service"
     status: implemented
@@ -817,7 +813,7 @@ pages:
   - path: "wiki/services/global-accelerator.md"
     type: "AWS Service"
     status: implemented
-    skill_ids: ["5.1.4","5.2.3","5.3.5"]
+    skill_ids: ["5.1.4", "5.2.3", "5.3.5", "2.3.4"]
   - path: "wiki/services/network-firewall.md"
     type: "AWS Service"
     status: implemented
@@ -886,11 +882,93 @@ pages:
     type: "AWS Feature"
     status: implemented
     skill_ids: ["5.3.5"]
+  - path: "wiki/services/application-auto-scaling.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["2.1.3"]
+  - path: "wiki/services/application-recovery-controller.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["2.2.2", "2.3.4"]
+  - path: "wiki/services/backup-audit-manager.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["2.3.1"]
+  - path: "wiki/services/cloudwatch-database-insights.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["1.3.5"]
+  - path: "wiki/services/compute-optimizer.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.3.1"]
+  - path: "wiki/services/container-insights.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["1.1.1", "1.1.2"]
+  - path: "wiki/services/datasync.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.3.3"]
+  - path: "wiki/services/dax.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["2.1.2", "2.1.3", "2.3.1"]
+  - path: "wiki/services/elasticache.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["2.1.2", "2.1.3"]
+  - path: "wiki/services/fargate.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["2.1.1"]
+  - path: "wiki/services/health.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.2.1"]
+  - path: "wiki/services/managed-grafana.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.1.1"]
+  - path: "wiki/services/managed-prometheus.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.1.1"]
+  - path: "wiki/services/rds-performance-insights.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["1.3.5"]
+  - path: "wiki/services/rds-proxy.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["1.3.5", "2.1.3", "2.3.2"]
+  - path: "wiki/services/s3-files.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["1.3.4"]
+  - path: "wiki/services/s3-transfer-acceleration.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["1.3.3"]
+  - path: "wiki/services/ses.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.1.5"]
+  - path: "wiki/services/storage-gateway.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.3.4"]
+  - path: "wiki/services/x-ray.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["1.1.1"]
 cross_domain_reconciliation:
-  status: planned
+  status: validated
   checks:
     - "Merge duplicate service and concept identities across domains."
     - "Replace planned dependency links with generated destinations."
     - "Verify every decision boundary and named section."
     - "Verify global index navigation and orphan-free graph."
     - "Report remaining gaps and unsupported claims."
+  result: "All 53 skills are atomic and validated; duplicate evidence-selection identity merged; no planned or gap coverage remains."
+

@@ -4,11 +4,14 @@ title: Step Functions
 service_id: step-functions
 description: Runs explicit stateful workflows with branching, waits, parallel work, retries, catches, and execution evidence.
 tags: [soa-c03, domain-3, step-functions, workflow, events]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["3.2.2"]
-domain_ids: ["3"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["3.2.2", "1.1.5", "1.2.2", "2.2.2"]
+domain_ids: ["3", "1", "2"]
 sources:
   - /raw/skills/3.2.2-implement-event-driven-automation.md
+  - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
+  - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
 status: verified
 ---
 
@@ -42,6 +45,15 @@ Make repeated tasks idempotent, design compensation explicitly, limit retries, p
 - [Event-driven automation](../concepts/event-driven-automation.md)
 - [Event-driven selection](../decision-guides/event-driven-automation-selection.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Stateful operational workflows
+
+Use Step Functions when the reaction requires explicit state, branching, waits, parallel work, retries, catches, or human-visible execution history. It is not the same as EventBridge routing, SNS fan-out, or SQS buffering.
+
 # Sources
 
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
+- [Skill 1.1.5](../../raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md)
+- [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
