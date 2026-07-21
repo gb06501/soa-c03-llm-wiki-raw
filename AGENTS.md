@@ -175,6 +175,7 @@ Generate navigable projections instead:
 - `wiki/domains/domain-N.md` collects every source skill, implemented page, planned page, and coverage status for one domain.
 - `wiki/skills/ID.md` links one skill ID to its immutable raw source, implemented knowledge, planned knowledge, and processing state.
 - `wiki/domains/index.md` and `wiki/skills/index.md` provide corpus-wide entry points.
+- The root `wiki/index.md` lists each navigation dimension once. Global knowledge-type links must not be repeated inside domain sections; domain-specific navigation belongs in `wiki/domains/domain-N.md`.
 - These files are derived catalogues, not new semantic knowledge objects, and do not add a page type or change coverage counts.
 - Tags remain retrieval metadata. Do not generate one page per tag unless a demonstrated human workflow justifies the additional maintenance surface.
 - Run `python3 scripts/generate_navigation.py` after raw skill metadata, wiki frontmatter, coverage status, or the page plan changes.
