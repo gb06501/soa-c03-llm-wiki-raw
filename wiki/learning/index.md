@@ -11,3 +11,7 @@
 ## Domain 3: Deployment, provisioning, and automation
 
 - [Domain 3 learning path](paths/domain-3-learning-path.md) - Orders Domain 3 study from immutable artifacts and infrastructure ownership through safe deployment and automation.
+
+## Domain 4: Security and compliance
+
+- [Domain 4 learning path](paths/domain-4-learning-path.md) - Orders authorization, multi-account governance, compliance, data protection, secrets, findings, and verified remediation.
