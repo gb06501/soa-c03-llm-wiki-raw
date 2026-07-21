@@ -1,5 +1,13 @@
 # Wiki update log
 
+## [2026-07-21] generate | Domain 4 security and compliance
+
+- **Scope:** Processed all 10 immutable Domain 4 skills with 86 atomic service, feature, and mechanism coverage items.
+- **Knowledge:** Added 58 semantic pages: 25 canonical AWS service/product pages, 2 AWS feature pages, 11 concepts, 10 decision guides, 8 troubleshooting playbooks, 1 exam-trap page, and 1 learning path.
+- **Identity repair:** Reclassified six broad planned service bundles as concepts and registered only exact AWS service/product identities.
+- **State:** Marked every Domain 4 facet destination validated and updated the page plan, manifest, service registry, indexes, and generated navigation.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] repair | Root navigation deduplication
 
 - **Root cause:** Domain sections repeated global service, concept, decision-guide, and playbook catalogue links without applying a domain filter.

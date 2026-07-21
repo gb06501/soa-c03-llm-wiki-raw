@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T18:00:00+02:00"
+updated_at: "2026-07-21T22:00:00+02:00"
 scope: "SOA-C03 complete corpus"
 principle: "Plan all skills globally; implement in domain-sized batches; reconcile after Domain 5."
 counts:
@@ -8,7 +8,7 @@ counts:
 pages:
   - path: "wiki/concepts/access-evaluation.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.2"]
   - path: "wiki/concepts/cross-account-resource-provisioning.md"
     type: "Concept"
@@ -16,7 +16,7 @@ pages:
     skill_ids: ["3.1.4"]
   - path: "wiki/concepts/data-classification.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.1"]
   - path: "wiki/concepts/database-recovery.md"
     type: "Concept"
@@ -40,7 +40,7 @@ pages:
     skill_ids: ["2.3.4"]
   - path: "wiki/concepts/encryption-in-transit.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.3"]
   - path: "wiki/concepts/event-driven-automation.md"
     type: "Concept"
@@ -60,7 +60,7 @@ pages:
     skill_ids: ["2.2.2"]
   - path: "wiki/concepts/multi-account-security-governance.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5"]
   - path: "wiki/concepts/network-cost-optimization.md"
     type: "Concept"
@@ -96,7 +96,7 @@ pages:
     skill_ids: ["2.1.1", "2.1.2", "2.1.3", "2.2.1", "2.2.2", "2.3.1", "2.3.2", "2.3.3", "2.3.4"]
   - path: "wiki/concepts/security-findings.md"
     type: "Concept"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.5"]
   - path: "wiki/concepts/storage-versioning.md"
     type: "Concept"
@@ -108,7 +108,7 @@ pages:
     skill_ids: ["3.1.6"]
   - path: "wiki/decision-guides/access-denial-evidence-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.2"]
   - path: "wiki/decision-guides/alarm-design.md"
     type: "Decision Guide"
@@ -128,7 +128,7 @@ pages:
     skill_ids: ["5.3.3"]
   - path: "wiki/decision-guides/compliance-monitoring-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.5"]
   - path: "wiki/decision-guides/compute-optimization.md"
     type: "Decision Guide"
@@ -148,7 +148,7 @@ pages:
     skill_ids: ["1.1.4"]
   - path: "wiki/decision-guides/data-protection-control-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.1"]
   - path: "wiki/decision-guides/database-remediation.md"
     type: "Decision Guide"
@@ -192,7 +192,7 @@ pages:
     skill_ids: ["1.3.2"]
   - path: "wiki/decision-guides/encryption-at-rest-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.2"]
   - path: "wiki/decision-guides/event-driven-automation-selection.md"
     type: "Decision Guide"
@@ -208,7 +208,7 @@ pages:
     skill_ids: ["2.2.2"]
   - path: "wiki/decision-guides/iam-principal-and-policy-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.1"]
   - path: "wiki/decision-guides/infrastructure-provisioning-selection.md"
     type: "Decision Guide"
@@ -224,7 +224,7 @@ pages:
     skill_ids: ["3.1.1"]
   - path: "wiki/decision-guides/multi-account-guardrail-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.3"]
   - path: "wiki/decision-guides/network-cost-optimization.md"
     type: "Decision Guide"
@@ -268,15 +268,15 @@ pages:
     skill_ids: ["1.3.3"]
   - path: "wiki/decision-guides/secrets-storage-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.4"]
   - path: "wiki/decision-guides/security-check-remediation-priority.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.4"]
   - path: "wiki/decision-guides/security-finding-triage.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.5"]
   - path: "wiki/decision-guides/shared-storage-performance.md"
     type: "Decision Guide"
@@ -292,7 +292,7 @@ pages:
     skill_ids: ["1.1.1", "1.1.2"]
   - path: "wiki/decision-guides/tls-certificate-selection.md"
     type: "Decision Guide"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.3"]
   - path: "wiki/decision-guides/versioning-backup-object-lock-selection.md"
     type: "Decision Guide"
@@ -316,7 +316,7 @@ pages:
     skill_ids: ["3.1.1", "3.1.2", "3.1.3", "3.1.4", "3.1.5", "3.1.6", "3.2.1", "3.2.2"]
   - path: "wiki/exam-traps/domain-4-exam-traps.md"
     type: "Exam Trap"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5"]
   - path: "wiki/exam-traps/domain-5-exam-traps.md"
     type: "Exam Trap"
@@ -336,7 +336,7 @@ pages:
     skill_ids: ["3.1.1", "3.1.2", "3.1.3", "3.1.4", "3.1.5", "3.1.6", "3.2.1", "3.2.2"]
   - path: "wiki/learning/paths/domain-4-learning-path.md"
     type: "Learning Path"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.1", "4.1.2", "4.1.3", "4.1.4", "4.1.5", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5"]
   - path: "wiki/learning/paths/domain-5-learning-path.md"
     type: "Learning Path"
@@ -344,7 +344,7 @@ pages:
     skill_ids: ["5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5"]
   - path: "wiki/playbooks/access-denied.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.1", "4.1.2"]
   - path: "wiki/playbooks/alarm-and-notification-failure.md"
     type: "Troubleshooting Playbook"
@@ -372,11 +372,11 @@ pages:
     skill_ids: ["5.3.3"]
   - path: "wiki/playbooks/compliance-remediation-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.5"]
   - path: "wiki/playbooks/cross-account-access-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.3"]
   - path: "wiki/playbooks/cross-account-provisioning-failure.md"
     type: "Troubleshooting Playbook"
@@ -384,7 +384,7 @@ pages:
     skill_ids: ["3.1.4"]
   - path: "wiki/playbooks/data-classification-gap.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.1"]
   - path: "wiki/playbooks/database-restore-and-cutover.md"
     type: "Troubleshooting Playbook"
@@ -440,7 +440,7 @@ pages:
     skill_ids: ["3.1.1"]
   - path: "wiki/playbooks/kms-access-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.2"]
   - path: "wiki/playbooks/missing-telemetry.md"
     type: "Troubleshooting Playbook"
@@ -472,11 +472,11 @@ pages:
     skill_ids: ["2.1.1"]
   - path: "wiki/playbooks/secret-access-and-rotation-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.4"]
   - path: "wiki/playbooks/security-finding-remediation.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.1.4", "4.2.5"]
   - path: "wiki/playbooks/storage-version-recovery.md"
     type: "Troubleshooting Playbook"
@@ -488,7 +488,7 @@ pages:
     skill_ids: ["3.1.6"]
   - path: "wiki/playbooks/tls-connectivity-failure.md"
     type: "Troubleshooting Playbook"
-    status: planned
+    status: implemented
     skill_ids: ["4.2.3"]
   - path: "wiki/playbooks/unhealthy-target-and-dns-failover.md"
     type: "Troubleshooting Playbook"
@@ -539,8 +539,8 @@ pages:
     status: implemented
     skill_ids: ["2.1.1"]
   - path: "wiki/services/config-and-compliance.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["4.1.5"]
   - path: "wiki/services/content-distribution.md"
     type: "AWS Service"
@@ -563,16 +563,16 @@ pages:
     status: planned
     skill_ids: ["5.3.4"]
   - path: "wiki/services/iam-access-control.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["4.1.1"]
   - path: "wiki/services/image-management.md"
     type: "Concept"
     status: implemented
     skill_ids: ["3.1.1"]
   - path: "wiki/services/kms-encryption-at-rest.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["4.2.2"]
   - path: "wiki/services/load-balancing-and-health-checks.md"
     type: "Concept"
@@ -587,8 +587,8 @@ pages:
     status: planned
     skill_ids: ["5.1.3"]
   - path: "wiki/services/organizations-and-multi-account.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["4.1.3"]
   - path: "wiki/services/private-connectivity.md"
     type: "AWS Service"
@@ -611,8 +611,8 @@ pages:
     status: implemented
     skill_ids: ["1.3.3"]
   - path: "wiki/services/secrets-management.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["4.2.4"]
   - path: "wiki/services/shared-storage.md"
     type: "Concept"
@@ -627,21 +627,121 @@ pages:
     status: implemented
     skill_ids: ["1.2.3"]
   - path: "wiki/services/trusted-advisor-security.md"
-    type: "AWS Service"
-    status: planned
+    type: "Concept"
+    status: implemented
     skill_ids: ["4.1.4"]
   - path: "wiki/services/vpc-networking.md"
     type: "AWS Service"
     status: planned
     skill_ids: ["5.1.1"]
-cross_domain_reconciliation:
-  status: planned
-  checks:
-    - "Merge duplicate service and concept identities across domains."
-    - "Replace planned dependency links with generated destinations."
-    - "Verify every decision boundary and named section."
-    - "Verify global index navigation and orphan-free graph."
-    - "Report remaining gaps and unsupported claims."
+  - path: "wiki/services/iam.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.1","4.1.2"]
+  - path: "wiki/services/iam-identity-center.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.1","4.1.3"]
+  - path: "wiki/services/sts.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.1","4.1.2","4.1.3"]
+  - path: "wiki/services/cloudtrail.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.2","4.1.3","4.1.4","4.2.4"]
+  - path: "wiki/services/organizations.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.3","4.1.5"]
+  - path: "wiki/services/control-tower.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.3","4.1.5"]
+  - path: "wiki/services/trusted-advisor.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.4"]
+  - path: "wiki/services/config.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.5","4.2.1","4.2.5"]
+  - path: "wiki/services/macie.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.1","4.2.5"]
+  - path: "wiki/services/kms.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.2","4.2.1","4.2.2","4.2.4"]
+  - path: "wiki/services/certificate-manager.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.3"]
+  - path: "wiki/services/private-ca.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.3"]
+  - path: "wiki/services/secrets-manager.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.2","4.2.4"]
+  - path: "wiki/services/security-hub-cspm.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.5"]
+  - path: "wiki/services/guardduty.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.5"]
+  - path: "wiki/services/inspector.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.5"]
+  - path: "wiki/services/security-agent.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.5"]
+  - path: "wiki/services/cloudfront.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.3"]
+  - path: "wiki/services/route-53.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.3"]
+  - path: "wiki/services/vpc.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.1.2","4.2.3","4.2.4"]
+  - path: "wiki/services/elastic-load-balancing.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.3"]
+  - path: "wiki/services/dynamodb.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.2"]
+  - path: "wiki/services/aurora.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.2","4.2.3","4.2.4"]
+  - path: "wiki/services/efs.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.2","4.2.3"]
+  - path: "wiki/services/fsx.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["4.2.2"]
+  - path: "wiki/services/iam-access-analyzer.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["4.1.1","4.1.2"]
+  - path: "wiki/services/systems-manager-parameter-store.md"
+    type: "AWS Feature"
+    status: implemented
+    skill_ids: ["4.2.4"]
   - path: "wiki/services/image-builder.md"
     type: "AWS Service"
     status: implemented
@@ -698,3 +798,11 @@ cross_domain_reconciliation:
     type: "AWS Service"
     status: implemented
     skill_ids: ["3.2.2"]
+cross_domain_reconciliation:
+  status: planned
+  checks:
+    - "Merge duplicate service and concept identities across domains."
+    - "Replace planned dependency links with generated destinations."
+    - "Verify every decision boundary and named section."
+    - "Verify global index navigation and orphan-free graph."
+    - "Report remaining gaps and unsupported claims."

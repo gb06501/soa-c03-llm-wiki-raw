@@ -11,3 +11,7 @@
 ## Domain 3: Deployment, provisioning, and automation
 
 - [Domain 3 exam traps](domain-3-exam-traps.md) - Corrects tempting deployment, provisioning, infrastructure-as-code, fleet automation, and event-automation misconceptions.
+
+## Domain 4: Security and compliance
+
+- [Domain 4 exam traps](domain-4-exam-traps.md) - Corrects identity, governance, compliance, classification, encryption, secrets, and finding-response misconceptions.

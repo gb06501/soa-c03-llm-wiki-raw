@@ -2,81 +2,111 @@
 
 # Domain 4: Security and Compliance
 
-This domain contains 10 source skills and 0 implemented generated pages.
+This domain contains 10 source skills and 58 implemented generated pages.
 
 ## Coverage summary
 
-- **Planned:** 10 skills
+- **Validated:** 10 skills
 
 ## Skills
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [4.1.1](../skills/4.1.1.md) | Implement IAM features | Planned |
-| [4.1.2](../skills/4.1.2.md) | Troubleshoot and audit access issues | Planned |
-| [4.1.3](../skills/4.1.3.md) | Implement secure multi-account strategies | Planned |
-| [4.1.4](../skills/4.1.4.md) | Remediate Trusted Advisor security checks | Planned |
-| [4.1.5](../skills/4.1.5.md) | Enforce compliance requirements and continuous monitoring | Planned |
-| [4.2.1](../skills/4.2.1.md) | Implement and enforce a data classification scheme | Planned |
-| [4.2.2](../skills/4.2.2.md) | Implement, configure, and troubleshoot encryption at rest | Planned |
-| [4.2.3](../skills/4.2.3.md) | Implement, configure, and troubleshoot encryption in transit | Planned |
-| [4.2.4](../skills/4.2.4.md) | Securely store secrets by using AWS services | Planned |
-| [4.2.5](../skills/4.2.5.md) | Configure reports and remediate findings from AWS services | Planned |
+| [4.1.1](../skills/4.1.1.md) | Implement IAM features | Validated |
+| [4.1.2](../skills/4.1.2.md) | Troubleshoot and audit access issues | Validated |
+| [4.1.3](../skills/4.1.3.md) | Implement secure multi-account strategies | Validated |
+| [4.1.4](../skills/4.1.4.md) | Remediate Trusted Advisor security checks | Validated |
+| [4.1.5](../skills/4.1.5.md) | Enforce compliance requirements and continuous monitoring | Validated |
+| [4.2.1](../skills/4.2.1.md) | Implement and enforce a data classification scheme | Validated |
+| [4.2.2](../skills/4.2.2.md) | Implement, configure, and troubleshoot encryption at rest | Validated |
+| [4.2.3](../skills/4.2.3.md) | Implement, configure, and troubleshoot encryption in transit | Validated |
+| [4.2.4](../skills/4.2.4.md) | Securely store secrets by using AWS services | Validated |
+| [4.2.5](../skills/4.2.5.md) | Configure reports and remediate findings from AWS services | Validated |
 
 ## Implemented knowledge
 
-No generated knowledge pages are implemented for this domain yet.
-
-## Planned knowledge
-
 ### AWS Service
 
-- <code>wiki/services/config-and-compliance.md</code>
-- <code>wiki/services/iam-access-control.md</code>
-- <code>wiki/services/kms-encryption-at-rest.md</code>
-- <code>wiki/services/organizations-and-multi-account.md</code>
-- <code>wiki/services/secrets-management.md</code>
-- <code>wiki/services/trusted-advisor-security.md</code>
+- [Aurora](../services/aurora.md)
+- [Certificate Manager](../services/certificate-manager.md)
+- [CloudFront](../services/cloudfront.md)
+- [CloudTrail](../services/cloudtrail.md)
+- [Config](../services/config.md)
+- [Control Tower](../services/control-tower.md)
+- [DynamoDB](../services/dynamodb.md)
+- [EFS](../services/efs.md)
+- [Elastic Load Balancing](../services/elastic-load-balancing.md)
+- [FSx](../services/fsx.md)
+- [GuardDuty](../services/guardduty.md)
+- [IAM Identity Center](../services/iam-identity-center.md)
+- [IAM](../services/iam.md)
+- [Inspector](../services/inspector.md)
+- [KMS](../services/kms.md)
+- [Macie](../services/macie.md)
+- [Organizations](../services/organizations.md)
+- [Private CA](../services/private-ca.md)
+- [Route 53](../services/route-53.md)
+- [Secrets Manager](../services/secrets-manager.md)
+- [Security Agent](../services/security-agent.md)
+- [Security Hub CSPM](../services/security-hub-cspm.md)
+- [STS](../services/sts.md)
+- [Trusted Advisor](../services/trusted-advisor.md)
+- [VPC](../services/vpc.md)
+
+### AWS Feature
+
+- [IAM Access Analyzer](../services/iam-access-analyzer.md)
+- [Systems Manager Parameter Store](../services/systems-manager-parameter-store.md)
 
 ### Concept
 
-- <code>wiki/concepts/access-evaluation.md</code>
-- <code>wiki/concepts/data-classification.md</code>
-- <code>wiki/concepts/encryption-in-transit.md</code>
-- <code>wiki/concepts/multi-account-security-governance.md</code>
-- <code>wiki/concepts/security-findings.md</code>
+- [Access evaluation](../concepts/access-evaluation.md)
+- [Data classification](../concepts/data-classification.md)
+- [Encryption in transit](../concepts/encryption-in-transit.md)
+- [Multi-account security governance](../concepts/multi-account-security-governance.md)
+- [Security findings](../concepts/security-findings.md)
+- [Config and continuous compliance](../services/config-and-compliance.md)
+- [IAM access control](../services/iam-access-control.md)
+- [KMS encryption at rest](../services/kms-encryption-at-rest.md)
+- [Organizations and multi-account security](../services/organizations-and-multi-account.md)
+- [Secrets management](../services/secrets-management.md)
+- [Trusted Advisor security checks](../services/trusted-advisor-security.md)
 
 ### Decision Guide
 
-- <code>wiki/decision-guides/access-denial-evidence-selection.md</code>
-- <code>wiki/decision-guides/compliance-monitoring-selection.md</code>
-- <code>wiki/decision-guides/data-protection-control-selection.md</code>
-- <code>wiki/decision-guides/encryption-at-rest-selection.md</code>
-- <code>wiki/decision-guides/iam-principal-and-policy-selection.md</code>
-- <code>wiki/decision-guides/multi-account-guardrail-selection.md</code>
-- <code>wiki/decision-guides/secrets-storage-selection.md</code>
-- <code>wiki/decision-guides/security-check-remediation-priority.md</code>
-- <code>wiki/decision-guides/security-finding-triage.md</code>
-- <code>wiki/decision-guides/tls-certificate-selection.md</code>
+- [Access denial evidence selection](../decision-guides/access-denial-evidence-selection.md)
+- [Compliance monitoring selection](../decision-guides/compliance-monitoring-selection.md)
+- [Data protection control selection](../decision-guides/data-protection-control-selection.md)
+- [Encryption at rest selection](../decision-guides/encryption-at-rest-selection.md)
+- [IAM principal and policy selection](../decision-guides/iam-principal-and-policy-selection.md)
+- [Multi-account guardrail selection](../decision-guides/multi-account-guardrail-selection.md)
+- [Secrets storage selection](../decision-guides/secrets-storage-selection.md)
+- [Security check remediation priority](../decision-guides/security-check-remediation-priority.md)
+- [Security finding triage](../decision-guides/security-finding-triage.md)
+- [TLS certificate selection](../decision-guides/tls-certificate-selection.md)
 
 ### Troubleshooting Playbook
 
-- <code>wiki/playbooks/access-denied.md</code>
-- <code>wiki/playbooks/compliance-remediation-failure.md</code>
-- <code>wiki/playbooks/cross-account-access-failure.md</code>
-- <code>wiki/playbooks/data-classification-gap.md</code>
-- <code>wiki/playbooks/kms-access-failure.md</code>
-- <code>wiki/playbooks/secret-access-and-rotation-failure.md</code>
-- <code>wiki/playbooks/security-finding-remediation.md</code>
-- <code>wiki/playbooks/tls-connectivity-failure.md</code>
+- [Access denied](../playbooks/access-denied.md)
+- [Compliance remediation failure](../playbooks/compliance-remediation-failure.md)
+- [Cross-account access failure](../playbooks/cross-account-access-failure.md)
+- [Data classification gap](../playbooks/data-classification-gap.md)
+- [KMS access failure](../playbooks/kms-access-failure.md)
+- [Secret access and rotation failure](../playbooks/secret-access-and-rotation-failure.md)
+- [Security finding remediation](../playbooks/security-finding-remediation.md)
+- [TLS connectivity failure](../playbooks/tls-connectivity-failure.md)
 
 ### Exam Trap
 
-- <code>wiki/exam-traps/domain-4-exam-traps.md</code>
+- [Domain 4 exam traps](../exam-traps/domain-4-exam-traps.md)
 
 ### Learning Path
 
-- <code>wiki/learning/paths/domain-4-learning-path.md</code>
+- [Domain 4 learning path](../learning/paths/domain-4-learning-path.md)
+
+## Planned knowledge
+
+No additional planned pages are assigned to this domain.
 
 ## State
 

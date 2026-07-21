@@ -56,3 +56,51 @@ These paths are retained to avoid unnecessary link churn; their frontmatter now 
 - [Load balancing and health checks](load-balancing-and-health-checks.md)
 - [AMI and container image management](image-management.md)
 - [CloudFormation and CDK lifecycle](cloudformation-and-cdk.md)
+
+### Security, identity, and governance
+
+- [IAM](iam.md)
+- [IAM Identity Center](iam-identity-center.md)
+- [STS](sts.md)
+- [CloudTrail](cloudtrail.md)
+- [Organizations](organizations.md)
+- [Control Tower](control-tower.md)
+- [Trusted Advisor](trusted-advisor.md)
+- [Config](config.md)
+
+### Data protection and security findings
+
+- [Macie](macie.md)
+- [KMS](kms.md)
+- [Certificate Manager](certificate-manager.md)
+- [Private CA](private-ca.md)
+- [Secrets Manager](secrets-manager.md)
+- [Security Hub CSPM](security-hub-cspm.md)
+- [GuardDuty](guardduty.md)
+- [Inspector](inspector.md)
+- [Security Agent](security-agent.md)
+
+### Network, edge, storage, and database services
+
+- [CloudFront](cloudfront.md)
+- [Route 53](route-53.md)
+- [VPC](vpc.md)
+- [Elastic Load Balancing](elastic-load-balancing.md)
+- [DynamoDB](dynamodb.md)
+- [Aurora](aurora.md)
+- [EFS](efs.md)
+- [FSx](fsx.md)
+
+## Domain 4 AWS features
+
+- [IAM Access Analyzer](iam-access-analyzer.md) — parent: IAM.
+- [Systems Manager Parameter Store](systems-manager-parameter-store.md) — parent: Systems Manager.
+
+## Domain 4 cross-service concepts at stable paths
+
+- [IAM access control](iam-access-control.md)
+- [Organizations and multi-account security](organizations-and-multi-account.md)
+- [Config and continuous compliance](config-and-compliance.md)
+- [Trusted Advisor security checks](trusted-advisor-security.md)
+- [KMS encryption at rest](kms-encryption-at-rest.md)
+- [Secrets management](secrets-management.md)

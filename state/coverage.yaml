@@ -1,5 +1,5 @@
 version: 2
-updated_at: "2026-07-21T18:00:00+02:00"
+updated_at: "2026-07-21T22:00:00+02:00"
 scope: "SOA-C03 complete 53-skill corpus"
 method: "global-plan-incremental-build"
 atomic_itemization: required
@@ -1566,431 +1566,861 @@ skills:
     path: "raw/skills/4.1.1-implement-iam-features.md"
     blob_sha: 2cdf1831552a55f342292aa847e044e5fda03140
     title: "Implement IAM features"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/iam-access-control.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "iam"
+            kind: service
+            status: standalone
+            destination: "wiki/services/iam.md"
+            section: "# Core model"
+          - identity: "iam-identity-center"
+            kind: service
+            status: standalone
+            destination: "wiki/services/iam-identity-center.md"
+            section: "# Core model"
+          - identity: "sts"
+            kind: service
+            status: standalone
+            destination: "wiki/services/sts.md"
+            section: "# Core model"
+          - identity: "iam-access-analyzer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/iam-access-analyzer.md"
+            section: "# Core model"
+          - identity: "iam-access-control"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/iam-access-control.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/iam-principal-and-policy-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/iam-principal-and-policy-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/iam-principal-and-policy-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/access-denied.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/access-denied.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/access-denied.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# IAM and access"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "4.1.2"
     domain: "4"
     path: "raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md"
     blob_sha: a6ae319a4368aeac67de811339914002793e535f
     title: "Troubleshoot and audit access issues"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/concepts/access-evaluation.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "iam"
+            kind: service
+            status: standalone
+            destination: "wiki/services/iam.md"
+            section: "# Evidence and diagnosis"
+          - identity: "cloudtrail"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudtrail.md"
+            section: "# Evidence model"
+          - identity: "sts"
+            kind: service
+            status: standalone
+            destination: "wiki/services/sts.md"
+            section: "# Evidence and diagnosis"
+          - identity: "iam-access-analyzer"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/iam-access-analyzer.md"
+            section: "# Evidence and diagnosis"
+          - identity: "kms"
+            kind: service
+            status: standalone
+            destination: "wiki/services/kms.md"
+            section: "# Access path"
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "# Evidence and diagnosis"
+          - identity: "access-evaluation"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/access-evaluation.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/access-denial-evidence-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/access-denial-evidence-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/access-denial-evidence-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/access-denied.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/access-denied.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/access-denied.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# IAM and access"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Decision layers"
+
   - id: "4.1.3"
     domain: "4"
     path: "raw/skills/4.1.3-implement-secure-multi-account-strategies.md"
     blob_sha: 31690ff51f59d0e03b476a2b368853d7d89e670f
     title: "Implement secure multi-account strategies"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/organizations-and-multi-account.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "organizations"
+            kind: service
+            status: standalone
+            destination: "wiki/services/organizations.md"
+            section: "# Core model"
+          - identity: "control-tower"
+            kind: service
+            status: standalone
+            destination: "wiki/services/control-tower.md"
+            section: "# Core model"
+          - identity: "iam-identity-center"
+            kind: service
+            status: standalone
+            destination: "wiki/services/iam-identity-center.md"
+            section: "# Core model"
+          - identity: "sts"
+            kind: service
+            status: standalone
+            destination: "wiki/services/sts.md"
+            section: "# AssumeRole gates"
+          - identity: "cloudtrail"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudtrail.md"
+            section: "# Safe operations"
+          - identity: "multi-account-security"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/organizations-and-multi-account.md"
+            section: "# Operating model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/multi-account-guardrail-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/multi-account-guardrail-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/multi-account-guardrail-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cross-account-access-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cross-account-access-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/cross-account-access-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Multi-account governance"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Regional and account completeness"
+
   - id: "4.1.4"
     domain: "4"
     path: "raw/skills/4.1.4-remediate-trusted-advisor-security-checks.md"
     blob_sha: 14a2951bc7d19ab05d53e1f13870ff121bf02582
     title: "Remediate Trusted Advisor security checks"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/trusted-advisor-security.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "trusted-advisor"
+            kind: service
+            status: standalone
+            destination: "wiki/services/trusted-advisor.md"
+            section: "# Core model"
+          - identity: "iam"
+            kind: service
+            status: embedded
+            destination: "wiki/services/trusted-advisor-security.md"
+            section: "# Remediation pattern"
+          - identity: "s3"
+            kind: service
+            status: embedded
+            destination: "wiki/services/trusted-advisor-security.md"
+            section: "# Remediation pattern"
+          - identity: "ec2"
+            kind: service
+            status: embedded
+            destination: "wiki/services/trusted-advisor-security.md"
+            section: "# Remediation pattern"
+          - identity: "cloudtrail"
+            kind: service
+            status: embedded
+            destination: "wiki/services/trusted-advisor-security.md"
+            section: "# Remediation pattern"
+          - identity: "certificate-manager"
+            kind: service
+            status: embedded
+            destination: "wiki/services/trusted-advisor-security.md"
+            section: "# Remediation pattern"
+          - identity: "advisory-remediation"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/trusted-advisor-security.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/security-check-remediation-priority.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/security-check-remediation-priority.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/security-check-remediation-priority.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/security-finding-remediation.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/security-finding-remediation.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/security-finding-remediation.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Trusted Advisor and compliance"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Change safety"
+
   - id: "4.1.5"
     domain: "4"
     path: "raw/skills/4.1.5-enforce-compliance-requirements-and-continuous-monitoring.md"
     blob_sha: 3e79d6d52b8409fddb32a9bd5ac591f02e32cd03
     title: "Enforce compliance requirements and continuous monitoring"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/config-and-compliance.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "config"
+            kind: service
+            status: standalone
+            destination: "wiki/services/config.md"
+            section: "# Core model"
+          - identity: "organizations"
+            kind: service
+            status: standalone
+            destination: "wiki/services/organizations.md"
+            section: "# Governance objects"
+          - identity: "control-tower"
+            kind: service
+            status: standalone
+            destination: "wiki/services/control-tower.md"
+            section: "# Control behavior"
+          - identity: "systems-manager"
+            kind: service
+            status: embedded
+            destination: "wiki/services/config-and-compliance.md"
+            section: "# Automation guardrails"
+          - identity: "eventbridge"
+            kind: service
+            status: embedded
+            destination: "wiki/services/config-and-compliance.md"
+            section: "# Core model"
+          - identity: "sns"
+            kind: service
+            status: embedded
+            destination: "wiki/services/config-and-compliance.md"
+            section: "# Core model"
+          - identity: "continuous-compliance"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/config-and-compliance.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/compliance-monitoring-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/compliance-monitoring-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/compliance-monitoring-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/compliance-remediation-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/compliance-remediation-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/compliance-remediation-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Trusted Advisor and compliance"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Governance layers"
+
   - id: "4.2.1"
     domain: "4"
     path: "raw/skills/4.2.1-implement-and-enforce-a-data-classification-scheme.md"
     blob_sha: 639af843711bbe521ead2aaa2f1c95847b544b1a
     title: "Implement and enforce a data classification scheme"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/concepts/data-classification.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "macie"
+            kind: service
+            status: standalone
+            destination: "wiki/services/macie.md"
+            section: "# Core model"
+          - identity: "s3"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/data-classification.md"
+            section: "# Detection and enforcement"
+          - identity: "iam"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/data-classification.md"
+            section: "# Detection and enforcement"
+          - identity: "kms"
+            kind: service
+            status: standalone
+            destination: "wiki/services/kms.md"
+            section: "# Core model"
+          - identity: "config"
+            kind: service
+            status: standalone
+            destination: "wiki/services/config.md"
+            section: "# Decision boundaries"
+          - identity: "control-tower"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/data-classification.md"
+            section: "# Detection and enforcement"
+          - identity: "security-hub-cspm"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/data-classification.md"
+            section: "# Detection and enforcement"
+          - identity: "data-classification"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/data-classification.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/data-protection-control-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/data-protection-control-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/data-protection-control-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/data-classification-gap.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/data-classification-gap.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/data-classification-gap.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Data classification"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Regional and account completeness"
+
   - id: "4.2.2"
     domain: "4"
     path: "raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md"
     blob_sha: 2a1176d854442ff42e287d58c9c96505d063e012
     title: "Implement, configure, and troubleshoot encryption at rest"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/kms-encryption-at-rest.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "kms"
+            kind: service
+            status: standalone
+            destination: "wiki/services/kms.md"
+            section: "# Core model"
+          - identity: "s3"
+            kind: service
+            status: embedded
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Service patterns"
+          - identity: "ebs"
+            kind: service
+            status: embedded
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Service patterns"
+          - identity: "rds"
+            kind: service
+            status: embedded
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Service patterns"
+          - identity: "aurora"
+            kind: service
+            status: standalone
+            destination: "wiki/services/aurora.md"
+            section: "# Core model"
+          - identity: "dynamodb"
+            kind: service
+            status: standalone
+            destination: "wiki/services/dynamodb.md"
+            section: "# Core model"
+          - identity: "efs"
+            kind: service
+            status: standalone
+            destination: "wiki/services/efs.md"
+            section: "# Core model"
+          - identity: "fsx"
+            kind: service
+            status: standalone
+            destination: "wiki/services/fsx.md"
+            section: "# Core model"
+          - identity: "backup"
+            kind: service
+            status: embedded
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Service patterns"
+          - identity: "cloudwatch"
+            kind: service
+            status: embedded
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Service patterns"
+          - identity: "sns"
+            kind: service
+            status: embedded
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Service patterns"
+          - identity: "sqs"
+            kind: service
+            status: embedded
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Service patterns"
+          - identity: "encryption-at-rest"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/kms-encryption-at-rest.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/encryption-at-rest-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/encryption-at-rest-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/encryption-at-rest-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/kms-access-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/kms-access-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/kms-access-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Encryption at rest"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Change safety"
+
   - id: "4.2.3"
     domain: "4"
     path: "raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md"
     blob_sha: 8a45f14b8213f40817143400a62e9cabdd19dbbb
     title: "Implement, configure, and troubleshoot encryption in transit"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/concepts/encryption-in-transit.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "certificate-manager"
+            kind: service
+            status: standalone
+            destination: "wiki/services/certificate-manager.md"
+            section: "# Core model"
+          - identity: "private-ca"
+            kind: service
+            status: standalone
+            destination: "wiki/services/private-ca.md"
+            section: "# Core model"
+          - identity: "elastic-load-balancing"
+            kind: service
+            status: standalone
+            destination: "wiki/services/elastic-load-balancing.md"
+            section: "# Core model"
+          - identity: "cloudfront"
+            kind: service
+            status: standalone
+            destination: "wiki/services/cloudfront.md"
+            section: "# Core model"
+          - identity: "route-53"
+            kind: service
+            status: standalone
+            destination: "wiki/services/route-53.md"
+            section: "# Core model"
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "# Security integrations"
+          - identity: "s3"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/encryption-in-transit.md"
+            section: "# Enforcement"
+          - identity: "rds"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/encryption-in-transit.md"
+            section: "# Enforcement"
+          - identity: "aurora"
+            kind: service
+            status: standalone
+            destination: "wiki/services/aurora.md"
+            section: "# Decision boundaries"
+          - identity: "efs"
+            kind: service
+            status: standalone
+            destination: "wiki/services/efs.md"
+            section: "# Decision boundaries"
+          - identity: "encryption-in-transit"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/encryption-in-transit.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/tls-certificate-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/tls-certificate-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/tls-certificate-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/tls-connectivity-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/tls-connectivity-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/tls-connectivity-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Encryption in transit"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Change safety"
+
   - id: "4.2.4"
     domain: "4"
     path: "raw/skills/4.2.4-securely-store-secrets-by-using-services.md"
     blob_sha: 3624043a7c48d3359a23902d51a3beda9ddc7fed
     title: "Securely store secrets by using AWS services"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/services/secrets-management.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "secrets-manager"
+            kind: service
+            status: standalone
+            destination: "wiki/services/secrets-manager.md"
+            section: "# Core model"
+          - identity: "systems-manager-parameter-store"
+            kind: feature
+            status: standalone
+            destination: "wiki/services/systems-manager-parameter-store.md"
+            section: "# Core model"
+          - identity: "kms"
+            kind: service
+            status: standalone
+            destination: "wiki/services/kms.md"
+            section: "# Access path"
+          - identity: "cloudformation"
+            kind: service
+            status: embedded
+            destination: "wiki/services/secrets-management.md"
+            section: "# Delivery boundary"
+          - identity: "ec2"
+            kind: service
+            status: embedded
+            destination: "wiki/services/secrets-management.md"
+            section: "# Delivery boundary"
+          - identity: "lambda"
+            kind: service
+            status: embedded
+            destination: "wiki/services/secrets-management.md"
+            section: "# Delivery boundary"
+          - identity: "ecs"
+            kind: service
+            status: embedded
+            destination: "wiki/services/secrets-management.md"
+            section: "# Delivery boundary"
+          - identity: "eks"
+            kind: service
+            status: embedded
+            destination: "wiki/services/secrets-management.md"
+            section: "# Delivery boundary"
+          - identity: "vpc"
+            kind: service
+            status: standalone
+            destination: "wiki/services/vpc.md"
+            section: "# Security integrations"
+          - identity: "secrets-lifecycle"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/services/secrets-management.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/secrets-storage-selection.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/secrets-storage-selection.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/secrets-storage-selection.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/secret-access-and-rotation-failure.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/secret-access-and-rotation-failure.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/secret-access-and-rotation-failure.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Secrets"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Change safety"
+
   - id: "4.2.5"
     domain: "4"
     path: "raw/skills/4.2.5-configure-reports-and-remediate-findings-from-services.md"
     blob_sha: 7e19f79162dcb9f6a4ce42d13478e5ec8d239dbe
     title: "Configure reports and remediate findings from AWS services"
-    status: planned
+    status: validated
     facets:
       services_features_mechanisms:
-        status: planned
-        destination: "wiki/concepts/security-findings.md"
-        section: "# Core model"
+        status: standalone
+        items:
+          - identity: "security-hub-cspm"
+            kind: service
+            status: standalone
+            destination: "wiki/services/security-hub-cspm.md"
+            section: "# Core model"
+          - identity: "guardduty"
+            kind: service
+            status: standalone
+            destination: "wiki/services/guardduty.md"
+            section: "# Core model"
+          - identity: "inspector"
+            kind: service
+            status: standalone
+            destination: "wiki/services/inspector.md"
+            section: "# Core model"
+          - identity: "config"
+            kind: service
+            status: standalone
+            destination: "wiki/services/config.md"
+            section: "# Core model"
+          - identity: "macie"
+            kind: service
+            status: standalone
+            destination: "wiki/services/macie.md"
+            section: "# Core model"
+          - identity: "security-agent"
+            kind: service
+            status: standalone
+            destination: "wiki/services/security-agent.md"
+            section: "# Core model"
+          - identity: "eventbridge"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/security-findings.md"
+            section: "# Workflow"
+          - identity: "sns"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/security-findings.md"
+            section: "# Workflow"
+          - identity: "lambda"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/security-findings.md"
+            section: "# Workflow"
+          - identity: "step-functions"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/security-findings.md"
+            section: "# Workflow"
+          - identity: "systems-manager"
+            kind: service
+            status: embedded
+            destination: "wiki/concepts/security-findings.md"
+            section: "# Workflow"
+          - identity: "finding-lifecycle"
+            kind: mechanism
+            status: standalone
+            destination: "wiki/concepts/security-findings.md"
+            section: "# Core model"
       scenario_clues_requirements:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/security-finding-triage.md"
         section: "# Decision table"
       decision_boundaries_rejected_alternatives:
-        status: planned
+        status: standalone
         destination: "wiki/decision-guides/security-finding-triage.md"
         section: "# Decision table"
       comparisons:
-        status: planned
+        status: embedded
         destination: "wiki/decision-guides/security-finding-triage.md"
         section: "# Rejection rules"
       evidence_metrics_logs_diagnosis:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/security-finding-remediation.md"
         section: "# Evidence path"
       remediation_safety:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/security-finding-remediation.md"
         section: "# Safe action"
       failure_modes_verification:
-        status: planned
+        status: embedded
         destination: "wiki/playbooks/security-finding-remediation.md"
         section: "# Verification"
       exam_traps_exceptions:
-        status: planned
+        status: standalone
         destination: "wiki/exam-traps/domain-4-exam-traps.md"
-        section: "# Traps"
+        section: "# Security findings"
       cross_domain_dependencies:
-        status: planned
+        status: embedded
         destination: "wiki/concepts/multi-account-security-governance.md"
-        reason: "Reserved for the final corpus reconciliation pass."
+        section: "# Governance layers"
+
   - id: "5.1.1"
     domain: "5"
     path: "raw/skills/5.1.1-configure-a-vpc.md"

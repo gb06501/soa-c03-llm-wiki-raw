@@ -29,3 +29,14 @@
 - [Third-party deployment failure](third-party-deployment-failure.md) - Diagnoses Terraform initialization, plan, lock, state, partial apply, drift, account, and Git release failures.
 - [Systems Manager automation execution failure](automation-execution-failure.md) - Diagnoses managed-node, command, association, patch, window, session, output, and fleet-target failures.
 - [Event-driven automation failure](event-driven-automation-failure.md) - Traces missing, duplicated, delayed, denied, throttled, or recursive automation from source to verified state.
+
+## Domain 4: Security and compliance
+
+- [Access denied](access-denied.md) - Diagnoses identity, trust, resource, boundary, organization, endpoint, KMS, and service-policy denials.
+- [Cross-account access failure](cross-account-access-failure.md) - Diagnoses role, resource-policy, SCP, KMS, endpoint, and delegated-administration failures across accounts.
+- [Compliance remediation failure](compliance-remediation-failure.md) - Diagnoses missing evaluations, stale aggregation, automation failures, and repeated drift.
+- [Data classification gap](data-classification-gap.md) - Diagnoses unscanned, unclassified, misclassified, or unenforced data.
+- [KMS access failure](kms-access-failure.md) - Diagnoses key-policy, grant, context, state, Region, and service-integration failures.
+- [TLS connectivity failure](tls-connectivity-failure.md) - Diagnoses DNS, TCP, policy, certificate, trust, SNI, listener, origin, and application layers.
+- [Secret access and rotation failure](secret-access-and-rotation-failure.md) - Diagnoses identity, policy, endpoint, version-label, target-system, and rotation-step failures.
+- [Security finding remediation](security-finding-remediation.md) - Validates, prioritizes, contains, remediates, and closes source findings safely.
