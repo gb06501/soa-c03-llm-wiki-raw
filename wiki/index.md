@@ -19,4 +19,6 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 
 - [Update log](log.md)
 - Processing state: [`state/manifest.yaml`](../state/manifest.yaml)
+- Semantic coverage: [`state/coverage.yaml`](../state/coverage.yaml)
+- Corpus page plan: [`state/page-plan.yaml`](../state/page-plan.yaml)
 
