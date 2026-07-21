@@ -50,6 +50,8 @@ When external research is requested:
 | `raw/references/` | Human-approved | Optional imported authoritative references |
 | `wiki/` | Agent-maintained | Cross-linked, generated knowledge |
 | `wiki/index.md` | Agent-maintained | Progressive-disclosure catalogue |
+| `wiki/domains/` | Agent-generated | Domain views across source skills and generated knowledge |
+| `wiki/skills/` | Agent-generated | Skill-ID views linking raw sources, coverage status, and generated pages |
 | `wiki/log.md` | Agent-maintained | Append-only history of ingests and material updates |
 | `state/manifest.yaml` | Agent-maintained | Source versions and processing state |
 | `state/coverage.yaml` | Agent-maintained | Corpus-wide skill, knowledge-facet, and page coverage |
@@ -65,6 +67,8 @@ Use this initial structure:
 wiki/
   index.md
   log.md
+  domains/
+  skills/
   services/
   concepts/
   comparisons/
@@ -161,6 +165,20 @@ okf_version: "0.1"
 ```
 
 Other index files should remain simple Markdown catalogues.
+
+### Metadata navigation
+
+Keep `tags`, `skill_ids`, and `domain_ids` as plain identifiers in YAML frontmatter. Do not replace them with Markdown links or nested URL objects.
+
+Generate navigable projections instead:
+
+- `wiki/domains/domain-N.md` collects every source skill, implemented page, planned page, and coverage status for one domain.
+- `wiki/skills/ID.md` links one skill ID to its immutable raw source, implemented knowledge, planned knowledge, and processing state.
+- `wiki/domains/index.md` and `wiki/skills/index.md` provide corpus-wide entry points.
+- These files are derived catalogues, not new semantic knowledge objects, and do not add a page type or change coverage counts.
+- Tags remain retrieval metadata. Do not generate one page per tag unless a demonstrated human workflow justifies the additional maintenance surface.
+- Run `python3 scripts/generate_navigation.py` after raw skill metadata, wiki frontmatter, coverage status, or the page plan changes.
+- Generated navigation files must not be edited manually.
 
 ## Content model
 
@@ -484,6 +502,8 @@ Before declaring generation complete, verify:
 24. Validation reports atomic item counts, not only facet-category counts.
 25. Domain-aware indexes use the same `## Domain N: Domain name` structure for every implemented domain.
 26. Run `python3 scripts/validate_wiki_links.py`; it must report zero invalid links.
+27. Run `python3 scripts/generate_navigation.py --check`; all domain and skill views must match their source state.
+28. Every raw skill ID resolves through `wiki/skills/`, and every domain ID resolves through `wiki/domains/`.
 
 ## Definition of done
 

@@ -6,6 +6,13 @@ okf_version: "0.1"
 
 This bundle synthesizes the immutable study sources in `raw/`. Start with a learning path or select a page by operational need.
 
+## Browse the knowledge graph
+
+- [Browse by domain](domains/index.md) - all five domains with skill status, implemented knowledge, and planned coverage.
+- [Browse by skill ID](skills/index.md) - all 53 skills linked to their raw source and generated destinations.
+
+Tags remain machine-readable retrieval metadata. Domain and skill views provide the durable human- and agent-facing navigation layer.
+
 ## Domain 1: Monitoring and performance optimization
 
 - [Services and features](services/index.md) - AWS services, owned features, and cross-service mechanisms.
