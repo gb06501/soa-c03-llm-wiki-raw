@@ -1,5 +1,12 @@
 # Wiki update log
 
+## [2026-07-21] repair | Root navigation deduplication
+
+- **Root cause:** Domain sections repeated global service, concept, decision-guide, and playbook catalogue links without applying a domain filter.
+- **Repair:** Replaced the repeated sections with one domain list, one skill entry, and one canonical knowledge-type catalogue.
+- **Governance:** Global knowledge-type links now appear once; domain-specific navigation belongs in generated domain views.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] generate | Domain and skill navigation
 
 - **Navigation:** Added deterministic views for all five domains and all 53 skill IDs.
