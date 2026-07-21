@@ -83,7 +83,8 @@ Create subdirectory `index.md` files when a directory has enough pages that prog
 
 Use a small, stable vocabulary:
 
-- `AWS Service` — a service, feature, or important service component.
+- `AWS Service` — exactly one canonical AWS service or AWS product recorded in `state/aws-service-registry.yaml`.
+- `AWS Feature` — a named feature, component, or control surface owned by one or more canonical AWS services.
 - `Concept` — an operational or architectural mechanism.
 - `Comparison` — two or more choices that exam scenarios commonly contrast.
 - `Decision Guide` — clue-to-choice rules for selecting an AWS solution.
@@ -94,6 +95,17 @@ Use a small, stable vocabulary:
 - `Knowledge Gap` — missing, uncertain, contradictory, or weakly supported knowledge.
 
 Do not invent new page types when an existing type is adequate.
+
+### Canonical service identity
+
+- Use short, recognizable service names such as `EC2`, `ECR`, `CloudFormation`, and `Systems Manager`; an `AWS` or `Amazon` display prefix is optional.
+- Every page with `type: AWS Service` must represent exactly one entry in `state/aws-service-registry.yaml`.
+- Its `title` must equal that registry entry's `display_name`, and its `service_id` must equal the registry key.
+- Activity, outcome, and multi-service names such as “EC2 optimization,” “compute scaling,” “shared storage,” and “image management” are not AWS Service identities.
+- Use `AWS Feature` for a service-owned feature. Include `parent_services` with registry display names.
+- Use `Concept` when a mechanism spans multiple services or describes an operational model.
+- Keep stable file paths when correcting an existing page's type or title unless a rename has clear navigation value and all inbound links are updated.
+- The service index must distinguish canonical service pages from feature and cross-service pages.
 
 ## OKF v0.1 conventions
 
@@ -130,6 +142,8 @@ Rules:
 - Preserve unknown frontmatter fields when updating a page.
 - Use lowercase kebab-case filenames without spaces.
 - A file path is the stable concept identity; do not rename pages casually.
+- `AWS Service` pages require `service_id`.
+- `AWS Feature` pages require `parent_services`.
 
 The root `wiki/index.md` may declare:
 
@@ -210,6 +224,12 @@ Prefer synthesis across skills. For example, an RDS availability page may draw f
 
 Compactness does not override coverage. A decision boundary may live inside a service page instead of a standalone Decision Guide only when `state/coverage.yaml` identifies the containing page and section. Do not count a source as covered merely because it appears in frontmatter.
 
+Coverage facets are containers, not atomic knowledge items. Each facet may contain multiple independently tracked `items`. Do not represent several services, decisions, evidence paths, or failure modes with one aggregate status merely because they share a source skill.
+
+An item needs its own identity when it has an independent object model, configuration surface, permission boundary, evidence source, failure mode, or lifecycle. Several items may share a page only when the page contains a named section for each item and the combined page remains a coherent conceptual identity.
+
+A `standalone` item must point to a page whose identity matches that item. A generic summary page is not a standalone destination for every service named inside it.
+
 ## Coverage model
 
 Plan from the entire 53-skill corpus before generating or completing any individual domain. The global plan establishes stable concept identities and reveals cross-domain relationships; implementation may then proceed in reviewable domain-sized batches.
@@ -226,7 +246,7 @@ For every raw skill, inventory these knowledge facets:
 - exam traps and exceptions;
 - cross-domain dependencies.
 
-Record every applicable facet in `state/coverage.yaml`. Each entry must map to one of:
+Record every applicable facet in `state/coverage.yaml`. Each facet must enumerate all applicable atomic items. Each item must map to one of:
 
 - `standalone`: represented by a dedicated wiki page;
 - `embedded`: represented by a named section in another page;
@@ -234,7 +254,9 @@ Record every applicable facet in `state/coverage.yaml`. Each entry must map to o
 - `gap`: insufficient or contradictory source support;
 - `not_applicable`: reviewed and intentionally omitted, with a reason.
 
-A skill is `validated` only when every applicable facet is mapped and every material decision boundary has a page-and-section destination. Source citation alone is traceability, not coverage.
+A skill is `validated` only when every applicable facet item is mapped, every material decision boundary has a page-and-section destination, and every named AWS service is reconciled with `state/aws-service-registry.yaml`. Source citation alone is traceability, not coverage.
+
+For shared pages, linking to an existing page is not enough. Add the new source, skill ID, domain ID, and material knowledge to that page, or record the item as planned or intentionally embedded elsewhere.
 
 Coverage is evaluated at three levels:
 
@@ -366,6 +388,11 @@ Check for:
 - missing `type`, title, description, tags, timestamp, status, or sources;
 - broken internal links;
 - duplicate concept identities;
+- `AWS Service` titles absent from the service registry;
+- `AWS Feature` pages without valid parent services;
+- broad pages incorrectly typed as AWS services;
+- facet categories with several source items collapsed into one unitemized status;
+- shared pages linked without incorporating the new source and skill ID;
 - orphan pages;
 - stale indexes;
 - manifest entries that do not match source versions;
@@ -442,6 +469,12 @@ Before declaring generation complete, verify:
 16. Domain completion is not inferred from source citation counts or page counts.
 17. A final corpus reconciliation checks cross-domain duplication and missing global navigation.
 18. The pull request reports unresolved uncertainty honestly.
+19. Every `AWS Service` page title and `service_id` matches the canonical registry.
+20. Every `AWS Feature` page names valid `parent_services`.
+21. Every service named materially in the requested raw scope has an atomic coverage item.
+22. Generic concept pages are not counted as standalone service coverage.
+23. Shared cross-domain service pages incorporate the new source and skill ID, not only a link.
+24. Validation reports atomic item counts, not only facet-category counts.
 
 ## Definition of done
 

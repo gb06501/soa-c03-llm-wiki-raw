@@ -1,9 +1,9 @@
 ---
-type: AWS Service
+type: Concept
 title: Caching
 description: Explains CloudFront, ElastiCache, and DAX cache boundaries, scaling controls, and evidence.
 tags: [soa-c03, domain-2, caching, cloudfront, elasticache, dax]
-timestamp: 2026-07-21T13:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["2.1.2"]
 domain_ids: ["2"]
 sources:

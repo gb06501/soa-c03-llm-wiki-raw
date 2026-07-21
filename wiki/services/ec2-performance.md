@@ -1,17 +1,21 @@
 ---
 type: AWS Service
-title: EC2 performance
-description: Diagnoses EC2 health and the lowest limiting compute, memory, storage, network, or placement layer.
+title: EC2
+service_id: ec2
+description: Runs virtual machine instances from versioned images with observable compute, storage, network, health, and deployment behavior.
 tags: [soa-c03, domain-1, ec2, performance, health]
-timestamp: 2026-07-21T00:00:00+02:00
-skill_ids: ["1.1.2", "1.2.1", "1.3.1", "1.3.2", "1.3.6"]
-domain_ids: ["1"]
+timestamp: 2026-07-21T18:00:00+02:00
+skill_ids: ["1.1.2", "1.2.1", "1.3.1", "1.3.2", "1.3.6", "3.1.1", "3.1.3", "3.1.5"]
+domain_ids: ["1", "3"]
 sources:
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md
   - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
+  - /raw/skills/3.1.1-create-and-manage-amis-and-container-images.md
+  - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
+  - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
 status: verified
 ---
 
@@ -74,6 +78,14 @@ Inspect bandwidth, packet rate, flows, ENI capability, and enhanced-networking s
 - [Resource performance diagnosis](../playbooks/resource-performance-diagnosis.md)
 - [Evidence-to-remediation loop](../concepts/evidence-to-remediation-loop.md)
 
+# Domain 3: AMIs and deployment
+
+An AMI combines Region-specific metadata, block-device mappings, and backing snapshots. Before launch, verify owner and permission, Region, architecture, boot/root compatibility, drivers, snapshot and KMS access, launch-template version, IAM profile, subnet capacity, and user-data behavior.
+
+Image creation normally reboots for consistency. A no-reboot capture can be crash-consistent unless application writes are quiesced. Deregistration prevents new launches but does not terminate existing instances or automatically remove every snapshot.
+
+During deployment, separate control-plane launch success from bootstrap, dependency, target-health, and application evidence. Instance refresh belongs to [EC2 Auto Scaling](/services/ec2-auto-scaling.md).
+
 # Sources
 
 - [Skill 1.1.2](../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
@@ -81,3 +93,6 @@ Inspect bandwidth, packet rate, flows, ENI capability, and enhanced-networking s
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.2](../../raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md)
 - [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
+- [Skill 3.1.1](../../raw/skills/3.1.1-create-and-manage-amis-and-container-images.md)
+- [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
+- [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)

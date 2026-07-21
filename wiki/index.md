@@ -8,7 +8,7 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 
 ## Domain 1: Monitoring and performance optimization
 
-- [Services and features](services/index.md) - AWS mechanisms, configuration objects, evidence, and failure modes.
+- [Services and features](services/index.md) - canonical AWS services, owned features, and cross-service mechanisms.
 - [Cross-skill concepts](concepts/index.md) - reusable reasoning models across multiple services.
 - [Decision guides](decision-guides/index.md) - scenario clue to AWS choice.
 - [Troubleshooting playbooks](playbooks/index.md) - evidence-first diagnosis and safe remediation.
@@ -17,7 +17,7 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 
 ## Domain 2: Reliability and business continuity
 
-- [Services and features](services/index.md) - scaling, caching, health checks, and backup services.
+- [Services and features](services/index.md) - canonical services plus scaling, caching, health, and backup mechanisms.
 - [Cross-skill concepts](concepts/index.md) - fault tolerance, recovery, versioning, and DR.
 - [Decision guides](decision-guides/index.md) - capacity, availability, protection, and recovery choices.
 - [Troubleshooting playbooks](playbooks/index.md) - evidence-first scaling, health, backup, and failover diagnosis.
@@ -26,7 +26,7 @@ This bundle synthesizes the immutable study sources in `raw/`. Start with a lear
 
 ## Domain 3: Deployment, provisioning, and automation
 
-- [Services and features](services/index.md) - image and infrastructure-as-code lifecycle.
+- [Services and features](services/index.md) - canonical deployment, provisioning, and automation services.
 - [Cross-skill concepts](concepts/index.md) - diagnostics, deployment strategies, multi-account provisioning, and automation.
 - [Decision guides](decision-guides/index.md) - artifact, tooling, rollout, fleet, and event choices.
 - [Troubleshooting playbooks](playbooks/index.md) - evidence-first deployment and automation recovery.

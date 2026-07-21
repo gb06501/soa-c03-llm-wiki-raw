@@ -1,9 +1,10 @@
 ---
 type: AWS Service
-title: RDS performance
-description: Locates RDS bottlenecks across resource, operating-system, database-load, wait, SQL, and connection layers.
+title: RDS
+service_id: rds
+description: Runs managed relational databases with observable compute, connection, storage, query, scaling, and recovery behavior.
 tags: [soa-c03, domain-1, rds, database, performance]
-timestamp: 2026-07-21T00:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["1.2.1", "1.3.1", "1.3.5"]
 domain_ids: ["1"]
 sources:

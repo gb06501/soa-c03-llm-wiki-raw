@@ -1,27 +1,58 @@
 # Services and features
 
-- [CloudWatch telemetry](cloudwatch-telemetry.md) - metrics, logs, audit, traces, and workload observability.
-- [CloudWatch Agent](cloudwatch-agent.md) - guest and container telemetry collection.
-- [CloudWatch alarms](cloudwatch-alarms.md) - evaluation settings, states, actions, and failure evidence.
-- [CloudWatch dashboards](cloudwatch-dashboards.md) - operational views across accounts and Regions.
-- [SNS notifications](sns-notifications.md) - fan-out, subscriptions, policies, encryption, and delivery.
-- [EventBridge](eventbridge.md) - event matching, transformation, routing, retries, and DLQs.
-- [Systems Manager Automation](systems-manager-automation.md) - governed infrastructure runbooks.
-- [EBS performance](ebs-performance.md) - IOPS, throughput, latency, queue, and instance ceilings.
-- [S3 performance](s3-performance.md) - transfer, request, caching, and lifecycle choices.
-- [Shared storage](shared-storage.md) - EFS, FSx, S3 Files, S3, and Storage Gateway selection.
-- [RDS performance](rds-performance.md) - metrics, DB load, waits, SQL, and targeted remediation.
-- [EC2 performance](ec2-performance.md) - health, compute, storage, network, and placement behavior.
+Only pages in **Canonical services** use `type: AWS Service`. Display names follow the short-name registry in [`state/aws-service-registry.yaml`](../../state/aws-service-registry.yaml).
 
-## Domain 2
+## Canonical services
 
-- [Compute scaling](compute-scaling.md) - EC2, ECS, EKS, and Lambda capacity controls.
-- [Caching](caching.md) - CloudFront, ElastiCache, and DAX behavior.
-- [Managed database scaling](managed-database-scaling.md) - RDS, Aurora, and DynamoDB scaling dimensions.
-- [Load balancing and health checks](load-balancing-and-health-checks.md) - ELB targets and Route 53 health-driven routing.
-- [AWS Backup](aws-backup.md) - plans, assignments, vaults, copies, and restore testing.
+### Observability and messaging
 
-## Domain 3
+- [CloudWatch](cloudwatch-telemetry.md)
+- [EventBridge](eventbridge.md)
+- [SNS](sns-notifications.md)
+- [SQS](sqs.md)
 
-- [AMI and container image management](image-management.md) - build, distribute, secure, pin, and retire images.
-- [CloudFormation and AWS CDK lifecycle](cloudformation-and-cdk.md) - declarative ownership, preview, replacement protection, and assets.
+### Compute, containers, and serverless
+
+- [EC2](ec2-performance.md)
+- [EC2 Auto Scaling](ec2-auto-scaling.md)
+- [ECS](ecs.md)
+- [EKS](eks.md)
+- [Lambda](lambda.md)
+- [ECR](ecr.md)
+- [Image Builder](image-builder.md)
+
+### Infrastructure and operations
+
+- [CloudFormation](cloudformation.md)
+- [CDK](cdk.md)
+- [Service Catalog](service-catalog.md)
+- [Resource Access Manager](resource-access-manager.md)
+- [Systems Manager](systems-manager.md)
+- [Step Functions](step-functions.md)
+- [DevOps Agent](devops-agent.md)
+
+### Storage and databases
+
+- [EBS](ebs-performance.md)
+- [S3](s3-performance.md)
+- [RDS](rds-performance.md)
+- [Backup](aws-backup.md)
+
+## AWS features
+
+- [CloudWatch Agent](cloudwatch-agent.md) — parent: CloudWatch.
+- [CloudWatch alarms](cloudwatch-alarms.md) — parent: CloudWatch.
+- [CloudWatch dashboards](cloudwatch-dashboards.md) — parent: CloudWatch.
+- [Systems Manager Automation](systems-manager-automation.md) — parent: Systems Manager.
+
+## Cross-service concepts at stable paths
+
+These paths are retained to avoid unnecessary link churn; their frontmatter now identifies them as concepts.
+
+- [Shared storage](shared-storage.md)
+- [Compute scaling](compute-scaling.md)
+- [Caching](caching.md)
+- [Managed database scaling](managed-database-scaling.md)
+- [Load balancing and health checks](load-balancing-and-health-checks.md)
+- [AMI and container image management](image-management.md)
+- [CloudFormation and CDK lifecycle](cloudformation-and-cdk.md)

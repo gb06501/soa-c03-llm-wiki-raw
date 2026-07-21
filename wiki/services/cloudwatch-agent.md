@@ -1,9 +1,10 @@
 ---
-type: AWS Service
+type: AWS Feature
 title: CloudWatch Agent
+parent_services: [CloudWatch]
 description: Collects guest, process, filesystem, log, and supported trace telemetry from compute environments.
 tags: [soa-c03, domain-1, cloudwatch-agent, telemetry]
-timestamp: 2026-07-21T00:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["1.1.1", "1.1.2", "1.3.1", "1.3.6"]
 domain_ids: ["1"]
 sources:

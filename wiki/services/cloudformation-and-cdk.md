@@ -1,9 +1,9 @@
 ---
-type: AWS Service
+type: Concept
 title: CloudFormation and AWS CDK lifecycle
 description: Explains declarative resource ownership, change preview, replacement protection, CDK synthesis, and governed products.
 tags: [soa-c03, domain-3, cloudformation, cdk, iac]
-timestamp: 2026-07-21T16:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["3.1.2"]
 domain_ids: ["3"]
 sources:

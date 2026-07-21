@@ -1,9 +1,9 @@
 ---
-type: AWS Service
+type: Concept
 title: Managed database scaling
 description: Explains RDS, Aurora, DynamoDB, connection, storage, and read-scaling mechanisms.
 tags: [soa-c03, domain-2, database, scaling, rds, aurora, dynamodb]
-timestamp: 2026-07-21T13:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["2.1.3"]
 domain_ids: ["2"]
 sources:

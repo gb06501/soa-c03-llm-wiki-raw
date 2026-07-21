@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T16:00:00+02:00"
+updated_at: "2026-07-21T18:00:00+02:00"
 scope: "SOA-C03 Domains 1-3"
 status: validated
 sources:
@@ -121,27 +121,27 @@ sources:
   - path: raw/skills/3.1.1-create-and-manage-amis-and-container-images.md
     blob_sha: 61ab57b0d18914439a8e9109e9741063eb130183
     processed_at: "2026-07-21T16:00:00+02:00"
-    generated_pages: [wiki/services/image-management.md, wiki/decision-guides/machine-container-image-selection.md, wiki/playbooks/image-build-distribution-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md]
+    generated_pages: [wiki/services/image-management.md, wiki/decision-guides/machine-container-image-selection.md, wiki/playbooks/image-build-distribution-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/ec2-performance.md, wiki/services/image-builder.md, wiki/services/ecr.md]
     status: validated
   - path: raw/skills/3.1.2-create-and-manage-resources-with-cloudformation-and-cdk.md
     blob_sha: 17847639f1b396ba21ed59a2c082cb345ed3aee2
     processed_at: "2026-07-21T16:00:00+02:00"
-    generated_pages: [wiki/services/cloudformation-and-cdk.md, wiki/decision-guides/infrastructure-provisioning-selection.md, wiki/playbooks/cloudformation-deployment-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md]
+    generated_pages: [wiki/services/cloudformation-and-cdk.md, wiki/decision-guides/infrastructure-provisioning-selection.md, wiki/playbooks/cloudformation-deployment-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/cloudformation.md, wiki/services/cdk.md, wiki/services/service-catalog.md]
     status: validated
   - path: raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
     blob_sha: 811dc566222d815c319088dff179aefebf3e49aa
     processed_at: "2026-07-21T16:00:00+02:00"
-    generated_pages: [wiki/concepts/deployment-diagnostics.md, wiki/decision-guides/deployment-failure-evidence-selection.md, wiki/playbooks/deployment-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md]
+    generated_pages: [wiki/concepts/deployment-diagnostics.md, wiki/decision-guides/deployment-failure-evidence-selection.md, wiki/playbooks/deployment-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/ec2-performance.md, wiki/services/ec2-auto-scaling.md, wiki/services/ecr.md, wiki/services/ecs.md, wiki/services/eks.md, wiki/services/lambda.md, wiki/services/cloudformation.md, wiki/services/cdk.md, wiki/services/service-catalog.md]
     status: validated
   - path: raw/skills/3.1.4-provision-and-share-resources-across-regions-and-accounts.md
     blob_sha: fe3e84e2d3a1709bf66fbb3de89a54cbe75af8c5
     processed_at: "2026-07-21T16:00:00+02:00"
-    generated_pages: [wiki/concepts/cross-account-resource-provisioning.md, wiki/decision-guides/resource-sharing-and-provisioning-selection.md, wiki/playbooks/cross-account-provisioning-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md]
+    generated_pages: [wiki/concepts/cross-account-resource-provisioning.md, wiki/decision-guides/resource-sharing-and-provisioning-selection.md, wiki/playbooks/cross-account-provisioning-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/resource-access-manager.md, wiki/services/cloudformation.md]
     status: validated
   - path: raw/skills/3.1.5-implement-deployment-strategies-and-services.md
     blob_sha: 60aef0fb6ad84889223c97abe8bb30e624bb4c2d
     processed_at: "2026-07-21T16:00:00+02:00"
-    generated_pages: [wiki/concepts/deployment-strategies.md, wiki/decision-guides/deployment-strategy-selection.md, wiki/playbooks/deployment-rollback.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md]
+    generated_pages: [wiki/concepts/deployment-strategies.md, wiki/decision-guides/deployment-strategy-selection.md, wiki/playbooks/deployment-rollback.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/ec2-auto-scaling.md, wiki/services/ecs.md, wiki/services/lambda.md, wiki/services/cloudformation.md, wiki/services/ecr.md]
     status: validated
   - path: raw/skills/3.1.6-use-and-manage-third-party-deployment-tools.md
     blob_sha: 2ca022704b79cd272fbcc77fb94432a7a18f4fba
@@ -151,15 +151,15 @@ sources:
   - path: raw/skills/3.2.1-automate-operational-processes-with-services.md
     blob_sha: e2153fb9cc799a36fbd4349658f4fdf73a5f9b02
     processed_at: "2026-07-21T16:00:00+02:00"
-    generated_pages: [wiki/concepts/operational-automation.md, wiki/decision-guides/operational-automation-service-selection.md, wiki/playbooks/automation-execution-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md]
+    generated_pages: [wiki/concepts/operational-automation.md, wiki/decision-guides/operational-automation-service-selection.md, wiki/playbooks/automation-execution-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/systems-manager.md, wiki/services/systems-manager-automation.md]
     status: validated
   - path: raw/skills/3.2.2-implement-event-driven-automation.md
     blob_sha: ad69d394ebd4be7ceb2c05f3d4dd567d4eedb29f
     processed_at: "2026-07-21T16:00:00+02:00"
-    generated_pages: [wiki/concepts/event-driven-automation.md, wiki/decision-guides/event-driven-automation-selection.md, wiki/playbooks/event-driven-automation-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md]
+    generated_pages: [wiki/concepts/event-driven-automation.md, wiki/decision-guides/event-driven-automation-selection.md, wiki/playbooks/event-driven-automation-failure.md, wiki/exam-traps/domain-3-exam-traps.md, wiki/concepts/deployment-and-operational-automation.md, wiki/learning/paths/domain-3-learning-path.md, wiki/services/s3-performance.md, wiki/services/eventbridge.md, wiki/services/sns-notifications.md, wiki/services/sqs.md, wiki/services/lambda.md, wiki/services/step-functions.md, wiki/services/systems-manager.md, wiki/services/systems-manager-automation.md, wiki/services/devops-agent.md]
     status: validated
 generated:
-  count: 89
+  count: 103
   roots:
     - wiki/services
     - wiki/concepts
@@ -168,4 +168,5 @@ generated:
     - wiki/exam-traps
     - wiki/learning/paths
 unresolved:
+  - "Domains 1-2 require atomic facet reconciliation under coverage schema v2; their pages remain implemented."
   - "No external sources were authorized; current-service verification remains out of scope."

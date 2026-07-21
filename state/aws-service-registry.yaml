@@ -1,0 +1,96 @@
+version: 1
+updated_at: "2026-07-21T18:00:00+02:00"
+display_policy: "Use short recognizable names; AWS and Amazon prefixes are optional."
+rules:
+  - "AWS Service pages represent exactly one registered service."
+  - "AWS Service page title equals display_name and service_id equals id."
+  - "Aliases support source matching but are not alternate page identities."
+services:
+  - id: backup
+    display_name: Backup
+    aliases: [AWS Backup]
+    page: wiki/services/aws-backup.md
+  - id: cdk
+    display_name: CDK
+    aliases: [AWS CDK, AWS Cloud Development Kit]
+    page: wiki/services/cdk.md
+  - id: cloudformation
+    display_name: CloudFormation
+    aliases: [AWS CloudFormation]
+    page: wiki/services/cloudformation.md
+  - id: cloudwatch
+    display_name: CloudWatch
+    aliases: [Amazon CloudWatch]
+    page: wiki/services/cloudwatch-telemetry.md
+  - id: ebs
+    display_name: EBS
+    aliases: [Amazon EBS, Elastic Block Store]
+    page: wiki/services/ebs-performance.md
+  - id: ec2
+    display_name: EC2
+    aliases: [Amazon EC2, Elastic Compute Cloud]
+    page: wiki/services/ec2-performance.md
+  - id: ec2-auto-scaling
+    display_name: EC2 Auto Scaling
+    aliases: [Amazon EC2 Auto Scaling, Auto Scaling group]
+    page: wiki/services/ec2-auto-scaling.md
+  - id: ecs
+    display_name: ECS
+    aliases: [Amazon ECS, Elastic Container Service]
+    page: wiki/services/ecs.md
+  - id: ecr
+    display_name: ECR
+    aliases: [Amazon ECR, Elastic Container Registry]
+    page: wiki/services/ecr.md
+  - id: devops-agent
+    display_name: DevOps Agent
+    aliases: [AWS DevOps Agent]
+    page: wiki/services/devops-agent.md
+  - id: eks
+    display_name: EKS
+    aliases: [Amazon EKS, Elastic Kubernetes Service]
+    page: wiki/services/eks.md
+  - id: eventbridge
+    display_name: EventBridge
+    aliases: [Amazon EventBridge]
+    page: wiki/services/eventbridge.md
+  - id: image-builder
+    display_name: Image Builder
+    aliases: [EC2 Image Builder]
+    page: wiki/services/image-builder.md
+  - id: lambda
+    display_name: Lambda
+    aliases: [AWS Lambda]
+    page: wiki/services/lambda.md
+  - id: rds
+    display_name: RDS
+    aliases: [Amazon RDS, Relational Database Service]
+    page: wiki/services/rds-performance.md
+  - id: resource-access-manager
+    display_name: Resource Access Manager
+    aliases: [AWS RAM, RAM]
+    page: wiki/services/resource-access-manager.md
+  - id: s3
+    display_name: S3
+    aliases: [Amazon S3, Simple Storage Service]
+    page: wiki/services/s3-performance.md
+  - id: service-catalog
+    display_name: Service Catalog
+    aliases: [AWS Service Catalog]
+    page: wiki/services/service-catalog.md
+  - id: sns
+    display_name: SNS
+    aliases: [Amazon SNS, Simple Notification Service]
+    page: wiki/services/sns-notifications.md
+  - id: sqs
+    display_name: SQS
+    aliases: [Amazon SQS, Simple Queue Service]
+    page: wiki/services/sqs.md
+  - id: step-functions
+    display_name: Step Functions
+    aliases: [AWS Step Functions]
+    page: wiki/services/step-functions.md
+  - id: systems-manager
+    display_name: Systems Manager
+    aliases: [AWS Systems Manager, SSM]
+    page: wiki/services/systems-manager.md

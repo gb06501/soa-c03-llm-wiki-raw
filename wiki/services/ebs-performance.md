@@ -1,9 +1,10 @@
 ---
 type: AWS Service
-title: EBS performance
-description: Diagnoses EBS IOPS, throughput, latency, queue, burst, capacity, and EC2-side limits.
+title: EBS
+service_id: ebs
+description: Provides EC2 block storage with measurable IOPS, throughput, latency, queue, and initialization behavior.
 tags: [soa-c03, domain-1, ebs, storage, performance]
-timestamp: 2026-07-21T00:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["1.2.1", "1.3.1", "1.3.2", "1.3.6"]
 domain_ids: ["1"]
 sources:

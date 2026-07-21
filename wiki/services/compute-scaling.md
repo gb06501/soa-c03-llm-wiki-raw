@@ -1,9 +1,9 @@
 ---
-type: AWS Service
+type: Concept
 title: Compute scaling
 description: Explains scaling controls and evidence across EC2 Auto Scaling, ECS, EKS, and Lambda.
 tags: [soa-c03, domain-2, scaling, compute]
-timestamp: 2026-07-21T13:00:00+02:00
+timestamp: 2026-07-21T18:00:00+02:00
 skill_ids: ["2.1.1"]
 domain_ids: ["2"]
 sources:

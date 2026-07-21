@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T16:00:00+02:00"
+updated_at: "2026-07-21T18:00:00+02:00"
 scope: "SOA-C03 complete corpus"
 principle: "Plan all skills globally; implement in domain-sized batches; reconcile after Domain 5."
 counts:
@@ -503,11 +503,11 @@ pages:
     status: implemented
     skill_ids: ["2.3.1"]
   - path: "wiki/services/caching.md"
-    type: "AWS Service"
+    type: "Concept"
     status: implemented
     skill_ids: ["2.1.2"]
   - path: "wiki/services/cloudformation-and-cdk.md"
-    type: "AWS Service"
+    type: "Concept"
     status: implemented
     skill_ids: ["3.1.2"]
   - path: "wiki/services/cloudfront-caching.md"
@@ -515,15 +515,15 @@ pages:
     status: planned
     skill_ids: ["5.3.3"]
   - path: "wiki/services/cloudwatch-agent.md"
-    type: "AWS Service"
+    type: "AWS Feature"
     status: implemented
     skill_ids: ["1.1.2"]
   - path: "wiki/services/cloudwatch-alarms.md"
-    type: "AWS Service"
+    type: "AWS Feature"
     status: implemented
     skill_ids: ["1.1.3"]
   - path: "wiki/services/cloudwatch-dashboards.md"
-    type: "AWS Service"
+    type: "AWS Feature"
     status: implemented
     skill_ids: ["1.1.4"]
   - path: "wiki/services/cloudwatch-network-monitoring.md"
@@ -535,7 +535,7 @@ pages:
     status: implemented
     skill_ids: ["1.1.1"]
   - path: "wiki/services/compute-scaling.md"
-    type: "AWS Service"
+    type: "Concept"
     status: implemented
     skill_ids: ["2.1.1"]
   - path: "wiki/services/config-and-compliance.md"
@@ -567,7 +567,7 @@ pages:
     status: planned
     skill_ids: ["4.1.1"]
   - path: "wiki/services/image-management.md"
-    type: "AWS Service"
+    type: "Concept"
     status: implemented
     skill_ids: ["3.1.1"]
   - path: "wiki/services/kms-encryption-at-rest.md"
@@ -575,11 +575,11 @@ pages:
     status: planned
     skill_ids: ["4.2.2"]
   - path: "wiki/services/load-balancing-and-health-checks.md"
-    type: "AWS Service"
+    type: "Concept"
     status: implemented
     skill_ids: ["2.2.1"]
   - path: "wiki/services/managed-database-scaling.md"
-    type: "AWS Service"
+    type: "Concept"
     status: implemented
     skill_ids: ["2.1.3"]
   - path: "wiki/services/network-protection.md"
@@ -615,7 +615,7 @@ pages:
     status: planned
     skill_ids: ["4.2.4"]
   - path: "wiki/services/shared-storage.md"
-    type: "AWS Service"
+    type: "Concept"
     status: implemented
     skill_ids: ["1.3.4"]
   - path: "wiki/services/sns-notifications.md"
@@ -623,7 +623,7 @@ pages:
     status: implemented
     skill_ids: ["1.1.5"]
   - path: "wiki/services/systems-manager-automation.md"
-    type: "AWS Service"
+    type: "AWS Feature"
     status: implemented
     skill_ids: ["1.2.3"]
   - path: "wiki/services/trusted-advisor-security.md"
@@ -642,3 +642,59 @@ cross_domain_reconciliation:
     - "Verify every decision boundary and named section."
     - "Verify global index navigation and orphan-free graph."
     - "Report remaining gaps and unsupported claims."
+  - path: "wiki/services/image-builder.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.1"]
+  - path: "wiki/services/ecr.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.1", "3.1.3", "3.1.5"]
+  - path: "wiki/services/cloudformation.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.2", "3.1.3", "3.1.4", "3.1.5"]
+  - path: "wiki/services/cdk.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.2", "3.1.3"]
+  - path: "wiki/services/service-catalog.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.2", "3.1.3"]
+  - path: "wiki/services/resource-access-manager.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.4"]
+  - path: "wiki/services/ec2-auto-scaling.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["2.1.1", "3.1.3", "3.1.5"]
+  - path: "wiki/services/ecs.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.3", "3.1.5"]
+  - path: "wiki/services/eks.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.3"]
+  - path: "wiki/services/lambda.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.1.3", "3.1.5", "3.2.2"]
+  - path: "wiki/services/systems-manager.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.2.1", "3.2.2"]
+  - path: "wiki/services/sqs.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.2.2"]
+  - path: "wiki/services/step-functions.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.2.2"]
+  - path: "wiki/services/devops-agent.md"
+    type: "AWS Service"
+    status: implemented
+    skill_ids: ["3.2.2"]
