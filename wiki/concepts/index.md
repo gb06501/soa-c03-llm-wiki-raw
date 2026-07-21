@@ -23,3 +23,11 @@
 - [Systems Manager operational automation](operational-automation.md) - Selects and governs Systems Manager capabilities for fleet commands, desired state, patching, maintenance, sessions, and inventory.
 - [Event-driven automation](event-driven-automation.md) - Connects event sources, filters, permissions, targets, retries, failure capture, idempotency, and loop prevention.
 - [Deployment and operational automation](deployment-and-operational-automation.md) - Unifies artifact identity, infrastructure ownership, rollout, event and fleet automation, evidence, and recovery across Domain 3.
+
+## Domain 4: Security and compliance
+
+- [Access evaluation](access-evaluation.md) - Models authorization as one exact request evaluated against every applicable allow, deny, and limiting boundary.
+- [Data classification](data-classification.md) - Connects data meaning and ownership to enforceable storage, access, encryption, retention, and monitoring controls.
+- [Encryption in transit](encryption-in-transit.md) - Separates DNS, network, TLS policy, certificate identity, trust, and application delivery across each hop.
+- [Security findings](security-findings.md) - Normalizes source evidence into risk-ranked investigation, containment, remediation, and verified closure.
+- [Multi-account security governance](multi-account-security-governance.md) - Connects account boundaries, identity, guardrails, detection, evidence, and response across Domain 4.
