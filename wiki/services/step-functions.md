@@ -45,9 +45,7 @@ Make repeated tasks idempotent, design compensation explicitly, limit retries, p
 - [Event-driven automation](../concepts/event-driven-automation.md)
 - [Event-driven selection](../decision-guides/event-driven-automation-selection.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Stateful operational workflows
+# Stateful operational workflows
 
 Use Step Functions when the reaction requires explicit state, branching, waits, parallel work, retries, catches, or human-visible execution history. It is not the same as EventBridge routing, SNS fan-out, or SQS buffering.
 
@@ -57,3 +55,4 @@ Use Step Functions when the reaction requires explicit state, branching, waits, 
 - [Skill 1.1.5](../../raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+

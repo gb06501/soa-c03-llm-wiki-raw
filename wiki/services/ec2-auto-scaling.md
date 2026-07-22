@@ -45,9 +45,7 @@ Keep the known-good launch-template version and AMI. Rollback cannot succeed if 
 - [Deployment strategies](../concepts/deployment-strategies.md)
 - [Scaling failure](../playbooks/scaling-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Scaling policies and refresh
+# Scaling policies and refresh
 
 Target tracking maintains a metric target; step scaling maps breach ranges to adjustments; scheduled scaling follows known time; predictive scaling follows recurring forecasts. Minimum, desired, and maximum bound capacity.
 
@@ -62,3 +60,4 @@ A launch template defines new instances. Instance refresh replaces existing capa
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+

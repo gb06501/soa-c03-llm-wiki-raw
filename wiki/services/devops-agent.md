@@ -41,9 +41,7 @@ Missing evidence or scope prevents useful investigation. A valid recommendation 
 - [Event-driven automation](../concepts/event-driven-automation.md)
 - [Event-driven selection](../decision-guides/event-driven-automation-selection.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Assisted operations boundary
+# Assisted operations boundary
 
 DevOps Agent can assist operational investigation and remediation, but source evidence, permissions, action scope, approval, and verification still govern safe changes. An assistant recommendation is not proof of root cause or recovery.
 
@@ -51,3 +49,4 @@ DevOps Agent can assist operational investigation and remediation, but source ev
 
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
+

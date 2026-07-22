@@ -78,15 +78,13 @@ execution ID -> document version -> failed or waiting step
 - [EventBridge](eventbridge.md)
 - [Event-driven remediation failure](../playbooks/event-driven-remediation-failure.md)
 
-# Domain 3: Operational and event integration
+# Operational and event integration
 
 Automation orchestrates AWS actions and can invoke Run Command. Use it for governed infrastructure runbooks rather than a general application workflow. Execution role permission, document version, parameters, approvals, branches, waits, step output, and target resource/KMS policies determine behavior.
 
 When invoked by EventBridge or another source, separately verify event match, invocation authorization, Automation execution, resource action, and desired-state verification. Add idempotency and a loop guard before automatic remediation.
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Runbook safety model
+# Runbook safety model
 
 `trigger -> runbook version -> assume role -> bounded steps -> branch/retry/timeout -> output -> independent verification`
 
@@ -100,3 +98,4 @@ Automation success means the steps completed; it does not prove application reco
 - [Skill 3.2.1](../../raw/skills/3.2.1-automate-operational-processes-with-services.md)
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
+

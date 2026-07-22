@@ -66,15 +66,13 @@ source/alarm history -> topic ARN -> topic policy and KMS key
 - [Alarm and notification failure](../playbooks/alarm-and-notification-failure.md)
 - [Remediation tool selection](../decision-guides/remediation-tool-selection.md)
 
-# Domain 3: Event automation
+# Event automation
 
 SNS is the push fan-out boundary. Use SQS when consumers need a durable polling buffer. Each subscription has independent delivery and filtering behavior, and source, topic, subscription, encryption, and consumer permissions remain separate.
 
 Duplicate delivery and retry require idempotent subscribers. Fan-out success does not prove every subscriber completed its business action.
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Alarm, fan-out, and delivery boundary
+# Alarm, fan-out, and delivery boundary
 
 CloudWatch may evaluate an alarm correctly while SNS delivery fails. Verify topic policy, KMS access, subscription confirmation, filter policy, retry evidence, and target policy. SNS fans out; SQS buffers; EventBridge matches and routes.
 
@@ -87,3 +85,4 @@ CloudWatch may evaluate an alarm correctly while SNS delivery fails. Verify topi
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+

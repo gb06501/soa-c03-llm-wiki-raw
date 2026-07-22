@@ -37,9 +37,7 @@ Use EventBridge or notifications to route findings. Use Lambda or Systems Manage
 - [Security check remediation priority](../decision-guides/security-check-remediation-priority.md)
 - [Security finding remediation](../playbooks/security-finding-remediation.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Optimization boundary
+# Optimization boundary
 
 Trusted Advisor recommendations are candidates for evidence-backed review. Validate workload ownership, peak demand, redundancy, dependency limits, planned events, and post-change health before acting.
 
@@ -47,3 +45,4 @@ Trusted Advisor recommendations are candidates for evidence-backed review. Valid
 
 - [Skill 4.1.4](../../raw/skills/4.1.4-remediate-trusted-advisor-security-checks.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
+

@@ -58,15 +58,13 @@ Make side effects idempotent, bound concurrency and retries, protect downstream 
 - [Deployment strategy selection](../decision-guides/deployment-strategy-selection.md)
 - [Event-driven failure](../playbooks/event-driven-automation-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Monitoring, concurrency, and remediation
+# Monitoring, concurrency, and remediation
 
 Duration, errors, throttles, concurrency, retries, and dependency latency identify different limits. Reserved concurrency allocates and caps capacity; provisioned concurrency reduces cold-start latency. More concurrency can overload a downstream database.
 
 Lambda fits small custom reactions and event targets. Multi-step governed infrastructure actions fit Systems Manager Automation or Step Functions better.
 
-## Recovery dependency
+# Recovery dependency
 
 Database restore may require environment, secret, endpoint, event-source, and IAM updates before functions use the new resource.
 
@@ -84,3 +82,4 @@ Database restore may require environment, secret, endpoint, event-source, and IA
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+

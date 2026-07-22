@@ -48,9 +48,7 @@ Bootstrap every required target environment with deliberate trust. Review `diff`
 - [CloudFormation](cloudformation.md)
 - [Infrastructure provisioning selection](../decision-guides/infrastructure-provisioning-selection.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Recovery readiness
+# Recovery readiness
 
 CDK source synthesizes infrastructure templates that can recreate declared resources in a recovery Region. Artifact, context, bootstrap, account, Region, permission, and data dependencies still require preparation and validation.
 
@@ -59,3 +57,4 @@ CDK source synthesizes infrastructure templates that can recreate declared resou
 - [Skill 3.1.2](../../raw/skills/3.1.2-create-and-manage-resources-with-cloudformation-and-cdk.md)
 - [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

@@ -38,9 +38,7 @@ Model availability and security requirements before removing a charged path, tes
 - [Network cost optimization](../decision-guides/network-cost-optimization.md)
 - [Network cost anomaly](../playbooks/network-cost-anomaly.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Compute optimization evidence
+# Compute optimization evidence
 
 Use Cost Explorer to confirm spend shape and resource-family trends after performance evidence identifies safe candidates. Cost alone does not prove a resource can be downsized without peak, memory, network, storage, availability, or downstream analysis.
 
@@ -48,3 +46,4 @@ Use Cost Explorer to confirm spend shape and resource-family trends after perfor
 
 - [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
+

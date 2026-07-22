@@ -48,9 +48,7 @@ Add endpoints with a controlled dial, verify health and client protocols, shift 
 - [Content distribution selection](../decision-guides/content-distribution-selection.md)
 - [Edge delivery failure](../playbooks/edge-delivery-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Disaster-recovery traffic boundary
+# Disaster-recovery traffic boundary
 
 Global Accelerator can move new traffic to healthy endpoints, but it does not copy data, provision recovery capacity, repair applications, or validate recovered dependencies.
 
@@ -60,3 +58,4 @@ Global Accelerator can move new traffic to healthy endpoints, but it does not co
 - [Skill 5.2.3](../../raw/skills/5.2.3-configure-content-and-service-distribution.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

@@ -41,13 +41,11 @@ Test encrypted snapshot restore, preserve certificate trust during CA rotation, 
 - [Encryption at rest selection](../decision-guides/encryption-at-rest-selection.md)
 - [Secret access and rotation failure](../playbooks/secret-access-and-rotation-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Scaling and availability
+# Scaling and availability
 
 Readers scale eligible reads only when applications use the reader endpoint. Serverless v2 capacity stays inside configured bounds. Multi-AZ storage does not replace healthy promotable database instances.
 
-## Restore and disaster recovery
+# Restore and disaster recovery
 
 Cluster restore also requires database instances and working endpoints. Cross-Region replica or Global Database readiness differs from backup restore in standing cost, promotion work, RPO, and RTO.
 
@@ -63,3 +61,4 @@ Cluster restore also requires database instances and working endpoints. Cross-Re
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

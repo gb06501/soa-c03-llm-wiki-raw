@@ -47,9 +47,7 @@ For `UPDATE_ROLLBACK_FAILED`, repair the blocking permission, dependency, or res
 - [CloudFormation deployment failure](../playbooks/cloudformation-deployment-failure.md)
 - [Cross-account provisioning](../concepts/cross-account-resource-provisioning.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Evidence and recovery readiness
+# Evidence and recovery readiness
 
 Stack events provide infrastructure-change evidence. Templates recreate declared infrastructure for disaster recovery; they do not restore application data, runtime state, secrets, or undeclared dependencies.
 
@@ -61,3 +59,4 @@ Stack events provide infrastructure-change evidence. Templates recreate declared
 - [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+
