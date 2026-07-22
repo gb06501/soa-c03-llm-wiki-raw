@@ -6,6 +6,7 @@ on:
       - "wiki/**"
       - "AGENTS.md"
       - "scripts/validate_wiki_links.py"
+      - "scripts/validate_wiki_semantics.py"
       - "scripts/generate_navigation.py"
       - ".github/workflows/wiki-navigation.yml"
   push:
@@ -14,6 +15,7 @@ on:
       - "wiki/**"
       - "AGENTS.md"
       - "scripts/validate_wiki_links.py"
+      - "scripts/validate_wiki_semantics.py"
       - "scripts/generate_navigation.py"
       - ".github/workflows/wiki-navigation.yml"
 
@@ -29,3 +31,5 @@ jobs:
         run: python3 scripts/generate_navigation.py --check
       - name: Validate complete wiki link graph
         run: python3 scripts/validate_wiki_links.py
+      - name: Validate metadata ordering and service framing
+        run: python3 scripts/validate_wiki_semantics.py

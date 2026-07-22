@@ -3,7 +3,7 @@ type: Learning Path
 title: Domain 1 learning path
 description: Orders Domain 1 study from signal selection through safe remediation and resource optimization.
 tags: [soa-c03, domain-1, learning-path]
-timestamp: 2026-07-21T00:00:00+02:00
+timestamp: 2026-07-22T05:15:00Z
 skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6"]
 domain_ids: ["1"]
 sources:
@@ -112,6 +112,17 @@ Use these after the corresponding service pages:
 
 # Sources
 
-- [Domain 1 Task 1.1 source](../../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
-- [Domain 1 Task 1.2 source](../../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
-- [Domain 1 Task 1.3 source](../../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
+- [Skill 1.1.1](../../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
+- [Skill 1.1.2](../../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
+- [Skill 1.1.3](../../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
+- [Skill 1.1.4](../../../raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md)
+- [Skill 1.1.5](../../../raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md)
+- [Skill 1.2.1](../../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
+- [Skill 1.2.2](../../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
+- [Skill 1.2.3](../../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
+- [Skill 1.3.1](../../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
+- [Skill 1.3.2](../../../raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md)
+- [Skill 1.3.3](../../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
+- [Skill 1.3.4](../../../raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md)
+- [Skill 1.3.5](../../../raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md)
+- [Skill 1.3.6](../../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)

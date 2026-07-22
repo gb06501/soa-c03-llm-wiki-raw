@@ -5,17 +5,17 @@ service_id: eventbridge
 description: Matches events on buses and routes transformed payloads to authorized targets with retry and failure controls.
 tags: [soa-c03, domain-1, eventbridge, automation]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "3.2.2", "2.2.2", "2.3.1"]
-domain_ids: ["1", "3", "2"]
+skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "2.2.2", "2.3.1", "3.2.2"]
+domain_ids: ["1", "2", "3"]
 sources:
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
   - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
-  - /raw/skills/3.2.2-implement-event-driven-automation.md
   - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
   - /raw/skills/2.3.1-automate-snapshots-and-backups.md
+  - /raw/skills/3.2.2-implement-event-driven-automation.md
 status: verified
 ---
 
@@ -94,7 +94,7 @@ EventBridge matches event structure and routes to authorized targets. It does no
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
-- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 

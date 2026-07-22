@@ -4,23 +4,23 @@ title: Observability signal selection
 description: Chooses the evidence source from the operational question instead of from a preferred tool.
 tags: [soa-c03, domain-1, observability, diagnosis]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.2.1", "1.3.5", "1.3.6", "1.1.5", "1.2.2", "1.2.3", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "2.1.1", "2.1.2", "2.1.3", "2.2.1", "2.2.2", "2.3.1", "2.3.2", "2.3.3", "2.3.4"]
+skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "1.3.2", "1.3.3", "1.3.4", "1.3.5", "1.3.6", "2.1.1", "2.1.2", "2.1.3", "2.2.1", "2.2.2", "2.3.1", "2.3.2", "2.3.3", "2.3.4"]
 domain_ids: ["1", "2"]
 sources:
   - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md
-  - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
-  - /raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md
-  - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
   - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
+  - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
   - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md
   - /raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md
   - /raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
+  - /raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md
+  - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
   - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
   - /raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md
   - /raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
@@ -91,16 +91,16 @@ Choose the signal class before service-specific evidence. Then correlate scope, 
 - [Skill 1.1.2](../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.1.4](../../raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md)
-- [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
-- [Skill 1.3.5](../../raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md)
-- [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
 - [Skill 1.1.5](../../raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md)
+- [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.2](../../raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md)
 - [Skill 1.3.3](../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
 - [Skill 1.3.4](../../raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md)
+- [Skill 1.3.5](../../raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md)
+- [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
 - [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)

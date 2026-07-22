@@ -5,14 +5,14 @@ service_id: config
 description: Records resource configuration and evaluates state against compliance rules and conformance packs.
 tags: ["soa-c03", "domain-4", "config", "compliance"]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.1.5", "4.2.1", "4.2.5", "1.2.1", "1.2.3"]
-domain_ids: ["4", "1"]
+skill_ids: ["1.2.1", "1.2.3", "4.1.5", "4.2.1", "4.2.5"]
+domain_ids: ["1", "4"]
 sources:
+  - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
+  - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
   - /raw/skills/4.1.5-enforce-compliance-requirements-and-continuous-monitoring.md
   - /raw/skills/4.2.1-implement-and-enforce-a-data-classification-scheme.md
   - /raw/skills/4.2.5-configure-reports-and-remediate-findings-from-services.md
-  - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
-  - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
 status: verified
 ---
 # Core model
@@ -53,9 +53,9 @@ A Config finding can trigger governed remediation, but evaluation scope, remedia
 
 # Sources
 
+- [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
+- [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
 - [Skill 4.1.5](../../raw/skills/4.1.5-enforce-compliance-requirements-and-continuous-monitoring.md)
 - [Skill 4.2.1](../../raw/skills/4.2.1-implement-and-enforce-a-data-classification-scheme.md)
 - [Skill 4.2.5](../../raw/skills/4.2.5-configure-reports-and-remediate-findings-from-services.md)
-- [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
-- [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
 

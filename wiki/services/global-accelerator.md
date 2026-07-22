@@ -5,13 +5,13 @@ service_id: global-accelerator
 description: Routes TCP or UDP connections through static anycast IPs to healthy Regional endpoints without caching content.
 tags: ["soa-c03", "domain-5", "global-accelerator", "edge"]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["5.1.4", "5.2.3", "5.3.5", "2.3.4"]
-domain_ids: ["5", "2"]
+skill_ids: ["2.3.4", "5.1.4", "5.2.3", "5.3.5"]
+domain_ids: ["2", "5"]
 sources:
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
   - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
   - /raw/skills/5.2.3-configure-content-and-service-distribution.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
-  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 # Core model
@@ -54,8 +54,8 @@ Global Accelerator can move new traffic to healthy endpoints, but it does not co
 
 # Sources
 
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
 - [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
 - [Skill 5.2.3](../../raw/skills/5.2.3-configure-content-and-service-distribution.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
-- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
 

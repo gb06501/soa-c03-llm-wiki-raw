@@ -5,15 +5,15 @@ parent_services: [Systems Manager]
 description: Runs governed, parameterized infrastructure workflows with step-level evidence and safety controls.
 tags: [soa-c03, domain-1, systems-manager, automation, runbook]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["1.2.1", "1.2.2", "1.2.3", "3.2.1", "3.2.2", "1.1.3"]
+skill_ids: ["1.1.3", "1.2.1", "1.2.2", "1.2.3", "3.2.1", "3.2.2"]
 domain_ids: ["1", "3"]
 sources:
+  - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
   - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
   - /raw/skills/3.2.1-automate-operational-processes-with-services.md
   - /raw/skills/3.2.2-implement-event-driven-automation.md
-  - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
 status: verified
 ---
 
@@ -92,10 +92,10 @@ Automation success means the steps completed; it does not prove application reco
 
 # Sources
 
+- [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
 - [Skill 3.2.1](../../raw/skills/3.2.1-automate-operational-processes-with-services.md)
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
-- [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 

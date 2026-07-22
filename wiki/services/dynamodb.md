@@ -2,15 +2,12 @@
 type: AWS Service
 title: DynamoDB
 service_id: dynamodb
-description: Provides managed NoSQL storage with service encryption and optional customer-managed KMS control.
+description: Provides managed NoSQL tables with capacity, indexing, caching, backup, replication, and security controls.
 tags: ["soa-c03", "domain-4", "dynamodb", "encryption-at-rest", domain-5, gateway-endpoint, network-cost]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.2.2", "5.1.2", "5.1.4", "1.2.1", "2.1.2", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4"]
-domain_ids: ["4", "5", "1", "2"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["1.2.1", "2.1.2", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4", "4.2.2", "5.1.2", "5.1.4"]
+domain_ids: ["1", "2", "4", "5"]
 sources:
-  - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
-  - /raw/skills/5.1.2-configure-private-networking-connectivity.md
-  - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md
   - /raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
@@ -18,11 +15,14 @@ sources:
   - /raw/skills/2.3.1-automate-snapshots-and-backups.md
   - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
   - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
+  - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
+  - /raw/skills/5.1.2-configure-private-networking-connectivity.md
+  - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
 status: verified
 ---
 # Core model
 
-DynamoDB encrypts table data at rest. Key choice changes control, policy, audit, and operational dependency, while table access and KMS key access remain distinct authorization paths.
+DynamoDB serves table and index requests through partitioned capacity. Access patterns and key distribution, capacity mode and bounds, secondary indexes, DAX, streams, backup and restore, global tables, network paths, and IAM/KMS authorization are distinct controls.
 
 # Decision boundaries
 
@@ -60,9 +60,6 @@ Point-in-time, on-demand, and Backup recovery create a new table. Restore does n
 
 # Sources
 
-- [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)
-- [Skill 5.1.2](../../raw/skills/5.1.2-configure-private-networking-connectivity.md)
-- [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
 - [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
@@ -70,4 +67,6 @@ Point-in-time, on-demand, and Backup recovery create a new table. Restore does n
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
-
+- [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)
+- [Skill 5.1.2](../../raw/skills/5.1.2-configure-private-networking-connectivity.md)
+- [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)

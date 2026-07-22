@@ -117,6 +117,10 @@ Do not invent new page types when an existing type is adequate.
 - Use `Concept` when a mechanism spans multiple services or describes an operational model.
 - Keep stable file paths when correcting an existing page's type or title unless a rename has clear navigation value and all inbound links are updated.
 - The service index must distinguish canonical service pages from feature and cross-service pages.
+- Canonical service pages are corpus-global; they are not owned by the domain or batch that first created them.
+- The `description` and primary content section must define the service independently of an exam domain, source file, or ingestion history.
+- Put security, cost, networking, performance, availability, and recovery applications in subject-specific sections after the global service model.
+- When a later skill adds a material use case, reassess the global description and primary model instead of only appending a batch-shaped section.
 
 ## OKF v0.1 conventions
 
@@ -149,6 +153,9 @@ Rules:
 - `timestamp` records the last meaningful content change in ISO 8601 format.
 - `skill_ids` and `domain_ids` identify exam coverage.
 - `sources` contains bundle-root-relative links to supporting raw files.
+- Keep `skill_ids` and `domain_ids` unique and numerically sorted.
+- Sort `sources` by numeric raw skill ID, followed by any non-skill references in lexical path order.
+- The final readable `# Sources` links must exactly match the frontmatter source set and order.
 - `status` is one of `verified`, `partial`, `disputed`, or `needs-research`.
 - Preserve unknown frontmatter fields when updating a page.
 - Use lowercase kebab-case filenames without spaces.
@@ -426,6 +433,8 @@ Check for:
 - pages with no meaningful synthesis beyond one raw source;
 - raw files modified by an agent;
 - important recurring concepts that lack a page.
+- nondeterministic or mismatched `skill_ids`, `domain_ids`, frontmatter sources, and readable source links;
+- canonical service descriptions or primary models shaped around one domain or ingestion batch instead of the service.
 
 Report findings before applying broad repairs unless the user requested the fixes.
 
@@ -505,6 +514,7 @@ Before declaring generation complete, verify:
 26. Run `python3 scripts/validate_wiki_links.py`; it must report zero invalid links.
 27. Run `python3 scripts/generate_navigation.py --check`; all domain and skill views must match their source state.
 28. Every raw skill ID resolves through `wiki/skills/`, and every domain ID resolves through `wiki/domains/`.
+29. Run `python3 scripts/validate_wiki_semantics.py`; metadata ordering, source parity, and batch-neutral service framing must pass.
 
 ## Definition of done
 

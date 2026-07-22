@@ -2,15 +2,12 @@
 type: AWS Service
 title: Aurora
 service_id: aurora
-description: Provides managed relational clusters with storage encryption, TLS, snapshots, and secret-dependent client access.
+description: Provides managed relational database clusters with reader scaling, snapshots, recovery, and security controls.
 tags: ["soa-c03", "domain-4", "aurora", "data-protection"]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.2.2", "4.2.3", "4.2.4", "1.2.1", "1.3.5", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4"]
-domain_ids: ["4", "1", "2"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["1.2.1", "1.3.5", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4", "4.2.2", "4.2.3", "4.2.4"]
+domain_ids: ["1", "2", "4"]
 sources:
-  - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
-  - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
-  - /raw/skills/4.2.4-securely-store-secrets-by-using-services.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md
   - /raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
@@ -18,11 +15,14 @@ sources:
   - /raw/skills/2.3.1-automate-snapshots-and-backups.md
   - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
   - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
+  - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
+  - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
+  - /raw/skills/4.2.4-securely-store-secrets-by-using-services.md
 status: verified
 ---
 # Core model
 
-Aurora security spans cluster storage encryption, snapshot and copy behavior, endpoint TLS, database authentication, secret lifecycle, and network reachability.
+Aurora separates cluster storage, database instances, writer and reader endpoints, and clients. Reader capacity serves eligible reads only when applications use the reader endpoint, and multi-AZ storage does not replace healthy promotable instances. Performance, scaling, backup and recovery, networking, authentication, and encryption are distinct operational layers.
 
 # Decision boundaries
 
@@ -51,9 +51,6 @@ Cluster restore also requires database instances and working endpoints. Cross-Re
 
 # Sources
 
-- [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)
-- [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
-- [Skill 4.2.4](../../raw/skills/4.2.4-securely-store-secrets-by-using-services.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.3.5](../../raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md)
 - [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
@@ -61,4 +58,6 @@ Cluster restore also requires database instances and working endpoints. Cross-Re
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
-
+- [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)
+- [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
+- [Skill 4.2.4](../../raw/skills/4.2.4-securely-store-secrets-by-using-services.md)

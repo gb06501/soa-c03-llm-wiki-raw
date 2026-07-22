@@ -2,20 +2,20 @@
 type: AWS Service
 title: FSx
 service_id: fsx
-description: Provides managed file-system products with service-specific encryption and network access controls.
+description: Provides managed file-system families for distinct protocols, identities, performance profiles, and data integrations.
 tags: ["soa-c03", "domain-4", "fsx", "encryption-at-rest"]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.2.2", "1.3.4", "2.3.3"]
-domain_ids: ["4", "1", "2"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["1.3.4", "2.3.3", "4.2.2"]
+domain_ids: ["1", "2", "4"]
 sources:
-  - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
   - /raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
   - /raw/skills/2.3.3-implement-versioning-for-storage-services.md
+  - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
 status: verified
 ---
 # Core model
 
-FSx products encrypt managed file-system storage and integrate with KMS according to the selected product and lifecycle. Client protocol, identity, directory, network, and backup controls remain separate.
+FSx is a family of managed file-system products, not one interchangeable filesystem. Select the family from the workload's protocol, identity, performance, availability, and data-integration requirements; networking, encryption, snapshots, backups, and replication then follow that family's object and lifecycle model.
 
 # Decision boundaries
 
@@ -44,7 +44,6 @@ Windows shadow copies, ONTAP volume snapshots, Lustre data-repository protection
 
 # Sources
 
-- [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)
 - [Skill 1.3.4](../../raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md)
 - [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
-
+- [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)

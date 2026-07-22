@@ -5,16 +5,16 @@ service_id: ec2-auto-scaling
 description: Maintains EC2 group capacity and replaces instances through health-governed scaling and instance refresh.
 tags: [soa-c03, domain-3, ec2, auto-scaling]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["2.1.1", "3.1.5", "1.1.3", "1.2.1", "1.3.1", "1.3.6", "2.2.2"]
-domain_ids: ["2", "3", "1"]
+skill_ids: ["1.1.3", "1.2.1", "1.3.1", "1.3.6", "2.1.1", "2.2.2", "3.1.5"]
+domain_ids: ["1", "2", "3"]
 sources:
-  - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
-  - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
+  - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
   - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
 status: verified
 ---
 
@@ -53,11 +53,11 @@ A launch template defines new instances. Instance refresh replaces existing capa
 
 # Sources
 
-- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
-- [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
+- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
 

@@ -5,11 +5,11 @@ service_id: devops-agent
 description: Investigates correlated operational evidence and performs or recommends authorized, governed remediation.
 tags: [soa-c03, domain-3, devops-agent, operations, automation]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["3.2.2", "1.2.1"]
-domain_ids: ["3", "1"]
+skill_ids: ["1.2.1", "3.2.2"]
+domain_ids: ["1", "3"]
 sources:
-  - /raw/skills/3.2.2-implement-event-driven-automation.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
+  - /raw/skills/3.2.2-implement-event-driven-automation.md
 status: verified
 ---
 
@@ -47,6 +47,6 @@ DevOps Agent can assist operational investigation and remediation, but source ev
 
 # Sources
 
-- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
+- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 
