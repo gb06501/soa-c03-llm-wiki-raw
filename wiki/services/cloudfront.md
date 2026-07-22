@@ -40,7 +40,7 @@ Deploy certificate and policy changes with overlap, test default and alternate n
 - [TLS certificate selection](../decision-guides/tls-certificate-selection.md)
 - [TLS connectivity failure](../playbooks/tls-connectivity-failure.md)
 
-# Domain 5: Edge delivery and caching
+# Edge delivery and caching
 
 A request selects the first matching behavior, forms a cache key, applies viewer policy and WAF, then serves a fresh edge object or contacts the selected origin. Cache policy, origin request policy, and response headers policy have distinct roles.
 
@@ -52,9 +52,7 @@ Diagnose with hostname/path, behavior, X-Cache, Age, result/status, policy/TTL, 
 - [CloudFront cache policy selection](../decision-guides/cloudfront-cache-policy-selection.md)
 - [Edge delivery failure](../playbooks/edge-delivery-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Cache boundary
+# Cache boundary
 
 CloudFront caches edge responses according to behavior, key, TTL, origin directives, and invalidation. It reduces repeated origin work and remote latency; it is not S3 Transfer Acceleration, an application-data cache, or a DynamoDB read cache.
 
@@ -69,3 +67,4 @@ CloudFront caches edge responses according to behavior, key, TTL, origin directi
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
 - [Skill 1.3.3](../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
 - [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
+

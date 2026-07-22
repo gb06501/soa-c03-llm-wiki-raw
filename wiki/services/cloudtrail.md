@@ -44,9 +44,7 @@ Centralize organization trails in a protected log archive, encrypt and validate 
 - [Access denial evidence selection](../decision-guides/access-denial-evidence-selection.md)
 - [Multi-account security governance](../concepts/multi-account-security-governance.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Change evidence
+# Change evidence
 
 Use CloudTrail when the question is who changed an AWS resource, which API request failed, or whether scaling configuration changed. It does not explain CPU, memory, query waits, or application errors without correlated service evidence.
 
@@ -59,3 +57,4 @@ Use CloudTrail when the question is who changed an AWS resource, which API reque
 - [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
+

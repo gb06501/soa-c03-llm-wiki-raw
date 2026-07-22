@@ -77,15 +77,13 @@ source emitted -> account/Region/bus -> rule enabled -> actual pattern match
 - [Event-driven remediation failure](../playbooks/event-driven-remediation-failure.md)
 - [Remediation tool selection](../decision-guides/remediation-tool-selection.md)
 
-# Domain 3: Delivery, replay, and loop safety
+# Delivery, replay, and loop safety
 
 A rule pattern must match the real event envelope. A matching rule still needs a valid target ARN, target role or resource policy, and KMS access. Each target has independent retry, age, DLQ, and evidence.
 
 Archive replay deliberately sends old events again; it does not reverse prior effects. Consumers need idempotency and current-state guards. Automatic remediation must filter its own result events or otherwise prevent recursive triggers.
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Routing and operational triggers
+# Routing and operational triggers
 
 EventBridge matches event structure and routes to authorized targets. It does not replace a durable worker queue, target permissions, target retry design, or idempotent processing. Alarm changes, backup events, health events, and automation triggers retain their source-service evidence.
 
@@ -99,3 +97,4 @@ EventBridge matches event structure and routes to authorized targets. It does no
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+

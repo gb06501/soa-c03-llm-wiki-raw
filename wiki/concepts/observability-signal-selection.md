@@ -81,11 +81,9 @@ Prove data collection before interpreting absence.
 - [Evidence-to-remediation loop](evidence-to-remediation-loop.md)
 - [Missing telemetry](../playbooks/missing-telemetry.md)
 
-# Corpus-wide reconciliation
+# Signal-class first
 
-The planned `evidence-selection.md` identity was merged here because both described the same question: which evidence answers the operational question.
-
-Use service-specific evidence only after choosing the signal class. Then correlate scope, time, identity, recent change, dependency behavior, and a healthy baseline before remediation.
+Choose the signal class before service-specific evidence. Then correlate scope, time, identity, recent change, dependency behavior, and a healthy baseline before remediation.
 
 # Sources
 
@@ -112,3 +110,4 @@ Use service-specific evidence only after choosing the signal class. Then correla
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

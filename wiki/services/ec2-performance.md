@@ -83,7 +83,7 @@ Inspect bandwidth, packet rate, flows, ENI capability, and enhanced-networking s
 - [Resource performance diagnosis](../playbooks/resource-performance-diagnosis.md)
 - [Evidence-to-remediation loop](../concepts/evidence-to-remediation-loop.md)
 
-# Domain 3: AMIs and deployment
+# AMIs and deployment
 
 An AMI combines Region-specific metadata, block-device mappings, and backing snapshots. Before launch, verify owner and permission, Region, architecture, boot/root compatibility, drivers, snapshot and KMS access, launch-template version, IAM profile, subnet capacity, and user-data behavior.
 
@@ -91,17 +91,15 @@ Image creation normally reboots for consistency. A no-reboot capture can be cras
 
 During deployment, separate control-plane launch success from bootstrap, dependency, target-health, and application evidence. Instance refresh belongs to [EC2 Auto Scaling](ec2-auto-scaling.md).
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Health, capacity, storage, and network
+# Health, capacity, storage, and network
 
 System status failures point first to the AWS host path; instance status failures point first to guest startup, OS, or networking. Instance type bounds CPU, memory, network, and EBS capability. Guest memory and filesystem evidence requires an agent.
 
-## Persistence and recovery
+# Persistence and recovery
 
 EBS persists independently of a running instance; instance store is disposable across stop, termination, or host loss. Reboot, stop/start, resize, Auto Scaling replacement, AMI recovery, and backup restore have different state and identity effects.
 
-## Placement and scaling
+# Placement and scaling
 
 Cluster placement optimizes close communication inside one AZ; spread and partition placement reduce different hardware-sharing risks. None replaces multi-AZ application design. A launch-template update affects new instances until replacement or refresh occurs.
 
@@ -120,3 +118,4 @@ Cluster placement optimizes close communication inside one AZ; spread and partit
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+

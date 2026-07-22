@@ -51,7 +51,7 @@ Keep the prior task-definition revision and ECR digest. Drain connections delibe
 - [Deployment strategies](../concepts/deployment-strategies.md)
 - [Deployment rollback](../playbooks/deployment-rollback.md)
 
-# Domain 5: Network request evidence
+# Network request evidence
 
 Trace an ECS request through load-balancer logs and target status, task ENI Flow Logs, service/task events, configured stdout/stderr log driver, FireLens/router evidence, health checks, agent logs for EC2 launch type, DNS, and dependencies.
 
@@ -60,13 +60,11 @@ A task-role AccessDenied and a network timeout require different evidence. A hea
 - [Network log selection](../decision-guides/network-log-selection.md)
 - [Network request tracing](../playbooks/network-request-tracing.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Monitoring and scaling
+# Monitoring and scaling
 
 Container evidence spans cluster, service, task, container, host capacity, placement, and application behavior. Increasing desired tasks does not help when no cluster capacity or subnet address is available. Service scaling and capacity-provider or EC2 scaling are separate layers.
 
-## Recovery dependency
+# Recovery dependency
 
 Restored databases or changed endpoints require task-definition or application configuration updates before ECS workloads use the recovered dependency.
 
@@ -81,3 +79,4 @@ Restored databases or changed endpoints require task-definition or application c
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+

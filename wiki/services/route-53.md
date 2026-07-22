@@ -42,7 +42,7 @@ Automate validation records in controlled zones, preserve them for managed renew
 - [TLS certificate selection](../decision-guides/tls-certificate-selection.md)
 - [Encryption in transit](../concepts/encryption-in-transit.md)
 
-# Domain 5: DNS, Resolver, and routing
+# DNS, Resolver, and routing
 
 Route 53 provides authoritative public/private zones, Resolver endpoints and rules, routing policies, health checks, and query evidence. A DNS answer selects an address; it does not proxy or prove the target path.
 
@@ -54,9 +54,7 @@ Routing policies select eligible records by weights, latency, failover role, geo
 - [DNS routing policy selection](../decision-guides/dns-routing-policy-selection.md)
 - [DNS resolution failure](../playbooks/dns-resolution-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Health checks and failover
+# Health checks and failover
 
 Route 53 health controls DNS answers; it does not change load-balancer target membership or move existing connections. Public checkers cannot directly test private endpoints, so a published metric and alarm may bridge private health.
 
@@ -75,3 +73,4 @@ DNS failover still depends on record association, policy, health state, TTL and 
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

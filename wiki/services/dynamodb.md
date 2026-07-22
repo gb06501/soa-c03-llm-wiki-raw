@@ -41,7 +41,7 @@ Avoid disabling or scheduling deletion of an in-use key, test restore and replic
 - [Encryption at rest selection](../decision-guides/encryption-at-rest-selection.md)
 - [KMS access failure](../playbooks/kms-access-failure.md)
 
-# Domain 5: Gateway endpoint access
+# Gateway endpoint access
 
 A DynamoDB gateway endpoint installs service prefix-list routes into associated route tables. It has no endpoint ENI or security group. Endpoint policy restricts use but does not grant identity or table permission.
 
@@ -50,13 +50,11 @@ Use the endpoint for supported private regional traffic and to avoid NAT process
 - [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
 - [Network cost optimization](../decision-guides/network-cost-optimization.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Capacity, caching, and hot partitions
+# Capacity, caching, and hot partitions
 
 On-demand and provisioned modes address different demand predictability. Auto scaling is reactive and bounded. Low table utilization can coexist with throttling when a key or index is hot. DAX accelerates repeated eventually consistent reads; it does not add write capacity.
 
-## Backup, restore, and global tables
+# Backup, restore, and global tables
 
 Point-in-time, on-demand, and Backup recovery create a new table. Restore does not automatically recreate every stream, mapping, alarm, scaling, TTL, or application reference. Global tables provide multi-Region replicas and are not a substitute for backup.
 
@@ -72,3 +70,4 @@ Point-in-time, on-demand, and Backup recovery create a new table. Restore does n
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+
