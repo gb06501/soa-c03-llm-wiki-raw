@@ -42,7 +42,7 @@ Add and test the new certificate before removing the old one, preserve compatibl
 - [TLS certificate selection](../decision-guides/tls-certificate-selection.md)
 - [TLS connectivity failure](../playbooks/tls-connectivity-failure.md)
 
-# Domain 5: Balancing and request evidence
+# Balancing and request evidence
 
 ALB provides Layer 7 host/path routing and integrates with Regional WAF. NLB provides Layer 4 TCP/UDP/TLS behavior. Gateway Load Balancer distributes transparent appliance traffic. Listener, rule, target group, health check, cross-zone behavior, security, and target application are separate layers.
 
@@ -54,9 +54,7 @@ Load-balancer hourly/capacity and cross-AZ paths are cost inputs, but consolidat
 - [Network request tracing](../playbooks/network-request-tracing.md)
 - [Network performance diagnosis](../playbooks/network-performance-diagnosis.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Load balancer and health model
+# Load balancer and health model
 
 ALB routes HTTP/HTTPS requests, NLB handles high-performance TCP/UDP/TLS flows, and Gateway Load Balancer inserts virtual appliances. Listener, rule, target group, health-check path/port/protocol, target state, security path, and application response determine usable capacity.
 
@@ -75,3 +73,4 @@ ELB health can drive Auto Scaling replacement, but Route 53 health separately co
 - [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

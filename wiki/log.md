@@ -1,5 +1,13 @@
 # Wiki update log
 
+## [2026-07-22] repair | Learner-facing semantic headings
+
+- **Root cause:** Incremental build labels such as “Domain 5” and “Corpus reconciliation” leaked from generation batches into global service and concept pages.
+- **Repair:** Replaced batch-history headings with subject headings while retaining all underlying knowledge and source metadata.
+- **Coverage:** Updated every affected named-section destination so atomic coverage still resolves.
+- **Scope:** Machine-readable `skill_ids`, `domain_ids`, and tags remain metadata; learner-facing knowledge is domain-neutral.
+- **Source:** No file under `raw/` changed.
+
 ## [2026-07-22] reconcile | Complete-corpus atomic coverage
 
 - **Scope:** Reconciled all 53 immutable skills after the five domain bootstraps.
@@ -95,5 +103,6 @@
 - **Synthesis:** Connected observability, automation, compute, storage, database, and troubleshooting knowledge.
 - **Validation:** Preserved `raw/`, checked required metadata, sources, internal links, indexes, and duplicate identities.
 - **Gap:** No external AWS documentation was imported; knowledge remains bounded by the supplied study sources.
+
 
 

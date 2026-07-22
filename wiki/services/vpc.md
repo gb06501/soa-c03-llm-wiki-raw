@@ -57,11 +57,11 @@ Prefer least-privilege endpoint policies, explicit DNS ownership, redundant endp
 - [Access denial evidence selection](../decision-guides/access-denial-evidence-selection.md)
 - [TLS connectivity failure](../playbooks/tls-connectivity-failure.md)
 
-# Domain 5: Packet paths and connectivity
+# Packet paths and connectivity
 
 ## Route and security model
 
-A Domain 5 VPC path is resolved by the exact source/destination, longest-prefix route in each direction, target or attachment state, SG and ordered NACL behavior, transformed addresses, and application listener. IPv4 and IPv6 require independent routes and rules.
+A VPC path is resolved by the exact source/destination, longest-prefix route in each direction, target or attachment state, SG and ordered NACL behavior, transformed addresses, and application listener. IPv4 and IPv6 require independent routes and rules.
 
 ## Private and hybrid connectivity
 
@@ -71,15 +71,13 @@ Gateway/interface endpoints, PrivateLink, peering, Transit Gateway, VPN, Direct 
 
 Use route associations, Flow Logs, Reachability Analyzer, NAT/endpoint/TGW/VPN metrics, Resolver tests, CloudTrail/Config, and real application evidence. ACCEPT or a modeled path is not proof that the application responded.
 
-## Related Domain 5 decisions
+## Related connectivity decisions
 
 - [VPC addressing and routing selection](../decision-guides/vpc-addressing-routing-selection.md)
 - [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
 - [VPC connectivity failure](../playbooks/vpc-connectivity-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Compute, storage, health, and recovery paths
+# Compute, storage, health, and recovery paths
 
 ENIs, subnets, routes, security groups, network ACLs, addresses, DNS, and available subnet capacity affect EC2 performance, shared-storage mounts, load-balancer health, scaling launches, and restored database reachability. A recovered resource is not usable until the entire path and application endpoint are correct.
 
@@ -105,3 +103,4 @@ ENIs, subnets, routes, security groups, network ACLs, addresses, DNS, and availa
 - [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+

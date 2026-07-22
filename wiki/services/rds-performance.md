@@ -76,17 +76,15 @@ baseline -> limiting layer -> one targeted change -> impact review
 - [Resource performance diagnosis](../playbooks/resource-performance-diagnosis.md)
 - [Remediation tool selection](../decision-guides/remediation-tool-selection.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Monitoring layers
+# Monitoring layers
 
 CloudWatch shows service-level resource behavior; Enhanced Monitoring shows operating-system detail; database insights show load, waits, SQL, users, and hosts; logs show engine events. Start at the constrained layer.
 
-## Scaling and proxy boundary
+# Scaling and proxy boundary
 
 Instance class changes compute and memory. Read replicas offload reads and can lag. Storage autoscaling grows space within bounds. RDS Proxy pools connections; it does not add database compute or cache query results.
 
-## Backup, restore, and availability
+# Backup, restore, and availability
 
 Multi-AZ is availability, not backup or read scaling. Snapshot and point-in-time restore create a new database identity that requires network, parameter, security, endpoint, monitoring, and application cutover validation.
 
@@ -100,3 +98,4 @@ Multi-AZ is availability, not backup or read scaling. Snapshot and point-in-time
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

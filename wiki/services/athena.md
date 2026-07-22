@@ -16,7 +16,7 @@ status: verified
 ---
 # Core model
 
-Athena runs SQL against data in S3. For Domain 5 it is an analysis surface for detailed Cost and Usage Report data, VPC Flow Logs, load-balancer logs, CloudFront logs, WAF logs, and other structured network evidence.
+Athena runs SQL against data in S3. It is an analysis surface for detailed Cost and Usage Report data, VPC Flow Logs, load-balancer logs, CloudFront logs, WAF logs, and other structured network evidence.
 
 # Decision boundaries
 
@@ -35,9 +35,7 @@ Protect result locations, encrypt logs and query output, restrict sensitive fiel
 - [Network log selection](../decision-guides/network-log-selection.md)
 - [Network request tracing](../playbooks/network-request-tracing.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Operational analysis
+# Operational analysis
 
 Athena applies SQL to structured evidence stored in S3, including historical logs and optimization exports. It is a query layer; collection, delivery, schema, partitioning, and source completeness remain separate.
 
@@ -47,3 +45,4 @@ Athena applies SQL to structured evidence stored in S3, including historical log
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
+

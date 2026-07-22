@@ -73,13 +73,13 @@ Choose from access frequency, retrieval speed, availability/resilience, retrieva
 - [Storage service selection](../decision-guides/storage-service-selection.md)
 - [Resource performance diagnosis](../playbooks/resource-performance-diagnosis.md)
 
-# Domain 3: Event notifications
+# Event notifications
 
 S3 Event Notification selects an event type and optional object-key prefix/suffix, then sends matching events to Lambda, SNS, SQS, or EventBridge. The destination must exist and authorize S3; encrypted destinations also require the correct KMS policy.
 
 Delivery can be duplicated and out of order. Consumers must be idempotent. Avoid recursive writes by separating input/output prefixes or buckets and filtering only the input path.
 
-# Domain 5: Private access and edge origin
+# Private access and edge origins
 
 An S3 gateway endpoint routes supported regional S3 traffic through associated route tables and prefix lists without endpoint ENIs or security groups. Endpoint, IAM, bucket, and KMS policies remain separate authorization layers.
 
@@ -90,17 +90,15 @@ Flow Logs explain VPC-side endpoint/NAT paths; S3 and CloudFront access evidence
 - [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
 - [Content distribution selection](../decision-guides/content-distribution-selection.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Transfer and lifecycle
+# Transfer and lifecycle
 
 Multipart and parallel operations improve large-object transfer; Transfer Acceleration changes the remote-client path through an edge endpoint; DataSync handles managed storage movement. Lifecycle changes storage class or retention and is not a throughput fix.
 
-## Versioning, Object Lock, and replication
+# Versioning, Object Lock, and replication
 
 Versioning retains object versions and delete markers. Object Lock protects selected versions from deletion or change. Replication creates another copy according to rule scope and permissions. These controls have different recovery and independence properties.
 
-## Availability and disaster recovery
+# Availability and disaster recovery
 
 S3 is regional and designed across Availability Zones. Cross-Region data readiness, artifact availability, version state, replication status, and application cutover remain separate DR concerns.
 
@@ -119,3 +117,4 @@ S3 is regional and designed across Availability Zones. Cross-Region data readine
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
 - [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
+

@@ -67,13 +67,11 @@ Elastic Volumes can modify supported type, size, IOPS, and throughput. Monitor m
 - [Resource performance diagnosis](../playbooks/resource-performance-diagnosis.md)
 - [Storage service selection](../decision-guides/storage-service-selection.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Performance and scope
+# Performance and scope
 
 Effective storage performance is limited by the lower of volume capability, EC2 EBS capability, filesystem behavior, and application I/O pattern. Queue, latency, IOPS, throughput, burst state, and instance ceiling must be separated.
 
-## Snapshot and recovery
+# Snapshot and recovery
 
 An EBS volume is AZ-scoped. A snapshot is a recovery object, not a live standby. Restored blocks can require initialization before predictable performance, and increasing a volume does not automatically grow its filesystem.
 
@@ -85,3 +83,4 @@ An EBS volume is AZ-scoped. A snapshot is a recovery object, not a live standby.
 - [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+

@@ -56,9 +56,7 @@ Patch Scan reports; Install changes the node. Maintenance-window cutoff stops ne
 - [Systems Manager Automation](systems-manager-automation.md)
 - [Automation failure](../playbooks/automation-execution-failure.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Telemetry deployment and governed remediation
+# Telemetry deployment and governed remediation
 
 Systems Manager can distribute or retrieve CloudWatch Agent configuration and supply governed operational actions. Managed-node actions and direct AWS API actions have different prerequisites. Target resolution, execution role, step output, timeout, rollback, and verification remain explicit.
 
@@ -71,3 +69,4 @@ Systems Manager can distribute or retrieve CloudWatch Agent configuration and su
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
+

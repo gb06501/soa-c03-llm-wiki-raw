@@ -85,7 +85,7 @@ CloudWatch Metrics answers quantitative resource and application questions. Clou
 - [CloudWatch alarms](cloudwatch-alarms.md)
 - [Missing telemetry](../playbooks/missing-telemetry.md)
 
-# Domain 5: Network monitoring
+# Network monitoring
 
 CloudWatch network evidence includes configured hybrid probes, actual supported flow performance, public internet health events, scripted canaries, component metrics, alarms, dashboards, and Logs Insights.
 
@@ -96,13 +96,11 @@ Preserve AZ, tunnel, attachment, target, geography, ASN, probe, and flow dimensi
 - [Network monitor selection](../decision-guides/network-monitor-selection.md)
 - [Network performance diagnosis](../playbooks/network-performance-diagnosis.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Metrics, logs, alarms, and views
+# Metrics, logs, alarms, and views
 
 Metrics quantify resource behavior; logs preserve messages; alarms evaluate time-series conditions; dashboards combine widgets and queries. Missing guest or container telemetry is a collection problem until agent, scope, permissions, and destination are proven.
 
-## Evidence order
+# Evidence order
 
 `symptom -> resource metric -> workload or database detail -> matching log -> recent change -> service health -> remediation evidence`
 
@@ -124,3 +122,4 @@ Alarm state does not prove action delivery. A dashboard is a view, not an alert.
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
 - [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+

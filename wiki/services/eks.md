@@ -48,7 +48,7 @@ Confirm desired replicas are scheduled and ready, the intended image digest is r
 - [Deployment diagnostics](../concepts/deployment-diagnostics.md)
 - [Deployment failure](../playbooks/deployment-failure.md)
 
-# Domain 5: Network request evidence
+# Network request evidence
 
 Correlate ingress/controller logs, service and EndpointSlice state, pod current/previous logs and events, readiness/liveness, CoreDNS, VPC CNI/IP allocation, kube-proxy or data-plane evidence, node logs, enabled control-plane logs, and VPC/ELB evidence.
 
@@ -57,13 +57,11 @@ An application container can be healthy while an ingress, sidecar, network polic
 - [Network log selection](../decision-guides/network-log-selection.md)
 - [Network request tracing](../playbooks/network-request-tracing.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Monitoring and scaling
+# Monitoring and scaling
 
 Kubernetes evidence spans cluster, node, pod, container, resource requests, scheduler state, network addresses, and application behavior. Pod scaling and node scaling are separate; more pods require schedulable node capacity.
 
-## Recovery dependency
+# Recovery dependency
 
 A recovered backend is not in service until workload configuration, IAM, networking, and application discovery point EKS workloads to it.
 
@@ -77,3 +75,4 @@ A recovered backend is not in service until workload configuration, IAM, network
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+

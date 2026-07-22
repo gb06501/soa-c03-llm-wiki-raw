@@ -50,9 +50,7 @@ Prefer temporary credentials, narrow resources, conditions, MFA for privileged p
 - [IAM principal and policy selection](../decision-guides/iam-principal-and-policy-selection.md)
 - [Access denied](../playbooks/access-denied.md)
 
-# Corpus reconciliation: Domains 1 and 2
-
-## Operational permission boundaries
+# Operational permission boundaries
 
 Automation, backup, replication, restore, and version recovery each require both caller permissions and service or target resource permissions. A healthy control-plane object does not prove its execution role can perform the data-plane action.
 
@@ -63,3 +61,4 @@ Automation, backup, replication, restore, and version recovery each require both
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
+
