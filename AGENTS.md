@@ -121,6 +121,8 @@ Do not invent new page types when an existing type is adequate.
 - The `description` and primary content section must define the service independently of an exam domain, source file, or ingestion history.
 - Put security, cost, networking, performance, availability, and recovery applications in subject-specific sections after the global service model.
 - When a later skill adds a material use case, reassess the global description and primary model instead of only appending a batch-shaped section.
+- Derive the global service model from the union of the page's declared sources; do not broaden it with uncited model memory.
+- If the available sources support only a narrow service use case, keep the page explicitly partial or record a knowledge gap instead of inventing a comprehensive definition.
 
 ## OKF v0.1 conventions
 
@@ -223,6 +225,8 @@ Do not force every heading into every page.
 - State important exceptions next to the general rule.
 - Do not use unsupported numeric limits, prices, defaults, or timing claims.
 - Do not convert examples into universal rules.
+- Use subject headings in semantic pages. Do not expose generation history such as “Corpus reconciliation,” “bootstrap,” “ingest,” or a contributing domain as the heading for global knowledge.
+- Domain labels are appropriate only in explicitly domain-scoped navigation, learning, coverage, or assessment pages.
 
 ### Study-specific patterns
 
@@ -244,6 +248,8 @@ Create a new page when the subject:
 - deserves an independent lifecycle.
 
 Update an existing page when new information concerns the same conceptual identity.
+
+Shared-page integration is a whole-page revision, not an append-only operation. Read the existing page and its declared sources, classify new material as global identity or a scoped application, merge overlapping sections, remove redundant explanations, and keep one subject-based section hierarchy. Processing order must not determine the page description, heading order, or emphasis.
 
 Do not:
 
@@ -316,6 +322,8 @@ Every generated page must contain:
 3. Relevant `skill_ids`.
 4. Clear distinction between explicit source content and agent inference.
 
+Use one readable source link for every frontmatter source entry. Keep the same exact paths and order. Do not substitute aggregate labels or range links such as “Skills 1.1.1–1.1.5” for the individual sources.
+
 Use phrasing such as:
 
 - **Source states:** directly supported.
@@ -356,6 +364,10 @@ For each domain-sized implementation batch:
 
 1. Read the global coverage plan and every raw skill in the domain.
 2. Reassess related pages from other domains so shared concepts are updated rather than duplicated.
+   - Read the complete affected page, not only its final section.
+   - Decide whether the new material changes the corpus-global model or belongs in an existing subject-specific section.
+   - Consolidate overlapping sections and citations instead of preserving ingestion-batch boundaries.
+   - Do not let domain processing order control presentation order or conceptual emphasis.
 3. Create or update pages for every applicable facet.
 4. Map every decision boundary to a standalone Decision Guide or a named decision section.
 5. Add meaningful cross-links and update all relevant indexes.
@@ -365,9 +377,20 @@ For each domain-sized implementation batch:
 9. Report planned, implemented, embedded, unsupported, and intentionally omitted items separately.
 10. Use a dedicated branch and draft pull request for human review.
 
-After the final domain batch, run a corpus reconciliation pass across all 53 skills. Merge duplicate identities, repair cross-domain links, verify global navigation, and keep unresolved gaps explicit.
+After the final domain batch, run a corpus reconciliation pass across all 53 skills. Audit every canonical service page against the union of its cited skills: verify its title and registry identity, source-grounded description, primary model, subject-based section taxonomy, and balance across domains. Correct first-domain bias and consolidate overlapping sections. Then merge duplicate identities, repair cross-domain links, verify global navigation, and keep unresolved gaps explicit.
 
 Do not generate every page in one unreviewed batch merely because planning uses the whole corpus.
+
+#### Broad generation requests
+
+When the user asks to create “most” or “all” pages:
+
+1. Treat the request as authorization to plan the complete requested source scope, not as permission to skip review boundaries.
+2. Inventory the full scope and reconcile the global coverage map and page identities before creating pages.
+3. Divide implementation into coherent domain- or subject-sized batches, with shared pages assigned deliberately rather than recreated.
+4. Use one dedicated branch and draft pull request per independent batch.
+5. Pause after each dependent batch for review or merge unless the user explicitly directs continuation.
+6. Keep unbuilt destinations marked `planned`; do not report the broad request complete until every applicable facet is implemented, embedded, gapped, or intentionally omitted.
 
 ### 3. Ingest a changed or new source
 
@@ -435,6 +458,10 @@ Check for:
 - important recurring concepts that lack a page.
 - nondeterministic or mismatched `skill_ids`, `domain_ids`, frontmatter sources, and readable source links;
 - canonical service descriptions or primary models shaped around one domain or ingestion batch instead of the service.
+- learner-facing process-history headings in global semantic pages;
+- append-only shared pages with overlapping or duplicate subject sections;
+- global service claims broader than the union of their declared sources;
+- aggregate readable source links that do not represent every declared source one-to-one.
 
 Report findings before applying broad repairs unless the user requested the fixes.
 
@@ -514,7 +541,9 @@ Before declaring generation complete, verify:
 26. Run `python3 scripts/validate_wiki_links.py`; it must report zero invalid links.
 27. Run `python3 scripts/generate_navigation.py --check`; all domain and skill views must match their source state.
 28. Every raw skill ID resolves through `wiki/skills/`, and every domain ID resolves through `wiki/domains/`.
-29. Run `python3 scripts/validate_wiki_semantics.py`; metadata ordering, source parity, and batch-neutral service framing must pass.
+29. Run `python3 scripts/validate_wiki_semantics.py`; deterministic metadata, exact source parity, and explicit batch-language checks must pass.
+30. Treat semantic-validator success as structural evidence only. Manually review the description, primary section, and subject balance of every affected `AWS Service` page; automation cannot prove semantic neutrality.
+31. Every affected shared page has a subject-based hierarchy without duplicate or ingestion-history sections.
 
 ## Definition of done
 
@@ -524,6 +553,7 @@ A knowledge-generation task is done when:
 - all applicable decision boundaries have explicit destinations;
 - `state/coverage.yaml` contains no unexplained omissions for the requested scope;
 - generated pages are source-grounded and cross-linked;
+- every affected shared page has received a whole-page semantic review rather than an append-only update;
 - indexes, log, and manifest are updated;
 - quality gates pass;
 - the learner can navigate from a scenario or AWS service to the relevant decision rules, evidence, playbooks, traps, and source skills;

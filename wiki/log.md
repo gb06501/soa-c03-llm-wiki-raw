@@ -1,5 +1,15 @@
 # Wiki update log
 
+## [2026-07-22] governance | Whole-page semantic integration
+
+- **Shared pages:** Defined integration as a whole-page revision with subject-based consolidation, not append-only domain ingestion.
+- **Service grounding:** Required corpus-global service models to remain bounded by the union of declared raw sources, with partial status or gaps when support is narrow.
+- **Presentation:** Prohibited learner-facing generation-history headings in global semantic pages and made processing order independent from page emphasis.
+- **Traceability:** Required one readable link per declared source and prohibited aggregate range links.
+- **Broad requests:** Defined how “most” or “all” page-generation requests are globally planned but implemented in reviewable batches.
+- **Validation boundary:** Clarified that automated semantic checks enforce structure and explicit terms but cannot prove conceptual neutrality.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-22] repair | Global service models and deterministic sources
 
 - **Root cause:** Incremental domain batches appended their sources and knowledge to shared pages without re-evaluating the page's corpus-global identity.
