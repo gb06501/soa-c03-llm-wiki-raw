@@ -2,12 +2,14 @@
 type: AWS Service
 title: CloudFront
 service_id: cloudfront
-description: Delivers content through edge distributions with independent viewer and origin TLS policies.
+description: Distributes HTTP and HTTPS content through edge locations using behaviors, caching policies, origins, and security controls.
 tags: ["soa-c03", "domain-4", "cloudfront", "tls", domain-5, edge, caching]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.2", "5.3.3", "5.3.5", "1.3.3", "2.1.2"]
-domain_ids: ["4", "5", "1", "2"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["1.3.3", "2.1.2", "4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.2", "5.3.3", "5.3.5"]
+domain_ids: ["1", "2", "4", "5"]
 sources:
+  - /raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md
+  - /raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
   - /raw/skills/5.1.3-audit-network-protection-services-in-one-account.md
   - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
@@ -15,13 +17,11 @@ sources:
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
   - /raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
-  - /raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md
-  - /raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md
 status: verified
 ---
 # Core model
 
-A CloudFront request crosses two TLS relationships: viewer to edge and edge to origin. Each side has its own protocol policy, hostname, certificate, and trust requirements.
+A CloudFront request selects a distribution behavior, forms a cache key, and is served from the edge or forwarded to the configured origin. Behavior order, cache policy, origin request policy, TTL, origin access and health, viewer controls, and the application response determine the result. Viewer-to-edge and edge-to-origin TLS remain independent relationships.
 
 # Decision boundaries
 
@@ -58,6 +58,8 @@ CloudFront caches edge responses according to behavior, key, TTL, origin directi
 
 # Sources
 
+- [Skill 1.3.3](../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
+- [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
 - [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
 - [Skill 5.1.3](../../raw/skills/5.1.3-audit-network-protection-services-in-one-account.md)
 - [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
@@ -65,6 +67,3 @@ CloudFront caches edge responses according to behavior, key, TTL, origin directi
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 5.3.3](../../raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
-- [Skill 1.3.3](../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
-- [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
-

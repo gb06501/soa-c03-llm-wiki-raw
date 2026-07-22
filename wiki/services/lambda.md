@@ -5,12 +5,9 @@ service_id: lambda
 description: Runs event-invoked code with immutable versions, aliases, concurrency controls, source-specific retries, and failure destinations.
 tags: [soa-c03, domain-3, lambda, serverless, events]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["3.1.3", "3.1.5", "3.2.2", "1.1.1", "1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "2.1.1", "2.3.2"]
-domain_ids: ["3", "1", "2"]
+skill_ids: ["1.1.1", "1.1.3", "1.1.5", "1.2.1", "1.2.2", "1.2.3", "1.3.1", "2.1.1", "2.3.2", "3.1.3", "3.1.5", "3.2.2"]
+domain_ids: ["1", "2", "3"]
 sources:
-  - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
-  - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
-  - /raw/skills/3.2.2-implement-event-driven-automation.md
   - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
@@ -20,6 +17,9 @@ sources:
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
   - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
+  - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
+  - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
+  - /raw/skills/3.2.2-implement-event-driven-automation.md
 status: verified
 ---
 
@@ -70,9 +70,6 @@ Database restore may require environment, secret, endpoint, event-source, and IA
 
 # Sources
 
-- [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
-- [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
-- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.1.5](../../raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md)
@@ -82,4 +79,7 @@ Database restore may require environment, secret, endpoint, event-source, and IA
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+- [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
+- [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
+- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 

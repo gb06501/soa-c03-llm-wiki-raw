@@ -2,12 +2,17 @@
 type: AWS Service
 title: VPC
 service_id: vpc
-description: Provides network boundaries, routes, endpoints, and private connectivity that constrain security-service data paths.
+description: Provides isolated IP address spaces, subnets, routing, security boundaries, and connectivity for AWS resources.
 tags: ["soa-c03", "domain-4", "vpc", "private-connectivity", domain-5, networking, routing]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.1.2", "4.2.3", "4.2.4", "5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5", "1.3.4", "1.3.6", "2.2.1", "2.2.2", "2.3.2"]
-domain_ids: ["4", "5", "1", "2"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["1.3.4", "1.3.6", "2.2.1", "2.2.2", "2.3.2", "4.1.2", "4.2.3", "4.2.4", "5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.2.1", "5.2.2", "5.2.3", "5.3.1", "5.3.2", "5.3.3", "5.3.4", "5.3.5"]
+domain_ids: ["1", "2", "4", "5"]
 sources:
+  - /raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
+  - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
+  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
   - /raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
   - /raw/skills/4.2.4-securely-store-secrets-by-using-services.md
@@ -23,16 +28,11 @@ sources:
   - /raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md
   - /raw/skills/5.3.4-identify-and-troubleshoot-hybrid-and-private-connectivity-issues.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
-  - /raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
-  - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
-  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
-  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
-  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
 status: verified
 ---
 # Core model
 
-A VPC data path depends on addressing, routes, security groups, network ACLs, name resolution, endpoint selection, and service policy. Authorization success does not prove network reachability, and network reachability does not grant authorization.
+A VPC defines address ranges and subnets, routes traffic to gateways or attachments, applies security-group and network-ACL controls, and connects resources to services and other networks. A usable path still depends on DNS, forward and return routes, target state, transformed addresses, service policy, authorization, and the application listener.
 
 # Security integrations
 
@@ -83,6 +83,11 @@ ENIs, subnets, routes, security groups, network ACLs, addresses, DNS, and availa
 
 # Sources
 
+- [Skill 1.3.4](../../raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md)
+- [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
+- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
 - [Skill 4.1.2](../../raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md)
 - [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
 - [Skill 4.2.4](../../raw/skills/4.2.4-securely-store-secrets-by-using-services.md)
@@ -98,9 +103,3 @@ ENIs, subnets, routes, security groups, network ACLs, addresses, DNS, and availa
 - [Skill 5.3.3](../../raw/skills/5.3.3-identify-and-remediate-cloudfront-caching-issues.md)
 - [Skill 5.3.4](../../raw/skills/5.3.4-identify-and-troubleshoot-hybrid-and-private-connectivity-issues.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
-- [Skill 1.3.4](../../raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md)
-- [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
-- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
-- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
-- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
-

@@ -1,5 +1,14 @@
 # Wiki update log
 
+## [2026-07-22] repair | Global service models and deterministic sources
+
+- **Root cause:** Incremental domain batches appended their sources and knowledge to shared pages without re-evaluating the page's corpus-global identity.
+- **Service models:** Reframed 11 cross-domain service descriptions and primary models around the service itself; retained networking, cost, security, performance, and recovery knowledge as scoped applications.
+- **Source order:** Sorted `skill_ids`, `domain_ids`, frontmatter sources, and readable source links numerically across every affected semantic page.
+- **Traceability:** Expanded two legacy Domain 1 aggregate source sections so every declared raw skill has an exact readable link.
+- **Governance:** Added a standard-library semantic validator for deterministic metadata, exact source parity, and batch-neutral service framing, and added it to pull-request checks.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-22] repair | Learner-facing semantic headings
 
 - **Root cause:** Incremental build labels such as “Domain 5” and “Corpus reconciliation” leaked from generation batches into global service and concept pages.

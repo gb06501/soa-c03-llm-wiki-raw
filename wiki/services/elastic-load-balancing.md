@@ -2,12 +2,16 @@
 type: AWS Service
 title: Elastic Load Balancing
 service_id: elastic-load-balancing
-description: Terminates, passes through, or routes encrypted connections through managed load balancers.
+description: Distributes application and network traffic across healthy targets through managed load balancers.
 tags: ["soa-c03", "domain-4", "elastic-load-balancing", "tls", domain-5, network-evidence]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.1", "5.3.2", "5.3.5", "2.1.1", "2.2.1", "2.2.2", "2.3.4"]
-domain_ids: ["4", "5", "2"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["2.1.1", "2.2.1", "2.2.2", "2.3.4", "4.2.3", "5.1.3", "5.1.4", "5.2.3", "5.3.1", "5.3.2", "5.3.5"]
+domain_ids: ["2", "4", "5"]
 sources:
+  - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
+  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
   - /raw/skills/5.1.3-audit-network-protection-services-in-one-account.md
   - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
@@ -15,15 +19,11 @@ sources:
   - /raw/skills/5.3.1-troubleshoot-vpc-configurations.md
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
-  - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
-  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
-  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
-  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 # Core model
 
-An Application Load Balancer commonly terminates HTTP/TLS and routes at Layer 7. A Network Load Balancer can terminate TLS or pass TCP through. Listener protocol, certificate, security policy, target protocol, and health checks are independent choices.
+Elastic Load Balancing separates the client-facing listener, routing or forwarding behavior, target group, target health, and backend application path. Application Load Balancers route HTTP/HTTPS at Layer 7, Network Load Balancers handle TCP/UDP/TLS flows, and Gateway Load Balancers insert virtual appliances. A configured load balancer is usable only when its listeners, rules, targets, security path, and application response align.
 
 # Decision boundaries
 
@@ -62,6 +62,10 @@ ELB health can drive Auto Scaling replacement, but Route 53 health separately co
 
 # Sources
 
+- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
+- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
 - [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
 - [Skill 5.1.3](../../raw/skills/5.1.3-audit-network-protection-services-in-one-account.md)
 - [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
@@ -69,8 +73,3 @@ ELB health can drive Auto Scaling replacement, but Route 53 health separately co
 - [Skill 5.3.1](../../raw/skills/5.3.1-troubleshoot-vpc-configurations.md)
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
-- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
-- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
-- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
-- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
-

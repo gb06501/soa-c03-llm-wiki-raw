@@ -5,22 +5,22 @@ service_id: ec2
 description: Runs virtual machine instances from versioned images with observable compute, storage, network, health, and deployment behavior.
 tags: [soa-c03, domain-1, ec2, performance, health]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["1.1.2", "1.2.1", "1.3.1", "1.3.2", "1.3.6", "3.1.1", "3.1.3", "3.1.5", "1.1.1", "1.1.3", "2.1.1", "2.2.2", "2.3.1"]
-domain_ids: ["1", "3", "2"]
+skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.2.1", "1.3.1", "1.3.2", "1.3.6", "2.1.1", "2.2.2", "2.3.1", "3.1.1", "3.1.3", "3.1.5"]
+domain_ids: ["1", "2", "3"]
 sources:
+  - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
+  - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md
   - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
-  - /raw/skills/3.1.1-create-and-manage-amis-and-container-images.md
-  - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
-  - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
-  - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
-  - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
   - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
   - /raw/skills/2.3.1-automate-snapshots-and-backups.md
+  - /raw/skills/3.1.1-create-and-manage-amis-and-container-images.md
+  - /raw/skills/3.1.3-identify-and-remediate-deployment-issues.md
+  - /raw/skills/3.1.5-implement-deployment-strategies-and-services.md
 status: verified
 ---
 
@@ -105,17 +105,17 @@ Cluster placement optimizes close communication inside one AZ; spread and partit
 
 # Sources
 
+- [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
 - [Skill 1.1.2](../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
+- [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.2](../../raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md)
 - [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
-- [Skill 3.1.1](../../raw/skills/3.1.1-create-and-manage-amis-and-container-images.md)
-- [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
-- [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
-- [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
-- [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 3.1.1](../../raw/skills/3.1.1-create-and-manage-amis-and-container-images.md)
+- [Skill 3.1.3](../../raw/skills/3.1.3-identify-and-remediate-deployment-issues.md)
+- [Skill 3.1.5](../../raw/skills/3.1.5-implement-deployment-strategies-and-services.md)
 

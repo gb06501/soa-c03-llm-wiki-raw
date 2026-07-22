@@ -2,12 +2,16 @@
 type: AWS Service
 title: Route 53
 service_id: route-53
-description: Provides DNS routing and validation records used by secure endpoint and certificate workflows.
+description: Provides authoritative DNS, health-aware routing, and VPC DNS resolution and forwarding.
 tags: ["soa-c03", "domain-4", "route-53", "dns", domain-5, resolver, dns-routing]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.2.3", "5.1.3", "5.2.1", "5.2.2", "5.2.3", "5.3.2", "5.3.5", "2.2.1", "2.2.2", "2.3.2", "2.3.4"]
-domain_ids: ["4", "5", "2"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["2.2.1", "2.2.2", "2.3.2", "2.3.4", "4.2.3", "5.1.3", "5.2.1", "5.2.2", "5.2.3", "5.3.2", "5.3.5"]
+domain_ids: ["2", "4", "5"]
 sources:
+  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
   - /raw/skills/5.1.3-audit-network-protection-services-in-one-account.md
   - /raw/skills/5.2.1-configure-dns-and-route-53-resolver.md
@@ -15,15 +19,11 @@ sources:
   - /raw/skills/5.2.3-configure-content-and-service-distribution.md
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
-  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
-  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
-  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
-  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 # Core model
 
-Route 53 maps names to endpoints and can host DNS validation records for managed certificates. DNS correctness precedes TLS: clients must reach the intended endpoint before certificate and protocol checks can succeed.
+Route 53 answers DNS questions; it does not proxy application traffic. Public and private hosted zones provide authoritative records, routing policies and health checks select eligible answers, and Resolver endpoints and rules connect VPC DNS with external namespaces. The observed answer also depends on delegation, associations, rule selection, TTLs, and caches.
 
 # Decision boundaries
 
@@ -62,6 +62,10 @@ DNS failover still depends on record association, policy, health state, TTL and 
 
 # Sources
 
+- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
 - [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
 - [Skill 5.1.3](../../raw/skills/5.1.3-audit-network-protection-services-in-one-account.md)
 - [Skill 5.2.1](../../raw/skills/5.2.1-configure-dns-and-route-53-resolver.md)
@@ -69,8 +73,3 @@ DNS failover still depends on record association, policy, health state, TTL and 
 - [Skill 5.2.3](../../raw/skills/5.2.3-configure-content-and-service-distribution.md)
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
-- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
-- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
-- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
-- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
-

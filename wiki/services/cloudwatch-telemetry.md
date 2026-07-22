@@ -5,16 +5,14 @@ service_id: cloudwatch
 description: Collects and relates metrics, logs, traces, alarms, dashboards, and operational evidence.
 tags: [soa-c03, domain-1, cloudwatch, observability, domain-5, network-monitoring]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["1.1.1", "1.1.2", "1.2.1", "5.3.2", "5.3.5", "1.1.3", "1.1.4", "1.3.1", "1.3.2", "1.3.5", "1.3.6", "2.1.1", "2.1.3", "2.2.1"]
-domain_ids: ["1", "5", "2"]
+skill_ids: ["1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.2.1", "1.3.1", "1.3.2", "1.3.5", "1.3.6", "2.1.1", "2.1.3", "2.2.1", "5.3.2", "5.3.5"]
+domain_ids: ["1", "2", "5"]
 sources:
   - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
-  - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
-  - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
-  - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md
+  - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md
   - /raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md
@@ -22,6 +20,8 @@ sources:
   - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
   - /raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
   - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
+  - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
+  - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
 status: verified
 ---
 
@@ -110,11 +110,9 @@ Alarm state does not prove action delivery. A dashboard is a view, not an alert.
 
 - [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
 - [Skill 1.1.2](../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
-- [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
-- [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
-- [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.1.4](../../raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md)
+- [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.2](../../raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md)
 - [Skill 1.3.5](../../raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md)
@@ -122,4 +120,6 @@ Alarm state does not prove action delivery. A dashboard is a view, not an alert.
 - [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
 - [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
 - [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
+- [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
 

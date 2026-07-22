@@ -5,14 +5,14 @@ service_id: iam
 description: Controls AWS identities and permissions through principals, policies, conditions, and explicit evaluation boundaries.
 tags: ["soa-c03", "domain-4", "iam", "access-control"]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["4.1.1", "4.1.2", "1.2.3", "2.3.1", "2.3.3"]
-domain_ids: ["4", "1", "2"]
+skill_ids: ["1.2.3", "2.3.1", "2.3.3", "4.1.1", "4.1.2"]
+domain_ids: ["1", "2", "4"]
 sources:
-  - /raw/skills/4.1.1-implement-iam-features.md
-  - /raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md
   - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
   - /raw/skills/2.3.1-automate-snapshots-and-backups.md
   - /raw/skills/2.3.3-implement-versioning-for-storage-services.md
+  - /raw/skills/4.1.1-implement-iam-features.md
+  - /raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md
 status: verified
 ---
 # Core model
@@ -56,9 +56,9 @@ Automation, backup, replication, restore, and version recovery each require both
 
 # Sources
 
-- [Skill 4.1.1](../../raw/skills/4.1.1-implement-iam-features.md)
-- [Skill 4.1.2](../../raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
 - [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
 - [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
+- [Skill 4.1.1](../../raw/skills/4.1.1-implement-iam-features.md)
+- [Skill 4.1.2](../../raw/skills/4.1.2-troubleshoot-and-audit-access-issues.md)
 

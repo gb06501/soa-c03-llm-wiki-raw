@@ -5,22 +5,22 @@ service_id: s3
 description: Provides object storage with transfer, request, lifecycle, versioning, and event-notification controls.
 tags: [soa-c03, domain-1, s3, performance, lifecycle, domain-5, private-access, edge-origin]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["1.3.3", "1.3.4", "3.2.2", "5.1.2", "5.1.4", "5.2.3", "5.3.2", "1.1.1", "1.3.1", "2.2.2", "2.3.1", "2.3.3", "2.3.4"]
-domain_ids: ["1", "3", "5", "2"]
+skill_ids: ["1.1.1", "1.3.1", "1.3.3", "1.3.4", "2.2.2", "2.3.1", "2.3.3", "2.3.4", "3.2.2", "5.1.2", "5.1.4", "5.2.3", "5.3.2"]
+domain_ids: ["1", "2", "3", "5"]
 sources:
+  - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
+  - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
   - /raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md
   - /raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
+  - /raw/skills/2.3.3-implement-versioning-for-storage-services.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
   - /raw/skills/3.2.2-implement-event-driven-automation.md
   - /raw/skills/5.1.2-configure-private-networking-connectivity.md
   - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
   - /raw/skills/5.2.3-configure-content-and-service-distribution.md
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
-  - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
-  - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
-  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
-  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
-  - /raw/skills/2.3.3-implement-versioning-for-storage-services.md
-  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 
@@ -104,17 +104,17 @@ S3 is regional and designed across Availability Zones. Cross-Region data readine
 
 # Sources
 
+- [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
+- [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
 - [Skill 1.3.3](../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
 - [Skill 1.3.4](../../raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 5.1.2](../../raw/skills/5.1.2-configure-private-networking-connectivity.md)
 - [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
 - [Skill 5.2.3](../../raw/skills/5.2.3-configure-content-and-service-distribution.md)
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
-- [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
-- [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
-- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
-- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
-- [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
-- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)
 

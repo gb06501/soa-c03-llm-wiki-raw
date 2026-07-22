@@ -2,19 +2,19 @@
 type: AWS Service
 title: Cost Explorer
 service_id: cost-explorer
-description: Finds cost trends and network usage patterns by service, account, Region, usage type, operation, and ownership dimensions.
+description: Explores AWS cost and usage trends through time ranges, filters, grouping dimensions, and forecasts.
 tags: ["soa-c03", "domain-5", "cost-explorer", "network-cost"]
-timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["5.1.4", "1.3.1"]
-domain_ids: ["5", "1"]
+timestamp: 2026-07-22T05:15:00Z
+skill_ids: ["1.3.1", "5.1.4"]
+domain_ids: ["1", "5"]
 sources:
-  - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
   - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
+  - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
 status: verified
 ---
 # Core model
 
-Cost Explorer identifies which billed service and usage type changed. It does not by itself explain the packet path that produced the charge.
+Cost Explorer is an interactive, aggregated view of AWS cost and usage over time. It helps identify where spend changed by filtering and grouping on available dimensions, but it does not prove the technical cause of a charge or whether a resource can be changed safely.
 
 # Investigation model
 
@@ -44,6 +44,5 @@ Use Cost Explorer to confirm spend shape and resource-family trends after perfor
 
 # Sources
 
-- [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
 - [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
-
+- [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)

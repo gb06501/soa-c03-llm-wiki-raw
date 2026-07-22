@@ -5,16 +5,16 @@ service_id: systems-manager
 description: Operates managed nodes through documents, fleet targeting, configuration, patching, maintenance, sessions, inventory, and parameters.
 tags: [soa-c03, domain-3, systems-manager, operations]
 timestamp: 2026-07-22T09:00:00+02:00
-skill_ids: ["3.2.1", "3.2.2", "1.1.2", "1.1.3", "1.2.1", "1.2.2", "1.2.3"]
-domain_ids: ["3", "1"]
+skill_ids: ["1.1.2", "1.1.3", "1.2.1", "1.2.2", "1.2.3", "3.2.1", "3.2.2"]
+domain_ids: ["1", "3"]
 sources:
-  - /raw/skills/3.2.1-automate-operational-processes-with-services.md
-  - /raw/skills/3.2.2-implement-event-driven-automation.md
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
   - /raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
+  - /raw/skills/3.2.1-automate-operational-processes-with-services.md
+  - /raw/skills/3.2.2-implement-event-driven-automation.md
 status: verified
 ---
 
@@ -62,11 +62,11 @@ Systems Manager can distribute or retrieve CloudWatch Agent configuration and su
 
 # Sources
 
-- [Skill 3.2.1](../../raw/skills/3.2.1-automate-operational-processes-with-services.md)
-- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 - [Skill 1.1.2](../../raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md)
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 1.2.3](../../raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md)
+- [Skill 3.2.1](../../raw/skills/3.2.1-automate-operational-processes-with-services.md)
+- [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
 
