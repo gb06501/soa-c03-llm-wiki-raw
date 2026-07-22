@@ -1,122 +1,122 @@
 version: 1
-updated_at: "2026-07-21T22:45:00+02:00"
+updated_at: "2026-07-22T09:00:00+02:00"
 scope: "SOA-C03 complete corpus"
 status: validated
 sources:
   - path: raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
     blob_sha: 9276191767df8b284787fbec83132b92e70ac7cf
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/cloudwatch-telemetry.md, wiki/concepts/observability-signal-selection.md, wiki/playbooks/missing-telemetry.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/telemetry-selection.md]
+    generated_pages: [wiki/services/cloudwatch-telemetry.md, wiki/concepts/observability-signal-selection.md, wiki/playbooks/missing-telemetry.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/telemetry-selection.md, wiki/services/cloudtrail.md, wiki/services/athena.md, wiki/services/ec2-performance.md, wiki/services/ecs.md, wiki/services/eks.md, wiki/services/lambda.md, wiki/services/s3-performance.md, wiki/services/x-ray.md, wiki/services/managed-prometheus.md, wiki/services/managed-grafana.md, wiki/services/container-insights.md]
     status: validated
   - path: raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
     blob_sha: 50d465117056a84173fd77395b5ef35da7f1c779
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/cloudwatch-agent.md, wiki/services/cloudwatch-telemetry.md, wiki/services/ec2-performance.md, wiki/concepts/observability-signal-selection.md, wiki/playbooks/missing-telemetry.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/telemetry-selection.md]
+    generated_pages: [wiki/services/cloudwatch-agent.md, wiki/services/cloudwatch-telemetry.md, wiki/services/ec2-performance.md, wiki/concepts/observability-signal-selection.md, wiki/playbooks/missing-telemetry.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/telemetry-selection.md, wiki/services/ecs.md, wiki/services/eks.md, wiki/services/systems-manager.md, wiki/services/container-insights.md]
     status: validated
   - path: raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
     blob_sha: 3215a985cebf416ce6e08d1da8a2c0f631c8c9a1
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/cloudwatch-alarms.md, wiki/services/cloudwatch-dashboards.md, wiki/services/sns-notifications.md, wiki/concepts/observability-signal-selection.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/alarm-and-notification-failure.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/alarm-design.md, wiki/decision-guides/dashboard-design.md, wiki/decision-guides/event-notification-routing.md]
+    generated_pages: [wiki/services/cloudwatch-alarms.md, wiki/services/cloudwatch-dashboards.md, wiki/services/sns-notifications.md, wiki/concepts/observability-signal-selection.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/alarm-and-notification-failure.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/alarm-design.md, wiki/decision-guides/dashboard-design.md, wiki/decision-guides/event-notification-routing.md, wiki/services/cloudwatch-telemetry.md, wiki/services/ec2-performance.md, wiki/services/ec2-auto-scaling.md, wiki/services/lambda.md, wiki/services/eventbridge.md, wiki/services/systems-manager.md, wiki/services/systems-manager-automation.md]
     status: validated
   - path: raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md
     blob_sha: f8762ed1958aa26f8bfed82e49a35384a0f3e738
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/cloudwatch-dashboards.md, wiki/concepts/observability-signal-selection.md, wiki/playbooks/missing-telemetry.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/dashboard-design.md]
+    generated_pages: [wiki/services/cloudwatch-dashboards.md, wiki/concepts/observability-signal-selection.md, wiki/playbooks/missing-telemetry.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/dashboard-design.md, wiki/services/cloudwatch-telemetry.md]
     status: validated
   - path: raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
     blob_sha: d5f860feff9c8e9527f547d7421b1ecad32c4691
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/sns-notifications.md, wiki/services/cloudwatch-alarms.md, wiki/services/eventbridge.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/alarm-and-notification-failure.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/event-notification-routing.md]
+    generated_pages: [wiki/services/sns-notifications.md, wiki/services/cloudwatch-alarms.md, wiki/services/eventbridge.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/alarm-and-notification-failure.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/event-notification-routing.md, wiki/services/lambda.md, wiki/services/sqs.md, wiki/services/step-functions.md, wiki/services/kms.md, wiki/concepts/observability-signal-selection.md, wiki/services/ses.md]
     status: validated
   - path: raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
     blob_sha: f89ef47d2e310365ebd034008968a6fb7eee2565
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/concepts/evidence-to-remediation-loop.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/services/ec2-performance.md, wiki/services/rds-performance.md, wiki/services/eventbridge.md, wiki/services/systems-manager-automation.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/event-notification-routing.md, wiki/decision-guides/compute-optimization.md, wiki/decision-guides/database-remediation.md]
+    generated_pages: [wiki/concepts/evidence-to-remediation-loop.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/services/ec2-performance.md, wiki/services/rds-performance.md, wiki/services/eventbridge.md, wiki/services/systems-manager-automation.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/event-notification-routing.md, wiki/decision-guides/compute-optimization.md, wiki/decision-guides/database-remediation.md, wiki/services/cloudwatch-telemetry.md, wiki/services/cloudtrail.md, wiki/services/ebs-performance.md, wiki/services/ec2-auto-scaling.md, wiki/services/ecs.md, wiki/services/eks.md, wiki/services/lambda.md, wiki/services/sns-notifications.md, wiki/services/systems-manager.md, wiki/services/devops-agent.md, wiki/services/config.md, wiki/services/aurora.md, wiki/services/dynamodb.md, wiki/services/cloudformation.md, wiki/concepts/observability-signal-selection.md, wiki/services/health.md]
     status: validated
   - path: raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
     blob_sha: bf8f9692ff59f2971f9f28934610727ec1f81080
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/eventbridge.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/alarm-and-notification-failure.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/event-notification-routing.md]
+    generated_pages: [wiki/services/eventbridge.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/alarm-and-notification-failure.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/event-notification-routing.md, wiki/services/lambda.md, wiki/services/sns-notifications.md, wiki/services/sqs.md, wiki/services/step-functions.md, wiki/services/systems-manager.md, wiki/services/systems-manager-automation.md, wiki/concepts/observability-signal-selection.md]
     status: validated
   - path: raw/skills/1.2.3-create-and-run-systems-manager-automation-runbooks.md
     blob_sha: 8aa9155497a5f61063fc61ac787abd4ef3d5f202
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/systems-manager-automation.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md]
+    generated_pages: [wiki/services/systems-manager-automation.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/event-driven-remediation-failure.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/services/lambda.md, wiki/services/eventbridge.md, wiki/services/systems-manager.md, wiki/services/config.md, wiki/services/iam.md, wiki/concepts/observability-signal-selection.md]
     status: validated
   - path: raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
     blob_sha: f36715eb52036bb2b68980b1c653e2cb51a649c0
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/ec2-performance.md, wiki/services/ebs-performance.md, wiki/services/rds-performance.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/compute-optimization.md, wiki/decision-guides/database-remediation.md]
+    generated_pages: [wiki/services/ec2-performance.md, wiki/services/ebs-performance.md, wiki/services/rds-performance.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/concepts/safe-automation.md, wiki/decision-guides/remediation-tool-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/compute-optimization.md, wiki/decision-guides/database-remediation.md, wiki/services/cloudwatch-telemetry.md, wiki/services/athena.md, wiki/services/ec2-auto-scaling.md, wiki/services/ecs.md, wiki/services/eks.md, wiki/services/lambda.md, wiki/services/s3-performance.md, wiki/services/cost-explorer.md, wiki/services/trusted-advisor.md, wiki/concepts/observability-signal-selection.md, wiki/services/compute-optimizer.md]
     status: validated
   - path: raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md
     blob_sha: a0542a7dea22a1aafffda1273023544ffe04b106
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/ebs-performance.md, wiki/services/ec2-performance.md, wiki/decision-guides/storage-service-selection.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/ebs-performance-tuning.md]
+    generated_pages: [wiki/services/ebs-performance.md, wiki/services/ec2-performance.md, wiki/decision-guides/storage-service-selection.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/ebs-performance-tuning.md, wiki/services/cloudwatch-telemetry.md, wiki/concepts/observability-signal-selection.md]
     status: validated
   - path: raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md
     blob_sha: 7301c40a0a9c745b40b507e433b82e0ebb3ec03b
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/s3-performance.md, wiki/services/shared-storage.md, wiki/decision-guides/storage-service-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/s3-transfer-optimization.md, wiki/decision-guides/shared-storage-performance.md]
+    generated_pages: [wiki/services/s3-performance.md, wiki/services/shared-storage.md, wiki/decision-guides/storage-service-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/s3-transfer-optimization.md, wiki/decision-guides/shared-storage-performance.md, wiki/services/cloudfront.md, wiki/concepts/observability-signal-selection.md, wiki/services/datasync.md, wiki/services/s3-transfer-acceleration.md]
     status: validated
   - path: raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
     blob_sha: dddf4c9717914e1edb85785688192f83253aff1f
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/shared-storage.md, wiki/services/s3-performance.md, wiki/decision-guides/storage-service-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/shared-storage-performance.md]
+    generated_pages: [wiki/services/shared-storage.md, wiki/services/s3-performance.md, wiki/decision-guides/storage-service-selection.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/shared-storage-performance.md, wiki/services/efs.md, wiki/services/fsx.md, wiki/services/vpc.md, wiki/concepts/observability-signal-selection.md, wiki/services/storage-gateway.md, wiki/services/s3-files.md]
     status: validated
   - path: raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md
     blob_sha: d76b9fd2aef66437a134f5ebe7dd995819d81e02
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/rds-performance.md, wiki/concepts/observability-signal-selection.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/database-remediation.md]
+    generated_pages: [wiki/services/rds-performance.md, wiki/concepts/observability-signal-selection.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/database-remediation.md, wiki/services/cloudwatch-telemetry.md, wiki/services/aurora.md, wiki/services/rds-proxy.md, wiki/services/cloudwatch-database-insights.md, wiki/services/rds-performance-insights.md]
     status: validated
   - path: raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
     blob_sha: e5dba30bddacc0d15eb2911c4bbbd7d294ee1863
     processed_at: "2026-07-21T00:00:00+02:00"
-    generated_pages: [wiki/services/ec2-performance.md, wiki/services/ebs-performance.md, wiki/concepts/observability-signal-selection.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/decision-guides/storage-service-selection.md, wiki/playbooks/missing-telemetry.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/compute-optimization.md, wiki/decision-guides/ebs-performance-tuning.md]
+    generated_pages: [wiki/services/ec2-performance.md, wiki/services/ebs-performance.md, wiki/concepts/observability-signal-selection.md, wiki/concepts/evidence-to-remediation-loop.md, wiki/decision-guides/storage-service-selection.md, wiki/playbooks/missing-telemetry.md, wiki/playbooks/resource-performance-diagnosis.md, wiki/exam-traps/domain-1-exam-traps.md, wiki/learning/paths/domain-1-learning-path.md, wiki/decision-guides/compute-optimization.md, wiki/decision-guides/ebs-performance-tuning.md, wiki/services/cloudwatch-telemetry.md, wiki/services/ec2-auto-scaling.md, wiki/services/vpc.md]
     status: validated
   - path: raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
     blob_sha: 9e37b5cbaee9921bfe200c0189bd2aecfc033c8d
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/services/compute-scaling.md, wiki/decision-guides/compute-scaling-selection.md, wiki/playbooks/scaling-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/services/compute-scaling.md, wiki/decision-guides/compute-scaling-selection.md, wiki/playbooks/scaling-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/cloudwatch-telemetry.md, wiki/services/cloudtrail.md, wiki/services/ec2-performance.md, wiki/services/ec2-auto-scaling.md, wiki/services/ecs.md, wiki/services/eks.md, wiki/services/lambda.md, wiki/services/elastic-load-balancing.md, wiki/concepts/observability-signal-selection.md, wiki/services/fargate.md]
     status: validated
   - path: raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md
     blob_sha: 73d9bd8bd6c6e3b01d33f7d5b827b34c05da13d6
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/services/caching.md, wiki/decision-guides/caching-selection.md, wiki/playbooks/cache-performance-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/services/caching.md, wiki/decision-guides/caching-selection.md, wiki/playbooks/cache-performance-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/dynamodb.md, wiki/services/cloudfront.md, wiki/concepts/observability-signal-selection.md, wiki/services/elasticache.md, wiki/services/dax.md]
     status: validated
   - path: raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
     blob_sha: 8baefb31c3b270b7da6dbab6686552d56f5eccfb
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/services/managed-database-scaling.md, wiki/decision-guides/database-scaling-selection.md, wiki/playbooks/database-scaling-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/services/managed-database-scaling.md, wiki/decision-guides/database-scaling-selection.md, wiki/playbooks/database-scaling-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/cloudwatch-telemetry.md, wiki/services/rds-performance.md, wiki/services/aurora.md, wiki/services/dynamodb.md, wiki/concepts/observability-signal-selection.md, wiki/services/application-auto-scaling.md, wiki/services/elasticache.md, wiki/services/dax.md, wiki/services/rds-proxy.md]
     status: validated
   - path: raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
     blob_sha: ea003bff45ec5e4de1e185ddc4e074d00ae65b03
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/services/load-balancing-and-health-checks.md, wiki/decision-guides/load-balancer-health-check-selection.md, wiki/playbooks/unhealthy-target-and-dns-failover.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/services/load-balancing-and-health-checks.md, wiki/decision-guides/load-balancer-health-check-selection.md, wiki/playbooks/unhealthy-target-and-dns-failover.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/cloudwatch-telemetry.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md, wiki/services/vpc.md, wiki/concepts/observability-signal-selection.md]
     status: validated
   - path: raw/skills/2.2.2-configure-fault-tolerant-systems.md
     blob_sha: 201bea01798712d69de370ea6ffa72b3b17ac636
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/concepts/fault-tolerance.md, wiki/decision-guides/fault-tolerance-pattern-selection.md, wiki/playbooks/failure-boundary-diagnosis.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/concepts/fault-tolerance.md, wiki/decision-guides/fault-tolerance-pattern-selection.md, wiki/playbooks/failure-boundary-diagnosis.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/ec2-performance.md, wiki/services/ebs-performance.md, wiki/services/ec2-auto-scaling.md, wiki/services/sns-notifications.md, wiki/services/sqs.md, wiki/services/eventbridge.md, wiki/services/step-functions.md, wiki/services/s3-performance.md, wiki/services/efs.md, wiki/services/rds-performance.md, wiki/services/aurora.md, wiki/services/dynamodb.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md, wiki/services/vpc.md, wiki/concepts/observability-signal-selection.md, wiki/services/application-recovery-controller.md]
     status: validated
   - path: raw/skills/2.3.1-automate-snapshots-and-backups.md
     blob_sha: d0277df7b96a0e2710ffaf6ac7126c0df5f40bbf
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/services/aws-backup.md, wiki/decision-guides/backup-protection-selection.md, wiki/playbooks/backup-job-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/services/aws-backup.md, wiki/decision-guides/backup-protection-selection.md, wiki/playbooks/backup-job-failure.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/ec2-performance.md, wiki/services/ebs-performance.md, wiki/services/sns-notifications.md, wiki/services/eventbridge.md, wiki/services/s3-performance.md, wiki/services/rds-performance.md, wiki/services/aurora.md, wiki/services/dynamodb.md, wiki/services/iam.md, wiki/services/kms.md, wiki/concepts/observability-signal-selection.md, wiki/services/dax.md, wiki/services/backup-audit-manager.md]
     status: validated
   - path: raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
     blob_sha: 4644334be57772bf741d4a16a085657016046425
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/concepts/database-recovery.md, wiki/decision-guides/database-restore-selection.md, wiki/playbooks/database-restore-and-cutover.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/concepts/database-recovery.md, wiki/decision-guides/database-restore-selection.md, wiki/playbooks/database-restore-and-cutover.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/ecs.md, wiki/services/eks.md, wiki/services/lambda.md, wiki/services/rds-performance.md, wiki/services/aurora.md, wiki/services/dynamodb.md, wiki/services/aws-backup.md, wiki/services/route-53.md, wiki/services/kms.md, wiki/services/vpc.md, wiki/concepts/observability-signal-selection.md, wiki/services/rds-proxy.md]
     status: validated
   - path: raw/skills/2.3.3-implement-versioning-for-storage-services.md
     blob_sha: b11f2b74c372b8c641d6ba2f5894636511c7e13d
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/concepts/storage-versioning.md, wiki/decision-guides/versioning-backup-object-lock-selection.md, wiki/playbooks/storage-version-recovery.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/concepts/storage-versioning.md, wiki/decision-guides/versioning-backup-object-lock-selection.md, wiki/playbooks/storage-version-recovery.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/s3-performance.md, wiki/services/fsx.md, wiki/services/aws-backup.md, wiki/services/iam.md, wiki/services/kms.md, wiki/concepts/observability-signal-selection.md]
     status: validated
   - path: raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
     blob_sha: 6663abbe42d523c4788fedc5954c18e61a38065c
     processed_at: "2026-07-21T13:00:00+02:00"
-    generated_pages: [wiki/concepts/disaster-recovery.md, wiki/decision-guides/dr-strategy-selection.md, wiki/playbooks/disaster-recovery-failover.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md]
+    generated_pages: [wiki/concepts/disaster-recovery.md, wiki/decision-guides/dr-strategy-selection.md, wiki/playbooks/disaster-recovery-failover.md, wiki/exam-traps/domain-2-exam-traps.md, wiki/concepts/scaling-resilience-and-recovery.md, wiki/learning/paths/domain-2-learning-path.md, wiki/services/s3-performance.md, wiki/services/efs.md, wiki/services/rds-performance.md, wiki/services/aurora.md, wiki/services/dynamodb.md, wiki/services/aws-backup.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md, wiki/services/global-accelerator.md, wiki/services/cloudformation.md, wiki/services/cdk.md, wiki/concepts/observability-signal-selection.md, wiki/services/application-recovery-controller.md]
     status: validated
   - path: raw/skills/3.1.1-create-and-manage-amis-and-container-images.md
     blob_sha: 61ab57b0d18914439a8e9109e9741063eb130183
@@ -269,7 +269,7 @@ sources:
     generated_pages: [wiki/services/global-accelerator.md, wiki/services/network-firewall.md, wiki/services/transit-gateway.md, wiki/services/vpc-flow-logs.md, wiki/services/vpc-reachability-analyzer.md, wiki/services/nat-gateway.md, wiki/services/site-to-site-vpn.md, wiki/services/route53-resolver-dns-firewall.md, wiki/services/cloudwatch-network-synthetic-monitor.md, wiki/services/cloudwatch-network-flow-monitor.md, wiki/services/cloudwatch-internet-monitor.md, wiki/services/cloudwatch-synthetics.md, wiki/concepts/network-evidence-and-delivery.md, wiki/services/cloudwatch-network-monitoring.md, wiki/decision-guides/network-monitor-selection.md, wiki/playbooks/network-performance-diagnosis.md, wiki/exam-traps/domain-5-exam-traps.md, wiki/learning/paths/domain-5-learning-path.md, wiki/services/vpc.md, wiki/services/cloudfront.md, wiki/services/route-53.md, wiki/services/elastic-load-balancing.md, wiki/services/cloudwatch-telemetry.md]
     status: validated
 generated:
-  count: 219
+  count: 239
   roots:
     - wiki/services
     - wiki/concepts
@@ -280,3 +280,4 @@ generated:
 unresolved:
   - "Domains 1-2 require atomic facet reconciliation under coverage schema v2; their pages remain implemented."
   - "No external sources were authorized; current-service verification remains out of scope."
+

@@ -4,13 +4,20 @@ title: DynamoDB
 service_id: dynamodb
 description: Provides managed NoSQL storage with service encryption and optional customer-managed KMS control.
 tags: ["soa-c03", "domain-4", "dynamodb", "encryption-at-rest", domain-5, gateway-endpoint, network-cost]
-timestamp: 2026-07-21T22:45:00+02:00
-skill_ids: ["4.2.2", "5.1.2", "5.1.4"]
-domain_ids: ["4", "5"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["4.2.2", "5.1.2", "5.1.4", "1.2.1", "2.1.2", "2.1.3", "2.2.2", "2.3.1", "2.3.2", "2.3.4"]
+domain_ids: ["4", "5", "1", "2"]
 sources:
   - /raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md
   - /raw/skills/5.1.2-configure-private-networking-connectivity.md
   - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
+  - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
+  - /raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md
+  - /raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
+  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 # Core model
@@ -43,8 +50,25 @@ Use the endpoint for supported private regional traffic and to avoid NAT process
 - [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
 - [Network cost optimization](../decision-guides/network-cost-optimization.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Capacity, caching, and hot partitions
+
+On-demand and provisioned modes address different demand predictability. Auto scaling is reactive and bounded. Low table utilization can coexist with throttling when a key or index is hot. DAX accelerates repeated eventually consistent reads; it does not add write capacity.
+
+## Backup, restore, and global tables
+
+Point-in-time, on-demand, and Backup recovery create a new table. Restore does not automatically recreate every stream, mapping, alarm, scaling, TTL, or application reference. Global tables provide multi-Region replicas and are not a substitute for backup.
+
 # Sources
 
 - [Skill 4.2.2](../../raw/skills/4.2.2-implement-configure-and-troubleshoot-encryption-at-rest.md)
 - [Skill 5.1.2](../../raw/skills/5.1.2-configure-private-networking-connectivity.md)
 - [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
+- [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
+- [Skill 2.1.2](../../raw/skills/2.1.2-implement-caching-for-dynamic-scalability.md)
+- [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)

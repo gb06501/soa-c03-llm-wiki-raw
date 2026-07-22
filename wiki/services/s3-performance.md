@@ -4,9 +4,9 @@ title: S3
 service_id: s3
 description: Provides object storage with transfer, request, lifecycle, versioning, and event-notification controls.
 tags: [soa-c03, domain-1, s3, performance, lifecycle, domain-5, private-access, edge-origin]
-timestamp: 2026-07-21T22:45:00+02:00
-skill_ids: ["1.3.3", "1.3.4", "3.2.2", "5.1.2", "5.1.4", "5.2.3", "5.3.2"]
-domain_ids: ["1", "3", "5"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["1.3.3", "1.3.4", "3.2.2", "5.1.2", "5.1.4", "5.2.3", "5.3.2", "1.1.1", "1.3.1", "2.2.2", "2.3.1", "2.3.3", "2.3.4"]
+domain_ids: ["1", "3", "5", "2"]
 sources:
   - /raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md
   - /raw/skills/1.3.4-evaluate-and-optimize-shared-storage-solutions.md
@@ -15,6 +15,12 @@ sources:
   - /raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md
   - /raw/skills/5.2.3-configure-content-and-service-distribution.md
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
+  - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
+  - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
+  - /raw/skills/2.3.3-implement-versioning-for-storage-services.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 
@@ -84,6 +90,20 @@ Flow Logs explain VPC-side endpoint/NAT paths; S3 and CloudFront access evidence
 - [Private connectivity selection](../decision-guides/private-connectivity-selection.md)
 - [Content distribution selection](../decision-guides/content-distribution-selection.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Transfer and lifecycle
+
+Multipart and parallel operations improve large-object transfer; Transfer Acceleration changes the remote-client path through an edge endpoint; DataSync handles managed storage movement. Lifecycle changes storage class or retention and is not a throughput fix.
+
+## Versioning, Object Lock, and replication
+
+Versioning retains object versions and delete markers. Object Lock protects selected versions from deletion or change. Replication creates another copy according to rule scope and permissions. These controls have different recovery and independence properties.
+
+## Availability and disaster recovery
+
+S3 is regional and designed across Availability Zones. Cross-Region data readiness, artifact availability, version state, replication status, and application cutover remain separate DR concerns.
+
 # Sources
 
 - [Skill 1.3.3](../../raw/skills/1.3.3-implement-and-optimize-s3-performance-strategies.md)
@@ -93,3 +113,9 @@ Flow Logs explain VPC-side endpoint/NAT paths; S3 and CloudFront access evidence
 - [Skill 5.1.4](../../raw/skills/5.1.4-optimize-the-cost-of-network-architectures.md)
 - [Skill 5.2.3](../../raw/skills/5.2.3-configure-content-and-service-distribution.md)
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
+- [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
+- [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)
+- [Skill 2.3.3](../../raw/skills/2.3.3-implement-versioning-for-storage-services.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)

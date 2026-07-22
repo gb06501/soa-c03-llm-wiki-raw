@@ -1,5 +1,15 @@
 # Wiki update log
 
+## [2026-07-22] reconcile | Complete-corpus atomic coverage
+
+- **Scope:** Reconciled all 53 immutable skills after the five domain bootstraps.
+- **Atomic coverage:** Replaced the 23 legacy Domain 1-2 aggregate service facets with 231 atomic service, feature, and mechanism items; all five domains and all 53 skills are now validated.
+- **Identity repair:** Merged the duplicate planned `evidence-selection.md` identity into Observability signal selection and removed the last planned semantic destination.
+- **Creation:** Added 20 exact pages for 13 canonical AWS services/products and 7 service-owned features that previously lacked independent identities.
+- **Integration:** Enriched 35 shared service pages and the observability concept with Domain 1-2 sources, decisions, evidence, failure boundaries, and recovery behavior.
+- **Corpus checks:** Reconciled canonical service identity, generated navigation, cross-domain dependencies, duplicate titles, orphan visibility, and full-tree links.
+- **Source:** No file under `raw/` changed and no external knowledge was added.
+
 ## [2026-07-21] generate | Domain 5 networking and content delivery
 
 - **Scope:** Processed all 12 immutable Domain 5 skills with 122 atomic service, feature, mechanism, concept, decision, and troubleshooting coverage items.
@@ -85,4 +95,5 @@
 - **Synthesis:** Connected observability, automation, compute, storage, database, and troubleshooting knowledge.
 - **Validation:** Preserved `raw/`, checked required metadata, sources, internal links, indexes, and duplicate identities.
 - **Gap:** No external AWS documentation was imported; knowledge remains bounded by the supplied study sources.
+
 

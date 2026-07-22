@@ -4,9 +4,9 @@ title: Route 53
 service_id: route-53
 description: Provides DNS routing and validation records used by secure endpoint and certificate workflows.
 tags: ["soa-c03", "domain-4", "route-53", "dns", domain-5, resolver, dns-routing]
-timestamp: 2026-07-21T22:45:00+02:00
-skill_ids: ["4.2.3", "5.1.3", "5.2.1", "5.2.2", "5.2.3", "5.3.2", "5.3.5"]
-domain_ids: ["4", "5"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["4.2.3", "5.1.3", "5.2.1", "5.2.2", "5.2.3", "5.3.2", "5.3.5", "2.2.1", "2.2.2", "2.3.2", "2.3.4"]
+domain_ids: ["4", "5", "2"]
 sources:
   - /raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md
   - /raw/skills/5.1.3-audit-network-protection-services-in-one-account.md
@@ -15,6 +15,10 @@ sources:
   - /raw/skills/5.2.3-configure-content-and-service-distribution.md
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
+  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md
+  - /raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md
 status: verified
 ---
 # Core model
@@ -50,6 +54,14 @@ Routing policies select eligible records by weights, latency, failover role, geo
 - [DNS routing policy selection](../decision-guides/dns-routing-policy-selection.md)
 - [DNS resolution failure](../playbooks/dns-resolution-failure.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Health checks and failover
+
+Route 53 health controls DNS answers; it does not change load-balancer target membership or move existing connections. Public checkers cannot directly test private endpoints, so a published metric and alarm may bridge private health.
+
+DNS failover still depends on record association, policy, health state, TTL and resolver cache, healthy destination capacity, and recovered application dependencies.
+
 # Sources
 
 - [Skill 4.2.3](../../raw/skills/4.2.3-implement-configure-and-troubleshoot-encryption-in-transit.md)
@@ -59,3 +71,7 @@ Routing policies select eligible records by weights, latency, failover role, geo
 - [Skill 5.2.3](../../raw/skills/5.2.3-configure-content-and-service-distribution.md)
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
+- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.2](../../raw/skills/2.3.2-restore-databases-to-meet-rto-rpo-and-cost-requirements.md)
+- [Skill 2.3.4](../../raw/skills/2.3.4-follow-disaster-recovery-procedures-and-best-practices.md)

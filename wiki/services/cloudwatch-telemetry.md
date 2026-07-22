@@ -4,15 +4,24 @@ title: CloudWatch
 service_id: cloudwatch
 description: Collects and relates metrics, logs, traces, alarms, dashboards, and operational evidence.
 tags: [soa-c03, domain-1, cloudwatch, observability, domain-5, network-monitoring]
-timestamp: 2026-07-21T22:45:00+02:00
-skill_ids: ["1.1.1", "1.1.2", "1.2.1", "5.3.2", "5.3.5"]
-domain_ids: ["1", "5"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["1.1.1", "1.1.2", "1.2.1", "5.3.2", "5.3.5", "1.1.3", "1.1.4", "1.3.1", "1.3.2", "1.3.5", "1.3.6", "2.1.1", "2.1.3", "2.2.1"]
+domain_ids: ["1", "5", "2"]
 sources:
   - /raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md
   - /raw/skills/1.1.2-configure-and-manage-the-cloudwatch-agent.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/5.3.2-collect-and-interpret-networking-logs.md
   - /raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md
+  - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
+  - /raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md
+  - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
+  - /raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md
+  - /raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md
+  - /raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md
+  - /raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md
+  - /raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md
+  - /raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md
 status: verified
 ---
 
@@ -87,6 +96,18 @@ Preserve AZ, tunnel, attachment, target, geography, ASN, probe, and flow dimensi
 - [Network monitor selection](../decision-guides/network-monitor-selection.md)
 - [Network performance diagnosis](../playbooks/network-performance-diagnosis.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Metrics, logs, alarms, and views
+
+Metrics quantify resource behavior; logs preserve messages; alarms evaluate time-series conditions; dashboards combine widgets and queries. Missing guest or container telemetry is a collection problem until agent, scope, permissions, and destination are proven.
+
+## Evidence order
+
+`symptom -> resource metric -> workload or database detail -> matching log -> recent change -> service health -> remediation evidence`
+
+Alarm state does not prove action delivery. A dashboard is a view, not an alert. Scaling and health integrations consume CloudWatch evidence but retain their own configuration and failure boundaries.
+
 # Sources
 
 - [Skill 1.1.1](../../raw/skills/1.1.1-configure-monitoring-and-logging-for-workloads.md)
@@ -94,3 +115,12 @@ Preserve AZ, tunnel, attachment, target, geography, ASN, probe, and flow dimensi
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 5.3.2](../../raw/skills/5.3.2-collect-and-interpret-networking-logs.md)
 - [Skill 5.3.5](../../raw/skills/5.3.5-configure-and-analyze-cloudwatch-network-monitoring-services.md)
+- [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
+- [Skill 1.1.4](../../raw/skills/1.1.4-create-and-manage-cloudwatch-dashboards.md)
+- [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
+- [Skill 1.3.2](../../raw/skills/1.3.2-analyze-and-optimize-ebs-performance.md)
+- [Skill 1.3.5](../../raw/skills/1.3.5-monitor-and-optimize-amazon-rds.md)
+- [Skill 1.3.6](../../raw/skills/1.3.6-implement-monitor-and-optimize-ec2-instances-storage-and-networking.md)
+- [Skill 2.1.1](../../raw/skills/2.1.1-configure-and-manage-scaling-mechanisms-in-compute-environments.md)
+- [Skill 2.1.3](../../raw/skills/2.1.3-configure-and-manage-scaling-in-managed-databases.md)
+- [Skill 2.2.1](../../raw/skills/2.2.1-configure-and-troubleshoot-elb-and-route-53-health-checks.md)

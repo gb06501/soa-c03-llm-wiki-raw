@@ -2,48 +2,84 @@
 
 # Domain 1: Monitoring, Logging, Analysis, Remediation, and Performance Optimization
 
-This domain contains 14 source skills and 32 implemented generated pages.
+This domain contains 14 source skills and 68 implemented generated pages.
 
 ## Coverage summary
 
-- **Needs reconciliation:** 14 skills
+- **Validated:** 14 skills
 
 ## Skills
 
 | Skill | Title | Coverage |
 | --- | --- | --- |
-| [1.1.1](../skills/1.1.1.md) | Configure monitoring and logging for workloads | Needs reconciliation |
-| [1.1.2](../skills/1.1.2.md) | Configure and manage the CloudWatch agent | Needs reconciliation |
-| [1.1.3](../skills/1.1.3.md) | Configure and troubleshoot CloudWatch alarms | Needs reconciliation |
-| [1.1.4](../skills/1.1.4.md) | Create and manage CloudWatch dashboards | Needs reconciliation |
-| [1.1.5](../skills/1.1.5.md) | Configure SNS notifications and alarm integration | Needs reconciliation |
-| [1.2.1](../skills/1.2.1.md) | Analyze performance metrics and automate remediation | Needs reconciliation |
-| [1.2.2](../skills/1.2.2.md) | Route, enrich, and deliver events with EventBridge | Needs reconciliation |
-| [1.2.3](../skills/1.2.3.md) | Create and run Systems Manager Automation runbooks | Needs reconciliation |
-| [1.3.1](../skills/1.3.1.md) | Optimize compute resources and remediate performance problems | Needs reconciliation |
-| [1.3.2](../skills/1.3.2.md) | Analyze and optimize EBS performance | Needs reconciliation |
-| [1.3.3](../skills/1.3.3.md) | Implement and optimize S3 performance strategies | Needs reconciliation |
-| [1.3.4](../skills/1.3.4.md) | Evaluate and optimize shared storage solutions | Needs reconciliation |
-| [1.3.5](../skills/1.3.5.md) | Monitor and optimize Amazon RDS | Needs reconciliation |
-| [1.3.6](../skills/1.3.6.md) | Implement, monitor, and optimize EC2 instances, storage, and networking | Needs reconciliation |
+| [1.1.1](../skills/1.1.1.md) | Configure monitoring and logging for workloads | Validated |
+| [1.1.2](../skills/1.1.2.md) | Configure and manage the CloudWatch agent | Validated |
+| [1.1.3](../skills/1.1.3.md) | Configure and troubleshoot CloudWatch alarms | Validated |
+| [1.1.4](../skills/1.1.4.md) | Create and manage CloudWatch dashboards | Validated |
+| [1.1.5](../skills/1.1.5.md) | Configure SNS notifications and alarm integration | Validated |
+| [1.2.1](../skills/1.2.1.md) | Analyze performance metrics and automate remediation | Validated |
+| [1.2.2](../skills/1.2.2.md) | Route, enrich, and deliver events with EventBridge | Validated |
+| [1.2.3](../skills/1.2.3.md) | Create and run Systems Manager Automation runbooks | Validated |
+| [1.3.1](../skills/1.3.1.md) | Optimize compute resources and remediate performance problems | Validated |
+| [1.3.2](../skills/1.3.2.md) | Analyze and optimize EBS performance | Validated |
+| [1.3.3](../skills/1.3.3.md) | Implement and optimize S3 performance strategies | Validated |
+| [1.3.4](../skills/1.3.4.md) | Evaluate and optimize shared storage solutions | Validated |
+| [1.3.5](../skills/1.3.5.md) | Monitor and optimize Amazon RDS | Validated |
+| [1.3.6](../skills/1.3.6.md) | Implement, monitor, and optimize EC2 instances, storage, and networking | Validated |
 
 ## Implemented knowledge
 
 ### AWS Service
 
+- [Athena](../services/athena.md)
+- [Aurora](../services/aurora.md)
+- [CloudFormation](../services/cloudformation.md)
+- [CloudFront](../services/cloudfront.md)
+- [CloudTrail](../services/cloudtrail.md)
 - [CloudWatch](../services/cloudwatch-telemetry.md)
+- [Compute Optimizer](../services/compute-optimizer.md)
+- [Config](../services/config.md)
+- [Cost Explorer](../services/cost-explorer.md)
+- [DataSync](../services/datasync.md)
+- [DevOps Agent](../services/devops-agent.md)
+- [DynamoDB](../services/dynamodb.md)
 - [EBS](../services/ebs-performance.md)
+- [EC2 Auto Scaling](../services/ec2-auto-scaling.md)
 - [EC2](../services/ec2-performance.md)
+- [ECS](../services/ecs.md)
+- [EFS](../services/efs.md)
+- [EKS](../services/eks.md)
 - [EventBridge](../services/eventbridge.md)
+- [FSx](../services/fsx.md)
+- [Health](../services/health.md)
+- [IAM](../services/iam.md)
+- [KMS](../services/kms.md)
+- [Lambda](../services/lambda.md)
+- [Managed Grafana](../services/managed-grafana.md)
+- [Managed Service for Prometheus](../services/managed-prometheus.md)
 - [RDS](../services/rds-performance.md)
 - [S3](../services/s3-performance.md)
+- [SES](../services/ses.md)
 - [SNS](../services/sns-notifications.md)
+- [SQS](../services/sqs.md)
+- [Step Functions](../services/step-functions.md)
+- [Storage Gateway](../services/storage-gateway.md)
+- [Systems Manager](../services/systems-manager.md)
+- [Trusted Advisor](../services/trusted-advisor.md)
+- [VPC](../services/vpc.md)
+- [X-Ray](../services/x-ray.md)
 
 ### AWS Feature
 
 - [CloudWatch Agent](../services/cloudwatch-agent.md)
 - [CloudWatch alarms](../services/cloudwatch-alarms.md)
 - [CloudWatch dashboards](../services/cloudwatch-dashboards.md)
+- [CloudWatch Database Insights](../services/cloudwatch-database-insights.md)
+- [Container Insights](../services/container-insights.md)
+- [RDS Performance Insights](../services/rds-performance-insights.md)
+- [RDS Proxy](../services/rds-proxy.md)
+- [S3 Files](../services/s3-files.md)
+- [S3 Transfer Acceleration](../services/s3-transfer-acceleration.md)
 - [Systems Manager Automation](../services/systems-manager-automation.md)
 
 ### Concept
@@ -84,9 +120,7 @@ This domain contains 14 source skills and 32 implemented generated pages.
 
 ## Planned knowledge
 
-### Concept
-
-- <code>wiki/concepts/evidence-selection.md</code>
+No additional planned pages are assigned to this domain.
 
 ## State
 

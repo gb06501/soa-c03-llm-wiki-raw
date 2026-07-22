@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-07-21T22:45:00+02:00"
+updated_at: "2026-07-22T09:00:00+02:00"
 display_policy: "Use short recognizable names; AWS and Amazon prefixes are optional."
 rules:
   - "AWS Service pages represent exactly one registered service."
@@ -234,3 +234,55 @@ services:
     display_name: WAF
     aliases: [AWS WAF, Web Application Firewall]
     page: wiki/services/waf.md
+  - id: application-auto-scaling
+    display_name: Application Auto Scaling
+    aliases: [AWS Application Auto Scaling]
+    page: wiki/services/application-auto-scaling.md
+  - id: application-recovery-controller
+    display_name: Application Recovery Controller
+    aliases: [Amazon Application Recovery Controller, ARC]
+    page: wiki/services/application-recovery-controller.md
+  - id: compute-optimizer
+    display_name: Compute Optimizer
+    aliases: [AWS Compute Optimizer]
+    page: wiki/services/compute-optimizer.md
+  - id: datasync
+    display_name: DataSync
+    aliases: [AWS DataSync]
+    page: wiki/services/datasync.md
+  - id: dax
+    display_name: DAX
+    aliases: [Amazon DynamoDB Accelerator, DynamoDB Accelerator]
+    page: wiki/services/dax.md
+  - id: elasticache
+    display_name: ElastiCache
+    aliases: [Amazon ElastiCache]
+    page: wiki/services/elasticache.md
+  - id: fargate
+    display_name: Fargate
+    aliases: [AWS Fargate]
+    page: wiki/services/fargate.md
+  - id: health
+    display_name: Health
+    aliases: [AWS Health, AWS Health Dashboard]
+    page: wiki/services/health.md
+  - id: managed-grafana
+    display_name: Managed Grafana
+    aliases: [Amazon Managed Grafana]
+    page: wiki/services/managed-grafana.md
+  - id: managed-prometheus
+    display_name: Managed Service for Prometheus
+    aliases: [Amazon Managed Service for Prometheus, AMP]
+    page: wiki/services/managed-prometheus.md
+  - id: ses
+    display_name: SES
+    aliases: [Amazon SES, Simple Email Service]
+    page: wiki/services/ses.md
+  - id: storage-gateway
+    display_name: Storage Gateway
+    aliases: [AWS Storage Gateway]
+    page: wiki/services/storage-gateway.md
+  - id: x-ray
+    display_name: X-Ray
+    aliases: [AWS X-Ray]
+    page: wiki/services/x-ray.md

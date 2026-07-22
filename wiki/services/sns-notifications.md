@@ -4,15 +4,17 @@ title: SNS
 service_id: sns
 description: Fans out messages to authorized subscriptions with delivery, filtering, encryption, and failure evidence.
 tags: [soa-c03, domain-1, sns, notifications]
-timestamp: 2026-07-21T18:00:00+02:00
-skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "3.2.2"]
-domain_ids: ["1", "3"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["1.1.3", "1.1.5", "1.2.1", "1.2.2", "3.2.2", "2.2.2", "2.3.1"]
+domain_ids: ["1", "3", "2"]
 sources:
   - /raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md
   - /raw/skills/1.1.5-configure-sns-notifications-and-alarm-integration.md
   - /raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md
   - /raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md
   - /raw/skills/3.2.2-implement-event-driven-automation.md
+  - /raw/skills/2.2.2-configure-fault-tolerant-systems.md
+  - /raw/skills/2.3.1-automate-snapshots-and-backups.md
 status: verified
 ---
 
@@ -70,6 +72,12 @@ SNS is the push fan-out boundary. Use SQS when consumers need a durable polling 
 
 Duplicate delivery and retry require idempotent subscribers. Fan-out success does not prove every subscriber completed its business action.
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Alarm, fan-out, and delivery boundary
+
+CloudWatch may evaluate an alarm correctly while SNS delivery fails. Verify topic policy, KMS access, subscription confirmation, filter policy, retry evidence, and target policy. SNS fans out; SQS buffers; EventBridge matches and routes.
+
 # Sources
 
 - [Skill 1.1.3](../../raw/skills/1.1.3-configure-and-troubleshoot-cloudwatch-alarms.md)
@@ -77,3 +85,5 @@ Duplicate delivery and retry require idempotent subscribers. Fan-out success doe
 - [Skill 1.2.1](../../raw/skills/1.2.1-analyze-performance-metrics-and-automate-remediation.md)
 - [Skill 1.2.2](../../raw/skills/1.2.2-route-enrich-and-deliver-events-with-eventbridge.md)
 - [Skill 3.2.2](../../raw/skills/3.2.2-implement-event-driven-automation.md)
+- [Skill 2.2.2](../../raw/skills/2.2.2-configure-fault-tolerant-systems.md)
+- [Skill 2.3.1](../../raw/skills/2.3.1-automate-snapshots-and-backups.md)

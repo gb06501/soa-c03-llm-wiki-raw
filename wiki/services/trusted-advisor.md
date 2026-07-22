@@ -4,11 +4,12 @@ title: Trusted Advisor
 service_id: trusted-advisor
 description: Evaluates account resources against AWS checks and provides prioritized recommendations.
 tags: ["soa-c03", "domain-4", "trusted-advisor", "security-checks"]
-timestamp: 2026-07-21T22:00:00+02:00
-skill_ids: ["4.1.4"]
-domain_ids: ["4"]
+timestamp: 2026-07-22T09:00:00+02:00
+skill_ids: ["4.1.4", "1.3.1"]
+domain_ids: ["4", "1"]
 sources:
   - /raw/skills/4.1.4-remediate-trusted-advisor-security-checks.md
+  - /raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md
 status: verified
 ---
 # Core model
@@ -36,6 +37,13 @@ Use EventBridge or notifications to route findings. Use Lambda or Systems Manage
 - [Security check remediation priority](../decision-guides/security-check-remediation-priority.md)
 - [Security finding remediation](../playbooks/security-finding-remediation.md)
 
+# Corpus reconciliation: Domains 1 and 2
+
+## Optimization boundary
+
+Trusted Advisor recommendations are candidates for evidence-backed review. Validate workload ownership, peak demand, redundancy, dependency limits, planned events, and post-change health before acting.
+
 # Sources
 
 - [Skill 4.1.4](../../raw/skills/4.1.4-remediate-trusted-advisor-security-checks.md)
+- [Skill 1.3.1](../../raw/skills/1.3.1-optimize-compute-resources-and-remediate-performance-problems.md)
