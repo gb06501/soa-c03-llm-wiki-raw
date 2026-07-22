@@ -2,9 +2,9 @@
 type: AWS Service
 title: Firehose
 service_id: firehose
-description: Delivers streaming network and security logs to supported analytical destinations with buffering and delivery evidence.
+description: Buffers, optionally transforms, and delivers streaming records to supported storage and analysis destinations.
 tags: ["soa-c03", "domain-5", "firehose", "log-delivery"]
-timestamp: 2026-07-21T22:45:00+02:00
+timestamp: 2026-07-22T05:15:00Z
 skill_ids: ["5.1.3", "5.3.2"]
 domain_ids: ["5"]
 sources:
@@ -14,7 +14,7 @@ status: verified
 ---
 # Core model
 
-Firehose accepts supported log streams, buffers and optionally transforms records, then delivers them to an owned destination such as S3. Delivery configuration, IAM/KMS permission, buffering, transformation, and destination health are separate failure layers.
+Firehose accepts streaming records, buffers and optionally transforms or compresses them, then delivers them to a supported destination. It transports data; it does not analyze that data. Source integration, delivery configuration, IAM/KMS permission, transformation, and destination health are separate failure layers.
 
 # Decision boundaries
 
